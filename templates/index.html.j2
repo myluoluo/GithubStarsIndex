@@ -1067,6 +1067,21 @@
                     </div>
                 </div>
 
+                <div class="dropdown" id="topic-dropdown">
+                    <div class="dropdown-trigger">
+                        <span id="l-topic-label">TOPICS: ALL</span>
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <div class="dropdown-content">
+                        <div class="dropdown-search-wrapper">
+                            <input type="text" class="dropdown-search" placeholder="FILTER..." id="topic-search">
+                            <div class="btn-clear-dropdown" onclick="clearTopicFilters()">[ CLEAR ]</div>
+                        </div>
+                        <div class="dropdown-list" id="topic-options"></div>
+                        <div class="dropdown-close-mobile" onclick="closeAllDropdowns()">[ TAP_TO_CLOSE ]</div>
+                    </div>
+                </div>
+
                 <div class="dropdown" id="tag-dropdown">
                     <div class="dropdown-trigger">
                         <span id="l-tag-label">TAGS: ALL</span>
@@ -1164,6 +1179,7 @@
         // Filter State
         let activeLanguage = null;
         let activeTags = new Set();
+        let activeTopics = new Set();
         let currentSort = 'pushed_at';
 
         const LANG_ALIAS = {
@@ -1200,6 +1216,7 @@
                 home_btn: "访问项目官网",
                 lang_all: "语言: 全部",
                 tag_all: "标签: 全部",
+                topic_all: "主题: 全部",
                 latest: "最新更新",
                 stars: "Star 数量",
                 alpha: "字母顺序"
@@ -1217,6 +1234,7 @@
                 home_btn: "Visit Homepage",
                 lang_all: "Language: All",
                 tag_all: "Tags: All",
+                topic_all: "Topics: All",
                 latest: "Latest",
                 stars: "Stars",
                 alpha: "A-Z"
@@ -1230,6 +1248,7 @@
             
             document.getElementById('l-lang-label').textContent = activeLanguage ? `Language: ${activeLanguage}` : texts.lang_all;
             document.getElementById('l-tag-label').textContent = texts.tag_all;
+            document.getElementById('l-topic-label').textContent = texts.topic_all;
 
             const sortPills = document.querySelectorAll('.sort-pill');
             sortPills[0].textContent = texts.latest;
@@ -1291,9 +1310,20 @@
             return Array.from(seen.values()).sort((a, b) => a.localeCompare(b));
         }
 
+        function getUniqueTopics() {
+            const seen = new Set();
+            RAW_DATA.forEach(item => {
+                (item.topics || []).forEach(t => {
+                    if (t) seen.add(t);
+                });
+            });
+            return Array.from(seen).sort((a, b) => a.localeCompare(b));
+        }
+
         // --- UI Initialization ---
         let availableLangs = [];
         let availableTags = [];
+        let availableTopics = [];
 
         function renderLangOptions(query = '') {
             const container = document.getElementById('lang-options');
@@ -1322,16 +1352,32 @@
             container.innerHTML = html;
         }
 
+        function renderTopicOptions(query = '') {
+            const container = document.getElementById('topic-options');
+            if (!container) return;
+            const filtered = query ? availableTopics.filter(t => t.toLowerCase().includes(query.toLowerCase())) : availableTopics;
+            
+            let html = '';
+            filtered.forEach(t => {
+                const isActive = activeTopics.has(t);
+                html += `<div class="dropdown-item ${isActive ? 'active' : ''}" data-value="${t}">${t}</div>`;
+            });
+            container.innerHTML = html;
+        }
+
         function initControls() {
             updateDashboard();
             availableLangs = getUniqueLanguages();
             availableTags = getUniqueTags();
+            availableTopics = getUniqueTopics();
 
             renderLangOptions();
             renderTagOptions();
+            renderTopicOptions();
 
             document.getElementById('lang-search').oninput = (e) => renderLangOptions(e.target.value);
             document.getElementById('tag-search').oninput = (e) => renderTagOptions(e.target.value);
+            document.getElementById('topic-search').oninput = (e) => renderTopicOptions(e.target.value);
 
             // Event Listeners
             document.querySelectorAll('.dropdown-trigger').forEach(trigger => {
@@ -1372,6 +1418,15 @@
                 applyFiltersAndSort();
             };
 
+            document.getElementById('topic-options').onclick = (e) => {
+                const item = e.target.closest('.dropdown-item');
+                if(!item) return;
+                const val = item.dataset.value;
+                if(activeTopics.has(val)) activeTopics.delete(val);
+                else activeTopics.add(val);
+                applyFiltersAndSort();
+            };
+
             document.querySelectorAll('.sort-pill').forEach(pill => {
                 pill.onclick = () => {
                     document.querySelectorAll('.sort-pill').forEach(p => p.classList.remove('active'));
@@ -1397,9 +1452,15 @@
             applyFiltersAndSort();
         }
 
+        function clearTopicFilters() {
+            activeTopics.clear();
+            applyFiltersAndSort();
+        }
+
         function clearAllFilters() {
             activeLanguage = null;
             activeTags.clear();
+            activeTopics.clear();
             applyFiltersAndSort();
         }
 
@@ -1419,6 +1480,12 @@
                 chip.innerHTML = `#${tag} <span onclick="removeTag('${tag}')">✕</span>`;
                 activeFiltersContainer.appendChild(chip);
             });
+            activeTopics.forEach(topic => {
+                const chip = document.createElement('div');
+                chip.className = 'filter-chip';
+                chip.innerHTML = `${topic} <span onclick="removeTopic('${topic}')">✕</span>`;
+                activeFiltersContainer.appendChild(chip);
+            });
 
             // Reset All Button
             const resetBtn = document.createElement('div');
@@ -1431,6 +1498,7 @@
 
         function removeLang() { activeLanguage = null; applyFiltersAndSort(); }
         function removeTag(tag) { activeTags.delete(tag); applyFiltersAndSort(); }
+        function removeTopic(topic) { activeTopics.delete(topic); applyFiltersAndSort(); }
 
         function applyFiltersAndSort() {
             const rawQuery = searchInput.value.trim().toLowerCase();
@@ -1454,7 +1522,10 @@
                 );
                 const tagMatch = activeTags.size === 0 || Array.from(activeTags).every(t => itemTags.has(t.toLowerCase()));
                 
-                return searchMatch && langMatch && tagMatch;
+                const itemTopics = new Set((item.topics || []).map(t => t.toLowerCase()));
+                const topicMatch = activeTopics.size === 0 || Array.from(activeTopics).every(t => itemTopics.has(t.toLowerCase()));
+
+                return searchMatch && langMatch && tagMatch && topicMatch;
             });
 
             // Sorting
@@ -1481,10 +1552,15 @@
             // Sync highlights in dropdowns
             renderLangOptions(document.getElementById('lang-search').value);
             renderTagOptions(document.getElementById('tag-search').value);
+            renderTopicOptions(document.getElementById('topic-search').value);
 
             // Restore scroll positions
+            const topicContainer = document.getElementById('topic-options');
+            const topicScrollTop = topicContainer ? topicContainer.scrollTop : 0;
+
             if(tagContainer) tagContainer.scrollTop = tagScrollTop;
             if(langContainer) langContainer.scrollTop = langScrollTop;
+            if(topicContainer) topicContainer.scrollTop = topicScrollTop;
 
             // Update labels
             document.getElementById('l-lang-label').textContent = activeLanguage ? `Language: ${activeLanguage}` : texts.lang_all;
