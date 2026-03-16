@@ -107,7 +107,6 @@ jobs:
 
       # ── 5b. 常规模式：正常同步（增量抓取） ─────────────────────
       - name: 同步 GitHub Stars
-        if: steps.seed_stars.outputs.source != 'main'
         env:
           # ── Secrets（机密，加密保存）──
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Actions 自动注入，无需手动添加
