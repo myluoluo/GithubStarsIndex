@@ -78,28 +78,27 @@ Click the **Fork** button in the top right corner to copy this repository to you
 
 This project is driven by environment variables. **Priority: GitHub Secrets > .env file**.
 
-#### Method A: Using GitHub Environment Variables (Recommended for continuous running)
+#### Method A: Using GitHub Secrets (Recommended for continuous runs)
 
-Go to **Settings → Secrets and variables → Actions** in your repository:
+Go to **Settings → Secrets and variables → Actions** and configure the values in **Secrets**.
 
-**🔐 Required Secrets/Variables**
+**🔐 Required Secrets**
 - `GH_USERNAME`: The GitHub username whose stars you want to crawl.
-- `AI_API_KEY`: Your AI interface API Key.
+- `AI_API_KEY`: Your AI interface API key.
 
-**📋 Optional Variables**
-These have built-in defaults and usually don't need configuration:
+**📋 Optional Secrets**
+These have built-in defaults and usually do not need configuration:
 - `AI_BASE_URL`: AI API endpoint (defaults to OpenAI).
 - `AI_MODEL`: Model name (defaults to `gpt-4o-mini`).
-- `AI_TIMEOUT`: Timeout for a single LLM request in seconds (defaults to `60`).
 - `AI_USER_AGENT`: Custom `User-Agent` header sent to the OpenAI-compatible API (unset by default).
-- `OUTPUT_FILENAME`: Base name for generated files (defaults to `stars`).
-- `VAULT_SYNC_PATH`: Save directory in your Vault (defaults to `GitHub-Stars/`).
-- `PAGES_SYNC_ENABLED`: Whether to sync to Pages; deployment only runs when explicitly set to `true`.
 
-If you want to enable Notion sync, also add:
-- Secret: `NOTION_API_KEY`
-- Variables: `NOTION_SYNC_ENABLED=true`, plus either `NOTION_PAGE_ID` or `NOTION_DATABASE_ID`
-- Optional Variable: `NOTION_DATABASE_TITLE` for auto-discovery / auto-create mode under a parent page
+**📝 Notes about the default workflow**
+- `GITHUB_TOKEN` is injected automatically by GitHub Actions. You do not need to create it manually.
+- GitHub Pages publishing is always enabled in the default workflow, so you do not need `PAGES_SYNC_ENABLED`.
+- If `NOTION_API_KEY` is present and either `NOTION_PAGE_ID` or `NOTION_DATABASE_ID` is configured, the default workflow enables Notion sync automatically. You do not need to set `NOTION_SYNC_ENABLED`.
+- `NOTION_DATABASE_TITLE` is optional and only used in `NOTION_PAGE_ID` mode for auto-discovery / auto-create.
+- `AI_TIMEOUT`, `MAX_CONCURRENCY`, `OUTPUT_FILENAME`, `VAULT_SYNC_ENABLED`, `VAULT_REPO`, and `VAULT_SYNC_PATH` are still supported by the script, but the default workflow does not inject them from Actions. Use local `.env` execution or customize the workflow if you need them.
+- Although the default workflow reads `VAULT_PAT`, it does not inject `VAULT_SYNC_ENABLED`, `VAULT_REPO`, or `VAULT_SYNC_PATH`, so Obsidian sync is not enabled by default.
 
 > [!TIP]
 > **About GitHub API Limits**:
@@ -130,6 +129,9 @@ Go to **Actions → 🌟 GitHub Stars Index 同步 → Run workflow** and click 
 
 ## Configuration Reference
 
+> [!NOTE]
+> The table below lists the full script-level environment surface. For the built-in GitHub Actions workflow, the effective configuration set is the one described in the “GitHub Secrets” section above.
+
 | Variable             | Type                     | Description                                   | Default Value               |
 | -------------------- | ------------------------ | --------------------------------------------- | --------------------------- |
 | `GH_USERNAME`        | Required                 | GitHub username to sync                       | -                           |
@@ -139,15 +141,15 @@ Go to **Actions → 🌟 GitHub Stars Index 同步 → Run workflow** and click 
 | `AI_TIMEOUT`         | Optional                 | Timeout for a single LLM request in seconds   | `60`                        |
 | `AI_USER_AGENT`      | Optional                 | Custom `User-Agent` header for the OpenAI-compatible API | -                |
 | `OUTPUT_FILENAME`    | Optional                 | Base name for generated MD/HTML files         | `stars`                     |
-| `VAULT_SYNC_ENABLED` | Optional                 | Whether to enable Obsidian sync               | `false`                     |
+| `VAULT_SYNC_ENABLED` | Optional                 | Whether to enable Obsidian sync; not injected by the default Actions workflow | `false` |
 | `VAULT_REPO`         | Optional                 | Vault repository (`owner/repo`)               | -                           |
 | `VAULT_SYNC_PATH`    | Optional                 | Directory path for Vault sync                 | `GitHub-Stars/`             |
-| `NOTION_SYNC_ENABLED` | Optional                | Whether to enable Notion sync                 | `false`                     |
+| `NOTION_SYNC_ENABLED` | Optional                | Whether to enable Notion sync; auto-derived from Notion Secrets in the default Actions workflow | `false` |
 | `NOTION_API_KEY`     | Optional when disabled; required when enabled | Notion integration token        | -                           |
 | `NOTION_PAGE_ID`     | Optional                 | Parent page ID for auto-discovery or auto-creation of a dedicated Database | - |
 | `NOTION_DATABASE_ID` | Optional                 | Explicit dedicated Database ID; either this or `NOTION_PAGE_ID` is required when Notion sync is enabled | - |
 | `NOTION_DATABASE_TITLE` | Optional              | Database title used in auto-discovery / auto-create mode | `GitHub Stars Index` |
-| `PAGES_SYNC_ENABLED` | Optional                 | Whether to deploy to GitHub Pages; only effective when explicitly set to `true` | `false` |
+| `PAGES_SYNC_ENABLED` | Optional                 | Whether to deploy to GitHub Pages; always enabled in the default Actions workflow | `false` |
 | `MAX_CONCURRENCY`    | Optional                 | AI concurrency limit (recommended 1-10)       | `1`                         |
 | `GH_TOKEN`           | **Strongly Recommended** | Increases API limits to prevent rate-limiting | -                           |
 
@@ -169,11 +171,9 @@ This feature allows you to automatically push the generated star summaries to yo
     - **Permissions**: Under "Repository permissions," set **Contents** to **Read and write**.
     - Once generated, add it to this project's **Settings -> Secrets -> Actions** as `VAULT_PAT`.
 3.  **Enable Sync Configuration**:
-    - In this project's **Settings -> Variables -> Actions**:
-        - Set `VAULT_SYNC_ENABLED` to `true`.
-        - Set `VAULT_REPO` to `your-username/repo-name` (e.g., `iblogc/my-obsidian-vault`).
-        - Set `VAULT_SYNC_PATH` to the desired folder in your Vault (e.g., `Reading/GitHub-Stars/`).
-4.  **Save and Finish**: The next time the Action runs, `stars_zh.md` and `stars_en.md` will automatically appear in your Vault repository.
+    - The built-in default GitHub Actions workflow does **not** inject `VAULT_SYNC_ENABLED`, `VAULT_REPO`, or `VAULT_SYNC_PATH`.
+    - If you want Obsidian sync, use local `.env` execution or customize the workflow to pass those variables into the runtime environment.
+4.  **Save and Finish**: Once those values are available, `stars_zh.md` and `stars_en.md` will be pushed into your Vault repository automatically.
 
 > [!TIP]
 > **How to view locally?**
@@ -197,7 +197,7 @@ This feature runs after Markdown rendering and syncs repository metadata plus AI
 2. Choose one target mode:
    - `NOTION_PAGE_ID`: hand the script a parent page. It will search for a dedicated child Database named by `NOTION_DATABASE_TITLE`, and create one if missing.
    - `NOTION_DATABASE_ID`: point directly to an existing dedicated Database.
-3. In repository Variables, set `NOTION_SYNC_ENABLED=true` and configure one of the two options above. Set `NOTION_DATABASE_TITLE` only if you want a custom title for parent-page auto-discovery / auto-create mode.
+3. In the default GitHub Actions workflow, you do not need `NOTION_SYNC_ENABLED`. Just add `NOTION_API_KEY` plus either `NOTION_PAGE_ID` or `NOTION_DATABASE_ID` in Secrets. Add `NOTION_DATABASE_TITLE` only if you want a custom title for parent-page auto-discovery / auto-create mode.
 
 ### How to share the parent page with the integration
 
@@ -228,7 +228,7 @@ If you use `NOTION_PAGE_ID`, the integration must have access to that parent pag
 
 This project automatically generates multi-language static web pages with real-time search functionality.
 
-1. Ensure `PAGES_SYNC_ENABLED=true`.
+1. The default GitHub Actions workflow always publishes to `gh-pages`, so `PAGES_SYNC_ENABLED` is not required there.
 2. After running the Action once, go to **Settings -> Pages**.
 3. Select `gh-pages` branch and `/(root)` directory, then click Save.
 

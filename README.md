@@ -77,30 +77,29 @@ graph TD
 
 ### 第二步：配置环境 (二选一)
 
-本项目通过环境变量驱动，**配置优先级：GitHub Secrets > .env 文件**。
+本项目通过环境变量驱动，**脚本支持 `.env` / 环境变量；仓库内置 GitHub Actions workflow 当前只读取 Actions Secrets，不再读取 Actions Variables**。
 
-#### 方案 A：使用 GitHub 环境变量 (推荐，适合持续运行)
+#### 方案 A：使用 GitHub Secrets (推荐，适合持续运行)
 
-进入仓库的 **Settings → Secrets and variables → Actions** 进行配置：
+进入仓库的 **Settings → Secrets and variables → Actions**，在 **Secrets** 中进行配置：
 
-**🔐 必填项 (Required Secrets/Variables)**
+**🔐 必填 Secrets**
 - `GH_USERNAME`: 要抓取 Stars 的 GitHub 用户名。
 - `AI_API_KEY`: 你的 AI 接口 API Key。
 
-**📋 可选项 (Optional Variables)**
+**📋 可选 Secrets**
 以下参数有内置默认值，通常无需配置：
 - `AI_BASE_URL`: AI 接口地址 (默认使用 OpenAI 官方地址)。
 - `AI_MODEL`: 模型名称 (默认 `gpt-4o-mini`)。
-- `AI_TIMEOUT`: 单次 LLM 请求超时时间，单位秒 (默认 `60`)。
 - `AI_USER_AGENT`: 透传给 OpenAI 兼容接口的 `User-Agent` 请求头 (默认不设置)。
-- `OUTPUT_FILENAME`: 生成文件的基准名 (默认 `stars`)。
-- `VAULT_SYNC_PATH`: Vault 里的存放目录 (默认 `GitHub-Stars/`)。
-- `PAGES_SYNC_ENABLED`: 是否同步到 Pages；仅在显式设为 `true` 时部署。
 
-如果你要开启 Notion 同步，还需要额外配置：
-- Secret: `NOTION_API_KEY`
-- Variables: `NOTION_SYNC_ENABLED=true`，以及 `NOTION_PAGE_ID` 或 `NOTION_DATABASE_ID`
-- 可选 Variables: `NOTION_DATABASE_TITLE`（仅在父页面自动发现/建库模式下使用）
+**📝 当前默认 workflow 的额外说明**
+- `GITHUB_TOKEN` 由 GitHub Actions 自动注入，无需手动创建。
+- GitHub Pages 在默认 workflow 中固定开启发布，不需要再配置 `PAGES_SYNC_ENABLED`。
+- 如果配置了 `NOTION_API_KEY`，并且同时提供 `NOTION_PAGE_ID` 或 `NOTION_DATABASE_ID`，默认 workflow 会自动开启 Notion 同步，不需要额外配置 `NOTION_SYNC_ENABLED`。
+- `NOTION_DATABASE_TITLE` 可选，仅在 `NOTION_PAGE_ID` 模式下用于自动发现/建库标题。
+- `AI_TIMEOUT`、`MAX_CONCURRENCY`、`OUTPUT_FILENAME`、`VAULT_SYNC_ENABLED`、`VAULT_REPO`、`VAULT_SYNC_PATH` 这些脚本级变量，当前默认 workflow 不会从 Actions 注入；如需使用，请改为本地 `.env` 运行，或自行扩展 workflow。
+- 虽然默认 workflow 会读取 `VAULT_PAT` Secret，但由于没有同时注入 `VAULT_SYNC_ENABLED`、`VAULT_REPO`、`VAULT_SYNC_PATH`，所以默认不会触发 Obsidian 同步。
 
 > [!TIP]
 > **关于 GitHub API 限制**：
@@ -131,6 +130,9 @@ schedule:
 
 ## 配置项详解
 
+> [!NOTE]
+> 下表是脚本支持的环境变量全集；但默认 GitHub Actions workflow 实际会读取哪些配置，以前一节“GitHub Secrets”说明为准。
+
 | 变量名               | 类型     | 说明                       | 默认值                      |
 | -------------------- | -------- | -------------------------- | --------------------------- |
 | `GH_USERNAME`        | 必填     | 要同步的 GitHub 用户名     | -                           |
@@ -140,15 +142,15 @@ schedule:
 | `AI_TIMEOUT`         | 可选     | 单次 LLM 请求超时时间（秒） | `60`                        |
 | `AI_USER_AGENT`      | 可选     | 自定义 OpenAI 兼容接口请求头 `User-Agent` | -              |
 | `OUTPUT_FILENAME`    | 可选     | 生成 MD/HTML 的文件名基准  | `stars`                     |
-| `VAULT_SYNC_ENABLED` | 可选     | 是否开启 Obsidian 同步     | `false`                     |
+| `VAULT_SYNC_ENABLED` | 可选     | 是否开启 Obsidian 同步；默认 Actions workflow 不注入该变量 | `false` |
 | `VAULT_REPO`         | 选填     | Vault 仓库 (`owner/repo`)  | -                           |
 | `VAULT_SYNC_PATH`    | 可选     | Vault 同步的目录路径       | `GitHub-Stars/`             |
-| `NOTION_SYNC_ENABLED` | 可选    | 是否开启 Notion 同步       | `false`                     |
+| `NOTION_SYNC_ENABLED` | 可选    | 是否开启 Notion 同步；默认 Actions workflow 会根据 Notion Secrets 自动判定 | `false` |
 | `NOTION_API_KEY`     | 选填     | Notion integration token，启用 Notion 时必填 | -              |
 | `NOTION_PAGE_ID`     | 选填     | 父页面 ID；用于自动发现或创建专用 Database | -                    |
 | `NOTION_DATABASE_ID` | 选填     | 显式指定已有专用 Database；与 `NOTION_PAGE_ID` 二选一即可 | - |
 | `NOTION_DATABASE_TITLE` | 可选  | 自动发现/建库时使用的 Database 标题 | `GitHub Stars Index` |
-| `PAGES_SYNC_ENABLED` | 可选     | 是否开启 GitHub Pages 部署；仅在显式设为 `true` 时生效 | `false` |
+| `PAGES_SYNC_ENABLED` | 可选     | 是否开启 GitHub Pages 部署；默认 Actions workflow 已固定开启 | `false` |
 | `MAX_CONCURRENCY`    | 可选     | AI 并发处理数 (建议 1-10)  | `1`                         |
 | `GH_TOKEN`           | **建议** | 提升 API 额度，防止限速    | -                           |
 
@@ -170,11 +172,9 @@ schedule:
     - **Permissions**: 在 "Repository permissions" 中，设置 **Contents** 为 **Read and write**。
     - 生成 Token 后，将其存入本项目的 **Settings -> Secrets -> Actions** 中，命名为 `VAULT_PAT`。
 3.  **开启同步配置**:
-    - 在本项目的 **Settings -> Variables -> Actions** 中：
-        - 设置 `VAULT_SYNC_ENABLED` 为 `true`。
-        - 设置 `VAULT_REPO` 为 `你的用户名/仓库名` (例如 `iblogc/my-obsidian-vault`)。
-        - 设置 `VAULT_SYNC_PATH` 为你希望在 Vault 中存放的目录 (例如 `Reading/GitHub-Stars/`)。
-4.  **保存完成**: 下次 Action 运行时，生成的 `stars_zh.md` 和 `stars_en.md` 将会自动出现在你的 Vault 仓库中。
+    - 当前仓库内置的默认 GitHub Actions workflow **不会**从 Actions 注入 `VAULT_SYNC_ENABLED`、`VAULT_REPO`、`VAULT_SYNC_PATH`。
+    - 如果你要启用 Obsidian 同步，请使用本地 `.env` 运行，或自行修改 workflow，把上述变量注入运行环境。
+4.  **保存完成**: 配置齐全后，生成的 `stars_zh.md` 和 `stars_en.md` 将会自动推送到你的 Vault 仓库中。
 
 > [!TIP]
 > **本地如何查收？**
@@ -198,7 +198,7 @@ schedule:
 2. 决定使用哪种目标定位方式：
    - `NOTION_PAGE_ID`：把某个父页面交给脚本，脚本会在该页面下按 `NOTION_DATABASE_TITLE` 自动发现同名专用库；找不到就创建。
    - `NOTION_DATABASE_ID`：直接指定一个已经存在的专用 Database。
-3. 在仓库 Variables 中设置 `NOTION_SYNC_ENABLED=true`，并配置上述二选一变量；如需自定义自动建库标题，再设置 `NOTION_DATABASE_TITLE`。
+3. 在当前默认 GitHub Actions workflow 中，不需要单独配置 `NOTION_SYNC_ENABLED`。只要在 Secrets 中配置 `NOTION_API_KEY`，并提供 `NOTION_PAGE_ID` 或 `NOTION_DATABASE_ID` 二选一即可；如需自定义自动建库标题，再额外配置 `NOTION_DATABASE_TITLE`。
 
 ### 如何把父页面共享给 integration
 
@@ -229,7 +229,7 @@ schedule:
 
 本项目自动生成支持多语言、支持实时搜索的静态网页：
 
-1. 确保 `PAGES_SYNC_ENABLED=true`。
+1. 默认 GitHub Actions workflow 会自动发布到 `gh-pages`，不需要额外配置 `PAGES_SYNC_ENABLED`。
 2. 运行一次 Action 后，进入 **Settings -> Pages**。
 3. **Branch** 选择 `gh-pages`，目录选择 `/(root)`，保存。
 

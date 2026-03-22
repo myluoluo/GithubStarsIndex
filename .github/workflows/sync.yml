@@ -83,55 +83,45 @@ jobs:
           echo "⚠️ 强制重建模式：删除现有数据"
           rm -rf data/stars.json
 
-      # # ── 5a. 首次迁移（main -> gh-pages）：仅渲染，避免重新抓取 ───
-      # - name: 首次迁移仅渲染（不抓取）
-      #   if: steps.seed_stars.outputs.source == 'main'
-      #   env:
-      #     # ── Secrets（机密，加密保存）──
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    # Actions 自动注入，无需手动添加
-      #     AI_API_KEY: ${{ secrets.AI_API_KEY }}        # AI API Key
-      #     VAULT_PAT: ${{ secrets.VAULT_PAT }}          # Vault 仓库写权限 PAT（Vault 同步时必填）
-
-      #     # ── Variables（非机密，明文，在 Settings → Variables 中配置）──
-      #     GH_USERNAME: ${{ vars.GH_USERNAME }}         # 要抓取 Stars 的 GitHub 用户名
-      #     AI_BASE_URL: ${{ vars.AI_BASE_URL }}         # AI 接口地址
-      #     AI_MODEL: ${{ vars.AI_MODEL }}
-      #     MAX_CONCURRENCY: ${{ vars.MAX_CONCURRENCY }}
-      #     OUTPUT_FILENAME: ${{ vars.OUTPUT_FILENAME }}
-      #     VAULT_SYNC_ENABLED: ${{ vars.VAULT_SYNC_ENABLED }}
-      #     VAULT_REPO: ${{ vars.VAULT_REPO }}
-      #     VAULT_SYNC_PATH: ${{ vars.VAULT_SYNC_PATH }}
-      #     TEST_LIMIT: ${{ github.event.inputs.test_limit }}
-      #     PAGES_SYNC_ENABLED: ${{ vars.PAGES_SYNC_ENABLED }}
-      #   run: python scripts/sync_stars.py --render-only
-
-      # ── 5b. 常规模式：正常同步（增量抓取） ─────────────────────
+      # ── 5. 常规模式：正常同步（仅从 Secrets 注入） ─────────────────────
       - name: 同步 GitHub Stars
-        env:
-          # ── Secrets（机密，加密保存）──
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Actions 自动注入，无需手动添加
-          AI_API_KEY: ${{ secrets.AI_API_KEY }} # AI API Key
-          VAULT_PAT: ${{ secrets.VAULT_PAT }} # Vault 仓库写权限 PAT（Vault 同步时必填）
-          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }} # Notion Integration Token
+        shell: bash
+        run: |
+          set -euo pipefail
 
-          # ── Variables（非机密，明文，在 Settings → Variables 中配置）──
-          GH_USERNAME: ${{ vars.GH_USERNAME }} # 要抓取 Stars 的 GitHub 用户名
-          AI_BASE_URL: ${{ vars.AI_BASE_URL }} # AI 接口地址
-          AI_MODEL: ${{ vars.AI_MODEL }}
-          AI_TIMEOUT: ${{ vars.AI_TIMEOUT }}
-          AI_USER_AGENT: ${{ vars.AI_USER_AGENT }}
-          MAX_CONCURRENCY: ${{ vars.MAX_CONCURRENCY }}
-          OUTPUT_FILENAME: ${{ vars.OUTPUT_FILENAME }}
-          VAULT_SYNC_ENABLED: ${{ vars.VAULT_SYNC_ENABLED }}
-          VAULT_REPO: ${{ vars.VAULT_REPO }}
-          VAULT_SYNC_PATH: ${{ vars.VAULT_SYNC_PATH }}
-          NOTION_SYNC_ENABLED: ${{ vars.NOTION_SYNC_ENABLED }}
-          NOTION_PAGE_ID: ${{ vars.NOTION_PAGE_ID }}
-          NOTION_DATABASE_ID: ${{ vars.NOTION_DATABASE_ID }}
-          NOTION_DATABASE_TITLE: ${{ vars.NOTION_DATABASE_TITLE }}
-          TEST_LIMIT: ${{ github.event.inputs.test_limit }}
-          PAGES_SYNC_ENABLED: ${{ vars.PAGES_SYNC_ENABLED }}
-        run: python scripts/sync_stars.py
+          export_if_present() {
+            local key="$1"
+            local value="$2"
+            if [ -n "$value" ]; then
+              export "$key=$value"
+            fi
+          }
+
+          export GITHUB_TOKEN='${{ secrets.GITHUB_TOKEN }}'
+          export GH_USERNAME='${{ secrets.GH_USERNAME }}'
+          export AI_API_KEY='${{ secrets.AI_API_KEY }}'
+          export PAGES_SYNC_ENABLED='true'
+
+          export_if_present 'AI_BASE_URL' '${{ secrets.AI_BASE_URL }}'
+          export_if_present 'AI_MODEL' '${{ secrets.AI_MODEL }}'
+          export_if_present 'AI_USER_AGENT' '${{ secrets.AI_USER_AGENT }}'
+
+          if [ -n '${{ github.event.inputs.test_limit }}' ]; then
+            export TEST_LIMIT='${{ github.event.inputs.test_limit }}'
+          fi
+
+          export_if_present 'VAULT_PAT' '${{ secrets.VAULT_PAT }}'
+          export_if_present 'NOTION_API_KEY' '${{ secrets.NOTION_API_KEY }}'
+          export_if_present 'NOTION_PAGE_ID' '${{ secrets.NOTION_PAGE_ID }}'
+          export_if_present 'NOTION_DATABASE_ID' '${{ secrets.NOTION_DATABASE_ID }}'
+          export_if_present 'NOTION_DATABASE_TITLE' '${{ secrets.NOTION_DATABASE_TITLE }}'
+
+          if [ -n '${{ secrets.NOTION_API_KEY }}' ] && \
+             { [ -n '${{ secrets.NOTION_PAGE_ID }}' ] || [ -n '${{ secrets.NOTION_DATABASE_ID }}' ]; }; then
+            export NOTION_SYNC_ENABLED='true'
+          fi
+
+          python scripts/sync_stars.py
 
       # ── 6. 准备 Pages 发布内容（包含 stars.json） ─────────────
       - name: 准备 gh-pages 发布目录
@@ -144,7 +134,6 @@ jobs:
 
       # ── 7. 部署到 GitHub Pages ─────────────────────────────
       - name: 部署到 GitHub Pages
-        if: vars.PAGES_SYNC_ENABLED == 'true'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist # 同步 dist 文件夹的内容
