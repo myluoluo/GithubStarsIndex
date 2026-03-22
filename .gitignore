@@ -22,3 +22,5 @@ venv/
 # 数据与构建产物
 dist/
 data/
+docs/
+tests/

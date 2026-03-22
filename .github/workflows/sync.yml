@@ -112,16 +112,23 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Actions 自动注入，无需手动添加
           AI_API_KEY: ${{ secrets.AI_API_KEY }} # AI API Key
           VAULT_PAT: ${{ secrets.VAULT_PAT }} # Vault 仓库写权限 PAT（Vault 同步时必填）
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }} # Notion Integration Token
 
           # ── Variables（非机密，明文，在 Settings → Variables 中配置）──
           GH_USERNAME: ${{ vars.GH_USERNAME }} # 要抓取 Stars 的 GitHub 用户名
           AI_BASE_URL: ${{ vars.AI_BASE_URL }} # AI 接口地址
           AI_MODEL: ${{ vars.AI_MODEL }}
+          AI_TIMEOUT: ${{ vars.AI_TIMEOUT }}
+          AI_USER_AGENT: ${{ vars.AI_USER_AGENT }}
           MAX_CONCURRENCY: ${{ vars.MAX_CONCURRENCY }}
           OUTPUT_FILENAME: ${{ vars.OUTPUT_FILENAME }}
           VAULT_SYNC_ENABLED: ${{ vars.VAULT_SYNC_ENABLED }}
           VAULT_REPO: ${{ vars.VAULT_REPO }}
           VAULT_SYNC_PATH: ${{ vars.VAULT_SYNC_PATH }}
+          NOTION_SYNC_ENABLED: ${{ vars.NOTION_SYNC_ENABLED }}
+          NOTION_PAGE_ID: ${{ vars.NOTION_PAGE_ID }}
+          NOTION_DATABASE_ID: ${{ vars.NOTION_DATABASE_ID }}
+          NOTION_DATABASE_TITLE: ${{ vars.NOTION_DATABASE_TITLE }}
           TEST_LIMIT: ${{ github.event.inputs.test_limit }}
           PAGES_SYNC_ENABLED: ${{ vars.PAGES_SYNC_ENABLED }}
         run: python scripts/sync_stars.py

@@ -29,6 +29,12 @@ from openai import OpenAI
 from jinja2 import Environment, FileSystemLoader
 from dotenv import load_dotenv
 
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
+from scripts.sync_targets import NotionSyncClient, VaultSyncClient
+
 # 加载本地 .env 文件
 load_dotenv(override=True)
 
@@ -58,10 +64,33 @@ DATA_DIR.mkdir(exist_ok=True)
 # ════════════════════════════════════════════════════════════
 
 
+BOOLEAN_ENV_KEYS = {
+    "VAULT_SYNC_ENABLED",
+    "PAGES_SYNC_ENABLED",
+    "NOTION_SYNC_ENABLED",
+}
+INTEGER_ENV_KEYS = {"MAX_CONCURRENCY", "TEST_LIMIT"}
+INTEGER_ENV_KEYS.add("AI_TIMEOUT")
+
+
+def _parse_env_value(env_key: str, raw_value: str):
+    if env_key in INTEGER_ENV_KEYS:
+        return int(raw_value) if raw_value.isdigit() else None
+    if env_key in BOOLEAN_ENV_KEYS:
+        return raw_value.lower() == "true"
+    return raw_value
+
+
+def _set_config_value(cfg: dict, config_path: str, value) -> None:
+    parts = config_path.split(".")
+    target = cfg
+    for part in parts[:-1]:
+        target = target[part]
+    target[parts[-1]] = value
+
+
 def load_config() -> dict:
     """加载配置：环境变量优先于 config.yml"""
-    # 核心映射：环境变量名 -> (配置路径, 默认值)
-    # 配置路径使用点分隔，如 'ai.model'
     env_mapping = {
         "GH_USERNAME": "github.username",
         "GH_TOKEN": "github.token",
@@ -69,6 +98,8 @@ def load_config() -> dict:
         "AI_BASE_URL": "ai.base_url",
         "AI_API_KEY": "ai.api_key",
         "AI_MODEL": "ai.model",
+        "AI_TIMEOUT": "ai.timeout",
+        "AI_USER_AGENT": "ai.user_agent",
         "MAX_CONCURRENCY": "ai.concurrency",
         "OUTPUT_FILENAME": "output.filename",
         "VAULT_SYNC_ENABLED": "vault_sync.enabled",
@@ -76,16 +107,22 @@ def load_config() -> dict:
         "VAULT_SYNC_PATH": "vault_sync.path",
         "VAULT_PAT": "vault_sync.pat",
         "PAGES_SYNC_ENABLED": "pages_sync.enabled",
+        "NOTION_SYNC_ENABLED": "notion_sync.enabled",
+        "NOTION_API_KEY": "notion_sync.api_key",
+        "NOTION_PAGE_ID": "notion_sync.page_id",
+        "NOTION_DATABASE_ID": "notion_sync.database_id",
+        "NOTION_DATABASE_TITLE": "notion_sync.database_title",
         "TEST_LIMIT": "test_limit",
     }
 
-    # 1. 默认基础结构
     cfg = {
         "github": {"username": os.environ.get("GH_USERNAME"), "token": None},
         "ai": {
             "model": "gpt-4o-mini",
             "base_url": "https://api.openai.com/v1",
             "api_key": None,
+            "timeout": 60,
+            "user_agent": None,
             "concurrency": 5,
         },
         "output": {"filename": "stars"},
@@ -97,45 +134,49 @@ def load_config() -> dict:
             "commit_message": "🤖 自动更新 GitHub Stars 摘要",
         },
         "pages_sync": {"enabled": False},
+        "notion_sync": {
+            "enabled": False,
+            "api_key": None,
+            "page_id": None,
+            "database_id": None,
+            "database_title": "GitHub Stars Index",
+        },
         "test_limit": None,
     }
 
-    # 2. 从 config.yml 加载 (若存在)
     if CONFIG_PATH.exists():
         with open(CONFIG_PATH, "r", encoding="utf-8") as f:
             user_yml = yaml.safe_load(f) or {}
-            # 这里简单处理两层嵌套
-            for section in ["ai", "output", "vault_sync", "pages_sync"]:
+            for section in ["ai", "output", "vault_sync", "pages_sync", "notion_sync"]:
                 if section in user_yml and isinstance(user_yml[section], dict):
                     cfg[section].update(user_yml[section])
 
-    # 3. 环境变量覆盖 (具有最高优先级)
     for env_key, config_path in env_mapping.items():
-        val = os.environ.get(env_key)
-        if val is not None:
-            # 处理类型转换
-            if env_key in ["MAX_CONCURRENCY", "TEST_LIMIT"]:
-                if val.isdigit():
-                    val = int(val)
-                else:
-                    continue
-            elif env_key in ["VAULT_SYNC_ENABLED", "PAGES_SYNC_ENABLED"]:
-                val = val.lower() == "true"
+        raw_value = os.environ.get(env_key)
+        if raw_value is None:
+            continue
+        value = _parse_env_value(env_key, raw_value)
+        if value is None:
+            continue
+        _set_config_value(cfg, config_path, value)
 
-            # 更新到字典
-            parts = config_path.split(".")
-            target = cfg
-            for p in parts[:-1]:
-                target = target[p]
-            target[parts[-1]] = val
-
-    # 4. 必填项校验
     if not cfg["github"]["username"]:
         log.error("❌ 错误: 未配置 GitHub 用户名 (GH_USERNAME)")
         sys.exit(1)
     if not cfg["ai"]["api_key"]:
         log.error("❌ 错误: 未配置 AI API Key (AI_API_KEY)")
         sys.exit(1)
+    if cfg["notion_sync"]["enabled"] and not cfg["notion_sync"]["api_key"]:
+        log.error("❌ 错误: 未配置 Notion API Key (NOTION_API_KEY)")
+        sys.exit(1)
+    if cfg["notion_sync"]["enabled"]:
+        has_database_id = bool(cfg["notion_sync"]["database_id"])
+        has_page_id = bool(cfg["notion_sync"]["page_id"])
+        if not has_database_id and not has_page_id:
+            log.error(
+                "❌ 错误: 至少需要配置 NOTION_DATABASE_ID 或 NOTION_PAGE_ID 其中之一"
+            )
+            sys.exit(1)
 
     return cfg
 
@@ -182,6 +223,20 @@ class DataStore:
         return self.data["repos"].get(full_name)
 
 
+def prune_removed_repos(store: DataStore, live_repo_names: set[str]) -> int:
+    existing_repo_names = set(store.data.get("repos", {}))
+    removed_repo_names = existing_repo_names - live_repo_names
+    for repo_name in removed_repo_names:
+        store.data["repos"].pop(repo_name, None)
+    return len(removed_repo_names)
+
+
+def has_persistable_changes(
+    *, new_count: int, refreshed_count: int, removed_count: int
+) -> bool:
+    return any((new_count, refreshed_count, removed_count))
+
+
 # ════════════════════════════════════════════════════════════
 # GitHub API 客户端
 # ════════════════════════════════════════════════════════════
@@ -189,6 +244,7 @@ class DataStore:
 
 class GitHubClient:
     BASE_URL = "https://api.github.com"
+    MAX_REQUEST_ATTEMPTS = 3
 
     def __init__(self, username: str, token: Optional[str] = None):
         self.username = username
@@ -205,7 +261,7 @@ class GitHubClient:
     def _get(
         self, url: str, params: dict = None, headers: Optional[dict] = None
     ) -> requests.Response:
-        for attempt in range(3):
+        for attempt in range(self.MAX_REQUEST_ATTEMPTS):
             try:
                 resp = self.session.get(
                     url, params=params, headers=headers, timeout=30
@@ -220,10 +276,16 @@ class GitHubClient:
                     continue
                 resp.raise_for_status()
                 return resp
+            except requests.HTTPError as e:
+                status_code = getattr(e.response, "status_code", None)
+                if status_code is not None and status_code < 500 and status_code != 429:
+                    raise
+                log.warning(f"请求失败（第 {attempt + 1} 次）: {e}")
             except requests.RequestException as e:
                 log.warning(f"请求失败（第 {attempt + 1} 次）: {e}")
-                time.sleep(2**attempt)
-        raise Exception("多次请求失败")
+            if attempt == self.MAX_REQUEST_ATTEMPTS - 1:
+                raise Exception("多次请求失败")
+            time.sleep(2**attempt)
 
     def get_starred_repos(self) -> list[dict]:
         repos = []
@@ -398,15 +460,32 @@ TAG_MAPPING = {
 # ════════════════════════════════════════════════════════════
 
 class AISummarizer:
-    THINK_BLOCK_RE = re.compile(r"<think>.*?</think>", re.IGNORECASE | re.DOTALL)
-
     def __init__(
-        self, base_url: str, api_key: str, model: str, timeout: int = 60, retry: int = 3
+        self,
+        base_url: str,
+        api_key: str,
+        model: str,
+        timeout: int = 60,
+        retry: int = 3,
+        user_agent: Optional[str] = None,
     ):
         self.base_url = (base_url or "").lower()
         self.model = model
         self.retry = retry
-        self.client = OpenAI(base_url=base_url, api_key=api_key, timeout=timeout)
+        default_headers = self._build_default_headers(user_agent)
+        self.client = OpenAI(
+            base_url=base_url,
+            api_key=api_key,
+            timeout=timeout,
+            default_headers=default_headers,
+        )
+
+    def _build_default_headers(
+        self, user_agent: Optional[str]
+    ) -> Optional[dict[str, str]]:
+        if not user_agent:
+            return None
+        return {"User-Agent": user_agent}
 
     def normalize_tags(self, tags: list[str]) -> list[str]:
         """标签归一化：去重、合并同义词、统一大小写"""
@@ -446,7 +525,7 @@ class AISummarizer:
             raise ValueError("empty content")
 
         # MiniMax 兼容接口可能会把 CoT 放在 <think>...</think> 中，先剥离。
-        text = self.THINK_BLOCK_RE.sub("", text).strip()
+        text = re.compile(r"<think>.*?</think>", re.IGNORECASE | re.DOTALL).sub("", text).strip()
 
         # 兼容 ```json ... ``` 包裹场景。
         text = text.replace("```json", "```").strip()
@@ -473,6 +552,37 @@ class AISummarizer:
 
         raise ValueError("no valid json object found in model content")
 
+    def _build_response_request(self, prompt: str, context: str) -> dict:
+        request = {
+            "model": self.model,
+            "instructions": prompt,
+            "input": context,
+            "temperature": 0.3,
+        }
+        if "api.minimaxi.com" not in self.base_url:
+            request["text"] = {"format": {"type": "json_object"}}
+        return request
+
+    def _extract_response_text(self, response: object) -> object:
+        output_text = getattr(response, "output_text", None)
+        if output_text:
+            return output_text
+
+        output_items = getattr(response, "output", None)
+        if not isinstance(output_items, list):
+            return output_text
+
+        parts = []
+        for item in output_items:
+            content_items = getattr(item, "content", None)
+            if not isinstance(content_items, list):
+                continue
+            for content in content_items:
+                text = getattr(content, "text", None)
+                if isinstance(text, str):
+                    parts.append(text)
+        return "\n".join(parts).strip()
+
     def summarize(self, repo_name: str, description: str, readme: str) -> dict:
         context = f"Repo: {repo_name}\nDesc: {description}\n\nREADME:\n{readme}"
         prompt = """你是一个顶级技术布道师和架构师。请深入分析 GitHub 仓库信息并生成：
@@ -493,21 +603,12 @@ class AISummarizer:
 }"""
         for attempt in range(self.retry):
             try:
-                kwargs = {
-                    "model": self.model,
-                    "messages": [
-                        {"role": "system", "content": prompt},
-                        {"role": "user", "content": context},
-                    ],
-                    "temperature": 0.3,
-                }
-
-                # 对标准 OpenAI 继续启用结构化返回；MiniMax 走文本容错解析。
-                if "api.minimaxi.com" not in self.base_url:
-                    kwargs["response_format"] = {"type": "json_object"}
-
-                resp = self.client.chat.completions.create(**kwargs)
-                data = self._extract_json_payload(resp.choices[0].message.content)
+                resp = self.client.responses.create(
+                    **self._build_response_request(prompt, context)
+                )
+                data = self._extract_json_payload(
+                    self._extract_response_text(resp)
+                )
                 # 兼容性处理
                 if "tags" in data and "tags_zh" not in data:
                     data["tags_zh"] = data["tags"]
@@ -600,6 +701,7 @@ def main():
             cfg["ai"]["model"],
             cfg["ai"].get("timeout", 60),
             cfg["ai"].get("max_retries", 3),
+            cfg["ai"].get("user_agent"),
         )
 
         # 1. 抓取所有 Stars
@@ -607,6 +709,7 @@ def main():
 
         # 2. 增量处理
         new_repos_to_process = []
+        refreshed_count = 0
         seen_full_names = set()  # 防止 API 返回重复数据
         test_limit = cfg.get("test_limit")
 
@@ -631,6 +734,7 @@ def main():
                 seen_full_names.add(full_name)
             else:
                 existing["metadata"] = repo
+                refreshed_count += 1
                 seen_full_names.add(full_name)
 
         def process_repo(args_tuple):
@@ -658,11 +762,25 @@ def main():
             with ThreadPoolExecutor(max_workers=concurrency) as executor:
                 list(executor.map(process_repo, enumerate(new_repos_to_process, 1)))
 
-        if new_count > 0:
+        removed_count = 0
+        if test_limit is None:
+            removed_count = prune_removed_repos(store, seen_full_names)
+            if removed_count > 0:
+                log.info(f"🧹 已清理 {removed_count} 条不再属于当前 Stars 的历史记录")
+
+        if has_persistable_changes(
+            new_count=new_count,
+            refreshed_count=refreshed_count,
+            removed_count=removed_count,
+        ):
             store.save()
-            log.info(f"✅ 数据保存完成，新增 {new_count} 条记录")
+            log.info(
+                f"✅ 数据保存完成，新增 {new_count} 条记录，"
+                f"刷新 {refreshed_count} 条，清理 {removed_count} 条"
+            )
         else:
             log.info("✨ 没有新条目需要处理")
+    has_live_star_source = not args.render_only
 
     # 3. 按 Star 时间重新排序（最新 Star 在前）
     # JSON 里的 repos 是无序的，我们按照 all_repos 的顺序来生成（它是倒序的）
@@ -728,27 +846,23 @@ def main():
         generated_mds[lang] = {"path": output_md_path, "content": md_content}
         log.info(f"✅ Markdown ({lang}) 生成完成: {output_md_path}")
 
-    # 5. 可选：Vault 同步
+    # 6. 可选：Notion 同步
+    n_cfg = cfg.get("notion_sync", {})
+    if n_cfg.get("enabled"):
+        notion_sync = NotionSyncClient(n_cfg, log)
+        notion_sync.sync(
+            ordered_repos,
+            cfg.get("test_limit"),
+            has_live_star_source=has_live_star_source,
+        )
+
+    # 7. 可选：Vault 同步
     v_cfg = cfg.get("vault_sync", {})
     if v_cfg.get("enabled"):
-        for lang, data in generated_mds.items():
-            # 拼接路径: 文件夹 + 文件名 + 语言 + .md
-            vault_dir = v_cfg.get("path", "GitHub-Stars/")
-            if not vault_dir.endswith("/"):
-                vault_dir += "/"
+        vault_sync = VaultSyncClient(gh, cfg["output"].get("filename", "stars"))
+        vault_sync.sync(v_cfg, generated_mds)
 
-            base_name = cfg["output"].get("filename", "stars")
-            vault_path = f"{vault_dir}{base_name}_{lang}.md"
-
-            gh.push_file(
-                v_cfg["repo"],
-                vault_path,
-                data["content"],
-                v_cfg.get("commit_message", "automated update"),
-                v_cfg["pat"],
-            )
-
-    # 6. 可选：GitHub Pages 生成
+    # 8. 可选：GitHub Pages 生成
     p_cfg = cfg.get("pages_sync", {})
     if p_cfg.get("enabled"):
         try:

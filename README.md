@@ -8,8 +8,9 @@
 
 - [功能特性](#功能特性)
 - [快速开始](#快速开始)
-- [配置项详解](#配置项详解-环境变量--env)
+- [配置项详解](#配置项详解)
 - [Obsidian 同步（可选）](#obsidian-同步可选)
+- [Notion 同步（可选）](#notion-同步可选)
 - [本地运行](#本地运行)
 
 ---
@@ -25,6 +26,7 @@
 - ⏭️ **智能增量**：新项目调用 AI 总结，旧项目**自动同步最新的 Star 数和元数据**
 - ⏰ GitHub Actions **定时自动运行**，cron 表达式自由配置
 - 🔄 可选：自动将生成的 `stars_zh.md` & `stars_en.md` **推送到 Obsidian Vault 仓库**
+- 🧠 可选：自动同步到 **Notion 专用 Database**，每个 Star 仓库对应一条页面记录
 - 🌐 可选：自动同步到 **GitHub Pages** 分支，支持多语言 (ZH/EN) 切换与页面实时搜索
 - 💻 支持任意 **OpenAI 格式兼容接口**（OpenAI / Azure / 本地 Ollama 等）
 
@@ -57,8 +59,8 @@ graph TD
     end
     
     Output --> Dispatch{同步分发}
-    Dispatch -- "VAULT_SYNC" --> Obs[推送至 Obsidian Vault]
-    Dispatch -- "PAGES_SYNC" --> Pages[部署 GitHub Pages]
+    Dispatch -- "VAULT_SYNC_ENABLED" --> Obs[推送至 Obsidian Vault]
+    Dispatch -- "PAGES_SYNC_ENABLED" --> Pages[部署 GitHub Pages]
     
     Obs --> End([完成])
     Pages --> End
@@ -89,9 +91,16 @@ graph TD
 以下参数有内置默认值，通常无需配置：
 - `AI_BASE_URL`: AI 接口地址 (默认使用 OpenAI 官方地址)。
 - `AI_MODEL`: 模型名称 (默认 `gpt-4o-mini`)。
+- `AI_TIMEOUT`: 单次 LLM 请求超时时间，单位秒 (默认 `60`)。
+- `AI_USER_AGENT`: 透传给 OpenAI 兼容接口的 `User-Agent` 请求头 (默认不设置)。
 - `OUTPUT_FILENAME`: 生成文件的基准名 (默认 `stars`)。
 - `VAULT_SYNC_PATH`: Vault 里的存放目录 (默认 `GitHub-Stars/`)。
-- `PAGES_SYNC_ENABLED`: 是否同步到 Pages (默认 `true`)。
+- `PAGES_SYNC_ENABLED`: 是否同步到 Pages；仅在显式设为 `true` 时部署。
+
+如果你要开启 Notion 同步，还需要额外配置：
+- Secret: `NOTION_API_KEY`
+- Variables: `NOTION_SYNC_ENABLED=true`，以及 `NOTION_PAGE_ID` 或 `NOTION_DATABASE_ID`
+- 可选 Variables: `NOTION_DATABASE_TITLE`（仅在父页面自动发现/建库模式下使用）
 
 > [!TIP]
 > **关于 GitHub API 限制**：
@@ -111,7 +120,7 @@ graph TD
 
 ```yaml
 schedule:
-  - cron: "0 2 * * 1"  # 示例：每周一凌晨 2 点运行
+  - cron: "0 2 * * 1"  # 示例：每周一 UTC 02:00 运行（北京时间 10:00）
 ```
 
 ### 第四步：手动触发首次运行
@@ -128,11 +137,18 @@ schedule:
 | `AI_API_KEY`         | 必填     | AI 接口 Key                | -                           |
 | `AI_BASE_URL`        | 可选     | OpenAI 兼容接口地址        | `https://api.openai.com/v1` |
 | `AI_MODEL`           | 可选     | 使用的 AI 模型             | `gpt-4o-mini`               |
+| `AI_TIMEOUT`         | 可选     | 单次 LLM 请求超时时间（秒） | `60`                        |
+| `AI_USER_AGENT`      | 可选     | 自定义 OpenAI 兼容接口请求头 `User-Agent` | -              |
 | `OUTPUT_FILENAME`    | 可选     | 生成 MD/HTML 的文件名基准  | `stars`                     |
 | `VAULT_SYNC_ENABLED` | 可选     | 是否开启 Obsidian 同步     | `false`                     |
 | `VAULT_REPO`         | 选填     | Vault 仓库 (`owner/repo`)  | -                           |
 | `VAULT_SYNC_PATH`    | 可选     | Vault 同步的目录路径       | `GitHub-Stars/`             |
-| `PAGES_SYNC_ENABLED` | 可选     | 是否开启 GitHub Pages 部署 | `true`                      |
+| `NOTION_SYNC_ENABLED` | 可选    | 是否开启 Notion 同步       | `false`                     |
+| `NOTION_API_KEY`     | 选填     | Notion integration token，启用 Notion 时必填 | -              |
+| `NOTION_PAGE_ID`     | 选填     | 父页面 ID；用于自动发现或创建专用 Database | -                    |
+| `NOTION_DATABASE_ID` | 选填     | 显式指定已有专用 Database；与 `NOTION_PAGE_ID` 二选一即可 | - |
+| `NOTION_DATABASE_TITLE` | 可选  | 自动发现/建库时使用的 Database 标题 | `GitHub Stars Index` |
+| `PAGES_SYNC_ENABLED` | 可选     | 是否开启 GitHub Pages 部署；仅在显式设为 `true` 时生效 | `false` |
 | `MAX_CONCURRENCY`    | 可选     | AI 并发处理数 (建议 1-10)  | `1`                         |
 | `GH_TOKEN`           | **建议** | 提升 API 额度，防止限速    | -                           |
 
@@ -163,6 +179,49 @@ schedule:
 > [!TIP]
 > **本地如何查收？**
 > 远程同步完成后，你只需在本地 Obsidian 中使用 **Obsidian Git** 插件执行拉取 (Pull)，或者手动在仓库目录下 `git pull`，最新的 Stars 摘要就会出现在你的笔记库中了。
+
+---
+
+## Notion 同步（可选）
+
+该功能会在 Markdown 渲染完成后，把仓库元数据和 AI 摘要同步到 Notion。它不是“把整份 README 镜像到 Notion”，而是把每个 GitHub Star 仓库映射为专用 Database 里的一条页面记录。
+
+### 同步原理
+
+- 每个仓库对应 Notion Database 中一条 page，写入 `Repo`、`URL`、`Description`、`Summary ZH`、`Summary EN`、`Language`、`Stars`、`Topics`、时间戳等 properties。
+- 首次创建 page 时会写入正文 blocks；后续如果 page 已存在，当前实现只更新 properties，正文 destructive rewrite 会被显式跳过，以避免误删已有内容或破坏 block 结构。
+- 如果仓库之前被归档、现在又重新出现在 GitHub Stars 列表里，脚本会自动取消该 page 的 archived 状态。
+
+### 配置步骤
+
+1. 在 Notion 创建一个 integration，并把它的 token 存到仓库 Secret `NOTION_API_KEY`。
+2. 决定使用哪种目标定位方式：
+   - `NOTION_PAGE_ID`：把某个父页面交给脚本，脚本会在该页面下按 `NOTION_DATABASE_TITLE` 自动发现同名专用库；找不到就创建。
+   - `NOTION_DATABASE_ID`：直接指定一个已经存在的专用 Database。
+3. 在仓库 Variables 中设置 `NOTION_SYNC_ENABLED=true`，并配置上述二选一变量；如需自定义自动建库标题，再设置 `NOTION_DATABASE_TITLE`。
+
+### 如何把父页面共享给 integration
+
+如果你使用 `NOTION_PAGE_ID` 模式，必须先把父页面授权给 integration，否则脚本无法在该页面下搜索或创建 Database。
+
+1. 打开目标父页面。
+2. 在右上角进入 `Share`（新版界面也可能显示为 `Connections` / `Add connections`）。
+3. 把刚创建的 integration 加到这个页面，确认它拥有访问权限。
+4. 如果你改用 `NOTION_DATABASE_ID`，则需要把对应 Database 直接共享给 integration。
+
+### 自动建库与专用库限制
+
+- 自动发现/自动建库只在 `NOTION_PAGE_ID` 模式下生效，标题来自 `NOTION_DATABASE_TITLE`。
+- 该 Database 必须是脚本专用库。脚本会校验 ownership marker，只复用由 `GithubStarsIndex Notion Sync` 管理的库。
+- 这意味着不支持把脚本接到一个混有手工记录的通用 Database 上，否则缺失仓库归档无法安全判断。
+- 如果父页面下存在多个同名 Database，脚本会直接报错并要求改用 `NOTION_DATABASE_ID` 显式指定。
+
+### 归档语义与当前边界
+
+- 只有在使用 live GitHub source 的常规同步中，脚本才会根据当前 Stars 列表归档 Notion 中已消失的仓库。
+- 一旦设置了 `TEST_LIMIT`，本次运行仍会创建、更新、取消归档已有记录，但不会执行缺失仓库归档。
+- `--render-only` 或任何非 live source 的运行都不会归档，因为这类运行没有实时 GitHub Star 结果作为可信依据。
+- 当前实现不会重写已有 page 的正文，只会更新 properties；这是显式限制，不是漏同步。
 
 ---
 
