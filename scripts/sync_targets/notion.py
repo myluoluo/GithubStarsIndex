@@ -577,7 +577,7 @@ class NotionSyncClient:
             database = self.client.retrieve_database(self.database_id)
             self._assert_marker(database, f"NOTION_DATABASE_ID={self.database_id}")
             self.database = database
-            self._log("info", f"使用显式配置的 Notion Database: {database['id']}")
+            self._log("info", "使用显式配置的 Notion Database")
             return database
 
         if not self.parent_page_id:
@@ -588,7 +588,7 @@ class NotionSyncClient:
         )
         if database:
             self.database = database
-            self._log("info", f"复用已有 Notion Database: {database['id']}")
+            self._log("info", "复用已有 Notion Database")
             return database
 
         database = self.client.create_database(
@@ -597,7 +597,7 @@ class NotionSyncClient:
             _default_database_properties(),
         )
         self.database = database
-        self._log("info", f"创建新的 Notion Database: {database['id']}")
+        self._log("info", "创建新的 Notion Database")
         return database
 
     def load_existing_pages(self) -> dict[str, dict[str, Any]]:
@@ -677,12 +677,6 @@ class NotionSyncClient:
         self.client.update_page(
             page_id,
             {"properties": build_notion_properties(dict(repo))},
-        )
-        repo_name = _require_text(repo, "full_name")
-        self._log(
-            "info",
-            f"Notion body update skipped for existing page: {repo_name} "
-            "(destructive rewrite risk)",
         )
 
     def _append_body_blocks(self, page_id: str, blocks: list[dict[str, Any]]) -> None:
