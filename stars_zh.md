@@ -1,6 +1,6 @@
 # ⭐ GitHub Stars Index
 
-> Updated: 2026-03-22 12:33 UTC · Total: 125
+> Updated: 2026-03-22 18:56 UTC · Total: 125
 
 ---
 
@@ -146,7 +146,7 @@
 ## dnakov/litter
 
 > [!info]
-> ⭐ 781 · Swift · 2026-03-22T11:19:24Z  
+> ⭐ 788 · Swift · 2026-03-22T18:39:33Z  
 > [GitHub](https://github.com/dnakov/litter)  
 > `#AI智能助手客户端` `#AI编程工具` `#Rust` `#跨平台` 
 > Litter 是一款原生 iOS + Android 客户端，用于连接和操控 Mac 上的 Codex AI 编程助手。通过 SSH/Bonjour/Tailscale 实现局域网发现与远程连接，支持暗色/亮色模式及无障碍访问选项。采用 Rust 桥接层实现跨平台共享逻辑，是移动端访问 Codex 的轻量级解决方案。
@@ -155,7 +155,7 @@
 ## jundot/omlx
 
 > [!info]
-> ⭐ 6,402 · Python · 2026-03-22T12:31:53Z  
+> ⭐ 6,455 · Python · 2026-03-22T18:50:31Z  
 > [GitHub](https://github.com/jundot/omlx) · [Website](https://omlx.ai)  
 > `#AI推理` `#Apple Silicon优化` `#本地LLM服务` `#自动化工具` `#apple-silicon` `#inference-server` `#llm` `#macos` `#mlx` `#openai-api` 
 > oMLX是专为Apple Silicon优化的本地LLM推理服务器，支持连续批处理与热冷分层KV缓存（内存+SSD），可跨对话持久化上下文。提供菜单栏管理与Web后台，兼容OpenAI API，支持LLM/VLM/Embedding模型及MCP协议，一键部署本地AI推理服务。
@@ -184,7 +184,7 @@
 ## surge-downloader/Surge
 
 > [!info]
-> ⭐ 2,513 · Go · 2026-03-22T12:00:43Z  
+> ⭐ 2,521 · Go · 2026-03-22T18:12:53Z  
 > [GitHub](https://github.com/surge-downloader/Surge)  
 > `#下载管理器` `#多线程下载` `#并行下载` `#终端工具` `#cli` `#download-manager` `#downloader` `#go` `#golang` `#hacktoberfest` `#poweruser` `#terminal` `#tui` 
 > Surge 是一款用 Go 语言开发的高速 TUI 下载管理器，专为追求效率的高级用户设计。支持多连接并行下载（最多32个连接）、文件分片、多镜像源自动切换和流式顺序下载。采用守护进程架构，可在多个终端标签页中统一管理下载队列，界面美观基于 Bubble Tea 构建。
@@ -204,7 +204,7 @@
 ## gaboolic/rime-frost
 
 > [!info]
-> ⭐ 3,084 · Lua · 2026-03-22T06:52:54Z  
+> ⭐ 3,085 · Lua · 2026-03-22T13:46:14Z  
 > [GitHub](https://github.com/gaboolic/rime-frost)  
 > `#中文分词` `#语言模型` `#输入体验优化` `#输入法词库` 
 > 白霜拼音是基于雾凇词库改进的高质量输入法词库，利用7.45亿字语料重新分词、统计字频词频并归一化，去除冷僻词和废词。支持全拼和双拼，集成Lua辅助码功能，跨平台支持Windows、Mac、Linux、Android、iOS。目标是打造纯净准确、智能开源的rime词库，提供不输商业输入法的输入体验。
@@ -214,7 +214,7 @@
 ## CrisRain/Lumina
 
 > [!info]
-> ⭐ 35 · Python · 2026-03-19T17:16:58Z  
+> ⭐ 36 · Python · 2026-03-22T16:22:00Z  
 > [GitHub](https://github.com/CrisRain/Lumina)  
 > `#Web管理面板` `#多节点管理` `#网络代理` `#自动化运维` 
 > Lumina 是一个现代化的 Cloudflare WARP Web 管理面板，支持 usque 和官方客户端双引擎切换，提供连接控制、多节点统一管理、实时日志、安全鉴权等能力。前端 Vue 3 + 后端 FastAPI 全栈设计，支持 Docker 一键部署，适用于网络代理运维与多节点集中管控场景。
@@ -244,7 +244,7 @@
 ## hoochanlon/Free-NTFS-for-Mac
 
 > [!info]
-> ⭐ 1,706 · TypeScript · 2026-03-22T05:14:05Z  
+> ⭐ 1,707 · TypeScript · 2026-03-22T13:20:48Z  
 > [GitHub](https://github.com/hoochanlon/Free-NTFS-for-Mac) · [Website](https://hoochanlon.github.io/Free-NTFS-for-Mac)  
 > `#Electron` `#NTFS读写` `#文件管理工具` `#跨平台` `#anylinuxfs` `#arm` `#disk` `#ext4` `#intel` `#m1` `#macfuse` `#macntfs` `#nigate` `#ntfs` `#ntfs-3g` `#ntfs-write` `#ntfsformac` `#ntfstool` `#x64` `#x86` 
 > Nigate 是一款开源的 Mac NTFS 读写工具，基于 Electron 构建。它为 Intel 和 Apple Silicon Mac 提供完整的 NTFS 分区读写支持，支持设备自动检测、一键挂载为读写模式、状态监控及跨文件系统挂载。工具采用现代深色界面设计，集成自动依赖检查、防休眠及安全重置功能，通过 Ninja Tools 脚本简化复杂操作，适合需要在 Mac 上频繁读写 NTFS 设备的用户。
@@ -254,7 +254,7 @@
 ## xxnuo/MTranServer
 
 > [!info]
-> ⭐ 4,446 · C++ · 2026-03-22T09:44:49Z  
+> ⭐ 4,446 · C++ · 2026-03-22T16:25:41Z  
 > [GitHub](https://github.com/xxnuo/MTranServer)  
 > `#离线翻译` `#私有部署` `#自动化工具` `#跨平台` 
 > MTranServer 是一款超低资源消耗的离线翻译模型服务器，无需 GPU 即可运行，单请求平均响应时间仅 50ms。支持 Windows/Mac/Linux/Docker 多平台部署及主流语言翻译。通过提供 DeepL、DeepLX、沉浸式翻译等兼容接口，可快速集成到现有翻译工作流，配合 IDE 插件实现代码注释翻译，打造高效的本地化翻译解决方案。
@@ -274,7 +274,7 @@
 ## koreader/koreader
 
 > [!info]
-> ⭐ 25,886 · Lua · 2026-03-22T12:08:43Z  
+> ⭐ 25,889 · Lua · 2026-03-22T16:39:45Z  
 > [GitHub](https://github.com/koreader/koreader) · [Website](http://koreader.rocks/)  
 > `#PDF重排` `#墨水屏优化` `#电子书阅读` `#跨平台` `#cbz` `#djvu` `#djvu-reflow` `#ebook` `#ebook-reader` `#eink` `#epub` `#ereader` `#fb2` `#kindle` `#kobo` `#luajit` `#opds` `#pdf` `#pdf-reflow` `#pocketbook` `#reader` `#reflow` `#remarkable-tablet` `#ubuntu-touch` 
 > KOReader是一款专为墨水屏设备打造的开源电子书阅读器，支持PDF、DjVu、EPUB、FB2等数十种格式文档。内置K2pdfopt引擎实现扫描版PDF重排优化，提供calibre无线同步、Wikipedia查词、RSS订阅等丰富功能。支持Kindle、Kobo、掌阅、Android等多平台运行，性能显著优于设备原生阅读器。
@@ -284,7 +284,7 @@
 ## autobcb/read
 
 > [!info]
-> ⭐ 698 · JavaScript · 2026-03-22T03:49:51Z  
+> ⭐ 698 · JavaScript · 2026-03-22T13:56:40Z  
 > [GitHub](https://github.com/autobcb/read)  
 > `#Docker部署` `#多端同步` `#网络文学` `#跨平台应用` 
 > 轻阅读是一款全移动端可用的网络文学阅读应用后端服务，支持Android、iOS、鸿蒙、Windows、macOS等多平台同步阅读进度。采用Docker部署，配备管理后台，支持本地书仓导入、代理功能和自定义包名。通过WebDAV与开源阅读实现进度互通，为小说爱好者提供便捷舒适的跨平台阅读体验。
@@ -314,7 +314,7 @@
 ## freeok/so-novel
 
 > [!info]
-> ⭐ 6,391 · Java · 2026-03-22T08:29:31Z  
+> ⭐ 6,394 · Java · 2026-03-22T15:44:57Z  
 > [GitHub](https://github.com/freeok/so-novel)  
 > `#数据采集` `#格式转换` `#电子书制作` `#跨平台` `#cli` `#content-export` `#document-parser` `#ebook` `#novel` `#offline-reader` `#tui` 
 > So Novel 是一款通用网页内容提取与导出工具，支持从任意网页抓取结构化数据并转换为 EPUB、TXT、PDF 等电子书格式。项目提供 WebUI、TUI、CLI 三种交互方式，支持 Docker 部署及多平台安装，配备自定义规则引擎，适用于网文采集、资料整理与电子书制作等场景。
@@ -354,7 +354,7 @@
 ## kingToolbox/WindTerm
 
 > [!info]
-> ⭐ 30,162 · C · 2026-03-22T12:23:45Z  
+> ⭐ 30,179 · C · 2026-03-22T18:42:25Z  
 > [GitHub](https://github.com/kingToolbox/WindTerm) · [Website](https://kingtoolbox.github.io)  
 > `#SSH客户端` `#终端工具` `#跨平台` `#运维自动化` `#bash` `#client` `#cmd` `#linux` `#mac` `#powershell` `#serial` `#sftp` `#shell` `#ssh` `#telnet` `#terminal` `#tmux` `#windows` `#wsl` `#x11` `#xmodem` `#xterm` `#ymodem` `#zmodem` 
 > WindTerm是一款专业跨平台SSH/Sftp/Telnet/Shell/串口/Tmux终端工具，支持SSH v2、X11转发、端口转发、多因素认证及SFTP/SCP文件传输。兼容Windows、Linux、macOS，内置多语言界面、自动补全、分屏视图和会话管理，完全免费开源。
@@ -364,7 +364,7 @@
 ## xiaye13579/BBLL
 
 > [!info]
-> ⭐ 17,336 · N/A · 2026-03-22T11:29:40Z  
+> ⭐ 17,340 · N/A · 2026-03-22T18:32:16Z  
 > [GitHub](https://github.com/xiaye13579/BBLL)  
 > `#多媒体娱乐` `#开源项目` `#视频播放器` `#跨平台` `#android` `#apk` `#bilibili` `#bilibili-client` `#bilibili-tv` `#tv` 
 > BBLL是一款开源第三方哔哩哔哩Android客户端，基于官方API封装实现视频播放、搜索、推荐等功能。支持TV与移动双平台，兼容Android 4.4以上系统，采用硬件解码确保流畅播放体验。仅供学习交流使用，无任何破解行为。
@@ -384,7 +384,7 @@
 ## LC044/WeChatMsg
 
 > [!info]
-> ⭐ 40,674 · N/A · 2026-03-22T12:16:45Z  
+> ⭐ 40,675 · N/A · 2026-03-22T16:28:13Z  
 > [GitHub](https://github.com/LC044/WeChatMsg)  
 > `#个人数据管理` `#年度报告生成` `#数据导出工具` `#社交数据分析` `#chatgpt` `#llms` `#pyqt` `#wechat` 
 > 微信聊天记录导出与分析工具，支持从微信数据库提取聊天数据生成年度报告。单人/双人年度报告可在线预览，涵盖聊天频率、互动高峰时段等统计维度。核心价值在于让用户真正掌控自己的社交数据，支持数据本地存储与可视化分析。注重隐私保护，倡导"我的数据我做主"理念。
@@ -393,7 +393,7 @@
 ## vastsa/FileCodeBox
 
 > [!info]
-> ⭐ 8,173 · Python · 2026-03-22T07:26:58Z  
+> ⭐ 8,174 · Python · 2026-03-22T12:34:20Z  
 > [GitHub](https://github.com/vastsa/FileCodeBox) · [Website](https://fcb-docs.aiuo.net/)  
 > `#匿名传输` `#文件分享` `#私有部署` `#轻量级工具` `#anonymous` `#fastapi` `#filecodebox` `#python` `#tool` `#vue` 
 > FileCodeBox 是一款轻量级匿名文件分享工具，通过提取码实现「像取快递一样」的文件获取体验。基于 FastAPI + Vue3 构建，支持拖拽上传、批量文件、文本分享及多存储后端（本地/S3/OneDrive）。内置 IP 频率限制、提取码错误限制、文件自动过期等安全机制，支持 Docker 一键部署、国际化与深色模式，适合临时分享与私有部署。
@@ -423,7 +423,7 @@
 ## louislam/uptime-kuma
 
 > [!info]
-> ⭐ 84,337 · JavaScript · 2026-03-22T12:18:25Z  
+> ⭐ 84,344 · JavaScript · 2026-03-22T18:34:05Z  
 > [GitHub](https://github.com/louislam/uptime-kuma) · [Website](https://uptime.kuma.pet)  
 > `#Node.js` `#容器化` `#监控告警` `#运维自动化` `#docker` `#monitor` `#monitoring` `#responsive` `#self-hosted` `#selfhosted` `#single-page-app` `#socket-io` `#uptime` `#uptime-monitoring` `#webapp` `#websocket` 
 > Uptime Kuma 是一款开源自托管监控工具，支持 HTTP/TCP/DNS/Ping 等多种协议监控，提供 20 秒级检测频率，集成 90+ 通知服务（钉钉/Telegram/Slack 等），支持多语言、多状态页面、2FA 双因素认证及 Docker 容器监控，适合个人和小型团队进行服务可用性管理。
@@ -463,7 +463,7 @@
 ## gkd-kit/gkd
 
 > [!info]
-> ⭐ 37,165 · Kotlin · 2026-03-22T12:15:09Z  
+> ⭐ 37,177 · Kotlin · 2026-03-22T18:19:47Z  
 > [GitHub](https://github.com/gkd-kit/gkd) · [Website](https://gkd.li)  
 > `#Android自动化` `#屏幕点击` `#无障碍服务` `#订阅规则` `#accessibility` `#android` `#auto` `#click` `#compose` `#jetpack-compose` `#kotlin` `#kotlin-js` `#kotlin-multiplatform` `#webassembly` 
 > GKD 是一款基于 Android 无障碍服务的高级屏幕自动化点击应用。通过 CSS 风格的高级选择器精确定位界面元素，支持订阅规则远程更新配置，实现跳过广告、自动确认登录、简化重复操作等场景。需配合快照审查工具定位目标节点，规则可本地管理或订阅社区共享配置。
@@ -473,7 +473,7 @@
 ## Archeb/opentrace
 
 > [!info]
-> ⭐ 4,104 · C# · 2026-03-22T03:04:16Z  
+> ⭐ 4,105 · C# · 2026-03-22T14:20:07Z  
 > [GitHub](https://github.com/Archeb/opentrace) · [Website](https://opentrace.app)  
 > `#MTR工具` `#网络诊断` `#跨平台桌面应用` `#路由追踪` `#network` `#network-analysis` `#traceroute` `#utility` 
 > OpenTrace 是一款开源跨平台可视化路由追踪工具，基于 NextTrace 后端构建。支持 Windows WPF、Linux GTK、macOS 原生 GUI，提供 MTR、TCP/UDP 追踪、自定义 DNS 解析器（DNS/DoH）及本地 MMDB 数据库等进阶功能，多语言界面适配全球用户。
@@ -483,7 +483,7 @@
 ## nxtrace/NTrace-core
 
 > [!info]
-> ⭐ 7,655 · Go · 2026-03-22T10:34:19Z  
+> ⭐ 7,656 · Go · 2026-03-22T18:00:40Z  
 > [GitHub](https://github.com/nxtrace/NTrace-core) · [Website](https://www.nxtrace.org)  
 > `#CLI工具` `#可视化` `#网络诊断` `#路由追踪` `#api` `#as-path` `#asn-lookup` `#geoip` `#geolocation` `#ip-lookup` `#network-analysis` `#next-trace` `#nexttrace` `#traceroute` `#utility` 
 > NextTrace是一款开源的轻量级可视化路由追踪工具，使用Golang开发。它通过CLI界面实时展示网络数据包从源到目的地的完整路由路径，支持多平台自动化安装，提供直观的可视化输出，帮助用户快速诊断网络问题，定位路由故障点。
@@ -503,7 +503,7 @@
 ## hectorqin/reader
 
 > [!info]
-> ⭐ 10,905 · Kotlin · 2026-03-22T11:17:41Z  
+> ⭐ 10,907 · Kotlin · 2026-03-22T18:32:53Z  
 > [GitHub](https://github.com/hectorqin/reader)  
 > `#Spring Boot` `#Vert.x协程` `#网络文学` `#自托管阅读器` 
 > 阅读3服务器版是一款自托管网络文学阅读器，后端基于 Kotlin + Spring Boot + Vert.x + Coroutine 构建，前端采用 Vue.js + Element。支持书源管理、书架管理、搜索换源、听书、漫画、RSS订阅、WebDAV同步及多格式电子书导入。无需手机客户端，桌面端和iOS均可直接访问，适合搭建私人阅读服务。
@@ -513,7 +513,7 @@
 ## XIU2/TrackersListCollection
 
 > [!info]
-> ⭐ 30,832 · N/A · 2026-03-22T11:29:17Z  
+> ⭐ 30,834 · N/A · 2026-03-22T15:24:06Z  
 > [GitHub](https://github.com/XIU2/TrackersListCollection) · [Website](https://trackerslist.com)  
 > `#P2P下载` `#数据资源` `#网络加速` `#aria2` `#aria2-format-tracker` `#bittorrent` `#bittorrent-trackers` `#qbittorrent` `#torrent` `#torrent-tracker` `#tracker` `#trackers` `#trackerslist` `#utorrent` 
 > 每日更新的热门 BT Tracker 列表集合，提供 best/all/http/nohttp 多种分类版本，覆盖 78-157 个优质 Tracker。通过添加 Tracker 可显著提升 BT 下载速度、连接更多 peer 节点。支持 qBittorrent、Aria2 等主流 BT 客户端使用。
@@ -593,7 +593,7 @@
 ## ant-design/ant-design
 
 > [!info]
-> ⭐ 97,773 · TypeScript · 2026-03-22T11:45:08Z  
+> ⭐ 97,771 · TypeScript · 2026-03-22T18:26:53Z  
 > [GitHub](https://github.com/ant-design/ant-design) · [Website](https://ant.design)  
 > `#React` `#UI组件库` `#企业级应用` `#前端开发` `#ant-design` `#antd` `#design-systems` `#react` `#typescript` `#ui-kit` `#ui-library` 
 > 蚂蚁集团开源的企业级React UI组件库，提供60+高质量开箱即用组件。基于TypeScript开发，支持强大的CSS-in-JS主题定制和完整的国际化方案。遵循统一的设计语言规范，帮助团队快速构建美观一致的企业级Web应用，是React生态中最受欢迎的前端UI框架之一。
@@ -623,7 +623,7 @@
 ## MustangYM/WeChatExtension-ForMac
 
 > [!info]
-> ⭐ 22,672 · Objective-C · 2026-03-22T10:13:46Z  
+> ⭐ 22,673 · Objective-C · 2026-03-22T18:52:49Z  
 > [GitHub](https://github.com/MustangYM/WeChatExtension-ForMac)  
 > `#多开` `#微信增强` `#桌面应用` `#自动化工具` `#alfred` `#macos` `#wechat` `#wechat-macos` `#wechat-plugin` `#weixin-plugin` 
 > macOS微信增强插件，支持消息防撤回（手机同步接收被撤回内容）、多开登录、消息转发、自定义/AI自动回复、小程序查看及多种皮肤模式。采用Objective-C编写，经过两年持续维护，是GitHub上最活跃的微信相关开源项目之一。
@@ -633,7 +633,7 @@
 ## huiyadanli/RevokeMsgPatcher
 
 > [!info]
-> ⭐ 37,213 · C# · 2026-03-22T10:45:35Z  
+> ⭐ 37,214 · C# · 2026-03-22T17:19:09Z  
 > [GitHub](https://github.com/huiyadanli/RevokeMsgPatcher)  
 > `#DLL注入修改` `#即时通讯增强` `#微信多开` `#防撤回工具` `#hex-editor` `#patch` `#pc` `#qq` `#revoke` `#revokemsg` `#tim` `#tool` `#wechat` `#windows` 
 > 一款针对Windows平台PC版微信/QQ/TIM的防撤回补丁工具，通过十六进制编辑修改目标DLL文件实现消息防撤回功能，同时支持微信多开。采用.NET Framework开发，杀毒软件可能误报，需放行处理。微信/QQ/TIM更新后需重新应用补丁。
@@ -733,7 +733,7 @@
 ## BookStackApp/BookStack
 
 > [!info]
-> ⭐ 18,503 · PHP · 2026-03-22T06:46:25Z  
+> ⭐ 18,506 · PHP · 2026-03-22T18:26:47Z  
 > [GitHub](https://github.com/BookStackApp/BookStack) · [Website](https://www.bookstackapp.com/)  
 > `#PHP/Laravel` `#Wiki系统` `#文档管理` `#知识库` `#bookstack` `#documentation` `#laravel` `#php` `#selfhosted` `#wiki` 
 > BookStack是一款开源文档与Wiki平台，基于PHP和Laravel构建，提供直观的可视化编辑器用于创建和管理知识文档。系统支持用户权限管理、多语言本地化及Markdown编辑，适配团队协作写作、技术文档编写及企业内部知识库建设场景，采用MIT许可证发布。
@@ -833,7 +833,7 @@
 ## ngosang/trackerslist
 
 > [!info]
-> ⭐ 53,270 · N/A · 2026-03-22T11:43:49Z  
+> ⭐ 53,274 · N/A · 2026-03-22T18:23:21Z  
 > [GitHub](https://github.com/ngosang/trackerslist) · [Website](https://ngosang.github.io/trackerslist/)  
 > `#BitTorrent协议` `#P2P下载` `#网络资源` `#自动化维护` `#bittorrent` `#bittorrent-tracker` `#bittorrent-trackers` `#http` `#list` `#lists` `#public-tracker` `#public-trackers` `#torrent` `#tracker` `#trackers` `#trackerslist` `#udp` `#webtorrent` `#ws` 
 > 维护公共BitTorrent trackers的开源列表项目，提供117+个经过自动验证的tracker服务器。按性能（最佳/全部）、协议（HTTP/HTTPS/UDP/WebSocket）、网络（I2P/Yggdrasil）分类，支持DNS问题时使用IP版本。每日自动更新，提供多CDN镜像保证可用性。
@@ -943,7 +943,7 @@
 ## outline/outline
 
 > [!info]
-> ⭐ 37,757 · TypeScript · 2026-03-22T11:19:54Z  
+> ⭐ 37,764 · TypeScript · 2026-03-22T18:31:59Z  
 > [GitHub](https://github.com/outline/outline) · [Website](https://www.getoutline.com)  
 > `#Markdown文档` `#团队知识库` `#实时协作` `#自托管部署` `#docker` `#hacktoberfest` `#javascript` `#mobx` `#nodejs` `#react` `#slack` `#wiki` 
 > Outline是一款基于React和Node.js构建的团队知识库系统，专注于为成长型团队提供快速、协作的知识管理体验。支持实时协同编辑和Markdown文档撰写，采用TypeScript开发，界面美观，支持国际化，可自托管部署，是团队文档沉淀和协作写作的理想工具。
@@ -1023,7 +1023,7 @@
 ## netdata/netdata
 
 > [!info]
-> ⭐ 78,161 · C · 2026-03-22T11:23:26Z  
+> ⭐ 78,163 · C · 2026-03-22T18:18:37Z  
 > [GitHub](https://github.com/netdata/netdata) · [Website](https://www.netdata.cloud)  
 > `#AI驱动分析` `#可观测性` `#基础设施监控` `#实时监控` `#ai` `#alerting` `#cncf` `#data-visualization` `#database` `#devops` `#docker` `#grafana` `#influxdb` `#kubernetes` `#linux` `#machine-learning` `#mcp` `#mongodb` `#monitoring` `#mysql` `#netdata` `#observability` `#postgresql` `#prometheus` 
 > Netdata 是一个开源的实时基础设施监控平台，支持每秒采集全栈指标，提供 AI 驱动的可视化分析。它兼容 Linux、macOS、FreeBSD 和 Windows 系统，安装极简、资源占用低，可快速检测并预警基础设施、应用和容器层面的性能问题。
@@ -1033,7 +1033,7 @@
 ## ginuerzh/gost
 
 > [!info]
-> ⭐ 17,728 · Go · 2026-03-22T07:59:07Z  
+> ⭐ 17,727 · Go · 2026-03-22T13:38:42Z  
 > [GitHub](https://github.com/ginuerzh/gost)  
 > `#安全隧道` `#端口转发` `#网络代理` `#负载均衡` `#dns` `#go` `#golang` `#http2` `#kcp` `#obfs4` `#quic` `#shadowsocks` `#sni` `#socks5` `#ssh` `#tls` `#tunnel` `#tuntap` `#udp` 
 > GOST是一个用Go语言编写的高性能安全隧道工具，支持HTTP/HTTPS/HTTP2/SOCKS4/SOCKS5/Shadowsocks等多种代理协议，可构建多级代理链实现灵活的网络转发。具备本地/远程TCP/UDP端口转发、透明代理、负载均衡、DNS代理及TUN/TAP设备支持等功能，适用于网络穿透、安全代理和流量转发等场景。
@@ -1053,7 +1053,7 @@
 ## rclone/rclone
 
 > [!info]
-> ⭐ 56,177 · Go · 2026-03-22T11:57:46Z  
+> ⭐ 56,183 · Go · 2026-03-22T16:54:14Z  
 > [GitHub](https://github.com/rclone/rclone) · [Website](https://rclone.org)  
 > `#云存储管理` `#数据备份` `#文件同步` `#跨平台工具` `#azure-blob` `#azure-blob-storage` `#azure-files` `#backblaze-b2` `#cloud-storage` `#dropbox` `#encryption` `#ftp` `#fuse-filesystem` `#go` `#golang` `#google-cloud-storage` `#google-drive` `#onedrive` `#openstack-swift` `#rclone` `#s3` `#sftp` `#sync` `#webdav` 
 > Rclone是云存储同步领域的"瑞士军刀"，支持70+种云存储服务。采用类rsync的命令行界面，实现本地与云端、跨云端之间的文件同步、复制和备份。具备增量同步、加密、缓存、挂载等高级功能，是云迁移和数据管理的首选工具。
@@ -1143,7 +1143,7 @@
 ## librespeed/speedtest
 
 > [!info]
-> ⭐ 14,457 · PHP · 2026-03-22T11:14:23Z  
+> ⭐ 14,459 · PHP · 2026-03-22T13:40:55Z  
 > [GitHub](https://github.com/librespeed/speedtest) · [Website](https://librespeed.org)  
 > `#HTML5前端` `#多后端支持` `#网络性能监测` `#自托管工具` `#hacktoberfest` `#html5-speedtest` `#internet-speed` `#internet-speed-checker` `#librespeed` `#php` `#speedtest` `#web-worker` `#xhr` 
 > LibreSpeed是一款轻量级自托管网络速度测试工具，基于纯HTML5/JavaScript实现，无需Flash、Java或WebSocket。采用XMLHttpRequest和Web Workers技术，支持下载/上传速度、延迟、抖动及IP信息检测。可选遥测数据收集和结果分享功能，提供PHP/Go/Rust/Node.js等多种后端实现，支持MySQL/PostgreSQL/SQLite等数据库，兼容IE11至现代浏览器及移动端，提供Docker部署方案。
@@ -1153,7 +1153,7 @@
 ## h2y/Shadowrocket-ADBlock-Rules
 
 > [!info]
-> ⭐ 16,414 · Python · 2026-03-22T10:59:32Z  
+> ⭐ 16,413 · Python · 2026-03-22T13:21:33Z  
 > [GitHub](https://github.com/h2y/Shadowrocket-ADBlock-Rules) · [Website](https://github.com/h2y/Shadowrocket-ADBlock-Rules/blob/master/readme.md)  
 > `#iOS工具` `#广告过滤` `#网络代理` `#翻墙规则` `#gfw` `#proxy` `#shadowrocket` `#shadowsocks` `#shadowsocksr` `#ssr` `#surge` 
 > 面向iOS未越狱设备的Shadowrocket翻墙规则集，基于GFWList和EasyList自动生成。提供黑名单、白名单、国内外划分等多种代理模式，支持网页广告、App广告和视频广告过滤。规则采用DFA搜索树高效匹配，不影响上网速度。项目已停止更新但规则仍可使用。
@@ -1243,7 +1243,7 @@
 ## 521xueweihan/HelloGitHub
 
 > [!info]
-> ⭐ 147,011 · Python · 2026-03-22T12:22:15Z  
+> ⭐ 147,038 · Python · 2026-03-22T18:48:34Z  
 > [GitHub](https://github.com/521xueweihan/HelloGitHub) · [Website](https://hellogithub.com)  
 > `#入门项目推荐` `#内容聚合` `#开源社区` `#awesome` `#github` `#hellogithub` `#python` 
 > HelloGitHub 是一个开源项目推荐平台，每月28号发布月刊精选GitHub上有趣、入门级的开源项目。内容涵盖有趣项目、开源书籍、实战案例和企业级项目，帮助开发者快速发现优质开源资源，降低学习门槛，感受开源魅力。采用Markdown存储内容，社区驱动贡献，现已发布119期。
@@ -1253,7 +1253,7 @@
 ## ossrs/srs
 
 > [!info]
-> ⭐ 28,648 · C++ · 2026-03-22T12:11:42Z  
+> ⭐ 28,648 · C++ · 2026-03-22T15:16:37Z  
 > [GitHub](https://github.com/ossrs/srs) · [Website](https://ossrs.io)  
 > `#WebRTC` `#实时视频` `#流媒体服务` `#直播推流` `#audio` `#c` `#c-plus-plus` `#dash` `#hevc` `#hls` `#live` `#live-streaming` `#low-latency` `#media-server` `#multimedia` `#prometheus-exporter` `#rtmp` `#server-side` `#srt` `#streaming` `#video` `#video-conferencing` `#video-streaming` `#webrtc` 
 > SRS（Simple Realtime Server）是一款高性能实时媒体服务器，支持RTMP、WebRTC、HLS、HTTP-FLV、SRT、MPEG-DASH、GB28181等主流流媒体协议，兼容H.264/H.265/AV1/VP9视频编码和AAC/Opus/G.711音频格式。具备低延迟转码、多协议转换、DVR录制及集群部署能力，广泛应用于直播、监控、会议及在线教育场景。
@@ -1361,7 +1361,7 @@
 ## guzzle/guzzle
 
 > [!info]
-> ⭐ 23,457 · PHP · 2026-03-21T13:16:18Z  
+> ⭐ 23,456 · PHP · 2026-03-22T14:50:06Z  
 > [GitHub](https://github.com/guzzle/guzzle) · [Website](https://docs.guzzlephp.org/)  
 > `#API 集成` `#HTTP 客户端` `#PHP 库` `#Web 开发` `#curl` `#guzzle` `#http-client` `#httpclient` `#php` `#psr-7` `#requests` `#webservices` 
 > Guzzle 是 PHP 语言中最流行的 HTTP 客户端库，提供简洁接口发送 HTTP 请求并与 Web 服务轻松集成。支持同步和异步请求，遵循 PSR-7 接口规范并支持 PSR-18 互操作。中间件系统允许灵活扩展功能，抽象传输层设计使其不依赖特定底层实现。广泛用于 API 调用和微服务通信场景。

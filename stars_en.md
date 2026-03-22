@@ -1,6 +1,6 @@
 # ⭐ GitHub Stars Index
 
-> Updated: 2026-03-22 12:33 UTC · Total: 125
+> Updated: 2026-03-22 18:56 UTC · Total: 125
 
 ---
 
@@ -146,7 +146,7 @@
 ## dnakov/litter
 
 > [!info]
-> ⭐ 781 · Swift · 2026-03-22T11:19:24Z  
+> ⭐ 788 · Swift · 2026-03-22T18:39:33Z  
 > [GitHub](https://github.com/dnakov/litter)  
 > `#AI Assistant Client` `#AI Coding Tool` `#Cross-Platform` `#Rust` 
 > Litter is a native iOS + Android client for Codex AI coding assistant running on Mac. It enables remote connection via SSH/Bonjour/Tailscale with LAN discovery, supporting dark/light themes and accessibility features. Built with a shared Rust bridge layer for cross-platform code sharing, offering a lightweight mobile interface to Codex.
@@ -155,7 +155,7 @@
 ## jundot/omlx
 
 > [!info]
-> ⭐ 6,402 · Python · 2026-03-22T12:31:53Z  
+> ⭐ 6,455 · Python · 2026-03-22T18:50:31Z  
 > [GitHub](https://github.com/jundot/omlx) · [Website](https://omlx.ai)  
 > `#Apple Silicon` `#Automation Tool` `#LLM Inference` `#Local AI` `#apple-silicon` `#inference-server` `#llm` `#macos` `#mlx` `#openai-api` 
 > oMLX is a local LLM inference server optimized for Apple Silicon, featuring continuous batching and tiered KV caching (hot memory + cold SSD) that persists context across conversations. It offers menu bar management and web admin panel, provides OpenAI-compatible API, and supports VLM, embedding models and MCP protocol.
@@ -184,7 +184,7 @@
 ## surge-downloader/Surge
 
 > [!info]
-> ⭐ 2,513 · Go · 2026-03-22T12:00:43Z  
+> ⭐ 2,521 · Go · 2026-03-22T18:12:53Z  
 > [GitHub](https://github.com/surge-downloader/Surge)  
 > `#Download Manager` `#Go` `#Parallel Downloading` `#TUI Tool` `#cli` `#download-manager` `#downloader` `#go` `#golang` `#hacktoberfest` `#poweruser` `#terminal` `#tui` 
 > Surge is a blazing-fast TUI download manager built in Go for power users who prefer keyboard-driven workflows. It supports parallel downloading with up to 32 connections, file splitting, multi-mirror failover, and sequential streaming mode. Built on a daemon architecture, it provides a unified download queue across multiple terminal sessions with a beautiful interface using Bubble Tea & Lipgloss.
@@ -204,7 +204,7 @@
 ## gaboolic/rime-frost
 
 > [!info]
-> ⭐ 3,084 · Lua · 2026-03-22T06:52:54Z  
+> ⭐ 3,085 · Lua · 2026-03-22T13:46:14Z  
 > [GitHub](https://github.com/gaboolic/rime-frost)  
 > `#Chinese Text Segmentation` `#Input Experience Optimization` `#Input Method Dictionary` `#Language Model` 
 > White Frost Pinyin is a high-quality Chinese input dictionary improved from Wusong Pinyin, using 745M characters of corpus for re-segmentation and frequency normalization. It removes rare words while supporting full pinyin, double pinyin, and Lua auxiliary codes across Windows, Mac, Linux, Android and iOS platforms. Aiming to deliver input experience comparable to commercial input methods.
@@ -214,7 +214,7 @@
 ## CrisRain/Lumina
 
 > [!info]
-> ⭐ 35 · Python · 2026-03-19T17:16:58Z  
+> ⭐ 36 · Python · 2026-03-22T16:22:00Z  
 > [GitHub](https://github.com/CrisRain/Lumina)  
 > `#DevOps Automation` `#Multi-Node Management` `#Network Proxy` `#Web Dashboard` 
 > Lumina is a modern web-based control panel for Cloudflare WARP, supporting dual engines (usque and official client) with one-click switching. It provides connection control, multi-node centralized management, real-time logs, and secure authentication. Built with Vue 3 + FastAPI, deployable via Docker, ideal for network proxy operations.
@@ -244,7 +244,7 @@
 ## hoochanlon/Free-NTFS-for-Mac
 
 > [!info]
-> ⭐ 1,706 · TypeScript · 2026-03-22T05:14:05Z  
+> ⭐ 1,707 · TypeScript · 2026-03-22T13:20:48Z  
 > [GitHub](https://github.com/hoochanlon/Free-NTFS-for-Mac) · [Website](https://hoochanlon.github.io/Free-NTFS-for-Mac)  
 > `#Cross-Platform` `#Electron` `#File Management` `#NTFS Read-Write` `#anylinuxfs` `#arm` `#disk` `#ext4` `#intel` `#m1` `#macfuse` `#macntfs` `#nigate` `#ntfs` `#ntfs-3g` `#ntfs-write` `#ntfsformac` `#ntfstool` `#x64` `#x86` 
 > Nigate is an open-source NTFS utility for Mac built with Electron, providing full read-write access for NTFS drives on both Intel and Apple Silicon Macs. It features real-time device monitoring, one-click read-write mounting, and cross-filesystem mounting capabilities. With a modern dark-themed interface, auto dependency checking, sleep prevention, and secure reset functionality, it streamlines NTFS drive management through intuitive GUI and Ninja Tools scripts.
@@ -254,7 +254,7 @@
 ## xxnuo/MTranServer
 
 > [!info]
-> ⭐ 4,446 · C++ · 2026-03-22T09:44:49Z  
+> ⭐ 4,446 · C++ · 2026-03-22T16:25:41Z  
 > [GitHub](https://github.com/xxnuo/MTranServer)  
 > `#Automation Tool` `#Cross-Platform` `#Offline Translation` `#Private Deployment` 
 > MTranServer is an ultra-low-resource offline translation model server that runs without GPU, achieving 50ms average response time per request. It supports cross-platform deployment across Windows, Mac, Linux, and Docker with major language translation capabilities. Compatible with DeepL, DeepLX, and Immersive Translate APIs, it integrates seamlessly into existing workflows with IDE plugins for code comment translation.
@@ -274,7 +274,7 @@
 ## koreader/koreader
 
 > [!info]
-> ⭐ 25,886 · Lua · 2026-03-22T12:08:43Z  
+> ⭐ 25,889 · Lua · 2026-03-22T16:39:45Z  
 > [GitHub](https://github.com/koreader/koreader) · [Website](http://koreader.rocks/)  
 > `#Cross-Platform` `#E-Ink Optimization` `#Ebook Reader` `#PDF Reflowing` `#cbz` `#djvu` `#djvu-reflow` `#ebook` `#ebook-reader` `#eink` `#epub` `#ereader` `#fb2` `#kindle` `#kobo` `#luajit` `#opds` `#pdf` `#pdf-reflow` `#pocketbook` `#reader` `#reflow` `#remarkable-tablet` `#ubuntu-touch` 
 > KOReader is an open-source document viewer optimized for e-ink readers, supporting PDF, DjVu, EPUB, FB2 and many other formats. It features built-in K2pdfopt for reflowing scanned documents, calibre wireless sync, Wikipedia lookup, and RSS feeds. Available on Kindle, Kobo, PocketBook, Android and Linux with superior performance compared to native reading software.
@@ -284,7 +284,7 @@
 ## autobcb/read
 
 > [!info]
-> ⭐ 698 · JavaScript · 2026-03-22T03:49:51Z  
+> ⭐ 698 · JavaScript · 2026-03-22T13:56:40Z  
 > [GitHub](https://github.com/autobcb/read)  
 > `#Cross-platform App` `#Docker Deployment` `#Multi-platform Sync` `#Web Novel Reader` 
 > Light Reading is a backend service for a mobile-first web novel reading application supporting cross-platform sync across Android, iOS, HarmonyOS, Windows, and macOS. Deployed via Docker with admin panel, it enables local book source import, proxy functionality, and custom package names. Offers WebDAV integration with open-source readers for seamless reading progress synchronization.
@@ -314,7 +314,7 @@
 ## freeok/so-novel
 
 > [!info]
-> ⭐ 6,391 · Java · 2026-03-22T08:29:31Z  
+> ⭐ 6,394 · Java · 2026-03-22T15:44:57Z  
 > [GitHub](https://github.com/freeok/so-novel)  
 > `#Cross-Platform` `#E-book Creation` `#Format Conversion` `#网页爬虫` `#cli` `#content-export` `#document-parser` `#ebook` `#novel` `#offline-reader` `#tui` 
 > So Novel is a versatile web content extraction and export tool that scrapes structured data from web pages and converts it to e-book formats like EPUB, TXT, and PDF. It offers WebUI, TUI, and CLI interfaces with cross-platform support including Docker deployment. Featuring a custom rule engine, it excels in web novel collection, data organization, and e-book production.
@@ -354,7 +354,7 @@
 ## kingToolbox/WindTerm
 
 > [!info]
-> ⭐ 30,162 · C · 2026-03-22T12:23:45Z  
+> ⭐ 30,179 · C · 2026-03-22T18:42:25Z  
 > [GitHub](https://github.com/kingToolbox/WindTerm) · [Website](https://kingtoolbox.github.io)  
 > `#Cross-platform` `#DevOps Tool` `#SSH Client` `#Terminal Emulator` `#bash` `#client` `#cmd` `#linux` `#mac` `#powershell` `#serial` `#sftp` `#shell` `#ssh` `#telnet` `#terminal` `#tmux` `#windows` `#wsl` `#x11` `#xmodem` `#xterm` `#ymodem` `#zmodem` 
 > WindTerm is a professional cross-platform SSH/Sftp/Telnet/Shell/Serial/Tmux terminal with SSH v2 support, X11 forwarding, port forwarding, multi-factor authentication, and SFTP/SCP transfer. Available on Windows, Linux, macOS with multi-language UI, auto-completion, split views, and session management. Fully free and open source.
@@ -364,7 +364,7 @@
 ## xiaye13579/BBLL
 
 > [!info]
-> ⭐ 17,336 · N/A · 2026-03-22T11:29:40Z  
+> ⭐ 17,340 · N/A · 2026-03-22T18:32:16Z  
 > [GitHub](https://github.com/xiaye13579/BBLL)  
 > `#Cross-Platform` `#Media Entertainment` `#Open Source` `#Video Player` `#android` `#apk` `#bilibili` `#bilibili-client` `#bilibili-tv` `#tv` 
 > BBLL is an open-source third-party Bilibili client for Android, encapsulating official APIs to provide video playback, search, and recommendations. Supports both TV and mobile platforms, compatible with Android 4.4+, using hardware decoding for smooth playback. For learning purposes only, no cracking involved.
@@ -384,7 +384,7 @@
 ## LC044/WeChatMsg
 
 > [!info]
-> ⭐ 40,674 · N/A · 2026-03-22T12:16:45Z  
+> ⭐ 40,675 · N/A · 2026-03-22T16:28:13Z  
 > [GitHub](https://github.com/LC044/WeChatMsg)  
 > `#Annual Report Generation` `#Data Export` `#Personal Data Management` `#Social Analytics` `#chatgpt` `#llms` `#pyqt` `#wechat` 
 > A WeChat chat history extraction and analysis tool that retrieves data from WeChat database to generate annual reports. Supports single and dual-user annual reports with online preview, including chat frequency and interaction peak statistics. Core value is enabling users to truly control their social data with local storage and visualization. Emphasizes data privacy and "My Data, My Control" philosophy.
@@ -393,7 +393,7 @@
 ## vastsa/FileCodeBox
 
 > [!info]
-> ⭐ 8,173 · Python · 2026-03-22T07:26:58Z  
+> ⭐ 8,174 · Python · 2026-03-22T12:34:20Z  
 > [GitHub](https://github.com/vastsa/FileCodeBox) · [Website](https://fcb-docs.aiuo.net/)  
 > `#Anonymous Transfer` `#File Sharing` `#Lightweight Tool` `#Private Deployment` `#anonymous` `#fastapi` `#filecodebox` `#python` `#tool` `#vue` 
 > FileCodeBox is a lightweight anonymous file sharing tool enabling express-locker-style file retrieval via passcodes. Built with FastAPI and Vue3, it supports drag-drop uploads, batch files, text sharing, and multiple storage backends (Local/S3/OneDrive). Security features include IP rate limiting, passcode attempt restrictions, and auto-expiration. Docker-ready with i18n and dark mode, ideal for temporary sharing and private deployment.
@@ -423,7 +423,7 @@
 ## louislam/uptime-kuma
 
 > [!info]
-> ⭐ 84,337 · JavaScript · 2026-03-22T12:18:25Z  
+> ⭐ 84,344 · JavaScript · 2026-03-22T18:34:05Z  
 > [GitHub](https://github.com/louislam/uptime-kuma) · [Website](https://uptime.kuma.pet)  
 > `#DevOps Automation` `#Monitoring Alerting` `#Node.js` `#私有化部署` `#docker` `#monitor` `#monitoring` `#responsive` `#self-hosted` `#selfhosted` `#single-page-app` `#socket-io` `#uptime` `#uptime-monitoring` `#webapp` `#websocket` 
 > Uptime Kuma is an open-source self-hosted monitoring tool supporting HTTP, TCP, DNS, Ping, WebSocket, Docker containers and more with 20-second intervals. It integrates 90+ notification services, multi-language support, customizable status pages, and 2FA authentication, ideal for personal and SMB infrastructure monitoring.
@@ -463,7 +463,7 @@
 ## gkd-kit/gkd
 
 > [!info]
-> ⭐ 37,165 · Kotlin · 2026-03-22T12:15:09Z  
+> ⭐ 37,177 · Kotlin · 2026-03-22T18:19:47Z  
 > [GitHub](https://github.com/gkd-kit/gkd) · [Website](https://gkd.li)  
 > `#Accessibility Service` `#Android Automation` `#Screen Tapping` `#Subscription Rules` `#accessibility` `#android` `#auto` `#click` `#compose` `#jetpack-compose` `#kotlin` `#kotlin-js` `#kotlin-multiplatform` `#webassembly` 
 > GKD is an Android automation app powered by Accessibility Service with advanced CSS-like selectors for precise UI element targeting. It supports subscription-based remote rule updates to skip ads, auto-confirm logins, and streamline repetitive tasks. Rules can be managed locally or subscribed from community shared configurations, with snapshot inspection for element localization.
@@ -473,7 +473,7 @@
 ## Archeb/opentrace
 
 > [!info]
-> ⭐ 4,104 · C# · 2026-03-22T03:04:16Z  
+> ⭐ 4,105 · C# · 2026-03-22T14:20:07Z  
 > [GitHub](https://github.com/Archeb/opentrace) · [Website](https://opentrace.app)  
 > `#Cross-Platform Desktop` `#MTR Tool` `#Network Diagnostics` `#Route Tracing` `#network` `#network-analysis` `#traceroute` `#utility` 
 > OpenTrace is an open-source cross-platform visualized route tracing tool powered by NextTrace backend. It features native GUIs for Windows WPF, Linux GTK, and macOS, offering advanced capabilities including MTR, TCP/UDP traceroute, custom DNS resolvers (DNS/DoH), and local MMDB database support with multilingual interface.
@@ -483,7 +483,7 @@
 ## nxtrace/NTrace-core
 
 > [!info]
-> ⭐ 7,655 · Go · 2026-03-22T10:34:19Z  
+> ⭐ 7,656 · Go · 2026-03-22T18:00:40Z  
 > [GitHub](https://github.com/nxtrace/NTrace-core) · [Website](https://www.nxtrace.org)  
 > `#CLI Tool` `#Network Diagnostic` `#Route Tracing` `#Visualization` `#api` `#as-path` `#asn-lookup` `#geoip` `#geolocation` `#ip-lookup` `#network-analysis` `#next-trace` `#nexttrace` `#traceroute` `#utility` 
 > NextTrace is an open-source, lightweight visual routing tool developed in Golang. It provides real-time visualization of network packet routes from source to destination through a CLI interface. Supporting automated installation across multiple platforms, it offers intuitive visual output to help users quickly diagnose network issues and locate routing failure points.
@@ -503,7 +503,7 @@
 ## hectorqin/reader
 
 > [!info]
-> ⭐ 10,905 · Kotlin · 2026-03-22T11:17:41Z  
+> ⭐ 10,907 · Kotlin · 2026-03-22T18:32:53Z  
 > [GitHub](https://github.com/hectorqin/reader)  
 > `#Self-hosted Reader` `#Spring Boot` `#Vert.x Coroutine` `#Web Novel` 
 > Reader Server Edition is a self-hosted web novel reader built with Kotlin, Spring Boot, Vert.x, and Coroutine on the backend, paired with Vue.js and Element UI on the frontend. It offers book source management, bookshelf organization, search with source switching, text-to-speech, comic support, RSS feeds, WebDAV sync, and multi-format e-book imports. Accessible via desktop and iOS without a mobile client, ideal for personal reading services.
@@ -513,7 +513,7 @@
 ## XIU2/TrackersListCollection
 
 > [!info]
-> ⭐ 30,832 · N/A · 2026-03-22T11:29:17Z  
+> ⭐ 30,834 · N/A · 2026-03-22T15:24:06Z  
 > [GitHub](https://github.com/XIU2/TrackersListCollection) · [Website](https://trackerslist.com)  
 > `#Data Resources` `#Network Acceleration` `#P2P Download` `#aria2` `#aria2-format-tracker` `#bittorrent` `#bittorrent-trackers` `#qbittorrent` `#torrent` `#torrent-tracker` `#tracker` `#trackers` `#trackerslist` `#utorrent` 
 > A daily-updated collection of popular BitTorrent trackers offering multiple lists (best/all/http/nohttp) with 78-157 quality trackers. Adding these trackers significantly improves BT download speeds by connecting more peers. Compatible with qBittorrent, Aria2, and other major BT clients.
@@ -593,7 +593,7 @@
 ## ant-design/ant-design
 
 > [!info]
-> ⭐ 97,773 · TypeScript · 2026-03-22T11:45:08Z  
+> ⭐ 97,771 · TypeScript · 2026-03-22T18:26:53Z  
 > [GitHub](https://github.com/ant-design/ant-design) · [Website](https://ant.design)  
 > `#Enterprise Application` `#Frontend` `#React` `#UI Components` `#ant-design` `#antd` `#design-systems` `#react` `#typescript` `#ui-kit` `#ui-library` 
 > A comprehensive React UI library developed by Ant Group, offering 60+ enterprise-grade components out of the box. Built with TypeScript for predictable static types, it features powerful CSS-in-JS theming and extensive internationalization support. Following a cohesive design language, it helps teams rapidly build visually consistent professional web applications.
@@ -623,7 +623,7 @@
 ## MustangYM/WeChatExtension-ForMac
 
 > [!info]
-> ⭐ 22,672 · Objective-C · 2026-03-22T10:13:46Z  
+> ⭐ 22,673 · Objective-C · 2026-03-22T18:52:49Z  
 > [GitHub](https://github.com/MustangYM/WeChatExtension-ForMac)  
 > `#Automation Tool` `#Multi-Account Login` `#WeChat Enhancement` `#桌面应用` `#alfred` `#macos` `#wechat` `#wechat-macos` `#wechat-plugin` `#weixin-plugin` 
 > A feature-rich macOS WeChat plugin enabling message anti-revocation, multi-account login, message forwarding, AI/custom auto-reply, mini-program viewing, and multiple skin themes. Built with Objective-C, maintained for two years, it ranks among the most active WeChat-related open-source projects on GitHub.
@@ -633,7 +633,7 @@
 ## huiyadanli/RevokeMsgPatcher
 
 > [!info]
-> ⭐ 37,213 · C# · 2026-03-22T10:45:35Z  
+> ⭐ 37,214 · C# · 2026-03-22T17:19:09Z  
 > [GitHub](https://github.com/huiyadanli/RevokeMsgPatcher)  
 > `#Anti-Recall` `#DLL Injection` `#IM Enhancement` `#Multi-Instance` `#hex-editor` `#patch` `#pc` `#qq` `#revoke` `#revokemsg` `#tim` `#tool` `#wechat` `#windows` 
 > A hex patching tool for WeChat/QQ/TIM on Windows that disables message recall by modifying target DLL files. Supports WeChat multi-instance feature. Built with .NET Framework, may trigger false positives from antivirus software. Requires re-patching after software updates.
@@ -733,7 +733,7 @@
 ## BookStackApp/BookStack
 
 > [!info]
-> ⭐ 18,503 · PHP · 2026-03-22T06:46:25Z  
+> ⭐ 18,506 · PHP · 2026-03-22T18:26:47Z  
 > [GitHub](https://github.com/BookStackApp/BookStack) · [Website](https://www.bookstackapp.com/)  
 > `#Documentation` `#Knowledge Base` `#Laravel` `#Wiki System` `#bookstack` `#documentation` `#laravel` `#php` `#selfhosted` `#wiki` 
 > BookStack is an open-source documentation and wiki platform built with PHP and Laravel, offering an intuitive visual editor for creating and organizing knowledge documents. It supports user permissions, multilingual localization, and Markdown editing, making it ideal for team collaboration, technical documentation, and internal knowledge base management.
@@ -833,7 +833,7 @@
 ## ngosang/trackerslist
 
 > [!info]
-> ⭐ 53,270 · N/A · 2026-03-22T11:43:49Z  
+> ⭐ 53,274 · N/A · 2026-03-22T18:23:21Z  
 > [GitHub](https://github.com/ngosang/trackerslist) · [Website](https://ngosang.github.io/trackerslist/)  
 > `#Automated Maintenance` `#BitTorrent` `#Network Protocol` `#P2P Sharing` `#bittorrent` `#bittorrent-tracker` `#bittorrent-trackers` `#http` `#list` `#lists` `#public-tracker` `#public-trackers` `#torrent` `#tracker` `#trackers` `#trackerslist` `#udp` `#webtorrent` `#ws` 
 > Open-source project maintaining a curated list of 117+ public BitTorrent trackers with automated verification. Classified by performance (best/all), protocol (HTTP/HTTPS/UDP/WS), and network (I2P/Yggdrasil). Includes IP-based versions for DNS troubleshooting. Updated daily with multiple CDN mirrors for reliability.
@@ -943,7 +943,7 @@
 ## outline/outline
 
 > [!info]
-> ⭐ 37,757 · TypeScript · 2026-03-22T11:19:54Z  
+> ⭐ 37,764 · TypeScript · 2026-03-22T18:31:59Z  
 > [GitHub](https://github.com/outline/outline) · [Website](https://www.getoutline.com)  
 > `#Collaborative Editing` `#Knowledge Base` `#Node.js` `#React` `#docker` `#hacktoberfest` `#javascript` `#mobx` `#nodejs` `#react` `#slack` `#wiki` 
 > Outline is a fast, collaborative knowledge base built with React and Node.js, designed for growing teams to manage documentation. It supports real-time collaborative editing, Markdown-compatible documents, TypeScript throughout, beautiful UI, internationalization, and offers both hosted and self-hosted deployment options for team knowledge management.
@@ -1023,7 +1023,7 @@
 ## netdata/netdata
 
 > [!info]
-> ⭐ 78,161 · C · 2026-03-22T11:23:26Z  
+> ⭐ 78,163 · C · 2026-03-22T18:18:37Z  
 > [GitHub](https://github.com/netdata/netdata) · [Website](https://www.netdata.cloud)  
 > `#AI-Powered Analytics` `#Infrastructure Monitoring` `#Observability` `#Real-Time Monitoring` `#ai` `#alerting` `#cncf` `#data-visualization` `#database` `#devops` `#docker` `#grafana` `#influxdb` `#kubernetes` `#linux` `#machine-learning` `#mcp` `#mongodb` `#monitoring` `#mysql` `#netdata` `#observability` `#postgresql` `#prometheus` 
 > Netdata is an open-source real-time infrastructure monitoring platform that captures full-stack metrics every second with AI-powered analysis. It supports Linux, macOS, FreeBSD, and Windows, featuring instant deployment and minimal resource footprint to detect performance issues across infrastructure, applications, and containers.
@@ -1033,7 +1033,7 @@
 ## ginuerzh/gost
 
 > [!info]
-> ⭐ 17,728 · Go · 2026-03-22T07:59:07Z  
+> ⭐ 17,727 · Go · 2026-03-22T13:38:42Z  
 > [GitHub](https://github.com/ginuerzh/gost)  
 > `#Load Balancing` `#Network Proxy` `#Port Forwarding` `#Security Tunnel` `#dns` `#go` `#golang` `#http2` `#kcp` `#obfs4` `#quic` `#shadowsocks` `#sni` `#socks5` `#ssh` `#tls` `#tunnel` `#tuntap` `#udp` 
 > GOST is a high-performance security tunnel written in Go, supporting multiple proxy protocols including HTTP/HTTPS/HTTP2/SOCKS4/SOCKS5/Shadowsocks. It features multi-hop proxy chains, TCP/UDP port forwarding, transparent proxy, load balancing, DNS proxy, and TUN/TAP device support, ideal for network penetration and secure traffic forwarding.
@@ -1053,7 +1053,7 @@
 ## rclone/rclone
 
 > [!info]
-> ⭐ 56,177 · Go · 2026-03-22T11:57:46Z  
+> ⭐ 56,183 · Go · 2026-03-22T16:54:14Z  
 > [GitHub](https://github.com/rclone/rclone) · [Website](https://rclone.org)  
 > `#Cloud Storage` `#Cross-Platform` `#Data Backup` `#File Sync` `#azure-blob` `#azure-blob-storage` `#azure-files` `#backblaze-b2` `#cloud-storage` `#dropbox` `#encryption` `#ftp` `#fuse-filesystem` `#go` `#golang` `#google-cloud-storage` `#google-drive` `#onedrive` `#openstack-swift` `#rclone` `#s3` `#sftp` `#sync` `#webdav` 
 > Rclone is a "Swiss Army knife" for cloud storage, supporting 70+ storage providers. This command-line tool enables file sync, copy, and backup between local and cloud or cross-cloud platforms. With incremental sync, encryption, caching, and mounting features, it's the go-to solution for cloud migration and data management.
@@ -1143,7 +1143,7 @@
 ## librespeed/speedtest
 
 > [!info]
-> ⭐ 14,457 · PHP · 2026-03-22T11:14:23Z  
+> ⭐ 14,459 · PHP · 2026-03-22T13:40:55Z  
 > [GitHub](https://github.com/librespeed/speedtest) · [Website](https://librespeed.org)  
 > `#HTML5 Speed Test` `#Multi-backend Support` `#Network Performance` `#Self-hosted Tool` `#hacktoberfest` `#html5-speedtest` `#internet-speed` `#internet-speed-checker` `#librespeed` `#php` `#speedtest` `#web-worker` `#xhr` 
 > LibreSpeed is a lightweight self-hosted speed test solution built with pure HTML5/JavaScript, requiring no Flash, Java, or WebSocket. It uses XMLHttpRequest and Web Workers to measure download/upload speeds, latency, and jitter with optional telemetry. Supports multiple backends (PHP/Go/Rust/Node.js) and databases (MySQL/PostgreSQL/SQLite), compatible across IE11 to modern browsers with mobile support and Docker deployment.
@@ -1153,7 +1153,7 @@
 ## h2y/Shadowrocket-ADBlock-Rules
 
 > [!info]
-> ⭐ 16,414 · Python · 2026-03-22T10:59:32Z  
+> ⭐ 16,413 · Python · 2026-03-22T13:21:33Z  
 > [GitHub](https://github.com/h2y/Shadowrocket-ADBlock-Rules) · [Website](https://github.com/h2y/Shadowrocket-ADBlock-Rules/blob/master/readme.md)  
 > `#Ad Blocking` `#Network Proxy` `#Proxy Rules` `#iOS Tools` `#gfw` `#proxy` `#shadowrocket` `#shadowsocks` `#shadowsocksr` `#ssr` `#surge` 
 > A comprehensive Shadowrocket rule set for iOS non-jailbroken devices, auto-generated from GFWList and EasyList. Offers blacklist, whitelist, and region-based proxy modes with ad blocking for web pages, apps, and videos. Uses DFA search tree for efficient matching with zero performance impact. No longer maintained but still functional.
@@ -1243,7 +1243,7 @@
 ## 521xueweihan/HelloGitHub
 
 > [!info]
-> ⭐ 147,011 · Python · 2026-03-22T12:22:15Z  
+> ⭐ 147,038 · Python · 2026-03-22T18:48:34Z  
 > [GitHub](https://github.com/521xueweihan/HelloGitHub) · [Website](https://hellogithub.com)  
 > `#Beginner Projects` `#Content Curation` `#Open Source Community` `#Resource Discovery` `#awesome` `#github` `#hellogithub` `#python` 
 > HelloGitHub is a monthly curation platform sharing interesting and entry-level open source projects from GitHub. Published on the 28th of each month, it covers fun projects, open source books, hands-on examples, and enterprise-grade projects. With 119 issues released, it helps developers discover quality open source resources and embrace the open source community culture.
@@ -1253,7 +1253,7 @@
 ## ossrs/srs
 
 > [!info]
-> ⭐ 28,648 · C++ · 2026-03-22T12:11:42Z  
+> ⭐ 28,648 · C++ · 2026-03-22T15:16:37Z  
 > [GitHub](https://github.com/ossrs/srs) · [Website](https://ossrs.io)  
 > `#Live Streaming` `#Media Server` `#Real-time Video` `#WebRTC` `#audio` `#c` `#c-plus-plus` `#dash` `#hevc` `#hls` `#live` `#live-streaming` `#low-latency` `#media-server` `#multimedia` `#prometheus-exporter` `#rtmp` `#server-side` `#srt` `#streaming` `#video` `#video-conferencing` `#video-streaming` `#webrtc` 
 > SRS (Simple Realtime Server) is a high-performance real-time media server supporting RTMP, WebRTC, HLS, HTTP-FLV, SRT, MPEG-DASH, and GB28181 protocols, with codecs including H.264/H.265/AV1/VP9 and AAC/Opus/G.711. It offers low-latency transcoding, multi-protocol conversion, DVR recording, and clustering for live streaming, surveillance, video conferencing, and online education.
@@ -1361,7 +1361,7 @@
 ## guzzle/guzzle
 
 > [!info]
-> ⭐ 23,457 · PHP · 2026-03-21T13:16:18Z  
+> ⭐ 23,456 · PHP · 2026-03-22T14:50:06Z  
 > [GitHub](https://github.com/guzzle/guzzle) · [Website](https://docs.guzzlephp.org/)  
 > `#API Integration` `#HTTP Client` `#PHP Library` `#Web Development` `#curl` `#guzzle` `#http-client` `#httpclient` `#php` `#psr-7` `#requests` `#webservices` 
 > Guzzle is the most popular PHP HTTP client library, offering a clean interface to send HTTP requests and integrate with web services effortlessly. It supports both synchronous and asynchronous requests, adhering to PSR-7 interfaces and PSR-18 interoperability. The middleware system enables flexible behavior extension, while abstracted transport layer removes dependencies on specific implementations like cURL.
