@@ -1,6 +1,6 @@
 # ⭐ GitHub Stars Index
 
-> Updated: 2026-03-22 12:18 UTC · Total: 125
+> Updated: 2026-03-22 12:33 UTC · Total: 125
 
 ---
 
@@ -155,7 +155,7 @@
 ## jundot/omlx
 
 > [!info]
-> ⭐ 6,400 · Python · 2026-03-22T12:12:51Z  
+> ⭐ 6,402 · Python · 2026-03-22T12:31:53Z  
 > [GitHub](https://github.com/jundot/omlx) · [Website](https://omlx.ai)  
 > `#Apple Silicon` `#Automation Tool` `#LLM Inference` `#Local AI` `#apple-silicon` `#inference-server` `#llm` `#macos` `#mlx` `#openai-api` 
 > oMLX is a local LLM inference server optimized for Apple Silicon, featuring continuous batching and tiered KV caching (hot memory + cold SSD) that persists context across conversations. It offers menu bar management and web admin panel, provides OpenAI-compatible API, and supports VLM, embedding models and MCP protocol.
@@ -354,7 +354,7 @@
 ## kingToolbox/WindTerm
 
 > [!info]
-> ⭐ 30,161 · C · 2026-03-22T11:23:03Z  
+> ⭐ 30,162 · C · 2026-03-22T12:23:45Z  
 > [GitHub](https://github.com/kingToolbox/WindTerm) · [Website](https://kingtoolbox.github.io)  
 > `#Cross-platform` `#DevOps Tool` `#SSH Client` `#Terminal Emulator` `#bash` `#client` `#cmd` `#linux` `#mac` `#powershell` `#serial` `#sftp` `#shell` `#ssh` `#telnet` `#terminal` `#tmux` `#windows` `#wsl` `#x11` `#xmodem` `#xterm` `#ymodem` `#zmodem` 
 > WindTerm is a professional cross-platform SSH/Sftp/Telnet/Shell/Serial/Tmux terminal with SSH v2 support, X11 forwarding, port forwarding, multi-factor authentication, and SFTP/SCP transfer. Available on Windows, Linux, macOS with multi-language UI, auto-completion, split views, and session management. Fully free and open source.
@@ -653,7 +653,7 @@
 ## ssnhd/rime
 
 > [!info]
-> ⭐ 3,485 · Lua · 2026-03-21T13:10:47Z  
+> ⭐ 3,485 · Lua · 2026-03-22T12:25:35Z  
 > [GitHub](https://github.com/ssnhd/rime)  
 > `#Chinese Input` `#Configuration Management` `#Double Pinyin` `#Rime Config` 
 > A comprehensive configuration repo for macOS Rime/Squirrel input method, featuring multiple pinyin schemes (luna_pinyin, flypy, natural code double pinyin) with million-level Sogou dictionary, emoji support, and dynamic date/time input. Offers cross-platform sync, highly customizable, open-source and privacy-respecting.
@@ -773,7 +773,7 @@
 ## any86/any-rule
 
 > [!info]
-> ⭐ 8,671 · TypeScript · 2026-03-21T19:47:57Z  
+> ⭐ 8,670 · TypeScript · 2026-03-22T12:28:14Z  
 > [GitHub](https://github.com/any86/any-rule) · [Website](https://any-rule.vercel.app/)  
 > `#Code Assistant` `#Cross-Platform` `#Developer Tools` `#Regex Patterns` `#awsome` `#express` `#regex` `#regexp` `#zheng-ze` 
 > Any-rule is a comprehensive regex library featuring 84+ common patterns for validating phone numbers, emails, URLs, IDs, stock codes, and more. It supports Web, VSCode, IDEA, Alfred Workflow, and uTools platforms, offering search functionality and visual regex explanations to help developers quickly find and understand patterns.
@@ -1243,7 +1243,7 @@
 ## 521xueweihan/HelloGitHub
 
 > [!info]
-> ⭐ 147,010 · Python · 2026-03-22T12:03:50Z  
+> ⭐ 147,011 · Python · 2026-03-22T12:22:15Z  
 > [GitHub](https://github.com/521xueweihan/HelloGitHub) · [Website](https://hellogithub.com)  
 > `#Beginner Projects` `#Content Curation` `#Open Source Community` `#Resource Discovery` `#awesome` `#github` `#hellogithub` `#python` 
 > HelloGitHub is a monthly curation platform sharing interesting and entry-level open source projects from GitHub. Published on the 28th of each month, it covers fun projects, open source books, hands-on examples, and enterprise-grade projects. With 119 issues released, it helps developers discover quality open source resources and embrace the open source community culture.

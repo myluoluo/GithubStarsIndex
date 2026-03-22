@@ -1,6 +1,6 @@
 # ⭐ GitHub Stars Index
 
-> Updated: 2026-03-22 12:18 UTC · Total: 125
+> Updated: 2026-03-22 12:33 UTC · Total: 125
 
 ---
 
@@ -155,7 +155,7 @@
 ## jundot/omlx
 
 > [!info]
-> ⭐ 6,400 · Python · 2026-03-22T12:12:51Z  
+> ⭐ 6,402 · Python · 2026-03-22T12:31:53Z  
 > [GitHub](https://github.com/jundot/omlx) · [Website](https://omlx.ai)  
 > `#AI推理` `#Apple Silicon优化` `#本地LLM服务` `#自动化工具` `#apple-silicon` `#inference-server` `#llm` `#macos` `#mlx` `#openai-api` 
 > oMLX是专为Apple Silicon优化的本地LLM推理服务器，支持连续批处理与热冷分层KV缓存（内存+SSD），可跨对话持久化上下文。提供菜单栏管理与Web后台，兼容OpenAI API，支持LLM/VLM/Embedding模型及MCP协议，一键部署本地AI推理服务。
@@ -354,7 +354,7 @@
 ## kingToolbox/WindTerm
 
 > [!info]
-> ⭐ 30,161 · C · 2026-03-22T11:23:03Z  
+> ⭐ 30,162 · C · 2026-03-22T12:23:45Z  
 > [GitHub](https://github.com/kingToolbox/WindTerm) · [Website](https://kingtoolbox.github.io)  
 > `#SSH客户端` `#终端工具` `#跨平台` `#运维自动化` `#bash` `#client` `#cmd` `#linux` `#mac` `#powershell` `#serial` `#sftp` `#shell` `#ssh` `#telnet` `#terminal` `#tmux` `#windows` `#wsl` `#x11` `#xmodem` `#xterm` `#ymodem` `#zmodem` 
 > WindTerm是一款专业跨平台SSH/Sftp/Telnet/Shell/串口/Tmux终端工具，支持SSH v2、X11转发、端口转发、多因素认证及SFTP/SCP文件传输。兼容Windows、Linux、macOS，内置多语言界面、自动补全、分屏视图和会话管理，完全免费开源。
@@ -653,7 +653,7 @@
 ## ssnhd/rime
 
 > [!info]
-> ⭐ 3,485 · Lua · 2026-03-21T13:10:47Z  
+> ⭐ 3,485 · Lua · 2026-03-22T12:25:35Z  
 > [GitHub](https://github.com/ssnhd/rime)  
 > `#Rime配置` `#中文输入法` `#双拼方案` `#配置管理` 
 > 专为 macOS 鼠须管（Rime 输入法）打造的配置仓库，集成朙月拼音、小鹤双拼、自然码双拼三种方案，内置百万级搜狗词库，支持 Emoji 及时间日期动态输入。提供跨平台词库同步、高度可定制配置，完全开源保护隐私。
@@ -773,7 +773,7 @@
 ## any86/any-rule
 
 > [!info]
-> ⭐ 8,671 · TypeScript · 2026-03-21T19:47:57Z  
+> ⭐ 8,670 · TypeScript · 2026-03-22T12:28:14Z  
 > [GitHub](https://github.com/any86/any-rule) · [Website](https://any-rule.vercel.app/)  
 > `#代码辅助` `#多平台支持` `#开发工具` `#正则表达式` `#awsome` `#express` `#regex` `#regexp` `#zheng-ze` 
 > any-rule收录84条常用正则表达式，覆盖手机号、邮箱、URL、身份证、股票代码、迅雷/磁力链接等常见场景。支持Web、VSCode、IDEA、Alfred Workflow、uTools等多平台，提供关键词搜索和正则可视化图解功能，方便开发者快速查询和理解正则规则。
@@ -1243,7 +1243,7 @@
 ## 521xueweihan/HelloGitHub
 
 > [!info]
-> ⭐ 147,010 · Python · 2026-03-22T12:03:50Z  
+> ⭐ 147,011 · Python · 2026-03-22T12:22:15Z  
 > [GitHub](https://github.com/521xueweihan/HelloGitHub) · [Website](https://hellogithub.com)  
 > `#入门项目推荐` `#内容聚合` `#开源社区` `#awesome` `#github` `#hellogithub` `#python` 
 > HelloGitHub 是一个开源项目推荐平台，每月28号发布月刊精选GitHub上有趣、入门级的开源项目。内容涵盖有趣项目、开源书籍、实战案例和企业级项目，帮助开发者快速发现优质开源资源，降低学习门槛，感受开源魅力。采用Markdown存储内容，社区驱动贡献，现已发布119期。

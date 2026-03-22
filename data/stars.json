@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-22 12:18 UTC",
+  "last_updated": "2026-03-22 12:33 UTC",
   "repos": {
     "harukiiiiiiiii/my-claude-skills": {
       "metadata": {
@@ -143,7 +143,7 @@
         "name": "omlx",
         "owner": "jundot",
         "description": "LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar",
-        "stars": 6400,
+        "stars": 6402,
         "language": "Python",
         "url": "https://github.com/jundot/omlx",
         "homepage": "https://omlx.ai",
@@ -156,7 +156,7 @@
           "openai-api"
         ],
         "pushed_at": "2026-03-22T11:21:28Z",
-        "updated_at": "2026-03-22T12:12:51Z",
+        "updated_at": "2026-03-22T12:31:53Z",
         "starred_at": "2026-03-09T12:00:30Z"
       },
       "summary": {
@@ -817,7 +817,7 @@
         "name": "WindTerm",
         "owner": "kingToolbox",
         "description": "A professional cross-platform SSH/Sftp/Shell/Telnet/Tmux/Serial terminal.",
-        "stars": 30161,
+        "stars": 30162,
         "language": "C",
         "url": "https://github.com/kingToolbox/WindTerm",
         "homepage": "https://kingtoolbox.github.io",
@@ -844,7 +844,7 @@
           "zmodem"
         ],
         "pushed_at": "2025-03-11T19:12:09Z",
-        "updated_at": "2026-03-22T11:23:03Z",
+        "updated_at": "2026-03-22T12:23:45Z",
         "starred_at": "2024-02-17T17:51:35Z"
       },
       "summary": {
@@ -2046,8 +2046,8 @@
         "url": "https://github.com/ssnhd/rime",
         "homepage": "",
         "topics": [],
-        "pushed_at": "2025-08-26T09:02:47Z",
-        "updated_at": "2026-03-21T13:10:47Z",
+        "pushed_at": "2026-03-22T12:25:31Z",
+        "updated_at": "2026-03-22T12:25:35Z",
         "starred_at": "2021-02-04T10:24:55Z"
       },
       "summary": {
@@ -2490,7 +2490,7 @@
         "name": "any-rule",
         "owner": "any86",
         "description": "🦕  常用正则大全, 支持web / vscode / idea / Alfred Workflow多平台",
-        "stars": 8671,
+        "stars": 8670,
         "language": "TypeScript",
         "url": "https://github.com/any86/any-rule",
         "homepage": "https://any-rule.vercel.app/",
@@ -2502,7 +2502,7 @@
           "zheng-ze"
         ],
         "pushed_at": "2024-07-21T05:29:34Z",
-        "updated_at": "2026-03-21T19:47:57Z",
+        "updated_at": "2026-03-22T12:28:14Z",
         "starred_at": "2020-01-07T09:44:58Z"
       },
       "summary": {
@@ -4350,7 +4350,7 @@
         "name": "HelloGitHub",
         "owner": "521xueweihan",
         "description": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
-        "stars": 147010,
+        "stars": 147011,
         "language": "Python",
         "url": "https://github.com/521xueweihan/HelloGitHub",
         "homepage": "https://hellogithub.com",
@@ -4361,7 +4361,7 @@
           "python"
         ],
         "pushed_at": "2026-02-28T00:44:03Z",
-        "updated_at": "2026-03-22T12:03:50Z",
+        "updated_at": "2026-03-22T12:22:15Z",
         "starred_at": "2017-04-01T17:30:04Z"
       },
       "summary": {
