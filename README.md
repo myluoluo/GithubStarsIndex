@@ -90,6 +90,7 @@ graph TD
 **📋 可选 Secrets**
 以下参数有内置默认值，通常无需配置：
 - `AI_BASE_URL`: AI 接口地址 (默认使用 OpenAI 官方地址)。
+- `AI_API_STYLE`: AI 接口风格，可选 `chat_completions` 或 `responses`，默认 `chat_completions`。
 - `AI_MODEL`: 模型名称 (默认 `gpt-4o-mini`)。
 - `AI_USER_AGENT`: 透传给 OpenAI 兼容接口的 `User-Agent` 请求头 (默认不设置)。
 
@@ -98,6 +99,7 @@ graph TD
 - GitHub Pages 在默认 workflow 中固定开启发布，不需要再配置 `PAGES_SYNC_ENABLED`。
 - 如果配置了 `NOTION_API_KEY`，并且同时提供 `NOTION_PAGE_ID` 或 `NOTION_DATABASE_ID`，默认 workflow 会自动开启 Notion 同步，不需要额外配置 `NOTION_SYNC_ENABLED`。
 - `NOTION_DATABASE_TITLE` 可选，仅在 `NOTION_PAGE_ID` 模式下用于自动发现/建库标题。
+- `AI_API_STYLE` 在默认 workflow 中也支持从 Secret 注入；不配置时默认走 `chat_completions`。
 - `AI_TIMEOUT`、`MAX_CONCURRENCY`、`OUTPUT_FILENAME`、`VAULT_SYNC_ENABLED`、`VAULT_REPO`、`VAULT_SYNC_PATH` 这些脚本级变量，当前默认 workflow 不会从 Actions 注入；如需使用，请改为本地 `.env` 运行，或自行扩展 workflow。
 - 虽然默认 workflow 会读取 `VAULT_PAT` Secret，但由于没有同时注入 `VAULT_SYNC_ENABLED`、`VAULT_REPO`、`VAULT_SYNC_PATH`，所以默认不会触发 Obsidian 同步。
 
@@ -138,6 +140,7 @@ schedule:
 | `GH_USERNAME`        | 必填     | 要同步的 GitHub 用户名     | -                           |
 | `AI_API_KEY`         | 必填     | AI 接口 Key                | -                           |
 | `AI_BASE_URL`        | 可选     | OpenAI 兼容接口地址        | `https://api.openai.com/v1` |
+| `AI_API_STYLE`       | 可选     | AI 接口风格，可选 `chat_completions` 或 `responses` | `chat_completions` |
 | `AI_MODEL`           | 可选     | 使用的 AI 模型             | `gpt-4o-mini`               |
 | `AI_TIMEOUT`         | 可选     | 单次 LLM 请求超时时间（秒） | `60`                        |
 | `AI_USER_AGENT`      | 可选     | 自定义 OpenAI 兼容接口请求头 `User-Agent` | -              |

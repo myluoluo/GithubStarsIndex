@@ -103,6 +103,7 @@ jobs:
           export PAGES_SYNC_ENABLED='true'
 
           export_if_present 'AI_BASE_URL' '${{ secrets.AI_BASE_URL }}'
+          export_if_present 'AI_API_STYLE' '${{ secrets.AI_API_STYLE }}'
           export_if_present 'AI_MODEL' '${{ secrets.AI_MODEL }}'
           export_if_present 'AI_USER_AGENT' '${{ secrets.AI_USER_AGENT }}'
 

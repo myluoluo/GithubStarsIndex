@@ -45,6 +45,9 @@ logging.basicConfig(
     datefmt="%Y-%m-%d %H:%M:%S",
 )
 log = logging.getLogger(__name__)
+logging.getLogger("httpx").setLevel(logging.WARNING)
+logging.getLogger("httpcore").setLevel(logging.WARNING)
+logging.getLogger("openai").setLevel(logging.WARNING)
 
 # ── 常量 ──────────────────────────────────────────────────
 SCRIPT_DIR = Path(__file__).parent.parent  # 仓库根目录
@@ -71,6 +74,7 @@ BOOLEAN_ENV_KEYS = {
 }
 INTEGER_ENV_KEYS = {"MAX_CONCURRENCY", "TEST_LIMIT"}
 INTEGER_ENV_KEYS.add("AI_TIMEOUT")
+SUPPORTED_AI_API_STYLES = {"chat_completions", "responses"}
 
 
 def _parse_env_value(env_key: str, raw_value: str):
@@ -89,6 +93,17 @@ def _set_config_value(cfg: dict, config_path: str, value) -> None:
     target[parts[-1]] = value
 
 
+def _validate_ai_api_style(raw_value: Optional[str]) -> str:
+    api_style = (raw_value or "").strip().lower()
+    if not api_style:
+        return "chat_completions"
+    if api_style in SUPPORTED_AI_API_STYLES:
+        return api_style
+    raise ValueError(
+        "AI_API_STYLE 仅支持 chat_completions 或 responses"
+    )
+
+
 def load_config() -> dict:
     """加载配置：环境变量优先于 config.yml"""
     env_mapping = {
@@ -98,6 +113,7 @@ def load_config() -> dict:
         "AI_BASE_URL": "ai.base_url",
         "AI_API_KEY": "ai.api_key",
         "AI_MODEL": "ai.model",
+        "AI_API_STYLE": "ai.api_style",
         "AI_TIMEOUT": "ai.timeout",
         "AI_USER_AGENT": "ai.user_agent",
         "MAX_CONCURRENCY": "ai.concurrency",
@@ -121,6 +137,7 @@ def load_config() -> dict:
             "model": "gpt-4o-mini",
             "base_url": "https://api.openai.com/v1",
             "api_key": None,
+            "api_style": "chat_completions",
             "timeout": 60,
             "user_agent": None,
             "concurrency": 5,
@@ -159,6 +176,14 @@ def load_config() -> dict:
         if value is None:
             continue
         _set_config_value(cfg, config_path, value)
+
+    try:
+        cfg["ai"]["api_style"] = _validate_ai_api_style(
+            cfg["ai"].get("api_style")
+        )
+    except ValueError as error:
+        log.error(f"❌ 错误: {error}")
+        sys.exit(1)
 
     if not cfg["github"]["username"]:
         log.error("❌ 错误: 未配置 GitHub 用户名 (GH_USERNAME)")
@@ -465,12 +490,14 @@ class AISummarizer:
         base_url: str,
         api_key: str,
         model: str,
+        api_style: str = "chat_completions",
         timeout: int = 60,
         retry: int = 3,
         user_agent: Optional[str] = None,
     ):
         self.base_url = (base_url or "").lower()
         self.model = model
+        self.api_style = _validate_ai_api_style(api_style)
         self.retry = retry
         default_headers = self._build_default_headers(user_agent)
         self.client = OpenAI(
@@ -559,8 +586,21 @@ class AISummarizer:
             "input": context,
             "temperature": 0.3,
         }
-        if "api.minimaxi.com" not in self.base_url:
+        if not self._uses_minimax_compatible_api():
             request["text"] = {"format": {"type": "json_object"}}
+        return request
+
+    def _build_chat_completion_request(self, prompt: str, context: str) -> dict:
+        request = {
+            "model": self.model,
+            "messages": [
+                {"role": "system", "content": prompt},
+                {"role": "user", "content": context},
+            ],
+            "temperature": 0.3,
+        }
+        if not self._uses_minimax_compatible_api():
+            request["response_format"] = {"type": "json_object"}
         return request
 
     def _extract_response_text(self, response: object) -> object:
@@ -583,6 +623,37 @@ class AISummarizer:
                     parts.append(text)
         return "\n".join(parts).strip()
 
+    def _extract_chat_completion_text(self, response: object) -> object:
+        choices = getattr(response, "choices", None)
+        if not isinstance(choices, list) or not choices:
+            return None
+        message = getattr(choices[0], "message", None)
+        if message is None:
+            return None
+        return getattr(message, "content", None)
+
+    def _uses_minimax_compatible_api(self) -> bool:
+        return "api.minimax.io" in self.base_url or "api.minimaxi.com" in self.base_url
+
+    def _summarize_with_responses(self, prompt: str, context: str) -> dict:
+        response = self.client.responses.create(
+            **self._build_response_request(prompt, context)
+        )
+        return self._extract_json_payload(self._extract_response_text(response))
+
+    def _summarize_with_chat_completions(self, prompt: str, context: str) -> dict:
+        response = self.client.chat.completions.create(
+            **self._build_chat_completion_request(prompt, context)
+        )
+        return self._extract_json_payload(
+            self._extract_chat_completion_text(response)
+        )
+
+    def _request_summary_payload(self, prompt: str, context: str) -> dict:
+        if self.api_style == "responses":
+            return self._summarize_with_responses(prompt, context)
+        return self._summarize_with_chat_completions(prompt, context)
+
     def summarize(self, repo_name: str, description: str, readme: str) -> dict:
         context = f"Repo: {repo_name}\nDesc: {description}\n\nREADME:\n{readme}"
         prompt = """你是一个顶级技术布道师和架构师。请深入分析 GitHub 仓库信息并生成：
@@ -603,12 +674,7 @@ class AISummarizer:
 }"""
         for attempt in range(self.retry):
             try:
-                resp = self.client.responses.create(
-                    **self._build_response_request(prompt, context)
-                )
-                data = self._extract_json_payload(
-                    self._extract_response_text(resp)
-                )
+                data = self._request_summary_payload(prompt, context)
                 # 兼容性处理
                 if "tags" in data and "tags_zh" not in data:
                     data["tags_zh"] = data["tags"]
@@ -699,6 +765,7 @@ def main():
             cfg["ai"]["base_url"],
             cfg["ai"]["api_key"],
             cfg["ai"]["model"],
+            cfg["ai"].get("api_style", "chat_completions"),
             cfg["ai"].get("timeout", 60),
             cfg["ai"].get("max_retries", 3),
             cfg["ai"].get("user_agent"),

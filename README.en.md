@@ -89,6 +89,7 @@ Go to **Settings → Secrets and variables → Actions** and configure the value
 **📋 Optional Secrets**
 These have built-in defaults and usually do not need configuration:
 - `AI_BASE_URL`: AI API endpoint (defaults to OpenAI).
+- `AI_API_STYLE`: AI API style, either `chat_completions` or `responses` (defaults to `chat_completions`).
 - `AI_MODEL`: Model name (defaults to `gpt-4o-mini`).
 - `AI_USER_AGENT`: Custom `User-Agent` header sent to the OpenAI-compatible API (unset by default).
 
@@ -97,6 +98,7 @@ These have built-in defaults and usually do not need configuration:
 - GitHub Pages publishing is always enabled in the default workflow, so you do not need `PAGES_SYNC_ENABLED`.
 - If `NOTION_API_KEY` is present and either `NOTION_PAGE_ID` or `NOTION_DATABASE_ID` is configured, the default workflow enables Notion sync automatically. You do not need to set `NOTION_SYNC_ENABLED`.
 - `NOTION_DATABASE_TITLE` is optional and only used in `NOTION_PAGE_ID` mode for auto-discovery / auto-create.
+- `AI_API_STYLE` is also supported by the default workflow via Secret injection; if omitted, it defaults to `chat_completions`.
 - `AI_TIMEOUT`, `MAX_CONCURRENCY`, `OUTPUT_FILENAME`, `VAULT_SYNC_ENABLED`, `VAULT_REPO`, and `VAULT_SYNC_PATH` are still supported by the script, but the default workflow does not inject them from Actions. Use local `.env` execution or customize the workflow if you need them.
 - Although the default workflow reads `VAULT_PAT`, it does not inject `VAULT_SYNC_ENABLED`, `VAULT_REPO`, or `VAULT_SYNC_PATH`, so Obsidian sync is not enabled by default.
 
@@ -137,6 +139,7 @@ Go to **Actions → 🌟 GitHub Stars Index 同步 → Run workflow** and click 
 | `GH_USERNAME`        | Required                 | GitHub username to sync                       | -                           |
 | `AI_API_KEY`         | Required                 | AI API Key                                    | -                           |
 | `AI_BASE_URL`        | Optional                 | OpenAI-compatible API endpoint                | `https://api.openai.com/v1` |
+| `AI_API_STYLE`       | Optional                 | AI API style, either `chat_completions` or `responses` | `chat_completions` |
 | `AI_MODEL`           | Optional                 | AI model to use                               | `gpt-4o-mini`               |
 | `AI_TIMEOUT`         | Optional                 | Timeout for a single LLM request in seconds   | `60`                        |
 | `AI_USER_AGENT`      | Optional                 | Custom `User-Agent` header for the OpenAI-compatible API | -                |
