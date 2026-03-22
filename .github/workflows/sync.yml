@@ -106,6 +106,7 @@ jobs:
           export_if_present 'AI_API_STYLE' '${{ secrets.AI_API_STYLE }}'
           export_if_present 'AI_MODEL' '${{ secrets.AI_MODEL }}'
           export_if_present 'AI_USER_AGENT' '${{ secrets.AI_USER_AGENT }}'
+          export_if_present 'PAGES_DISALLOW_INDEXING' '${{ secrets.PAGES_DISALLOW_INDEXING }}'
 
           if [ -n '${{ github.event.inputs.test_limit }}' ]; then
             export TEST_LIMIT='${{ github.event.inputs.test_limit }}'

@@ -92,10 +92,12 @@ These have built-in defaults and usually do not need configuration:
 - `AI_API_STYLE`: AI API style, either `chat_completions` or `responses` (defaults to `chat_completions`).
 - `AI_MODEL`: Model name (defaults to `gpt-4o-mini`).
 - `AI_USER_AGENT`: Custom `User-Agent` header sent to the OpenAI-compatible API (unset by default).
+- `PAGES_DISALLOW_INDEXING`: Set to `true` to generate a `robots.txt` file that disallows search engine indexing.
 
 **📝 Notes about the default workflow**
 - `GITHUB_TOKEN` is injected automatically by GitHub Actions. You do not need to create it manually.
 - GitHub Pages publishing is always enabled in the default workflow, so you do not need `PAGES_SYNC_ENABLED`.
+- `PAGES_DISALLOW_INDEXING` is supported by the default workflow via Secret injection; when set to `true`, the workflow generates a `robots.txt` file that blocks crawling.
 - If `NOTION_API_KEY` is present and either `NOTION_PAGE_ID` or `NOTION_DATABASE_ID` is configured, the default workflow enables Notion sync automatically. You do not need to set `NOTION_SYNC_ENABLED`.
 - `NOTION_DATABASE_TITLE` is optional and only used in `NOTION_PAGE_ID` mode for auto-discovery / auto-create.
 - `AI_API_STYLE` is also supported by the default workflow via Secret injection; if omitted, it defaults to `chat_completions`.
@@ -153,6 +155,7 @@ Go to **Actions → 🌟 GitHub Stars Index 同步 → Run workflow** and click 
 | `NOTION_DATABASE_ID` | Optional                 | Explicit dedicated Database ID; either this or `NOTION_PAGE_ID` is required when Notion sync is enabled | - |
 | `NOTION_DATABASE_TITLE` | Optional              | Database title used in auto-discovery / auto-create mode | `GitHub Stars Index` |
 | `PAGES_SYNC_ENABLED` | Optional                 | Whether to deploy to GitHub Pages; always enabled in the default Actions workflow | `false` |
+| `PAGES_DISALLOW_INDEXING` | Optional            | Whether to generate a `robots.txt` file that disallows search engine indexing | `false` |
 | `MAX_CONCURRENCY`    | Optional                 | AI concurrency limit (recommended 1-10)       | `1`                         |
 | `GH_TOKEN`           | **Strongly Recommended** | Increases API limits to prevent rate-limiting | -                           |
 
@@ -234,6 +237,7 @@ This project automatically generates multi-language static web pages with real-t
 1. The default GitHub Actions workflow always publishes to `gh-pages`, so `PAGES_SYNC_ENABLED` is not required there.
 2. After running the Action once, go to **Settings -> Pages**.
 3. Select `gh-pages` branch and `/(root)` directory, then click Save.
+4. If you do not want search engines to index the site, set `PAGES_DISALLOW_INDEXING=true`. The script will generate a `robots.txt` file containing `User-agent: *` and `Disallow: /`.
 
 > [!IMPORTANT]
 > **Data Source Migration (Compatibility for Forks)**:

@@ -93,10 +93,12 @@ graph TD
 - `AI_API_STYLE`: AI 接口风格，可选 `chat_completions` 或 `responses`，默认 `chat_completions`。
 - `AI_MODEL`: 模型名称 (默认 `gpt-4o-mini`)。
 - `AI_USER_AGENT`: 透传给 OpenAI 兼容接口的 `User-Agent` 请求头 (默认不设置)。
+- `PAGES_DISALLOW_INDEXING`: 设为 `true` 时，生成禁止搜索引擎收录的 `robots.txt`。
 
 **📝 当前默认 workflow 的额外说明**
 - `GITHUB_TOKEN` 由 GitHub Actions 自动注入，无需手动创建。
 - GitHub Pages 在默认 workflow 中固定开启发布，不需要再配置 `PAGES_SYNC_ENABLED`。
+- `PAGES_DISALLOW_INDEXING` 在默认 workflow 中支持从 Secret 注入；设为 `true` 时会生成禁止抓取的 `robots.txt`。
 - 如果配置了 `NOTION_API_KEY`，并且同时提供 `NOTION_PAGE_ID` 或 `NOTION_DATABASE_ID`，默认 workflow 会自动开启 Notion 同步，不需要额外配置 `NOTION_SYNC_ENABLED`。
 - `NOTION_DATABASE_TITLE` 可选，仅在 `NOTION_PAGE_ID` 模式下用于自动发现/建库标题。
 - `AI_API_STYLE` 在默认 workflow 中也支持从 Secret 注入；不配置时默认走 `chat_completions`。
@@ -154,6 +156,7 @@ schedule:
 | `NOTION_DATABASE_ID` | 选填     | 显式指定已有专用 Database；与 `NOTION_PAGE_ID` 二选一即可 | - |
 | `NOTION_DATABASE_TITLE` | 可选  | 自动发现/建库时使用的 Database 标题 | `GitHub Stars Index` |
 | `PAGES_SYNC_ENABLED` | 可选     | 是否开启 GitHub Pages 部署；默认 Actions workflow 已固定开启 | `false` |
+| `PAGES_DISALLOW_INDEXING` | 可选 | 是否生成禁止搜索引擎收录的 `robots.txt` | `false` |
 | `MAX_CONCURRENCY`    | 可选     | AI 并发处理数 (建议 1-10)  | `1`                         |
 | `GH_TOKEN`           | **建议** | 提升 API 额度，防止限速    | -                           |
 
@@ -235,6 +238,7 @@ schedule:
 1. 默认 GitHub Actions workflow 会自动发布到 `gh-pages`，不需要额外配置 `PAGES_SYNC_ENABLED`。
 2. 运行一次 Action 后，进入 **Settings -> Pages**。
 3. **Branch** 选择 `gh-pages`，目录选择 `/(root)`，保存。
+4. 如果不希望搜索引擎收录该站点，可设置 `PAGES_DISALLOW_INDEXING=true`。脚本会在发布产物中生成内容为 `User-agent: *` 和 `Disallow: /` 的 `robots.txt`。
 
 > [!IMPORTANT]
 > **数据源迁移说明（兼容 Fork）**：

@@ -57,6 +57,8 @@ STARS_JSON_PATH = DATA_DIR / "stars.json"
 TEMPLATES_DIR = SCRIPT_DIR / "templates"
 DEFAULT_MD_TEMPLATE = "stars.md.j2"
 STARS_MD_PATH_DEFAULT = SCRIPT_DIR / "stars.md"
+ROBOTS_TXT_NAME = "robots.txt"
+ROBOTS_TXT_DISALLOW_ALL = "User-agent: *\nDisallow: /\n"
 
 # 确保数据目录存在
 DATA_DIR.mkdir(exist_ok=True)
@@ -70,6 +72,7 @@ DATA_DIR.mkdir(exist_ok=True)
 BOOLEAN_ENV_KEYS = {
     "VAULT_SYNC_ENABLED",
     "PAGES_SYNC_ENABLED",
+    "PAGES_DISALLOW_INDEXING",
     "NOTION_SYNC_ENABLED",
 }
 INTEGER_ENV_KEYS = {"MAX_CONCURRENCY", "TEST_LIMIT"}
@@ -123,6 +126,7 @@ def load_config() -> dict:
         "VAULT_SYNC_PATH": "vault_sync.path",
         "VAULT_PAT": "vault_sync.pat",
         "PAGES_SYNC_ENABLED": "pages_sync.enabled",
+        "PAGES_DISALLOW_INDEXING": "pages_sync.disallow_indexing",
         "NOTION_SYNC_ENABLED": "notion_sync.enabled",
         "NOTION_API_KEY": "notion_sync.api_key",
         "NOTION_PAGE_ID": "notion_sync.page_id",
@@ -150,7 +154,7 @@ def load_config() -> dict:
             "pat": None,
             "commit_message": "🤖 自动更新 GitHub Stars 摘要",
         },
-        "pages_sync": {"enabled": False},
+        "pages_sync": {"enabled": False, "disallow_indexing": False},
         "notion_sync": {
             "enabled": False,
             "api_key": None,
@@ -260,6 +264,17 @@ def has_persistable_changes(
     *, new_count: int, refreshed_count: int, removed_count: int
 ) -> bool:
     return any((new_count, refreshed_count, removed_count))
+
+
+def sync_pages_robots_txt(output_dir: Path, disallow_indexing: bool) -> None:
+    robots_path = output_dir / ROBOTS_TXT_NAME
+    if disallow_indexing:
+        robots_path.write_text(ROBOTS_TXT_DISALLOW_ALL, encoding="utf-8")
+        log.info(f"✅ robots.txt 已生成: {robots_path}")
+        return
+    if robots_path.exists():
+        robots_path.unlink()
+        log.info(f"🧹 已移除 robots.txt: {robots_path}")
 
 
 # ════════════════════════════════════════════════════════════
@@ -935,6 +950,10 @@ def main():
         try:
             out_dir = SCRIPT_DIR / p_cfg.get("output_dir", "dist")
             out_dir.mkdir(exist_ok=True)
+            sync_pages_robots_txt(
+                out_dir,
+                bool(p_cfg.get("disallow_indexing")),
+            )
 
             html_template = p_cfg.get("template", "index.html.j2")
             html_content = generator.render(html_template, context)
