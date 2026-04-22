@@ -1,4 +1,4968 @@
 {
-  "last_updated": "2026-04-15 19:45 UTC",
-  "repos": {}
+  "last_updated": "2026-04-22 23:56 UTC",
+  "repos": {
+    "givenge/reader-rust": {
+      "metadata": {
+        "full_name": "givenge/reader-rust",
+        "name": "reader-rust",
+        "owner": "givenge",
+        "description": "基于reader重构 Rust 版 reader 服务端",
+        "stars": 21,
+        "language": "Vue",
+        "url": "https://github.com/givenge/reader-rust",
+        "homepage": "https://givenge.github.io/reader-rust/",
+        "topics": [
+          "rust",
+          "vue"
+        ],
+        "pushed_at": "2026-04-18T06:38:38Z",
+        "updated_at": "2026-04-21T01:17:40Z",
+        "starred_at": "2026-04-20T15:33:04Z"
+      },
+      "summary": {
+        "zh": "基于Java版reader重构的Rust书籍阅读服务端，支持自定义书源与多种解析方式。提供书籍搜索、目录获取、章节缓存、RSS订阅及TTS语音朗读功能，支持Docker一键部署。",
+        "en": "A Rust-based rewrite of the reader book source service, supporting custom book sources with multiple parsing methods. Features include book search, directory fetching, chapter caching, RSS subscription, and TTS voice reading with Docker deployment support.",
+        "tags_zh": [
+          "Rust语言",
+          "多源解析",
+          "数字阅读",
+          "规则引擎"
+        ],
+        "tags_en": [
+          "Digital Reading",
+          "Multi-Source Parsing",
+          "Rule Engine",
+          "Rust"
+        ]
+      },
+      "pushed_at": "2026-04-18T06:38:38Z",
+      "updated_at": "2026-04-22"
+    },
+    "gsd-build/get-shit-done": {
+      "metadata": {
+        "full_name": "gsd-build/get-shit-done",
+        "name": "get-shit-done",
+        "owner": "gsd-build",
+        "description": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES.",
+        "stars": 56215,
+        "language": "JavaScript",
+        "url": "https://github.com/gsd-build/get-shit-done",
+        "homepage": "",
+        "topics": [
+          "claude-code",
+          "context-engineering",
+          "meta-prompting",
+          "spec-driven-development"
+        ],
+        "pushed_at": "2026-04-22T22:23:10Z",
+        "updated_at": "2026-04-22T23:43:33Z",
+        "starred_at": "2026-03-25T19:32:57Z"
+      },
+      "summary": {
+        "zh": "GSD是一个专为AI编程助手设计的轻量级元提示、上下文工程和规范驱动开发系统。解决AI在填充上下文窗口时的质量退化问题，支持Claude Code、Cursor、Windsurf等主流工具。通过规划结构和上下文管理，让开发者清晰表达需求即可快速构建功能，适合独立开发者快速交付项目。",
+        "en": "GSD is a lightweight meta-prompting, context engineering and spec-driven development system for AI coding assistants. It solves context rot — the quality degradation when AI fills its context window. Supports Claude Code, Cursor, Windsurf, and 10+ other tools. Ideal for solo developers who want to specify what they need and have AI build it without enterprise ceremony.",
+        "tags_zh": [
+          "AI编程助手",
+          "上下文工程",
+          "元提示技术",
+          "规范驱动开发"
+        ],
+        "tags_en": [
+          "AI Coding Assistant",
+          "Context Engineering",
+          "Meta-Prompting",
+          "Spec-Driven Dev"
+        ]
+      },
+      "pushed_at": "2026-04-22T22:23:10Z",
+      "updated_at": "2026-04-22"
+    },
+    "ccbkkb/MicroWARP": {
+      "metadata": {
+        "full_name": "ccbkkb/MicroWARP",
+        "name": "MicroWARP",
+        "owner": "ccbkkb",
+        "description": "🚀 An 800KB RAM ultra-lightweight Cloudflare WARP SOCKS5 proxy in Docker. 仅需 800KB 内存的纯内核态 Cloudflare WARP 代理 - Docker",
+        "stars": 1081,
+        "language": "Shell",
+        "url": "https://github.com/ccbkkb/MicroWARP",
+        "homepage": "",
+        "topics": [
+          "alpine",
+          "bypass-dpi",
+          "cloudflare",
+          "cloudflare-warp",
+          "docker",
+          "lightweight",
+          "proxy",
+          "socks5",
+          "warp",
+          "wireguard",
+          "zero-trust"
+        ],
+        "pushed_at": "2026-04-19T15:31:27Z",
+        "updated_at": "2026-04-22T14:49:45Z",
+        "starred_at": "2026-03-29T16:16:03Z"
+      },
+      "summary": {
+        "zh": "基于内核态WireGuard和纯C语言microsocks实现的Cloudflare WARP SOCKS5代理，内存占用仅800KB，Docker镜像体积9MB。无需warp-cli守护进程，通过Linux wg0接口实现近零CPU开销，支持Tailscale兼容与多架构部署，适用于API路由、出站隐私保护和轻量化Sidecar代理场景。",
+        "en": "An ultra-lightweight Cloudflare WARP SOCKS5 proxy using kernel-level WireGuard and pure C microsocks engine. Achieves 800KB RAM usage with 9MB image size by eliminating the warp-cli daemon overhead. Features near-zero CPU overhead via native Linux wg0 interface, Tailscale compatibility, and multi-arch support for API routing and privacy egress scenarios.",
+        "tags_zh": [
+          "SOCKS5",
+          "WireGuard代理",
+          "网络代理",
+          "轻量化Docker"
+        ],
+        "tags_en": [
+          "Lightweight Docker",
+          "Network Proxy",
+          "SOCKS5 Proxy",
+          "WireGuard"
+        ]
+      },
+      "pushed_at": "2026-04-19T15:31:27Z",
+      "updated_at": "2026-04-22"
+    },
+    "idawnlight/ShichiZip": {
+      "metadata": {
+        "full_name": "idawnlight/ShichiZip",
+        "name": "ShichiZip",
+        "owner": "idawnlight",
+        "description": "The 7-Zip derivative intended for macOS",
+        "stars": 671,
+        "language": "Swift",
+        "url": "https://github.com/idawnlight/ShichiZip",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2026-04-22T09:15:31Z",
+        "updated_at": "2026-04-22T18:41:06Z",
+        "starred_at": "2026-04-11T18:06:50Z"
+      },
+      "summary": {
+        "zh": "ShichiZip 是专为 macOS 设计的 7-Zip 压缩格式衍生工具，采用 Zig 语言开发以获得优异性能。支持标准 7-Zip 和 Zstandard 两种压缩算法变体，通过 XcodeGen 构建项目，为 macOS 用户提供轻量高效的开源压缩解压替代方案。",
+        "en": "ShichiZip is a 7-Zip derivative for macOS, built with Zig language for optimal performance. It supports both standard 7-Zip and Zstandard compression variants, offering macOS users a lightweight open-source alternative for archive extraction and creation.",
+        "tags_zh": [
+          "Zig语言",
+          "压缩工具",
+          "桌面应用",
+          "跨平台"
+        ],
+        "tags_en": [
+          "Compression Tool",
+          "Cross-platform",
+          "Zig Language",
+          "桌面应用"
+        ]
+      },
+      "pushed_at": "2026-04-22T09:15:31Z",
+      "updated_at": "2026-04-22"
+    },
+    "NetLops/SoSearch": {
+      "metadata": {
+        "full_name": "NetLops/SoSearch",
+        "name": "SoSearch",
+        "owner": "NetLops",
+        "description": "",
+        "stars": 108,
+        "language": "Rust",
+        "url": "https://github.com/NetLops/SoSearch",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2026-03-23T07:18:56Z",
+        "updated_at": "2026-04-21T12:30:31Z",
+        "starred_at": "2026-03-22T19:17:30Z"
+      },
+      "summary": {
+        "zh": "SoSearch 是一个用 Rust 编写的伪 Web 搜索引擎 API，无需官方 API Key 即可并发抓取 DuckDuckGo、Yahoo 和 Brave 的搜索结果。采用 Tokio 异步运行时和 rquest 的 TLS 伪装技术绕过反爬机制，支持作为 MCP Server 为 AI Agent 提供实时网页搜索能力。",
+        "en": "SoSearch is a lightning-fast pseudo web search engine API written in Rust, emulating SerpAPI/Tavily without official API keys. It concurrently scrapes DuckDuckGo, Yahoo, and Brave using TLS impersonation to bypass bot detection. Runs as an MCP server, exposing web search tools to AI agents like Claude and Gemini.",
+        "tags_zh": [
+          "AI智能体",
+          "MCP集成",
+          "异步并发",
+          "网页爬虫"
+        ],
+        "tags_en": [
+          "AI 智能体",
+          "Async Concurrency",
+          "MCP Server",
+          "网页爬虫"
+        ]
+      },
+      "pushed_at": "2026-03-23T07:18:56Z",
+      "updated_at": "2026-04-22"
+    },
+    "obra/superpowers": {
+      "metadata": {
+        "full_name": "obra/superpowers",
+        "name": "superpowers",
+        "owner": "obra",
+        "description": "An agentic skills framework & software development methodology that works.",
+        "stars": 164307,
+        "language": "Shell",
+        "url": "https://github.com/obra/superpowers",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2026-04-16T19:50:46Z",
+        "updated_at": "2026-04-22T23:50:33Z",
+        "starred_at": "2026-03-25T19:32:56Z"
+      },
+      "summary": {
+        "zh": "Superpowers 是一个面向 AI 编程代理的技能框架与方法论，通过自动触发的技能系统引导代理从需求澄清、设计确认、任务分解到子代理驱动开发的完整流程。它强调 TDD、YAGNI、DRY 等工程实践，支持 Claude Code、Cursor、Github Copilot 等主流 AI IDE，帮助代理实现数小时自主工作不偏离计划。",
+        "en": "Superpowers is an agentic skills framework and software development methodology that guides coding agents through brainstorming, design validation, task breakdown, and subagent-driven development. It enforces TDD, YAGNI, and DRY principles with automatic skill triggering, supporting Claude Code, Cursor, GitHub Copilot, and other major AI IDEs for hours of autonomous, plan-aligned coding.",
+        "tags_zh": [
+          "AI智能体",
+          "AI编程辅助",
+          "多IDE集成",
+          "软件开发方法论"
+        ],
+        "tags_en": [
+          "AI Agents",
+          "AI Coding Assistant",
+          "Multi-IDE Integration",
+          "Software Development Methodology"
+        ]
+      },
+      "pushed_at": "2026-04-16T19:50:46Z",
+      "updated_at": "2026-04-22"
+    },
+    "iblogc/GithubStarsIndex": {
+      "metadata": {
+        "full_name": "iblogc/GithubStarsIndex",
+        "name": "GithubStarsIndex",
+        "owner": "iblogc",
+        "description": "自动抓取 GitHub Stars，生成 AI 摘要，便于检索。",
+        "stars": 73,
+        "language": "Jinja",
+        "url": "https://github.com/iblogc/GithubStarsIndex",
+        "homepage": "https://stars.iblogc.com",
+        "topics": [],
+        "pushed_at": "2026-04-22T19:39:45Z",
+        "updated_at": "2026-04-21T08:27:06Z",
+        "starred_at": "2026-03-20T20:27:34Z"
+      },
+      "summary": {
+        "zh": "自动化抓取用户 GitHub Stars 仓库，调用 AI 生成摘要与智能标签的技术工具。支持标签归一化治理、并发处理与增量更新，可通过 GitHub Actions 定时运行，并可选同步至 Obsidian 或发布为支持实时搜索的 GitHub Pages 静态页面。",
+        "en": "An automation tool that fetches starred GitHub repositories and uses AI to generate summaries with smart tag normalization. Supports concurrent processing, incremental updates, GitHub Actions scheduling, and optional sync to Obsidian or deploy as searchable GitHub Pages static site.",
+        "tags_zh": [
+          "AI智能摘要",
+          "GitHub自动化",
+          "知识管理",
+          "运维自动化"
+        ],
+        "tags_en": [
+          "AI Summarization",
+          "GitHub Automation",
+          "Knowledge Management",
+          "Scheduled Automation"
+        ]
+      },
+      "pushed_at": "2026-04-22T19:39:45Z",
+      "updated_at": "2026-04-22"
+    },
+    "nashsu/AutoCLI": {
+      "metadata": {
+        "full_name": "nashsu/AutoCLI",
+        "name": "AutoCLI",
+        "owner": "nashsu",
+        "description": "AutoCLI is a  Blazing fast, memory-safe command-line tool — Fetch information from any website with a single command. Covers Twitter/X, Reddit, YouTube, HackerNews, Bilibili, Zhihu, Xiaohongshu, and 55+ sites, with support for controlling Electron desktop apps, integrating local CLI tools (gh, docker, kubectl), now powered by AutoCLI.ai .",
+        "stars": 2404,
+        "language": "Rust",
+        "url": "https://github.com/nashsu/AutoCLI",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2026-04-20T09:57:53Z",
+        "updated_at": "2026-04-22T19:40:17Z",
+        "starred_at": "2026-03-25T17:07:40Z"
+      },
+      "summary": {
+        "zh": "AutoCLI 是一款 Rust 编写的命令行工具，通过单条命令即可从任意网站抓取数据。支持 Twitter、Reddit、YouTube、知乎、小红书等 55+ 主流平台，具备浏览器会话复用、YAML 声明式爬取管道和 AI 智能适配器生成功能。相比 Node.js 版本快 12 倍，仅 4.7MB 单二进制文件，零依赖部署，是 AI Agent 获取全网信息的完美工具。",
+        "en": "AutoCLI is a blazing-fast, memory-safe CLI tool written in Rust that fetches data from any website with a single command. Supports 55+ platforms including Twitter, Reddit, YouTube, and Zhihu. Features browser session reuse, YAML declarative pipelines, and AI-powered adapter generation. Delivers 12x faster performance than Node.js with just a 4.7MB static binary and zero runtime dependencies.",
+        "tags_zh": [
+          "AI智能体",
+          "命令行工具",
+          "性能优化",
+          "网页爬虫"
+        ],
+        "tags_en": [
+          "AI 智能体",
+          "CLI Tool",
+          "Performance Optimization",
+          "网页爬虫"
+        ]
+      },
+      "pushed_at": "2026-04-20T09:57:53Z",
+      "updated_at": "2026-04-22"
+    },
+    "breezewish/CodexPotter": {
+      "metadata": {
+        "full_name": "breezewish/CodexPotter",
+        "name": "CodexPotter",
+        "owner": "breezewish",
+        "description": "Ralph loop for codex — continuously reconciles codebase toward your instructed state",
+        "stars": 339,
+        "language": "Rust",
+        "url": "https://github.com/breezewish/CodexPotter",
+        "homepage": "",
+        "topics": [
+          "codex",
+          "codex-cli",
+          "gpt",
+          "openai",
+          "ralph",
+          "ralph-loop",
+          "ralph-wiggum"
+        ],
+        "pushed_at": "2026-04-22T09:25:46Z",
+        "updated_at": "2026-04-22T15:05:37Z",
+        "starred_at": "2026-04-15T11:27:19Z"
+      },
+      "summary": {
+        "zh": "CodexPotter 是一款基于 Ralph 循环模式的 AI 代码自动对齐工具。通过持续驱动 OpenAI Codex 执行任务并多轮审查，确保代码库逐步收敛至用户指定的目标状态。它使用干净上下文避免污染，提供 <1k tokens 的轻量级提示，支持本地知识库和 AGENTS.md 集成，适用于代码重构、移植和规范化等场景。",
+        "en": "CodexPotter is an autonomous code reconciliation tool based on the Ralph loop pattern. It continuously drives OpenAI Codex to execute tasks through multiple review rounds, ensuring the codebase converges toward the instructed state. With clean context isolation to prevent poisoning and a tiny <1k token footprint, it integrates seamlessly with AGENTS.md and MCPs, making it ideal for automated code refactoring, porting, and standardization workflows.",
+        "tags_zh": [
+          "AI智能体",
+          "代码重构",
+          "提示工程",
+          "自动化工具"
+        ],
+        "tags_en": [
+          "AI 智能体",
+          "Automation Tool",
+          "Code Refactoring",
+          "提示工程"
+        ]
+      },
+      "pushed_at": "2026-04-22T09:25:46Z",
+      "updated_at": "2026-04-22"
+    },
+    "harukiiiiiiiii/my-claude-skills": {
+      "metadata": {
+        "full_name": "harukiiiiiiiii/my-claude-skills",
+        "name": "my-claude-skills",
+        "owner": "harukiiiiiiiii",
+        "description": "",
+        "stars": 23,
+        "language": "N/A",
+        "url": "https://github.com/harukiiiiiiiii/my-claude-skills",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2026-03-09T16:27:29Z",
+        "updated_at": "2026-04-07T08:25:13Z",
+        "starred_at": "2026-03-08T18:21:26Z"
+      },
+      "summary": {
+        "zh": "针对 Claude Code CLI 的技能集合，专注于 DNS 管理和 VPS 运维自动化。支持 Cloudflare、腾讯云、阿里云等主流 DNS 服务商，提供记录 CRUD、DDNS、批量管理等功能；VPS 运维技能涵盖状态监控、批量命令、日志分析等能力，帮助简化日常服务器管理操作。",
+        "en": "A Claude Code skills collection focused on DNS management and VPS operations automation. Supports major DNS providers like Cloudflare, Tencent Cloud, and Aliyun with record CRUD, DDNS, and batch management. VPS skills include server monitoring, batch commands, and log analysis for streamlined server administration.",
+        "tags_zh": [
+          "CLI工具",
+          "DNS管理",
+          "云服务管理",
+          "自动化运维"
+        ],
+        "tags_en": [
+          "CLI Tools",
+          "Cloud Services",
+          "DNS Management",
+          "DevOps Automation"
+        ]
+      },
+      "pushed_at": "2026-03-09T16:27:29Z",
+      "updated_at": "2026-04-22"
+    },
+    "SurgeDM/Surge": {
+      "metadata": {
+        "full_name": "SurgeDM/Surge",
+        "name": "Surge",
+        "owner": "SurgeDM",
+        "description": "Blazing fast TUI download manager built in Go for power users",
+        "stars": 2943,
+        "language": "Go",
+        "url": "https://github.com/SurgeDM/Surge",
+        "homepage": "",
+        "topics": [
+          "cli",
+          "download-manager",
+          "downloader",
+          "go",
+          "golang",
+          "hacktoberfest",
+          "poweruser",
+          "terminal",
+          "tui"
+        ],
+        "pushed_at": "2026-04-22T08:05:43Z",
+        "updated_at": "2026-04-22T18:15:08Z",
+        "starred_at": "2026-03-06T10:10:01Z"
+      },
+      "summary": {
+        "zh": "Go语言打造的高速TUI下载管理器，支持32线程并行下载与多镜像源，支持守护进程后台运行与流式顺序下载，采用Bubble Tea框架构建美观的终端界面，专为键盘操作的高级用户设计。",
+        "en": "A blazing fast TUI download manager built in Go, featuring multi-threaded parallel downloads (up to 32 connections), multiple mirror support, daemon-based architecture, and a beautiful terminal UI built with Bubble Tea for power users.",
+        "tags_zh": [
+          "Go语言",
+          "多线程下载",
+          "文件下载",
+          "终端应用"
+        ],
+        "tags_en": [
+          "File Download",
+          "Go",
+          "Multi-threading",
+          "Terminal App"
+        ]
+      },
+      "pushed_at": "2026-04-22T08:05:43Z",
+      "updated_at": "2026-04-22"
+    },
+    "caigg188/vback": {
+      "metadata": {
+        "full_name": "caigg188/vback",
+        "name": "vback",
+        "owner": "caigg188",
+        "description": "更方便，更省心：一款开箱即用的服务器备份脚本",
+        "stars": 24,
+        "language": "Shell",
+        "url": "https://github.com/caigg188/vback",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2026-04-16T11:05:02Z",
+        "updated_at": "2026-04-16T11:05:07Z",
+        "starred_at": "2026-03-03T09:47:54Z"
+      },
+      "summary": {
+        "zh": "vback 是一款开箱即用的单文件服务器备份脚本，使用 Bash 开发，可将服务器目录打包后上传至 S3 兼容云存储。支持多任务备份、多计划调度、SQLite 安全备份、上传校验与重试、交互式恢复等特性，兼容 Linux 与 macOS，适用于中小型项目的定时全量备份场景。",
+        "en": "vback is an out-of-box single-file server backup script written in Bash. It packages server directories and uploads to S3-compatible cloud storage. Features include multi-task backup, scheduled execution, SQLite safe backup, upload verification with retry, and interactive restore. Works on Linux and macOS, ideal for small-to-medium project full backups.",
+        "tags_zh": [
+          "Bash脚本",
+          "S3云存储",
+          "数据备份",
+          "运维自动化"
+        ],
+        "tags_en": [
+          "Bash Script",
+          "Data Backup",
+          "DevOps Automation",
+          "S3 Cloud Storage"
+        ]
+      },
+      "pushed_at": "2026-04-16T11:05:02Z",
+      "updated_at": "2026-04-22"
+    },
+    "jundot/omlx": {
+      "metadata": {
+        "full_name": "jundot/omlx",
+        "name": "omlx",
+        "owner": "jundot",
+        "description": "LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar",
+        "stars": 11076,
+        "language": "Python",
+        "url": "https://github.com/jundot/omlx",
+        "homepage": "https://omlx.ai",
+        "topics": [
+          "apple-silicon",
+          "inference-server",
+          "llm",
+          "macos",
+          "mlx",
+          "openai-api"
+        ],
+        "pushed_at": "2026-04-22T15:26:21Z",
+        "updated_at": "2026-04-22T23:26:01Z",
+        "starred_at": "2026-03-09T12:00:30Z"
+      },
+      "summary": {
+        "zh": "oMLX是专为Apple Silicon优化的LLM推理服务器，支持连续批处理与分层KV缓存（内存+SSD热冷分层），实现上下文跨请求复用。通过macOS菜单栏或CLI管理，支持OpenAI兼容API，可本地运行Llama等开源模型，为开发者提供低延迟的本地AI推理能力。",
+        "en": "oMLX is an LLM inference server optimized for Apple Silicon, featuring continuous batching and tiered KV caching across memory and SSD tiers. Managed via macOS menu bar or CLI, it supports OpenAI-compatible API for running open-source models like Llama, enabling low-latency local AI inference for developers.",
+        "tags_zh": [
+          "AI大模型",
+          "Apple Silicon",
+          "推理加速",
+          "本地推理"
+        ],
+        "tags_en": [
+          "Apple Silicon",
+          "KV Caching",
+          "LLM Inference",
+          "Local Deployment"
+        ]
+      },
+      "pushed_at": "2026-04-22T15:26:21Z",
+      "updated_at": "2026-04-22"
+    },
+    "TunMax/openclaw_computer": {
+      "metadata": {
+        "full_name": "TunMax/openclaw_computer",
+        "name": "openclaw_computer",
+        "owner": "TunMax",
+        "description": "一个预装 OpenClaw 并具有桌面环境的 Linux 容器，适配 ModelScope、HuggingFace 等免费容器部署服务，通过浏览器即可玩转 OpenClaw / A Docker container running Debian 12, the KDE desktop environment, and OpenClaw.",
+        "stars": 147,
+        "language": "Dockerfile",
+        "url": "https://github.com/TunMax/openclaw_computer",
+        "homepage": "",
+        "topics": [
+          "openclaw"
+        ],
+        "pushed_at": "2026-04-22T01:25:20Z",
+        "updated_at": "2026-04-22T01:25:24Z",
+        "starred_at": "2026-03-08T14:58:21Z"
+      },
+      "summary": {
+        "zh": "一款预装 OpenClaw AI 编程工具的云端 Linux 容器，基于 Debian 12 与 KDE 桌面环境，通过 VNC/NoVNC 技术实现浏览器远程访问。适配 ModelScope、HuggingFace Spaces 等免费容器部署服务，提供 2 核/16GB 云电脑配置。内置 Chrome 浏览器、中文输入法，支持 OpenClaw 配置自动备份/恢复及 S3/WebDAV 远程同步功能。",
+        "en": "A cloud-based Linux container pre-installed with OpenClaw AI coding tool, running Debian 12 with KDE desktop accessed via browser-based VNC/NoVNC. Designed for free container platforms like ModelScope and HuggingFace Spaces, offering 2 vCPU/16GB cloud desktop. Includes Chrome browser, Chinese input, and supports automatic backup/restore with S3/WebDAV remote sync.",
+        "tags_zh": [
+          "AI编程工具",
+          "Docker容器",
+          "云端开发环境",
+          "远程桌面"
+        ],
+        "tags_en": [
+          "AI Coding Tool",
+          "Cloud Development Environment",
+          "Docker Container",
+          "Remote Desktop"
+        ]
+      },
+      "pushed_at": "2026-04-22T01:25:20Z",
+      "updated_at": "2026-04-22"
+    },
+    "CrisRain/Lumina": {
+      "metadata": {
+        "full_name": "CrisRain/Lumina",
+        "name": "Lumina",
+        "owner": "CrisRain",
+        "description": "Modern web-based control panel for Cloudflare WARP client",
+        "stars": 42,
+        "language": "Python",
+        "url": "https://github.com/CrisRain/Lumina",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2026-03-01T16:04:17Z",
+        "updated_at": "2026-04-15T10:22:02Z",
+        "starred_at": "2026-02-22T17:04:45Z"
+      },
+      "summary": {
+        "zh": "Lumina 是一个现代化的 Cloudflare WARP 管理面板，支持 usque 与官方双后端引擎切换。提供连接控制、多节点统一管理、内核版本切换、实时日志监控和安全鉴权功能。前端采用 Vue 3，后端基于 FastAPI，支持 Docker 一键部署，适合需要集中管理多个 WARP 节点的场景。",
+        "en": "Lumina is a modern web-based control panel for Cloudflare WARP, supporting dual-backend engines (usque and official). It provides connection control, multi-node management, kernel version switching, real-time log monitoring, and secure authentication. Built with Vue 3 frontend and FastAPI backend, it supports Docker deployment, suitable for centralized management of multiple WARP nodes.",
+        "tags_zh": [
+          "WARP管理",
+          "多节点管理",
+          "网络代理",
+          "自动化工具"
+        ],
+        "tags_en": [
+          "Automation Tool",
+          "Multi-node Management",
+          "Network Proxy",
+          "WARP Management"
+        ]
+      },
+      "pushed_at": "2026-03-01T16:04:17Z",
+      "updated_at": "2026-04-22"
+    },
+    "caigg188/LDStatusPro": {
+      "metadata": {
+        "full_name": "caigg188/LDStatusPro",
+        "name": "LDStatusPro",
+        "owner": "caigg188",
+        "description": "一款功能强大的 Linux.do 社区增强工具以及相关综合服务开源项目",
+        "stars": 596,
+        "language": "JavaScript",
+        "url": "https://github.com/caigg188/LDStatusPro",
+        "homepage": "https://ldspro.qzz.io/",
+        "topics": [],
+        "pushed_at": "2026-04-22T14:57:48Z",
+        "updated_at": "2026-04-22T14:57:53Z",
+        "starred_at": "2026-01-31T14:28:18Z"
+      },
+      "summary": {
+        "zh": "LDStatus Pro 是一款专为 Linux.do 社区打造的用户脚本增强工具，提供信任级别追踪、阅读时间统计、云端数据同步和排行榜等功能。支持多站点登录，采用玻璃拟态 UI 设计，内置 AI 帖子总结、CDK 管理、LDC 积分查看等实用模块，全平台适配并支持跨浏览器/设备数据同步。",
+        "en": "LDStatus Pro is a powerful community enhancement tool for Linux.do, featuring trust level tracking, reading time statistics, cloud sync, and leaderboards. It supports multiple sites with OAuth authentication, glassmorphism UI, AI-powered post summarization, CDK management, and cross-device data synchronization across all platforms.",
+        "tags_zh": [
+          "数据可视化",
+          "浏览器插件",
+          "社区增强工具",
+          "自动化工具"
+        ],
+        "tags_en": [
+          "Cloud Sync",
+          "Community Tool",
+          "数据可视化",
+          "浏览器插件"
+        ]
+      },
+      "pushed_at": "2026-04-22T14:57:48Z",
+      "updated_at": "2026-04-22"
+    },
+    "gaboolic/rime-frost": {
+      "metadata": {
+        "full_name": "gaboolic/rime-frost",
+        "name": "rime-frost",
+        "owner": "gaboolic",
+        "description": "白霜拼音：蒹葭苍苍，白露为霜。白霜拼音使用使用745396750字的高质量语料，进行分词，重新统计字频、词频，归一化，打造纯净、词频准确、智能的词库。白霜词库是目前rime方案下最好的开源词库，立志于打造不输于商业输入法的输入体验。在墨奇输入法内置，欢迎使用。",
+        "stars": 3164,
+        "language": "Lua",
+        "url": "https://github.com/gaboolic/rime-frost",
+        "homepage": "https://github.com/gaboolic/moqi-im-windows",
+        "topics": [],
+        "pushed_at": "2026-04-21T12:27:26Z",
+        "updated_at": "2026-04-22T15:29:41Z",
+        "starred_at": "2026-02-27T12:08:54Z"
+      },
+      "summary": {
+        "zh": "白霜拼音是基于Rime框架的高质量中文输入法词库。使用7.45亿字语料重新分词统计字词频，支持全拼及自然码、小鹤等多版本双拼方案。集成辅助码、符号、日期计算等实用功能，跨平台支持Windows、Mac、Linux、Android、iOS，并可通过语言模型实现智能整句输入。评测显示词频准确度已超越商业输入法。",
+        "en": "White Frost Pinyin is a high-quality Chinese input lexicon for Rime framework, trained on 745M characters of corpus to recalculate word frequencies. It supports full pinyin and multiple double pinyin schemes. Features include auxiliary codes, symbols, date calculation, and cross-platform support. Language models enable intelligent sentence input. Benchmarks show it surpasses commercial input methods in accuracy.",
+        "tags_zh": [
+          "Rime词库",
+          "中文输入法",
+          "拼音输入",
+          "跨平台"
+        ],
+        "tags_en": [
+          "Chinese Input Method",
+          "Cross-Platform",
+          "Pinyin Input",
+          "Rime Lexicon"
+        ]
+      },
+      "pushed_at": "2026-04-21T12:27:26Z",
+      "updated_at": "2026-04-22"
+    },
+    "dnakov/litter": {
+      "metadata": {
+        "full_name": "dnakov/litter",
+        "name": "litter",
+        "owner": "dnakov",
+        "description": "",
+        "stars": 1294,
+        "language": "Rust",
+        "url": "https://github.com/dnakov/litter",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2026-04-22T19:04:05Z",
+        "updated_at": "2026-04-22T23:50:36Z",
+        "starred_at": "2026-03-19T15:55:55Z"
+      },
+      "summary": {
+        "zh": "Litter (kittylitter) 是 OpenAI Codex 的原生 iOS + Android 移动客户端，支持连接本地或远程服务器进行 AI 编程辅助。采用 Rust 核心 + UniFFI 跨平台绑定架构，平台代码（Swift/Kotlin）保持精简，专注于 UI、权限和通知，核心逻辑统一在 Rust 层处理。支持会话管理、实时语音交互和生成式 UI，可从手机端运行 Agent 编程工作流。",
+        "en": "Litter is a native iOS + Android client for OpenAI Codex, enabling AI-assisted coding from mobile devices by connecting to local or remote servers. Built with a shared Rust core and UniFFI-generated bindings, platform code remains thin (Swift/Kotlin handles UI/permissions only) while session management, streaming, and auth logic reside in Rust. Features include session control, real-time voice, and generative UI for agentic coding workflows.",
+        "tags_zh": [
+          "AI编程助手",
+          "Rust",
+          "移动开发",
+          "跨平台"
+        ],
+        "tags_en": [
+          "AI Coding Assistant",
+          "Cross-Platform",
+          "Mobile Development",
+          "Rust"
+        ]
+      },
+      "pushed_at": "2026-04-22T19:04:05Z",
+      "updated_at": "2026-04-22"
+    },
+    "cmj2002/warp-docker": {
+      "metadata": {
+        "full_name": "cmj2002/warp-docker",
+        "name": "warp-docker",
+        "owner": "cmj2002",
+        "description": "Run Cloudflare WARP in Docker.",
+        "stars": 905,
+        "language": "Shell",
+        "url": "https://github.com/cmj2002/warp-docker",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2025-10-29T15:31:43Z",
+        "updated_at": "2026-04-22T06:47:48Z",
+        "starred_at": "2026-01-17T15:33:12Z"
+      },
+      "summary": {
+        "zh": "在 Docker 容器中运行 Cloudflare WARP 客户端的解决方案。通过集成 WARP 和 GOST 代理工具，提供 SOCKS5/HTTP 代理服务，支持 WARP+ 许可证和 NAT 模式。适用于网络优化、隐私保护和跨境访问等场景，配置简单，部署便捷。",
+        "en": "A Docker solution for running Cloudflare WARP client in containers. It integrates WARP with GOST proxy to provide SOCKS5/HTTP proxy services, supporting WARP+ license and NAT mode. Ideal for network optimization, privacy protection, and cross-border access scenarios with easy configuration.",
+        "tags_zh": [
+          "Docker容器化",
+          "代理工具",
+          "网络优化"
+        ],
+        "tags_en": [
+          "Networking",
+          "SOCKS5 Proxy",
+          "容器化"
+        ]
+      },
+      "pushed_at": "2025-10-29T15:31:43Z",
+      "updated_at": "2026-04-22"
+    },
+    "hoochanlon/Free-NTFS-for-Mac": {
+      "metadata": {
+        "full_name": "hoochanlon/Free-NTFS-for-Mac",
+        "name": "Free-NTFS-for-Mac",
+        "owner": "hoochanlon",
+        "description": "Nigate: An open-source NTFS utility for Mac. It supports all Mac models (Intel and Apple Silicon), providing full read-write access, mounting, and management for NTFS drives.",
+        "stars": 1777,
+        "language": "TypeScript",
+        "url": "https://github.com/hoochanlon/Free-NTFS-for-Mac",
+        "homepage": "https://hoochanlon.github.io/Free-NTFS-for-Mac",
+        "topics": [
+          "anylinuxfs",
+          "arm",
+          "disk",
+          "ext4",
+          "intel",
+          "m1",
+          "macfuse",
+          "macntfs",
+          "nigate",
+          "ntfs",
+          "ntfs-3g",
+          "ntfs-write",
+          "ntfsformac",
+          "ntfstool",
+          "x64",
+          "x86"
+        ],
+        "pushed_at": "2026-01-23T16:26:13Z",
+        "updated_at": "2026-04-22T00:26:48Z",
+        "starred_at": "2026-01-15T05:22:01Z"
+      },
+      "summary": {
+        "zh": "Nigate是一款开源的Mac NTFS读写工具，基于Electron构建现代化GUI界面。支持Apple Silicon与Intel Mac全型号，可自动检测NTFS设备连接、一键挂载为读写模式、智能跳过手动设置的只读设备。提供实时监控、操作日志、防止睡眠及Ninja Tools脚本工具链，降低跨平台文件管理门槛。注意GUI应用需使用支持Atomic Write的编辑器（如VS Code）进行原地文件编辑。",
+        "en": "Nigate is an open-source NTFS utility for Mac with an Electron-based GUI. It supports all Mac models (Apple Silicon & Intel), offering real-time NTFS device detection, one-click read-write mounting, and intelligent auto-mount skipping manually set read-only devices. Features status monitoring, operation logs, sleep prevention, and Ninja Tools script chain. Note: GUI app requires editors with Atomic Write support (e.g., VS Code) for in-place file editing.",
+        "tags_zh": [
+          "开源软件",
+          "文件系统管理",
+          "系统工具",
+          "跨平台"
+        ],
+        "tags_en": [
+          "Cross-Platform",
+          "File System",
+          "Open Source",
+          "System Utility"
+        ]
+      },
+      "pushed_at": "2026-01-23T16:26:13Z",
+      "updated_at": "2026-04-22"
+    },
+    "xxnuo/MTranServer": {
+      "metadata": {
+        "full_name": "xxnuo/MTranServer",
+        "name": "MTranServer",
+        "owner": "xxnuo",
+        "description": "Offline translation model server with low resource consumption, fast speed, and private deployment capability. 低资源占用速度快可私有部署的离线翻译模型服务器",
+        "stars": 4492,
+        "language": "C++",
+        "url": "https://github.com/xxnuo/MTranServer",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2026-03-08T12:01:45Z",
+        "updated_at": "2026-04-22T18:15:40Z",
+        "starred_at": "2026-01-09T06:08:54Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2026-03-08T12:01:45Z",
+      "updated_at": "2026-04-22"
+    },
+    "zufuliu/notepad4": {
+      "metadata": {
+        "full_name": "zufuliu/notepad4",
+        "name": "notepad4",
+        "owner": "zufuliu",
+        "description": "Notepad4 (Notepad2⨯2, Notepad2++) is a light-weight Scintilla based text editor for Windows with syntax highlighting, code folding, auto-completion and API list for many programming languages and documents, bundled with file browser plugin matepath.",
+        "stars": 4554,
+        "language": "C++",
+        "url": "https://github.com/zufuliu/notepad4",
+        "homepage": "",
+        "topics": [
+          "arm64",
+          "dark-theme",
+          "editor",
+          "matepath",
+          "metapath",
+          "noteoad2",
+          "notepad2-mod",
+          "notepad4",
+          "scintilla",
+          "syntax-highlighting"
+        ],
+        "pushed_at": "2026-04-21T13:08:33Z",
+        "updated_at": "2026-04-22T10:14:01Z",
+        "starred_at": "2025-12-31T07:41:46Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2026-04-21T13:08:33Z",
+      "updated_at": "2026-04-22"
+    },
+    "koreader/koreader": {
+      "metadata": {
+        "full_name": "koreader/koreader",
+        "name": "koreader",
+        "owner": "koreader",
+        "description": "An ebook reader application supporting PDF, DjVu, EPUB, FB2 and many more formats, running on Cervantes, Kindle, Kobo, PocketBook and Android devices",
+        "stars": 26425,
+        "language": "Lua",
+        "url": "https://github.com/koreader/koreader",
+        "homepage": "http://koreader.rocks/",
+        "topics": [
+          "cbz",
+          "djvu",
+          "djvu-reflow",
+          "ebook",
+          "ebook-reader",
+          "eink",
+          "epub",
+          "ereader",
+          "fb2",
+          "kindle",
+          "kobo",
+          "luajit",
+          "opds",
+          "pdf",
+          "pdf-reflow",
+          "pocketbook",
+          "reader",
+          "reflow",
+          "remarkable-tablet",
+          "ubuntu-touch"
+        ],
+        "pushed_at": "2026-04-22T23:40:10Z",
+        "updated_at": "2026-04-22T19:36:44Z",
+        "starred_at": "2025-10-10T07:15:34Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2026-04-22T23:40:10Z",
+      "updated_at": "2026-04-22"
+    },
+    "autobcb/read": {
+      "metadata": {
+        "full_name": "autobcb/read",
+        "name": "read",
+        "owner": "autobcb",
+        "description": " 轻阅读一个全移动端可用的阅读应用，支持多端同步阅读进度，适配各种屏幕尺寸。 后端搭建视频教程：https://space.bilibili.com/517034064 ，麻烦一键三连下。",
+        "stars": 736,
+        "language": "JavaScript",
+        "url": "https://github.com/autobcb/read",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2026-04-10T11:27:10Z",
+        "updated_at": "2026-04-22T08:04:36Z",
+        "starred_at": "2025-08-10T16:51:22Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2026-04-10T11:27:10Z",
+      "updated_at": "2026-04-22"
+    },
+    "freeok/so-novel": {
+      "metadata": {
+        "full_name": "freeok/so-novel",
+        "name": "so-novel",
+        "owner": "freeok",
+        "description": "小说下载｜网文下载 | 网络小说",
+        "stars": 6614,
+        "language": "Java",
+        "url": "https://github.com/freeok/so-novel",
+        "homepage": "",
+        "topics": [
+          "cli",
+          "content-export",
+          "document-parser",
+          "ebook",
+          "novel",
+          "offline-reader",
+          "tui"
+        ],
+        "pushed_at": "2026-04-05T02:56:20Z",
+        "updated_at": "2026-04-22T18:55:17Z",
+        "starred_at": "2025-06-30T19:34:23Z"
+      },
+      "summary": {
+        "zh": "So Novel 是一款基于 Java 开发的小说网页下载与格式转换工具，支持从任意小说网站抓取内容并导出为 EPUB、TXT、PDF 等电子书格式。提供 TUI、WebUI、CLI 三种交互界面，支持 Windows、Linux、macOS 多平台及 Docker 部署，适用于网文采集与电子书制作场景。",
+        "en": "So Novel is a Java-based web novel download and format conversion tool that extracts content from novel websites and exports to EPUB, TXT, PDF and other e-book formats. Offers TUI, WebUI, and CLI interfaces with cross-platform support including Docker deployment, ideal for web fiction harvesting and e-book creation.",
+        "tags_zh": [
+          "多格式导出",
+          "电子书制作",
+          "网页爬虫",
+          "自动化工具"
+        ],
+        "tags_en": [
+          "Automation Tool",
+          "Ebook Creation",
+          "Multi-format Export",
+          "Web Scraper"
+        ]
+      },
+      "pushed_at": "2026-04-05T02:56:20Z",
+      "updated_at": "2026-04-22"
+    },
+    "catcat-blog/NetMirror": {
+      "metadata": {
+        "full_name": "catcat-blog/NetMirror",
+        "name": "NetMirror",
+        "owner": "catcat-blog",
+        "description": "Another Looking-glass Server",
+        "stars": 283,
+        "language": "Vue",
+        "url": "https://github.com/catcat-blog/NetMirror",
+        "homepage": "",
+        "topics": [
+          "lg",
+          "looking-glass"
+        ],
+        "pushed_at": "2025-12-23T08:12:32Z",
+        "updated_at": "2026-04-18T18:18:35Z",
+        "starred_at": "2025-07-28T08:32:26Z"
+      },
+      "summary": {
+        "zh": "NetMirror是一个现代化的Looking-glass服务器，采用Panel+Agent分布式架构部署网络诊断节点。提供Ping、iPerf3、MTR、Traceroute、Speedtest等网络工具，支持实时流量监控和交互式Shell诊断。面板端使用Vue.js+Tailwind CSS构建现代化响应式界面，通过Token机制实现Agent节点一键部署与自动注册。Docker容器化部署简化安装配置流程。",
+        "en": "NetMirror is a modern Looking-glass server featuring Panel+Agent distributed architecture for network diagnostics deployment. It provides essential tools including Ping, iPerf3, MTR, Traceroute, and Speedtest with real-time traffic monitoring and interactive shell diagnostics. The web panel built with Vue.js and Tailwind CSS offers a clean responsive interface, while token-based deployment enables one-click agent registration and auto-discovery across distributed nodes.",
+        "tags_zh": [
+          "Docker容器化",
+          "分布式架构",
+          "网络诊断工具",
+          "自动化部署"
+        ],
+        "tags_en": [
+          "Auto-deployment",
+          "Distributed Architecture",
+          "Network Diagnostics",
+          "容器化"
+        ]
+      },
+      "pushed_at": "2025-12-23T08:12:32Z",
+      "updated_at": "2026-04-22"
+    },
+    "moeYuiYui/lnmp": {
+      "metadata": {
+        "full_name": "moeYuiYui/lnmp",
+        "name": "lnmp",
+        "owner": "moeYuiYui",
+        "description": "LNMP一键安装包是一个用Linux Shell编写的可以为CentOS/RHEL/Fedora/Aliyun/Amazon、Debian/Ubuntu/Raspbian/Deepin/Mint Linux VPS或独立主机安装LNMP(Nginx/MySQL/PHP)、LNMPA(Nginx/MySQL/PHP/Apache)、LAMP(Apache/MySQL/PHP)生产环境的Shell程序。",
+        "stars": 131,
+        "language": "Shell",
+        "url": "https://github.com/moeYuiYui/lnmp",
+        "homepage": "https://lnmp.org",
+        "topics": [],
+        "pushed_at": "2024-09-16T19:18:08Z",
+        "updated_at": "2026-03-30T10:57:55Z",
+        "starred_at": "2024-08-28T13:49:02Z"
+      },
+      "summary": {
+        "zh": "LNMP一键安装包魔改版是一个用Shell脚本编写的生产级Web环境自动化部署工具，支持在CentOS、Debian、Ubuntu等Linux发行版上一键安装LNMP/LNMPA/LAMP架构。魔改版移除第三方镜像，软件包直接从官方源获取，支持Let's Encrypt/ZeroSSL免费SSL证书、多PHP版本共存、Redis/Memcached缓存、虚拟主机管理、FTP服务及数据库自动备份等企业级功能。",
+        "en": "LNMP One-Click Installation Package (Modified Version) is a Shell script-based production-grade Web environment auto-deployment tool that supports one-click installation of LNMP/LNMPA/LAMP architectures on Linux distributions like CentOS, Debian, and Ubuntu. The modified version removes third-party mirrors, fetches packages from official sources, and supports free SSL certificates, multi-PHP versions, caching solutions, virtual host management, FTP services, and automated database backups.",
+        "tags_zh": [
+          "Nginx/MySQL/PHP",
+          "Shell自动化脚本",
+          "Web服务器环境",
+          "一键部署运维"
+        ],
+        "tags_en": [
+          "Nginx/MySQL/PHP Stack",
+          "One-Click Deployment",
+          "Shell Automation",
+          "Web Server Environment"
+        ]
+      },
+      "pushed_at": "2024-09-16T19:18:08Z",
+      "updated_at": "2026-04-22"
+    },
+    "kanasimi/work_crawler": {
+      "metadata": {
+        "full_name": "kanasimi/work_crawler",
+        "name": "work_crawler",
+        "owner": "kanasimi",
+        "description": "Download comics novels 小说漫画下载工具 小説漫画のダウンローダ 小說漫畫下載:腾讯漫画 大角虫漫画 有妖气 咪咕 SF漫画 哦漫画 看漫画 漫画柜 汗汗酷漫 動漫伊甸園 快看漫画 微博动漫 733动漫网 大古漫画网 漫画DB 無限動漫 動漫狂 卡推漫画 动漫之家 动漫屋 古风漫画网 36漫画网 亲亲漫画网 乙女漫画 webtoons 咚漫 ニコニコ静画 ComicWalker ヤングエースUP モアイ pixivコミック サイコミ;アルファポリス カクヨム ハーメルン 小説家になろう 起点中文网 八一中文网 顶点小说 落霞小说网 努努书坊 笔趣阁→epub.",
+        "stars": 3984,
+        "language": "JavaScript",
+        "url": "https://github.com/kanasimi/work_crawler",
+        "homepage": "",
+        "topics": [
+          "cejs",
+          "comic-downloader",
+          "comics",
+          "crawler",
+          "download-comic",
+          "downloader",
+          "ebook",
+          "epub",
+          "manga",
+          "manga-downloader",
+          "narou",
+          "novel-downloader",
+          "novels",
+          "webcomics"
+        ],
+        "pushed_at": "2026-04-06T21:14:15Z",
+        "updated_at": "2026-04-22T14:01:31Z",
+        "starred_at": "2025-06-30T19:37:24Z"
+      },
+      "summary": {
+        "zh": "一款支持30+小说与漫画网站的批量下载工具，支持将小说转换为epub格式。提供GUI图形界面、命令行和API三种使用方式，界面支持中英日文等多语言，可跨平台运行（Windows/macOS/Linux）。支持腾讯漫画、Webtoons、起点中文网、小説家になろう等主流平台。",
+        "en": "A batch downloader for novels and comics supporting 30+ websites. Converts novels to epub format with GUI, CLI, and API interfaces. Cross-platform compatible (Windows/macOS/Linux) with multilingual UI (Chinese/English/Japanese). Supports platforms like Tencent Comics, Webtoons, Qidian, Shousetsu-narou, and more.",
+        "tags_zh": [
+          "批量下载",
+          "电子书工具",
+          "网页爬虫",
+          "跨平台"
+        ],
+        "tags_en": [
+          "Batch Download",
+          "Cross-Platform",
+          "Ebook Tool",
+          "Web Crawler"
+        ]
+      },
+      "pushed_at": "2026-04-06T21:14:15Z",
+      "updated_at": "2026-04-22"
+    },
+    "pengcw/legado.koplugin": {
+      "metadata": {
+        "full_name": "pengcw/legado.koplugin",
+        "name": "legado.koplugin",
+        "owner": "pengcw",
+        "description": "一个在 KOReader 中阅读 Legado 开源阅读书库的网文阅读插件",
+        "stars": 190,
+        "language": "Lua",
+        "url": "https://github.com/pengcw/legado.koplugin",
+        "homepage": "",
+        "topics": [
+          "kindle",
+          "koreader-plugin",
+          "legado"
+        ],
+        "pushed_at": "2026-03-26T09:53:33Z",
+        "updated_at": "2026-04-21T02:13:00Z",
+        "starred_at": "2025-06-26T18:34:54Z"
+      },
+      "summary": {
+        "zh": "KOReader 电子书阅读器的开源阅读(Legado)插件，支持对接阅读App或reader-server服务，实现在Kindle、Kobo等老旧设备上流畅阅读网文。核心功能包括离线缓存预下载、阅读进度同步、书籍换源搜索、漫画流式阅读及手势快捷键绑定，大幅提升受限设备的网文阅读体验。",
+        "en": "A KOReader plugin integrating Legado's open-source reading library, enabling web novel reading on Kindle, Kobo and other e-readers via Legado App or reader-server. Key features include offline caching with pre-download, reading progress sync, book source switching, comic streaming mode, and gesture/key bindings for enhanced reading experience on legacy devices.",
+        "tags_zh": [
+          "电子书阅读器",
+          "离线缓存",
+          "网文阅读插件",
+          "跨平台"
+        ],
+        "tags_en": [
+          "Cross-Platform",
+          "E-Reader",
+          "Offline Reading",
+          "Web Novel Plugin"
+        ]
+      },
+      "pushed_at": "2026-03-26T09:53:33Z",
+      "updated_at": "2026-04-22"
+    },
+    "httpsok/httpsok": {
+      "metadata": {
+        "full_name": "httpsok/httpsok",
+        "name": "httpsok",
+        "owner": "httpsok",
+        "description": "🔥🔥🔥一行命令，轻松搞定SSL证书自动续期。 SSL泛域名证书，SSL证书管理，SSL证书自动续期，SSL证书自动更新，七牛云、阿里云、腾讯云、CDN、OSS、https证书管理,https证书管理,免费SSL证书,TLS证书自动续签,nginx证书自动续期工具，nginx证书管理。从此告别Let's Encrypt",
+        "stars": 1173,
+        "language": "Shell",
+        "url": "https://github.com/httpsok/httpsok",
+        "homepage": "https://httpsok.com/doc/",
+        "topics": [
+          "nginx",
+          "ssl",
+          "ssl-certificate",
+          "ssl-certificates",
+          "ssl-support",
+          "tls",
+          "tls-certificate"
+        ],
+        "pushed_at": "2026-04-22T17:22:34Z",
+        "updated_at": "2026-04-22T17:22:39Z",
+        "starred_at": "2024-05-30T02:11:36Z"
+      },
+      "summary": {
+        "zh": "httpsok是一款高效的SSL证书自动续期工具，基于Shell开发，兼容Nginx、OpenResty、Apache等主流Web服务器。支持Let's Encrypt泛域名证书，可自动识别并更新nginx配置中的证书路径。兼容Debian、CentOS、Ubuntu等主流Linux发行版及Docker环境，并集成阿里云、腾讯云、七牛云等多家云服务商的DNS验证，一行命令即可完成证书申请、部署与自动续签，支持微信公众号证书到期提醒。",
+        "en": "httpsok is a streamlined SSL certificate auto-renewal tool designed for web servers like Nginx, OpenResty, and Apache. It automates Let's Encrypt wildcard certificate issuance and renewal, intelligently detecting and updating certificate paths in server configurations. Compatible with major Linux distributions and Docker, it integrates with multiple cloud DNS providers for verification. Features include one-command setup, multi-cloud support, and WeChat notification for certificate expiration alerts.",
+        "tags_zh": [
+          "Let's Encrypt",
+          "SSL证书管理",
+          "自动续签",
+          "运维自动化"
+        ],
+        "tags_en": [
+          "Auto-Renewal",
+          "DevOps Automation",
+          "Let's Encrypt",
+          "SSL Certificate"
+        ]
+      },
+      "pushed_at": "2026-04-22T17:22:34Z",
+      "updated_at": "2026-04-22"
+    },
+    "xiaye13579/BBLL": {
+      "metadata": {
+        "full_name": "xiaye13579/BBLL",
+        "name": "BBLL",
+        "owner": "xiaye13579",
+        "description": "一个第三方哔哩哔哩客户端，A third-party bilibili client。",
+        "stars": 17365,
+        "language": "N/A",
+        "url": "https://github.com/xiaye13579/BBLL",
+        "homepage": "",
+        "topics": [
+          "android",
+          "apk",
+          "bilibili",
+          "bilibili-client",
+          "bilibili-tv",
+          "tv"
+        ],
+        "pushed_at": "2025-02-28T03:03:17Z",
+        "updated_at": "2026-04-22T20:12:25Z",
+        "starred_at": "2024-02-04T06:43:28Z"
+      },
+      "summary": {
+        "zh": "BBLL是一款开源的第三方哔哩哔哩客户端，基于B站官方API封装实现视频播放、频道浏览等功能。支持Android TV与手机双平台，兼容Android 4.4至最新系统，提供遥控器快进快退等TV专属交互方式。应用纯净无广告，适合学习交流与日常观看使用。",
+        "en": "BBLL is an open-source third-party Bilibili client that encapsulates Bilibili's official API to provide video playback and channel browsing. Supports both Android TV and mobile platforms with compatibility from Android 4.4 onward, featuring TV-specific controls like remote fast-forward. Clean and ad-free, ideal for learning and daily viewing.",
+        "tags_zh": [
+          "API封装",
+          "智能电视",
+          "视频播放",
+          "跨平台"
+        ],
+        "tags_en": [
+          "API Integration",
+          "Android TV",
+          "Cross-Platform",
+          "Video Streaming"
+        ]
+      },
+      "pushed_at": "2025-02-28T03:03:17Z",
+      "updated_at": "2026-04-22"
+    },
+    "ne1llee/xbsrebuild": {
+      "metadata": {
+        "full_name": "ne1llee/xbsrebuild",
+        "name": "xbsrebuild",
+        "owner": "ne1llee",
+        "description": "香色闺阁xbs书源加解密工具",
+        "stars": 61,
+        "language": "Go",
+        "url": "https://github.com/ne1llee/xbsrebuild",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2023-05-09T09:13:23Z",
+        "updated_at": "2026-04-08T13:09:17Z",
+        "starred_at": "2024-01-19T05:10:55Z"
+      },
+      "summary": {
+        "zh": "香色闺阁小说阅读应用的书源文件加解密工具，实现xbs加密格式与json格式的双向转换。支持命令行批量处理文件和启动内置Web服务交互式转换两种模式。Go语言开发，提供Linux/macOS/Windows跨平台可执行程序，适合阅读应用开发者和书源制作者使用。",
+        "en": "A book source encryption/decryption utility for Xiangse Guige novel reading app, enabling bidirectional conversion between xbs (encrypted) and json formats. Supports both command-line batch processing and built-in web service for interactive conversion. Developed in Go with cross-platform executables for Linux/macOS/Windows, serving reading app developers and source creators.",
+        "tags_zh": [
+          "命令行工具",
+          "格式转换",
+          "电子书"
+        ],
+        "tags_en": [
+          "CLI Tool",
+          "Ebook",
+          "Format Conversion"
+        ]
+      },
+      "pushed_at": "2023-05-09T09:13:23Z",
+      "updated_at": "2026-04-22"
+    },
+    "LC044/WeChatMsg": {
+      "metadata": {
+        "full_name": "LC044/WeChatMsg",
+        "name": "WeChatMsg",
+        "owner": "LC044",
+        "description": "",
+        "stars": 41258,
+        "language": "N/A",
+        "url": "https://github.com/LC044/WeChatMsg",
+        "homepage": "",
+        "topics": [
+          "chatgpt",
+          "llms",
+          "pyqt",
+          "wechat"
+        ],
+        "pushed_at": "2025-12-30T13:31:16Z",
+        "updated_at": "2026-04-22T18:52:16Z",
+        "starred_at": "2024-01-15T17:41:55Z"
+      },
+      "summary": {
+        "zh": "微信消息本地导出工具，支持解析PC端微信数据库并导出聊天记录。用户可自主获取微信聊天数据（文字、图片、视频等），生成可视化年度报告。项目强调数据主权理念，用户数据真正归属自己。同时提供双人年度报告生成功能，适合个人数据备份与回顾。",
+        "en": "A WeChat message export tool that parses PC WeChat database locally, enabling users to export chat history (text, images, videos). Emphasizes data sovereignty - your data belongs to you. Features include generating personal and dual-person annual reports, suitable for personal data backup and memory preservation.",
+        "tags_zh": [
+          "微信数据导出",
+          "数据可视化",
+          "本地存储",
+          "聊天记录备份"
+        ],
+        "tags_en": [
+          "Chat History Backup",
+          "Local Storage",
+          "WeChat Data Export",
+          "数据可视化"
+        ]
+      },
+      "pushed_at": "2025-12-30T13:31:16Z",
+      "updated_at": "2026-04-22"
+    },
+    "yidas/mtr-database-php": {
+      "metadata": {
+        "full_name": "yidas/mtr-database-php",
+        "name": "mtr-database-php",
+        "owner": "yidas",
+        "description": "MTR (My traceroute) centralized monitoring dashboard with agent deployment",
+        "stars": 15,
+        "language": "PHP",
+        "url": "https://github.com/yidas/mtr-database-php",
+        "homepage": "",
+        "topics": [
+          "chart",
+          "dashboard",
+          "health-check",
+          "internet-connection",
+          "latency",
+          "monitoring",
+          "mtr",
+          "tracepath",
+          "traceroute"
+        ],
+        "pushed_at": "2025-07-05T15:20:06Z",
+        "updated_at": "2025-12-05T01:20:47Z",
+        "starred_at": "2023-12-19T21:41:55Z"
+      },
+      "summary": {
+        "zh": "基于PHP开发的MTR（My Traceroute）集中式监控平台，支持分布式Agent部署，自动采集网络路由追踪数据并存入MySQL数据库，通过Web Dashboard以图表形式可视化呈现网络质量状况，支持TCP模式检测和API数据收集。",
+        "en": "A PHP-based centralized monitoring platform for MTR (My Traceroute) with distributed agent deployment, automatically collecting network route tracking data into MySQL database and visualizing network quality through web dashboard charts. Supports TCP mode detection and API collection.",
+        "tags_zh": [
+          "分布式系统",
+          "数据可视化",
+          "网络监控",
+          "运维自动化"
+        ],
+        "tags_en": [
+          "DevOps Automation",
+          "Distributed Systems",
+          "Network Monitoring",
+          "数据可视化"
+        ]
+      },
+      "pushed_at": "2025-07-05T15:20:06Z",
+      "updated_at": "2026-04-22"
+    },
+    "kingToolbox/WindTerm": {
+      "metadata": {
+        "full_name": "kingToolbox/WindTerm",
+        "name": "WindTerm",
+        "owner": "kingToolbox",
+        "description": "A professional cross-platform SSH/Sftp/Shell/Telnet/Tmux/Serial terminal.",
+        "stars": 30660,
+        "language": "C",
+        "url": "https://github.com/kingToolbox/WindTerm",
+        "homepage": "https://kingtoolbox.github.io",
+        "topics": [
+          "bash",
+          "client",
+          "cmd",
+          "linux",
+          "mac",
+          "powershell",
+          "serial",
+          "sftp",
+          "shell",
+          "ssh",
+          "telnet",
+          "terminal",
+          "tmux",
+          "windows",
+          "wsl",
+          "x11",
+          "xmodem",
+          "xterm",
+          "ymodem",
+          "zmodem"
+        ],
+        "pushed_at": "2025-03-11T19:12:09Z",
+        "updated_at": "2026-04-22T23:28:13Z",
+        "starred_at": "2024-02-17T17:51:35Z"
+      },
+      "summary": {
+        "zh": "WindTerm是一款专业跨平台终端工具，支持SSH/Sftp/Shell/Telnet/Tmux/Serial全协议栈。采用高性能C语言架构，实现SSH ControlMaster、端口转发、X11转发及tmux集成，内置SFTP/SCP客户端。提供自动补全、焦点模式、自由类型模式等高级功能，完全免费开源，适合DevOps运维与服务器管理。",
+        "en": "WindTerm is a professional cross-platform terminal client supporting SSH/Sftp/Shell/Telnet/Tmux/Serial protocols. Built with high-performance C architecture, it features SSH ControlMaster, port forwarding, X11 forwarding, tmux integration, and built-in SFTP/SCP client. Offers auto-completion, focus mode, and free type mode. Free under Apache-2.0 license, ideal for DevOps and server management.",
+        "tags_zh": [
+          "SSH客户端",
+          "终端工具",
+          "跨平台",
+          "运维自动化"
+        ],
+        "tags_en": [
+          "Cross-platform",
+          "SSH Client",
+          "Terminal Tool",
+          "运维自动化"
+        ]
+      },
+      "pushed_at": "2025-03-11T19:12:09Z",
+      "updated_at": "2026-04-22"
+    },
+    "LinShengwzp/source-reader": {
+      "metadata": {
+        "full_name": "LinShengwzp/source-reader",
+        "name": "source-reader",
+        "owner": "LinShengwzp",
+        "description": "香色闺阁桌面版",
+        "stars": 62,
+        "language": "TypeScript",
+        "url": "https://github.com/LinShengwzp/source-reader",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2023-09-25T11:09:18Z",
+        "updated_at": "2026-04-07T12:14:40Z",
+        "starred_at": "2023-11-23T17:01:44Z"
+      },
+      "summary": {
+        "zh": "基于 Tauri + Vue 3 + TypeScript 构建的桌面小说阅读器应用，支持书源管理功能，提供跨平台阅读体验。后端采用 Rust 编写，前端使用 Vue 3 构建现代化界面，数据存储于 SQLite 数据库中。",
+        "en": "A desktop novel reader application built with Tauri, Vue 3, and TypeScript. It supports book source management and provides a cross-platform reading experience. The backend is written in Rust, while the frontend uses Vue 3 for a modern interface, with data stored in SQLite database.",
+        "tags_zh": [
+          "书源管理",
+          "小说阅读",
+          "桌面应用",
+          "跨平台"
+        ],
+        "tags_en": [
+          "Book Source",
+          "Cross-Platform",
+          "Novel Reader",
+          "桌面应用"
+        ]
+      },
+      "pushed_at": "2023-09-25T11:09:18Z",
+      "updated_at": "2026-04-22"
+    },
+    "ragnar-johannsson/conntrack-top": {
+      "metadata": {
+        "full_name": "ragnar-johannsson/conntrack-top",
+        "name": "conntrack-top",
+        "owner": "ragnar-johannsson",
+        "description": "Show the top source and destination addresses in the nf_conntrack table",
+        "stars": 12,
+        "language": "Shell",
+        "url": "https://github.com/ragnar-johannsson/conntrack-top",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2012-12-30T18:00:34Z",
+        "updated_at": "2023-12-30T14:26:28Z",
+        "starred_at": "2023-12-30T14:26:27Z"
+      },
+      "summary": {
+        "zh": "一款轻量级Shell脚本工具，通过读取Linux内核Netfilter的nf_conntrack表，实时统计并展示TCP/UDP连接数最多的Top 10源IP和目标IP，帮助运维人员快速定位异常流量来源或高负载主机，适用于网络故障排查和安全审计场景。",
+        "en": "A lightweight Shell script that parses Linux kernel's nf_conntrack table to display the top 10 source and destination IPs for TCP/UDP connections, enabling ops engineers to quickly identify high-volume traffic sources or busy hosts for troubleshooting and security auditing.",
+        "tags_zh": [
+          "Shell脚本",
+          "流量分析",
+          "网络运维",
+          "连接追踪"
+        ],
+        "tags_en": [
+          "Connection Tracking",
+          "Network Monitoring",
+          "Shell Script",
+          "Traffic Analysis"
+        ]
+      },
+      "pushed_at": "2012-12-30T18:00:34Z",
+      "updated_at": "2026-04-22"
+    },
+    "zhanghanyun/backtrace": {
+      "metadata": {
+        "full_name": "zhanghanyun/backtrace",
+        "name": "backtrace",
+        "owner": "zhanghanyun",
+        "description": "三网回程路由测试",
+        "stars": 1452,
+        "language": "Go",
+        "url": "https://github.com/zhanghanyun/backtrace",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2025-06-10T07:57:47Z",
+        "updated_at": "2026-04-22T15:00:02Z",
+        "starred_at": "2023-12-11T07:14:16Z"
+      },
+      "summary": {
+        "zh": "三网回程路由测试工具，用于检测中国电信、联通、移动三大运营商的回程路由路径，帮助运维人员快速诊断网络路由是否合理、是否存在跨运营商绕路等问题。Go 语言开发，支持一键安装。",
+        "en": "Network routing test tool for Chinese carriers (China Telecom, Unicom, and Mobile), enabling quick detection of return route paths. Helps ops engineers diagnose routing issues and identify cross-carrier detours. Built with Go, supports one-click installation.",
+        "tags_zh": [
+          "Go语言",
+          "网络诊断",
+          "路由测试",
+          "运维自动化"
+        ],
+        "tags_en": [
+          "DevOps Automation",
+          "Go Language",
+          "Network Diagnostic",
+          "Route Testing"
+        ]
+      },
+      "pushed_at": "2025-06-10T07:57:47Z",
+      "updated_at": "2026-04-22"
+    },
+    "Diyshift/3D-Printer": {
+      "metadata": {
+        "full_name": "Diyshift/3D-Printer",
+        "name": "3D-Printer",
+        "owner": "Diyshift",
+        "description": "Voron Stuff",
+        "stars": 667,
+        "language": "N/A",
+        "url": "https://github.com/Diyshift/3D-Printer",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2026-04-14T00:04:43Z",
+        "updated_at": "2026-04-18T23:27:08Z",
+        "starred_at": "2023-09-04T21:42:39Z"
+      },
+      "summary": {
+        "zh": "Voron系列3D打印机的开源改装件、工具和可打印配件集合。涵盖支架、线缆管理、优化零件等实用改装方案，帮助用户定制和提升Voron打印机的性能与功能。",
+        "en": "An open-source collection of tools, mods, and printable accessories for Voron 3D printers. Provides practical modifications like mounts, cable management solutions, and performance-enhancing parts to customize and optimize Voron printers.",
+        "tags_zh": [
+          "3D打印",
+          "Voron打印机",
+          "开源硬件",
+          "改装配件"
+        ],
+        "tags_en": [
+          "3D Printing",
+          "DIY Mods",
+          "Open Source Hardware",
+          "Voron Printers"
+        ]
+      },
+      "pushed_at": "2026-04-14T00:04:43Z",
+      "updated_at": "2026-04-22"
+    },
+    "louislam/uptime-kuma": {
+      "metadata": {
+        "full_name": "louislam/uptime-kuma",
+        "name": "uptime-kuma",
+        "owner": "louislam",
+        "description": "A fancy self-hosted monitoring tool",
+        "stars": 85609,
+        "language": "JavaScript",
+        "url": "https://github.com/louislam/uptime-kuma",
+        "homepage": "https://uptime.kuma.pet",
+        "topics": [
+          "docker",
+          "monitor",
+          "monitoring",
+          "responsive",
+          "self-hosted",
+          "selfhosted",
+          "single-page-app",
+          "socket-io",
+          "uptime",
+          "uptime-monitoring",
+          "webapp",
+          "websocket"
+        ],
+        "pushed_at": "2026-04-22T00:12:24Z",
+        "updated_at": "2026-04-22T22:58:30Z",
+        "starred_at": "2023-12-18T19:22:43Z"
+      },
+      "summary": {
+        "zh": "Uptime Kuma 是一款开源自托管监控工具，支持 HTTP/TCP/ping/DNS/容器等多协议监测，20秒间隔检测，配有响应式仪表盘、90+通知渠道和多语言界面。可通过 Docker 快速部署，适合个人站长和中小企业监控服务器、网站与服务可用性。",
+        "en": "Uptime Kuma is an open-source self-hosted monitoring tool supporting HTTP/TCP/ping/DNS/container protocols with 20-second checks. Features a reactive dashboard, 90+ notification integrations, multi-language UI, and Docker deployment. Ideal for personal and SMB infrastructure monitoring.",
+        "tags_zh": [
+          "Docker部署",
+          "服务监控",
+          "自托管工具",
+          "运维自动化"
+        ],
+        "tags_en": [
+          "DevOps Automation",
+          "Infrastructure Monitoring",
+          "Self-Hosted",
+          "容器化"
+        ]
+      },
+      "pushed_at": "2026-04-22T00:12:24Z",
+      "updated_at": "2026-04-22"
+    },
+    "vastsa/FileCodeBox": {
+      "metadata": {
+        "full_name": "vastsa/FileCodeBox",
+        "name": "FileCodeBox",
+        "owner": "vastsa",
+        "description": "文件快递柜-匿名口令分享文本，文件，像拿快递一样取文件（FileCodeBox - File Express Cabinet - Anonymous Passcode Sharing Text, Files, Like Taking Express Delivery for Files）",
+        "stars": 8235,
+        "language": "Python",
+        "url": "https://github.com/vastsa/FileCodeBox",
+        "homepage": "https://fcb-docs.aiuo.net/",
+        "topics": [
+          "anonymous",
+          "fastapi",
+          "filecodebox",
+          "python",
+          "tool",
+          "vue"
+        ],
+        "pushed_at": "2026-02-27T15:38:36Z",
+        "updated_at": "2026-04-22T23:02:08Z",
+        "starred_at": "2024-01-10T05:50:13Z"
+      },
+      "summary": {
+        "zh": "FileCodeBox（文件快递柜）是一款轻量级匿名文件分享工具，模拟快递柜体验，用户输入提取码即可获取文件或文本。无需注册登录，支持拖拽上传、批量分享与自动过期清理。基于FastAPI+Vue3构建，提供Docker一键部署，适合临时文件传输、代码片段分享、跨设备同步等场景。",
+        "en": "FileCodeBox is a lightweight anonymous file sharing tool mimicking express lockers—recipients retrieve files/text via passcodes without registration. Built on FastAPI + Vue3 with Docker one-click deployment, it supports drag-drop uploads, batch sharing, and auto-expiration. Ideal for temporary transfers, code snippets, and cross-device sync.",
+        "tags_zh": [
+          "临时存储",
+          "匿名传输",
+          "文件分享",
+          "轻量工具"
+        ],
+        "tags_en": [
+          "Anonymous Transfer",
+          "File Sharing",
+          "Lightweight Tool",
+          "Temporary Storage"
+        ]
+      },
+      "pushed_at": "2026-02-27T15:38:36Z",
+      "updated_at": "2026-04-22"
+    },
+    "gkd-kit/gkd": {
+      "metadata": {
+        "full_name": "gkd-kit/gkd",
+        "name": "gkd",
+        "owner": "gkd-kit",
+        "description": "基于无障碍，高级选择器，订阅规则的自定义屏幕点击安卓应用 | An Android APP with custom screen tapping based on Accessibility, Advanced Selectors, and Subscription Rules",
+        "stars": 37970,
+        "language": "Kotlin",
+        "url": "https://github.com/gkd-kit/gkd",
+        "homepage": "https://gkd.li",
+        "topics": [
+          "accessibility",
+          "android",
+          "auto",
+          "click",
+          "compose",
+          "jetpack-compose",
+          "kotlin",
+          "kotlin-js",
+          "kotlin-multiplatform",
+          "webassembly"
+        ],
+        "pushed_at": "2026-04-22T12:38:54Z",
+        "updated_at": "2026-04-22T23:50:57Z",
+        "starred_at": "2023-09-02T17:35:30Z"
+      },
+      "summary": {
+        "zh": "GKD是一款基于Android无障碍服务的高阶自动化点击工具，通过类似CSS的高级选择器精准定位UI节点，支持订阅规则实现远程配置与批量管理。用户可自定义规则，在特定界面满足条件时自动执行点击、跳过等操作，大幅简化移动端重复任务流程。",
+        "en": "GKD is an Android automation app leveraging Accessibility Service for screen tapping through advanced CSS-like selectors. It supports subscription rules for remote configuration, enabling users to define actions that trigger on specific UI states, greatly simplifying repetitive mobile tasks.",
+        "tags_zh": [
+          "UI选择器",
+          "无障碍服务",
+          "移动自动化",
+          "规则订阅"
+        ],
+        "tags_en": [
+          "Accessibility Service",
+          "Mobile Automation",
+          "Rule Subscription",
+          "UI Selector"
+        ]
+      },
+      "pushed_at": "2026-04-22T12:38:54Z",
+      "updated_at": "2026-04-22"
+    },
+    "nxtrace/NTrace-core": {
+      "metadata": {
+        "full_name": "nxtrace/NTrace-core",
+        "name": "NTrace-core",
+        "owner": "nxtrace",
+        "description": "NextTrace, an open source visual route tracking CLI tool",
+        "stars": 7748,
+        "language": "Go",
+        "url": "https://github.com/nxtrace/NTrace-core",
+        "homepage": "https://www.nxtrace.org",
+        "topics": [
+          "api",
+          "as-path",
+          "asn-lookup",
+          "geoip",
+          "geolocation",
+          "ip-lookup",
+          "network-analysis",
+          "next-trace",
+          "nexttrace",
+          "traceroute",
+          "utility"
+        ],
+        "pushed_at": "2026-04-22T08:14:26Z",
+        "updated_at": "2026-04-21T15:26:13Z",
+        "starred_at": "2023-08-31T11:48:51Z"
+      },
+      "summary": {
+        "zh": "NextTrace 是一个开源的轻量级可视化路由追踪工具，使用 Go 语言开发。作为类 traceroute 工具，它提供直观的路由路径可视化展示，支持 Linux/macOS/BSD 多平台，安装方式涵盖 APT 仓库和一键脚本。",
+        "en": "NextTrace is an open-source lightweight visual routing tracer built with Golang. As an enhanced traceroute alternative, it delivers intuitive route path visualization and supports Linux/macOS/BSD across multiple platforms via APT repository or one-click installation scripts.",
+        "tags_zh": [
+          "Go语言",
+          "可视化工具",
+          "网络诊断",
+          "路由追踪"
+        ],
+        "tags_en": [
+          "Go/Golang",
+          "Network Diagnostics",
+          "Route Tracking",
+          "Visualization"
+        ]
+      },
+      "pushed_at": "2026-04-22T08:14:26Z",
+      "updated_at": "2026-04-22"
+    },
+    "NXY666/Jsjiemi": {
+      "metadata": {
+        "full_name": "NXY666/Jsjiemi",
+        "name": "Jsjiemi",
+        "owner": "NXY666",
+        "description": "基于正则匹配的 JavaScript 解密工具。请务必遵守开源协议，不得用于非法或商业用途。",
+        "stars": 720,
+        "language": "JavaScript",
+        "url": "https://github.com/NXY666/Jsjiemi",
+        "homepage": "",
+        "topics": [
+          "decryptor",
+          "javascript",
+          "jsjiemi"
+        ],
+        "pushed_at": "2024-03-15T10:52:41Z",
+        "updated_at": "2026-04-11T17:41:37Z",
+        "starred_at": "2023-08-27T14:58:05Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2024-03-15T10:52:41Z",
+      "updated_at": "2026-04-22"
+    },
+    "Archeb/opentrace": {
+      "metadata": {
+        "full_name": "Archeb/opentrace",
+        "name": "opentrace",
+        "owner": "Archeb",
+        "description": "Open Source Visualized Route Tracing Tool for macOS, Windows, and Linux.",
+        "stars": 4189,
+        "language": "C#",
+        "url": "https://github.com/Archeb/opentrace",
+        "homepage": "https://opentrace.app",
+        "topics": [
+          "network",
+          "network-analysis",
+          "traceroute",
+          "utility"
+        ],
+        "pushed_at": "2026-04-20T00:46:49Z",
+        "updated_at": "2026-04-22T19:00:56Z",
+        "starred_at": "2023-08-31T12:01:11Z"
+      },
+      "summary": {
+        "zh": "OpenTrace 是一款开源可视化路由追踪工具，基于 NextTrace 构建内核。支持 Windows、macOS、Linux 全平台，采用原生 GUI 框架（WPF/GTK/Cocoa）。提供 MTR 追踪、多语言界面、自定义 DNS 解析器及本地 MMDB 数据库，可通过命令行或图形界面操作，适用于网络诊断与故障排查。",
+        "en": "OpenTrace is an open-source visualized route tracing tool powered by NextTrace backend. It offers cross-platform native GUI (WPF/GTK/Cocoa) with MTR functionality, multi-language support, custom DNS resolvers, and local MMDB database. Both CLI and GUI modes available, ideal for network diagnostics and troubleshooting.",
+        "tags_zh": [
+          "可视化工具",
+          "网络诊断",
+          "跨平台桌面应用",
+          "路由追踪"
+        ],
+        "tags_en": [
+          "Cross-platform",
+          "Network Diagnostics",
+          "Route Tracing",
+          "Visualized Tool"
+        ]
+      },
+      "pushed_at": "2026-04-20T00:46:49Z",
+      "updated_at": "2026-04-22"
+    },
+    "hectorqin/reader": {
+      "metadata": {
+        "full_name": "hectorqin/reader",
+        "name": "reader",
+        "owner": "hectorqin",
+        "description": "阅读3服务器版，桌面端，iOS可用。后端 Kotlin + Spring Boot + Vert.x + Coroutine ；前端 Vue.js + Element。麻烦点点star，关注一下公众号【假装大佬】❗️  ",
+        "stars": 10970,
+        "language": "Kotlin",
+        "url": "https://github.com/hectorqin/reader",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2026-04-20T09:10:06Z",
+        "updated_at": "2026-04-22T20:19:27Z",
+        "starred_at": "2022-12-31T19:10:15Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2026-04-20T09:10:06Z",
+      "updated_at": "2026-04-22"
+    },
+    "XIU2/TrackersListCollection": {
+      "metadata": {
+        "full_name": "XIU2/TrackersListCollection",
+        "name": "TrackersListCollection",
+        "owner": "XIU2",
+        "description": "🎈 Updated daily! A list of popular BitTorrent Trackers! / 每天更新！全网热门 BT Tracker 列表！",
+        "stars": 31086,
+        "language": "N/A",
+        "url": "https://github.com/XIU2/TrackersListCollection",
+        "homepage": "https://trackerslist.com",
+        "topics": [
+          "aria2",
+          "aria2-format-tracker",
+          "bittorrent",
+          "bittorrent-trackers",
+          "qbittorrent",
+          "torrent",
+          "torrent-tracker",
+          "tracker",
+          "trackers",
+          "trackerslist",
+          "utorrent"
+        ],
+        "pushed_at": "2026-04-22T00:25:14Z",
+        "updated_at": "2026-04-22T19:31:14Z",
+        "starred_at": "2022-12-30T16:41:05Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2026-04-22T00:25:14Z",
+      "updated_at": "2026-04-22"
+    },
+    "MikeWang000000/Natter": {
+      "metadata": {
+        "full_name": "MikeWang000000/Natter",
+        "name": "Natter",
+        "owner": "MikeWang000000",
+        "description": "Expose your TCP/UDP port behind full-cone NAT to the Internet.",
+        "stars": 2147,
+        "language": "Python",
+        "url": "https://github.com/MikeWang000000/Natter",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2025-10-25T19:43:47Z",
+        "updated_at": "2026-04-18T15:04:33Z",
+        "starred_at": "2022-12-05T18:42:37Z"
+      },
+      "summary": {
+        "zh": "Natter 是一款 Python 编写的 NAT 穿透工具，利用全锥型 NAT 特性将本地 TCP/UDP 端口暴露到互联网。支持 STUN 协议和 UPnP/IGD 自动发现，提供 iptables、nftables、socat 等多种转发方式。零第三方依赖，支持 Docker 部署，适用于家庭网络穿透、远程访问和内网服务发布等场景。",
+        "en": "Natter is a Python-based NAT traversal tool that exposes local TCP/UDP ports to the Internet using Full-Cone NAT. It supports STUN protocol and UPnP/IGD auto-discovery with multiple forwarding methods including iptables, nftables, and socat. Zero third-party dependencies and Docker support make it ideal for home network exposure and remote access scenarios.",
+        "tags_zh": [
+          "NAT打洞",
+          "STUN协议",
+          "端口映射",
+          "网络穿透"
+        ],
+        "tags_en": [
+          "NAT Traversal",
+          "Network Tools",
+          "Port Mapping",
+          "STUN Protocol"
+        ]
+      },
+      "pushed_at": "2025-10-25T19:43:47Z",
+      "updated_at": "2026-04-22"
+    },
+    "Reamd7/notion-zh_CN": {
+      "metadata": {
+        "full_name": "Reamd7/notion-zh_CN",
+        "name": "notion-zh_CN",
+        "owner": "Reamd7",
+        "description": "notion 中文化",
+        "stars": 7105,
+        "language": "JavaScript",
+        "url": "https://github.com/Reamd7/notion-zh_CN",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2024-04-27T04:47:53Z",
+        "updated_at": "2026-04-22T15:59:36Z",
+        "starred_at": "2021-10-01T16:02:18Z"
+      },
+      "summary": {
+        "zh": "notion-zh_CN 是 Notion 的中文汉化工具，支持网页端（油猴脚本）、桌面端（Windows/Mac）和安卓端。通过修改本地资源文件或注入脚本实现界面汉化，还提供 Cloudflare Worker 代理方案实现全平台访问加速。该项目让用户能提前使用 Notion 的中文语料，提升中文用户的使用体验。",
+        "en": "notion-zh_CN is a Chinese localization tool for Notion, supporting web (Tampermonkey), desktop (Win/Mac), and Android platforms. It localizes the interface by modifying local resource files or injecting scripts, with an optional Cloudflare Worker proxy for global access acceleration. This project enables users to access Notion's Chinese localization ahead of official release.",
+        "tags_zh": [
+          "效率工具",
+          "本地化工具",
+          "汉化脚本",
+          "跨平台"
+        ],
+        "tags_en": [
+          "Cross-Platform",
+          "Localization",
+          "Productivity Tools",
+          "浏览器插件"
+        ]
+      },
+      "pushed_at": "2024-04-27T04:47:53Z",
+      "updated_at": "2026-04-22"
+    },
+    "zeroone2numeral2/qbittorrent-bot": {
+      "metadata": {
+        "full_name": "zeroone2numeral2/qbittorrent-bot",
+        "name": "qbittorrent-bot",
+        "owner": "zeroone2numeral2",
+        "description": "Telegram bot to mange your qBittorrent torrents",
+        "stars": 167,
+        "language": "Python",
+        "url": "https://github.com/zeroone2numeral2/qbittorrent-bot",
+        "homepage": "",
+        "topics": [
+          "bot",
+          "qbittorrent",
+          "telegram",
+          "telegram-bot",
+          "torrent"
+        ],
+        "pushed_at": "2024-01-11T09:37:59Z",
+        "updated_at": "2026-01-12T23:11:37Z",
+        "starred_at": "2022-12-06T20:54:23Z"
+      },
+      "summary": {
+        "zh": "一个通过 Telegram 机器人远程管理 qBittorrent 下载的 Python 工具。支持查看种子列表、添加磁力链接/种子文件、管理下载任务（暂停/恢复/删除）、切换限速模式、导出配置等。提供 Docker 部署方案和细粒度权限控制，适合 NAS 或树莓派用户无界面管理下载。",
+        "en": "A Telegram bot for remote qBittorrent management. Supports listing torrents, adding via magnet/file, controlling downloads (pause/resume/delete), toggling speed limits, and exporting configs. Built with Python, supports Docker deployment and granular permission controls, ideal for NAS/Raspberry Pi users to manage downloads without GUI.",
+        "tags_zh": [
+          "Docker部署",
+          "Telegram Bot",
+          "下载管理",
+          "远程管理"
+        ],
+        "tags_en": [
+          "Docker-Ready",
+          "Download Manager",
+          "Remote Management",
+          "Telegram Bot"
+        ]
+      },
+      "pushed_at": "2024-01-11T09:37:59Z",
+      "updated_at": "2026-04-22"
+    },
+    "OwO-Network/nexttrace-experiment": {
+      "metadata": {
+        "full_name": "OwO-Network/nexttrace-experiment",
+        "name": "nexttrace-experiment",
+        "owner": "OwO-Network",
+        "description": "An open source visual route tracking CLI tool (experiment field)",
+        "stars": 477,
+        "language": "Go",
+        "url": "https://github.com/OwO-Network/nexttrace-experiment",
+        "homepage": "",
+        "topics": [
+          "as-path",
+          "asn-lookup",
+          "geolocation",
+          "lookingglass",
+          "network",
+          "traceroute"
+        ],
+        "pushed_at": "2023-11-20T05:53:55Z",
+        "updated_at": "2026-04-21T07:50:26Z",
+        "starred_at": "2022-11-07T18:39:23Z"
+      },
+      "summary": {
+        "zh": "NextTrace Experiment 是一款开源的可视化路由追踪 CLI 工具，使用 Golang 开发。作为实验性分支，该版本专注于提供高度可定制化的 Traceroute 功能，支持网络路径可视化分析，帮助用户诊断网络连接问题。",
+        "en": "NextTrace Experiment is an open-source visual route tracking CLI tool developed in Golang. As an experimental branch, it focuses on highly customizable Traceroute functionality with network path visualization, helping users diagnose network connectivity issues.",
+        "tags_zh": [
+          "Go语言",
+          "可视化工具",
+          "网络诊断",
+          "路由追踪"
+        ],
+        "tags_en": [
+          "Go",
+          "Network Diagnostics",
+          "Route Tracing",
+          "Visualization"
+        ]
+      },
+      "pushed_at": "2023-11-20T05:53:55Z",
+      "updated_at": "2026-04-22"
+    },
+    "easychen/http-t-shirts": {
+      "metadata": {
+        "full_name": "easychen/http-t-shirts",
+        "name": "http-t-shirts",
+        "owner": "easychen",
+        "description": "Open source http status code T shirt  ·  http状态码系列T恤设计稿",
+        "stars": 269,
+        "language": "N/A",
+        "url": "https://github.com/easychen/http-t-shirts",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2021-08-28T04:36:21Z",
+        "updated_at": "2025-12-13T13:23:41Z",
+        "starred_at": "2021-08-21T13:22:45Z"
+      },
+      "summary": {
+        "zh": "开源HTTP状态码系列T恤设计稿项目，收录30余种常见HTTP状态码（100-504）的图案设计。提供SVG矢量图、PNG位图、Adobe XD源文件及高清PDF，支持个人打印和商业销售，采用CC-BY协议授权。适合程序员社区周边、技术会议纪念品及开发者文化衫制作。",
+        "en": "An open-source HTTP status code T-shirt design series featuring 30+ status codes (100-504). The project provides SVG vectors, PNG bitmaps, Adobe XD source files, and high-definition PDFs under CC-BY license. Perfect for developer merchandise, tech conference swag, and programming community apparel.",
+        "tags_zh": [
+          "HTTP协议",
+          "开源设计",
+          "矢量图形",
+          "程序员周边"
+        ],
+        "tags_en": [
+          "Developer Merchandise",
+          "HTTP Protocol",
+          "Open Source Design",
+          "Vector Graphics"
+        ]
+      },
+      "pushed_at": "2021-08-28T04:36:21Z",
+      "updated_at": "2026-04-22"
+    },
+    "zu1k/nali": {
+      "metadata": {
+        "full_name": "zu1k/nali",
+        "name": "nali",
+        "owner": "zu1k",
+        "description": "An offline tool for querying IP geographic information and CDN provider. 一个查询IP地理信息和CDN服务提供商的离线终端工具.",
+        "stars": 4080,
+        "language": "Go",
+        "url": "https://github.com/zu1k/nali",
+        "homepage": "https://github.com/zu1k/nali",
+        "topics": [
+          "cdn",
+          "cdn-provider",
+          "chunzhen",
+          "cli",
+          "geoip",
+          "geoip2",
+          "golang",
+          "ip",
+          "ipip",
+          "nali",
+          "nali-cli",
+          "qqwry",
+          "qqwry-ip-database",
+          "zx-ipv6"
+        ],
+        "pushed_at": "2025-02-21T06:13:25Z",
+        "updated_at": "2026-04-20T17:16:43Z",
+        "starred_at": "2021-04-15T14:59:02Z"
+      },
+      "summary": {
+        "zh": "一款Go编写的离线IP地理信息查询终端工具，支持IPv4/IPv6双协议及CDN提供商识别。可通过Unix管道与dig、nslookup等命令无缝集成，支持纯真、GeoIP2、IPIP等多家离线数据库查询，全平台兼容，配色输出。适用于网络调试、DNS分析、CDN溯源等场景。",
+        "en": "A cross-platform offline IP geolocation CLI tool written in Go, supporting both IPv4/IPv6 and CDN provider identification. Integrates seamlessly with commands like dig and nslookup via Unix pipes, supports multiple databases including pure-Q, GeoIP2, IPIP, cross-platform compatible with colorful output.",
+        "tags_zh": [
+          "CDN识别",
+          "IP地理定位",
+          "离线查询",
+          "管道处理",
+          "网络工具"
+        ],
+        "tags_en": [
+          "CDN Identification",
+          "IP Geolocation",
+          "Network Tools",
+          "Offline Query",
+          "Pipeline Processing"
+        ]
+      },
+      "pushed_at": "2025-02-21T06:13:25Z",
+      "updated_at": "2026-04-22"
+    },
+    "ant-design/ant-design": {
+      "metadata": {
+        "full_name": "ant-design/ant-design",
+        "name": "ant-design",
+        "owner": "ant-design",
+        "description": "An enterprise-class UI design language and React UI library",
+        "stars": 97818,
+        "language": "TypeScript",
+        "url": "https://github.com/ant-design/ant-design",
+        "homepage": "https://ant.design",
+        "topics": [
+          "ant-design",
+          "antd",
+          "design-systems",
+          "react",
+          "typescript",
+          "ui-kit",
+          "ui-library"
+        ],
+        "pushed_at": "2026-04-22T21:26:09Z",
+        "updated_at": "2026-04-22T20:37:23Z",
+        "starred_at": "2021-05-16T00:07:19Z"
+      },
+      "summary": {
+        "zh": "Ant Design是阿里开源的企业级UI设计语言和React组件库，提供70+高质量、开箱即用的React组件，涵盖表单、表格、导航等常见场景。基于TypeScript开发，支持主题定制和40+语言国际化，广泛用于中后台应用开发。",
+        "en": "Ant Design is an enterprise-class UI design language and React component library developed by Alibaba. It offers 70+ high-quality React components out of the box, covering forms, tables, navigation and more. Built with TypeScript, it supports theme customization and i18n for 40+ languages, widely used in mid-to-back-office applications.",
+        "tags_zh": [
+          "React",
+          "企业级UI",
+          "前端组件库",
+          "设计系统"
+        ],
+        "tags_en": [
+          "Design System",
+          "React",
+          "TypeScript",
+          "UI Components"
+        ]
+      },
+      "pushed_at": "2026-04-22T21:26:09Z",
+      "updated_at": "2026-04-22"
+    },
+    "78/ssbc": {
+      "metadata": {
+        "full_name": "78/ssbc",
+        "name": "ssbc",
+        "owner": "78",
+        "description": "手撕包菜网站",
+        "stars": 1481,
+        "language": "JavaScript",
+        "url": "https://github.com/78/ssbc",
+        "homepage": "",
+        "topics": [
+          "dht",
+          "dhtspider",
+          "magnet",
+          "nodejs",
+          "torrent"
+        ],
+        "pushed_at": "2022-02-20T20:33:44Z",
+        "updated_at": "2026-04-10T02:58:25Z",
+        "starred_at": "2021-05-21T12:06:32Z"
+      },
+      "summary": {
+        "zh": "手撕包菜是一个基于DHT网络的BT资源搜索引擎网站。使用Node.js开发，MongoDB存储数据，SphinxSearch提供全文检索。包含DHT爬虫、数据索引、Web搜索界面的完整解决方案，支持实时采集和检索BitTorrent资源。提供详细的CentOS7部署指南，包括数据库、Node环境、爬虫程序和Nginx的配置教程。",
+        "en": "Shousibaocai is a BitTorrent resource search engine based on DHT network crawling. Built with Node.js, using MongoDB for storage and SphinxSearch for full-text search. Includes DHT crawler, indexer, and web interface for real-time BT resource discovery and search.",
+        "tags_zh": [
+          "DHT网络",
+          "搜索引擎",
+          "数据采集",
+          "网络爬虫"
+        ],
+        "tags_en": [
+          "DHT Network",
+          "Node.js",
+          "Search Engine",
+          "Web Crawler"
+        ]
+      },
+      "pushed_at": "2022-02-20T20:33:44Z",
+      "updated_at": "2026-04-22"
+    },
+    "ericaltendorf/plotman": {
+      "metadata": {
+        "full_name": "ericaltendorf/plotman",
+        "name": "plotman",
+        "owner": "ericaltendorf",
+        "description": "Chia plotting manager",
+        "stars": 890,
+        "language": "Python",
+        "url": "https://github.com/ericaltendorf/plotman",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2023-02-11T07:23:47Z",
+        "updated_at": "2026-03-31T16:53:14Z",
+        "starred_at": "2021-06-01T18:09:21Z"
+      },
+      "summary": {
+        "zh": "Plotman是Chia区块链绘图任务管理器，支持多临时目录并行调度、自动交错启动绘图任务，并通过rsync将完成的Plot归档至远程农场。无状态设计通过读取进程表和日志实现监控，支持暂停/恢复/终止任务控制。核心架构采用tmp/tmp2/dst三层目录缓冲，实现绘图与归档解耦，确保网络中断时绘图不中断。提供交互式仪表盘和命令行工具，适合大规模Plot农场运维。",
+        "en": "Plotman is a Chia blockchain plotting manager that orchestrates automated, staggered plotting across multiple temp directories with rsync-based archiving to remote farmers. Its stateless architecture monitors jobs via process tables and logfiles, supporting suspend/resume/kill controls. Built around tmp/tmp2/dst directory buffering, it decouples plotting from archiving for uninterrupted operation during network outages. Features interactive dashboard and CLI tools, ideal for large-scale Chia plot farm operations.",
+        "tags_zh": [
+          "Chia绘图",
+          "区块链运维",
+          "自动化工具"
+        ],
+        "tags_en": [
+          "Blockchain Operations",
+          "Chia Plotting",
+          "自动化工具"
+        ]
+      },
+      "pushed_at": "2023-02-11T07:23:47Z",
+      "updated_at": "2026-04-22"
+    },
+    "sunnyyoung/WeChatTweak": {
+      "metadata": {
+        "full_name": "sunnyyoung/WeChatTweak",
+        "name": "WeChatTweak",
+        "owner": "sunnyyoung",
+        "description": "A command-line tool for tweaking WeChat - 首款微信 macOS 客户端撤回拦截与多开 🔨",
+        "stars": 13635,
+        "language": "Swift",
+        "url": "https://github.com/sunnyyoung/WeChatTweak",
+        "homepage": "https://www.tweaks.app",
+        "topics": [
+          "alfred",
+          "alfred-workflow",
+          "macos",
+          "no-revoke",
+          "norevoke",
+          "raycast-extension",
+          "revoke",
+          "tweak",
+          "wechat",
+          "wechat-macos",
+          "wechat-plugin",
+          "wechat-plugin-macos",
+          "wechat-raycast",
+          "wechat-tweak",
+          "wechathook",
+          "wechattweak",
+          "wechattweak-macos",
+          "weixin",
+          "weixin-plugin",
+          "weixin-tweak"
+        ],
+        "pushed_at": "2026-02-08T13:28:22Z",
+        "updated_at": "2026-04-22T19:00:47Z",
+        "starred_at": "2021-03-10T11:00:18Z"
+      },
+      "summary": {
+        "zh": "macOS微信客户端增强命令行工具，提供撤回消息拦截、阻止自动更新及多开功能。通过Homebrew安装，适合需要同时登录多个账号或查看已撤回消息的macOS用户。操作简单，一条命令即可完成Patch。",
+        "en": "A macOS command-line enhancement tool for WeChat that blocks message recall, prevents auto-updates, and enables multi-instance login. Installed via Homebrew with simple one-command patching. Ideal for users needing multi-account management or viewing recalled messages.",
+        "tags_zh": [
+          "macOS工具",
+          "命令行工具",
+          "多开",
+          "微信增强"
+        ],
+        "tags_en": [
+          "CLI Tool",
+          "Multi-instance",
+          "WeChat Enhancement",
+          "macOS"
+        ]
+      },
+      "pushed_at": "2026-02-08T13:28:22Z",
+      "updated_at": "2026-04-22"
+    },
+    "huiyadanli/RevokeMsgPatcher": {
+      "metadata": {
+        "full_name": "huiyadanli/RevokeMsgPatcher",
+        "name": "RevokeMsgPatcher",
+        "owner": "huiyadanli",
+        "description": ":trollface: A hex editor for WeChat/QQ/TIM - PC版微信/QQ/TIM防撤回补丁（我已经看到了，撤回也没用了）",
+        "stars": 37425,
+        "language": "C#",
+        "url": "https://github.com/huiyadanli/RevokeMsgPatcher",
+        "homepage": "",
+        "topics": [
+          "hex-editor",
+          "patch",
+          "pc",
+          "qq",
+          "revoke",
+          "revokemsg",
+          "tim",
+          "tool",
+          "wechat",
+          "windows"
+        ],
+        "pushed_at": "2026-01-31T18:22:26Z",
+        "updated_at": "2026-04-22T22:58:23Z",
+        "starred_at": "2021-03-10T11:00:28Z"
+      },
+      "summary": {
+        "zh": "一款Windows平台的微信/QQ/TIM防撤回补丁工具，通过十六进制编辑修改目标客户端的DLL文件（微信WeChatWin.dll、QQ/TIM的IM.dll），实现查看被撤回消息的功能。微信版本附带多开功能。需要管理员权限运行，杀毒软件可能报警。每次应用更新后需重新打补丁。",
+        "en": "A Windows desktop utility that patches WeChat/QQ/TIM clients to view revoked messages by modifying DLL files via hex editing. The WeChat version includes multi-instance support. Requires admin privileges, may trigger antivirus alerts, and patches need reapplication after app updates.",
+        "tags_zh": [
+          "Windows桌面应用",
+          "多开功能",
+          "逆向破解",
+          "通讯辅助工具"
+        ],
+        "tags_en": [
+          "IM Enhancement",
+          "Multi-Instance",
+          "Reverse Engineering",
+          "Windows Desktop App"
+        ]
+      },
+      "pushed_at": "2026-01-31T18:22:26Z",
+      "updated_at": "2026-04-22"
+    },
+    "MustangYM/WeChatExtension-ForMac": {
+      "metadata": {
+        "full_name": "MustangYM/WeChatExtension-ForMac",
+        "name": "WeChatExtension-ForMac",
+        "owner": "MustangYM",
+        "description": "A plugin for Mac WeChat",
+        "stars": 22656,
+        "language": "Objective-C",
+        "url": "https://github.com/MustangYM/WeChatExtension-ForMac",
+        "homepage": "",
+        "topics": [
+          "alfred",
+          "macos",
+          "wechat",
+          "wechat-macos",
+          "wechat-plugin",
+          "weixin-plugin"
+        ],
+        "pushed_at": "2025-02-13T21:53:57Z",
+        "updated_at": "2026-04-22T01:02:18Z",
+        "starred_at": "2021-03-10T11:00:43Z"
+      },
+      "summary": {
+        "zh": "Mac版微信小助手插件，基于Objective-C开发，提供消息防撤回、多账号登录、消息转发、AI自动回复、小程序详情查看及多种皮肤模式等功能。历经两年维护，是最受欢迎的Objective-C开源项目之一。需注意旧版本存在封号风险，请勿使用非正规渠道版本。",
+        "en": "A macOS WeChat plugin built with Objective-C, offering message anti-revoke, multi-account login, message forwarding, AI auto-reply, mini-program viewer, and multiple skin modes. Maintained for two years with strong community presence. Note: older versions carry ban risks; use official releases only.",
+        "tags_zh": [
+          "macOS",
+          "桌面插件",
+          "社交工具",
+          "自动化工具"
+        ],
+        "tags_en": [
+          "Desktop Plugin",
+          "Social Tools",
+          "macOS",
+          "自动化工具"
+        ]
+      },
+      "pushed_at": "2025-02-13T21:53:57Z",
+      "updated_at": "2026-04-22"
+    },
+    "ssnhd/rime": {
+      "metadata": {
+        "full_name": "ssnhd/rime",
+        "name": "rime",
+        "owner": "ssnhd",
+        "description": "Rime Squirrel 鼠须管配置文件（朙月拼音、小鹤双拼、自然码双拼）",
+        "stars": 3494,
+        "language": "Lua",
+        "url": "https://github.com/ssnhd/rime",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2026-03-22T12:25:31Z",
+        "updated_at": "2026-04-20T15:09:48Z",
+        "starred_at": "2021-02-04T10:24:55Z"
+      },
+      "summary": {
+        "zh": "Rime 鼠须管输入法配置仓库，支持朙月拼音、小鹤双拼、自然码双拼三种输入方案。集成百万搜狗词库、Emoji 支持及动态日期时间输入，采用 YAML 配置实现高度自定义，跨平台词库同步，开源隐私保护，适合追求输入效率和可定制化的 macOS 中文用户。",
+        "en": "A Rime Squirrel configuration repository for macOS with support for Luminous Pinyin, Xiahe Double Pinyin, and Ziranma Double Pinyin. Features include million-word Sogou dictionary, emoji support, dynamic date/time input, YAML-based customization, cross-platform sync, and open-source privacy protection for power users.",
+        "tags_zh": [
+          "Rime配置",
+          "双拼方案",
+          "输入法工具",
+          "高度定制"
+        ],
+        "tags_en": [
+          "Customization",
+          "Double Pinyin",
+          "Input Method",
+          "Rime Config"
+        ]
+      },
+      "pushed_at": "2026-03-22T12:25:31Z",
+      "updated_at": "2026-04-22"
+    },
+    "Har-Kuun/OneClickCDN": {
+      "metadata": {
+        "full_name": "Har-Kuun/OneClickCDN",
+        "name": "OneClickCDN",
+        "owner": "Har-Kuun",
+        "description": "A one-click shell script to set up a CDN node for your websites.",
+        "stars": 635,
+        "language": "Shell",
+        "url": "https://github.com/Har-Kuun/OneClickCDN",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2023-10-02T17:31:31Z",
+        "updated_at": "2026-04-06T08:58:10Z",
+        "starred_at": "2021-04-06T16:20:28Z"
+      },
+      "summary": {
+        "zh": "一键部署Apache Traffic Server作为CDN节点的Shell脚本，支持Ubuntu/Debian/CentOS系统。自动从源码编译、配置SSL证书（Let's Encrypt）、添加网站、清除缓存。配置可备份恢复，便于多节点快速部署CDN集群，行为类似Cloudflare，适合自建内容分发网络。",
+        "en": "A shell script that deploys Apache Traffic Server as a CDN node with one command. It compiles from source, configures SSL certificates via Let's Encrypt, manages websites, and handles caching. Supports Ubuntu, Debian, and CentOS. Features backup/restore for multi-node deployment, functioning like Cloudflare servers for self-hosted CDN.",
+        "tags_zh": [
+          "Shell自动化",
+          "Traffic Server",
+          "网站加速",
+          "自建CDN"
+        ],
+        "tags_en": [
+          "Self-hosted CDN",
+          "Shell Script",
+          "Traffic Server",
+          "Website Acceleration"
+        ]
+      },
+      "pushed_at": "2023-10-02T17:31:31Z",
+      "updated_at": "2026-04-22"
+    },
+    "Achrou/goindex-theme-acrou": {
+      "metadata": {
+        "full_name": "Achrou/goindex-theme-acrou",
+        "name": "goindex-theme-acrou",
+        "owner": "Achrou",
+        "description": "This is a goindex theme.一个goindex的扩展主题。",
+        "stars": 1595,
+        "language": "JavaScript",
+        "url": "https://github.com/Achrou/goindex-theme-acrou",
+        "homepage": "https://ossdev.node6.workers.dev/",
+        "topics": [
+          "cloudflare",
+          "cloudflare-workers",
+          "drive",
+          "goindex",
+          "goindex-theme",
+          "google-drive"
+        ],
+        "pushed_at": "2024-08-03T03:06:26Z",
+        "updated_at": "2026-04-05T00:22:09Z",
+        "starred_at": "2020-10-06T11:31:10Z"
+      },
+      "summary": {
+        "zh": "基于Cloudflare Workers和Google Drive的GoIndex扩展主题，用于搭建私有网盘/文件浏览器。支持页面级缓存、多驱动器切换、网格视图、视频/音频在线播放（含字幕）、Markdown/Html渲染及多语言功能，可快速部署或通过rclone手动配置使用。",
+        "en": "A GoIndex theme extending Cloudflare Workers with Google Drive integration to build private cloud storage/file browsers. Features include page-level caching, multi-drive switching, grid view, video/audio streaming with subtitles, Markdown/Html rendering, and multi-language support with quick or manual deployment options.",
+        "tags_zh": [
+          "Cloudflare Workers",
+          "云存储",
+          "多媒体播放",
+          "文件索引"
+        ],
+        "tags_en": [
+          "Cloud Storage",
+          "Cloudflare Workers",
+          "File Indexing",
+          "Media Streaming"
+        ]
+      },
+      "pushed_at": "2024-08-03T03:06:26Z",
+      "updated_at": "2026-04-22"
+    },
+    "danog/MadelineProto": {
+      "metadata": {
+        "full_name": "danog/MadelineProto",
+        "name": "MadelineProto",
+        "owner": "danog",
+        "description": "Async PHP client API for the telegram MTProto protocol",
+        "stars": 3401,
+        "language": "PHP",
+        "url": "https://github.com/danog/MadelineProto",
+        "homepage": "https://docs.madelineproto.xyz",
+        "topics": [
+          "amphp",
+          "async",
+          "bot",
+          "calls",
+          "easy",
+          "hacktoberfest",
+          "inline-bots",
+          "madelineproto",
+          "mtproto",
+          "mtproto-api",
+          "php",
+          "proxy",
+          "secret-chats",
+          "stickers",
+          "tdlib",
+          "tdlib-php",
+          "telegram",
+          "telegram-api",
+          "voip"
+        ],
+        "pushed_at": "2026-04-22T20:37:03Z",
+        "updated_at": "2026-04-22T12:30:27Z",
+        "starred_at": "2020-10-11T12:50:28Z"
+      },
+      "summary": {
+        "zh": "纯PHP编写的Telegram MTProto异步客户端库，支持用户手机号登录和机器人token登录，可绕过官方Bot API直接与Telegram底层协议交互。具备消息发送、频道管理、文件传输、Stories下载等完整功能，适用于构建高级Telegram自动化工具和用户机器人。",
+        "en": "An async PHP library for direct Telegram interaction via MTProto protocol. Supports both user accounts and bot tokens without the official Bot API. Provides messaging, channel management, file handling, and story downloads for building advanced Telegram automation tools and userbots.",
+        "tags_zh": [
+          "API客户端",
+          "MTProto协议",
+          "Telegram机器人",
+          "异步PHP"
+        ],
+        "tags_en": [
+          "API Client",
+          "Async PHP",
+          "MTProto Protocol",
+          "Telegram Bot"
+        ]
+      },
+      "pushed_at": "2026-04-22T20:37:03Z",
+      "updated_at": "2026-04-22"
+    },
+    "overtrue/pinyin": {
+      "metadata": {
+        "full_name": "overtrue/pinyin",
+        "name": "pinyin",
+        "owner": "overtrue",
+        "description": "🇨🇳 基于词库的中文转拼音优质解决方案",
+        "stars": 4453,
+        "language": "PHP",
+        "url": "https://github.com/overtrue/pinyin",
+        "homepage": "https://github.com/overtrue/pinyin",
+        "topics": [
+          "php",
+          "pinyin"
+        ],
+        "pushed_at": "2026-03-06T13:20:26Z",
+        "updated_at": "2026-04-17T02:46:24Z",
+        "starred_at": "2021-01-13T04:46:56Z"
+      },
+      "summary": {
+        "zh": "基于 mozillazg/pinyin-data 词库的中文转拼音 PHP 库，精准支持多音字智能识别。提供声调符号、数字声调、无声调等多种输出风格，支持姓氏特殊读音与护照姓名转换。适用于中文标注、URL slug 生成及搜索索引构建。",
+        "en": "A Chinese-to-Pinyin PHP library built on mozillazg/pinyin-data dictionary with accurate polyphone handling. Supports multiple tone styles (symbol, number, plain), surname recognition, and passport name conversion. Ideal for pinyin annotation, URL slug generation, and search indexing.",
+        "tags_zh": [
+          "PHP库",
+          "中文处理",
+          "多音字识别",
+          "拼音转换"
+        ],
+        "tags_en": [
+          "Chinese NLP",
+          "PHP Library",
+          "Pinyin Conversion",
+          "Polyphone Handling"
+        ]
+      },
+      "pushed_at": "2026-03-06T13:20:26Z",
+      "updated_at": "2026-04-22"
+    },
+    "vletroye/Mods": {
+      "metadata": {
+        "full_name": "vletroye/Mods",
+        "name": "Mods",
+        "owner": "vletroye",
+        "description": "Mods can be used to Create or Open/Edit and Generate packages for Synology",
+        "stars": 90,
+        "language": "C#",
+        "url": "https://github.com/vletroye/Mods",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2023-10-20T08:47:22Z",
+        "updated_at": "2026-03-03T12:16:08Z",
+        "starred_at": "2020-07-10T12:11:20Z"
+      },
+      "summary": {
+        "zh": "Mods 是一款 Windows 桌面应用，为 Synology NAS 提供自定义快捷方式与安装包创建功能。支持在 DSM 桌面添加 URL、Shell 脚本及 WebApp 快捷方式，以浮动窗口形式运行。还可将 Web 应用打包为 .spk 安装包，兼容 DSM 6.x 和 7.x 版本，实现 NAS 桌面定制与自动化部署。",
+        "en": "Mods is a Windows desktop application for creating custom shortcuts and packages on Synology NAS. It enables adding URL, Shell script, and WebApp shortcuts to DSM desktop, running them in floating popup windows. It also packages web applications into .spk installers, supporting both DSM 6.x and 7.x for NAS desktop customization and automation deployment.",
+        "tags_zh": [
+          "C#桌面应用",
+          "NAS工具",
+          "Synology",
+          "自动化打包"
+        ],
+        "tags_en": [
+          "C# Desktop App",
+          "NAS Tools",
+          "Synology",
+          "自动化工具"
+        ]
+      },
+      "pushed_at": "2023-10-20T08:47:22Z",
+      "updated_at": "2026-04-22"
+    },
+    "iwestlin/gd-utils": {
+      "metadata": {
+        "full_name": "iwestlin/gd-utils",
+        "name": "gd-utils",
+        "owner": "iwestlin",
+        "description": "Google Drive 百宝箱",
+        "stars": 1286,
+        "language": "HTML",
+        "url": "https://github.com/iwestlin/gd-utils",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2023-03-05T02:43:49Z",
+        "updated_at": "2026-04-02T16:23:58Z",
+        "starred_at": "2020-06-27T15:37:27Z"
+      },
+      "summary": {
+        "zh": "Google Drive 百宝箱，支持文件夹批量转存、文件统计及 Telegram Bot 交互。采用 Service Account 授权实现高速批量操作，内置自动重试机制，支持 Docker 一键部署和 Colab 云端运行，单任务可处理数百万文件。",
+        "en": "A comprehensive Google Drive toolkit featuring batch file transfer, directory statistics, and Telegram Bot integration. Uses Service Account authentication for high-speed operations with automatic retry, supports Docker and Colab deployment, capable of handling millions of files per task.",
+        "tags_zh": [
+          "Telegram Bot",
+          "云存储工具",
+          "自动化工具"
+        ],
+        "tags_en": [
+          "Automation Tool",
+          "Cloud Storage",
+          "Telegram Bot"
+        ]
+      },
+      "pushed_at": "2023-03-05T02:43:49Z",
+      "updated_at": "2026-04-22"
+    },
+    "JAVClub/core": {
+      "metadata": {
+        "full_name": "JAVClub/core",
+        "name": "core",
+        "owner": "JAVClub",
+        "description": "🔞 JAVClub - 让你的大姐姐不再走丢",
+        "stars": 2883,
+        "language": "JavaScript",
+        "url": "https://github.com/JAVClub/core",
+        "homepage": "",
+        "topics": [
+          "adult",
+          "adult-content",
+          "google-drive",
+          "japanese",
+          "jav",
+          "javbus",
+          "javiewer",
+          "magnet",
+          "porn",
+          "spider",
+          "video-streaming"
+        ],
+        "pushed_at": "2021-06-14T00:26:15Z",
+        "updated_at": "2026-04-19T14:08:08Z",
+        "starred_at": "2020-08-02T19:08:48Z"
+      },
+      "summary": {
+        "zh": "JAVClub 是一个面向成人视频（JAV）的媒体资源管理系统，集采集、下载、Google Drive 云存储与在线播放于一体。系统通过自动爬虫抓取种子，配合 qBittorrent 下载，支持多用户邀请注册、收藏夹与公告栏功能，数据存储于 Google Drive 不占本地空间，提供 Docker 自动化部署方案。",
+        "en": "JAVClub is a comprehensive media resource management system for adult content, featuring automated scraping, downloading, and Google Drive cloud storage with online streaming. It includes a multi-user system with invitation registration, bookmarks, and announcements. Videos are stored in Google Drive to save local space, and supports Docker deployment for easy setup.",
+        "tags_zh": [
+          "个人媒体库",
+          "云端存储",
+          "在线播放",
+          "自动化工具"
+        ],
+        "tags_en": [
+          "Automation Tool",
+          "Cloud Storage",
+          "Media Library",
+          "Online Streaming"
+        ]
+      },
+      "pushed_at": "2021-06-14T00:26:15Z",
+      "updated_at": "2026-04-22"
+    },
+    "bilibili/mtr": {
+      "metadata": {
+        "full_name": "bilibili/mtr",
+        "name": "mtr",
+        "owner": "bilibili",
+        "description": "mtr 增加IP解析功能, a network diagnostic tool",
+        "stars": 109,
+        "language": "C",
+        "url": "https://github.com/bilibili/mtr",
+        "homepage": "http://www.bitwizard.nl/mtr/",
+        "topics": [],
+        "pushed_at": "2020-09-06T02:32:12Z",
+        "updated_at": "2025-02-01T00:37:02Z",
+        "starred_at": "2020-06-06T15:36:57Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2020-09-06T02:32:12Z",
+      "updated_at": "2026-04-22"
+    },
+    "BookStackApp/BookStack": {
+      "metadata": {
+        "full_name": "BookStackApp/BookStack",
+        "name": "BookStack",
+        "owner": "BookStackApp",
+        "description": "A platform to create documentation/wiki content built with PHP & Laravel",
+        "stars": 18694,
+        "language": "PHP",
+        "url": "https://github.com/BookStackApp/BookStack",
+        "homepage": "https://www.bookstackapp.com/",
+        "topics": [
+          "bookstack",
+          "documentation",
+          "laravel",
+          "php",
+          "selfhosted",
+          "wiki"
+        ],
+        "pushed_at": "2026-04-22T12:30:51Z",
+        "updated_at": "2026-04-22T20:17:26Z",
+        "starred_at": "2020-05-02T19:49:24Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2026-04-22T12:30:51Z",
+      "updated_at": "2026-04-22"
+    },
+    "iRay/TeleTor": {
+      "metadata": {
+        "full_name": "iRay/TeleTor",
+        "name": "TeleTor",
+        "owner": "iRay",
+        "description": "Telegram Torrents Bot",
+        "stars": 75,
+        "language": "Python",
+        "url": "https://github.com/iRay/TeleTor",
+        "homepage": "",
+        "topics": [
+          "telegram",
+          "telegram-bot",
+          "torrent",
+          "transmission"
+        ],
+        "pushed_at": "2023-10-18T01:49:03Z",
+        "updated_at": "2026-04-08T16:09:54Z",
+        "starred_at": "2020-03-16T13:07:07Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2023-10-18T01:49:03Z",
+      "updated_at": "2026-04-22"
+    },
+    "FriendsOfHere/meta-news": {
+      "metadata": {
+        "full_name": "FriendsOfHere/meta-news",
+        "name": "meta-news",
+        "owner": "FriendsOfHere",
+        "description": "A plugin to generate news plugin",
+        "stars": 4,
+        "language": "JavaScript",
+        "url": "https://github.com/FriendsOfHere/meta-news",
+        "homepage": "",
+        "topics": [
+          "here",
+          "news",
+          "plugin"
+        ],
+        "pushed_at": "2020-07-26T06:33:27Z",
+        "updated_at": "2020-07-26T06:29:56Z",
+        "starred_at": "2020-02-21T14:59:23Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2020-07-26T06:33:27Z",
+      "updated_at": "2026-04-22"
+    },
+    "hereappdev/Here-Plugins": {
+      "metadata": {
+        "full_name": "hereappdev/Here-Plugins",
+        "name": "Here-Plugins",
+        "owner": "hereappdev",
+        "description": "Plugins for Here App 🚀",
+        "stars": 156,
+        "language": "N/A",
+        "url": "https://github.com/hereappdev/Here-Plugins",
+        "homepage": "https://here.app",
+        "topics": [
+          "app",
+          "here",
+          "macos",
+          "plugin",
+          "productivity"
+        ],
+        "pushed_at": "2021-11-16T15:03:52Z",
+        "updated_at": "2026-03-19T01:17:40Z",
+        "starred_at": "2020-02-17T15:09:56Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2021-11-16T15:03:52Z",
+      "updated_at": "2026-04-22"
+    },
+    "RIPE-NCC/ripe-atlas-software-probe": {
+      "metadata": {
+        "full_name": "RIPE-NCC/ripe-atlas-software-probe",
+        "name": "ripe-atlas-software-probe",
+        "owner": "RIPE-NCC",
+        "description": "Probe codebase of RIPE Atlas, a global network measuring Internet connectivity and reachability",
+        "stars": 337,
+        "language": "C",
+        "url": "https://github.com/RIPE-NCC/ripe-atlas-software-probe",
+        "homepage": "https://atlas.ripe.net/",
+        "topics": [
+          "internet",
+          "internet-measurements",
+          "linux",
+          "measurements"
+        ],
+        "pushed_at": "2025-11-11T01:38:02Z",
+        "updated_at": "2026-04-21T20:59:33Z",
+        "starred_at": "2019-11-28T12:02:37Z"
+      },
+      "summary": {
+        "zh": "RIPE Atlas 全球互联网测量网络的软件探针实现，用于实时测量网络连接性、延迟和可达性。该项目提供跨平台部署包，支持 Debian、企业 Linux 和树莓派操作系统，为互联网研究人员提供大规模分布式测量基础设施。",
+        "en": "RIPE Atlas software probe implementation for global Internet measurement, enabling real-time measurement of network connectivity, latency, and reachability. This project provides cross-platform deployment packages supporting Debian, Enterprise Linux, and Raspberry Pi OS, offering researchers a large-scale distributed measurement infrastructure.",
+        "tags_zh": [
+          "互联网测量",
+          "分布式系统",
+          "网络基础设施",
+          "网络监控"
+        ],
+        "tags_en": [
+          "Distributed Systems",
+          "Internet Measurement",
+          "Network Infrastructure",
+          "Network Monitoring"
+        ]
+      },
+      "pushed_at": "2025-11-11T01:38:02Z",
+      "updated_at": "2026-04-22"
+    },
+    "any86/any-rule": {
+      "metadata": {
+        "full_name": "any86/any-rule",
+        "name": "any-rule",
+        "owner": "any86",
+        "description": "🦕  常用正则大全, 支持web / vscode / idea / Alfred Workflow多平台",
+        "stars": 8661,
+        "language": "TypeScript",
+        "url": "https://github.com/any86/any-rule",
+        "homepage": "https://any-rule.vercel.app/",
+        "topics": [
+          "awsome",
+          "express",
+          "regex",
+          "regexp",
+          "zheng-ze"
+        ],
+        "pushed_at": "2024-07-21T05:29:34Z",
+        "updated_at": "2026-04-21T15:35:38Z",
+        "starred_at": "2020-01-07T09:44:58Z"
+      },
+      "summary": {
+        "zh": "收录84条常用正则表达式的开源项目，支持Web、VSCode、IntelliJ IDEA、Alfred Workflow等多平台使用。提供关键词搜索、右键菜单、快捷命令三种调用方式，并附带正则可视化学习功能，方便开发者快速查找和使用各类验证正则。",
+        "en": "An open-source collection of 84 common regex patterns, available across Web, VSCode, IntelliJ IDEA, and Alfred Workflow. Offers keyword search, context menu, and shortcut commands, plus visual regex explanation for learning. An essential tool for developers working with regular expressions.",
+        "tags_zh": [
+          "开发工具",
+          "效率提升",
+          "正则表达式",
+          "跨平台"
+        ],
+        "tags_en": [
+          "Cross-platform",
+          "Developer Tools",
+          "Productivity",
+          "Regex Patterns"
+        ]
+      },
+      "pushed_at": "2024-07-21T05:29:34Z",
+      "updated_at": "2026-04-22"
+    },
+    "sl1673495/vue-netease-music": {
+      "metadata": {
+        "full_name": "sl1673495/vue-netease-music",
+        "name": "vue-netease-music",
+        "owner": "sl1673495",
+        "description": "🎵 基于 Vue2、Vue-CLI3 的高仿网易云 mac 客户端播放器（PC） Online Music Player",
+        "stars": 2180,
+        "language": "Vue",
+        "url": "https://github.com/sl1673495/vue-netease-music",
+        "homepage": "https://ssh-music.vercel.app/",
+        "topics": [
+          "better-scroll",
+          "javascript",
+          "music-player",
+          "netease-cloud-music",
+          "netease-music",
+          "player",
+          "sass",
+          "vue-cli3",
+          "vue-music",
+          "vue-music-player",
+          "vuejs",
+          "vuex",
+          "web-music-player"
+        ],
+        "pushed_at": "2024-03-02T16:10:08Z",
+        "updated_at": "2026-04-22T01:02:21Z",
+        "starred_at": "2019-12-12T11:27:30Z"
+      },
+      "summary": {
+        "zh": "基于 Vue2 与 Vue-CLI3 构建的高仿网易云音乐 mac 客户端风格 Web 音乐播放器。完整实现播放、MV、搜索、歌单、主题换肤、登录等核心功能，采用 ElementUI 魔改样式、better-scroll 歌词滚动、CSS Variables 动态换肤与 workbox 预缓存技术，高度还原桌面端体验。",
+        "en": "A high-fidelity Vue2 music player mimicking NetEase Cloud Music mac client UI. Features include playback, MV, search, playlists, theme switching, and login. Built with ElementUI, better-scroll, CSS Variables for dynamic theming, and workbox for Service Worker caching, delivering an authentic desktop experience.",
+        "tags_zh": [
+          "Vue2全家桶",
+          "音乐播放器",
+          "高保真UI还原"
+        ],
+        "tags_en": [
+          "High-Fidelity UI",
+          "Music Player",
+          "Vue2 Ecosystem"
+        ]
+      },
+      "pushed_at": "2024-03-02T16:10:08Z",
+      "updated_at": "2026-04-22"
+    },
+    "xiandanin/magnetW": {
+      "metadata": {
+        "full_name": "xiandanin/magnetW",
+        "name": "magnetW",
+        "owner": "xiandanin",
+        "description": "[已失效，不再维护]",
+        "stars": 11347,
+        "language": "JavaScript",
+        "url": "https://github.com/xiandanin/magnetW",
+        "homepage": "",
+        "topics": [
+          "electron",
+          "electron-vue",
+          "vue"
+        ],
+        "pushed_at": "2022-04-09T17:06:15Z",
+        "updated_at": "2026-04-22T05:34:12Z",
+        "starred_at": "2019-12-26T20:44:18Z"
+      },
+      "summary": {
+        "zh": "magnetW是一个跨平台磁力搜索引擎桌面客户端，支持Windows、macOS、Linux系统，提供多站点聚合磁力搜索功能。项目已停止维护，功能基于爬虫技术实现，仅供技术交流学习，开源免费无广告。",
+        "en": "magnetW is a cross-platform magnet search engine desktop client supporting Windows, macOS, and Linux. It aggregates multiple sites for magnet search. The project is discontinued and provided for technical exchange only, open-source and ad-free.",
+        "tags_zh": [
+          "多站点聚合",
+          "爬虫技术",
+          "磁力搜索",
+          "跨平台桌面应用"
+        ],
+        "tags_en": [
+          "Cross-platform",
+          "Magnet Search",
+          "Web Scraper",
+          "桌面应用"
+        ]
+      },
+      "pushed_at": "2022-04-09T17:06:15Z",
+      "updated_at": "2026-04-22"
+    },
+    "gxtrobot/bustag": {
+      "metadata": {
+        "full_name": "gxtrobot/bustag",
+        "name": "bustag",
+        "owner": "gxtrobot",
+        "description": "a tag and recommend system for old bus driver 给老司机用的一个番号推荐系统",
+        "stars": 3835,
+        "language": "JavaScript",
+        "url": "https://github.com/gxtrobot/bustag",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2022-12-08T06:00:48Z",
+        "updated_at": "2026-04-22T01:02:22Z",
+        "starred_at": "2019-09-16T15:00:34Z"
+      },
+      "summary": {
+        "zh": "基于机器学习的车牌自动推荐系统，通过异步爬虫自动抓取车牌信息，用户对车牌打标后训练模型，系统自动预测并过滤不喜欢的车牌内容，节省筛选时间。支持Docker一键部署，提供Web界面进行打标、训练和推荐。",
+        "en": "A machine learning-based recommendation system that automatically crawches adult content, allows user tagging for training personalized models, and predicts preferences to filter unwanted content. Features async spider, web UI, model training, and Docker deployment.",
+        "tags_zh": [
+          "内容推荐",
+          "异步爬虫",
+          "机器学习",
+          "自动化工具"
+        ],
+        "tags_en": [
+          "Async Spider",
+          "Automation Tool",
+          "Content Recommendation",
+          "机器学习"
+        ]
+      },
+      "pushed_at": "2022-12-08T06:00:48Z",
+      "updated_at": "2026-04-22"
+    },
+    "ngosang/trackerslist": {
+      "metadata": {
+        "full_name": "ngosang/trackerslist",
+        "name": "trackerslist",
+        "owner": "ngosang",
+        "description": "Updated list of public BitTorrent trackers",
+        "stars": 53598,
+        "language": "N/A",
+        "url": "https://github.com/ngosang/trackerslist",
+        "homepage": "https://ngosang.github.io/trackerslist/",
+        "topics": [
+          "bittorrent",
+          "bittorrent-tracker",
+          "bittorrent-trackers",
+          "http",
+          "list",
+          "lists",
+          "public-tracker",
+          "public-trackers",
+          "torrent",
+          "tracker",
+          "trackers",
+          "trackerslist",
+          "udp",
+          "webtorrent",
+          "ws"
+        ],
+        "pushed_at": "2026-04-22T22:09:43Z",
+        "updated_at": "2026-04-22T23:26:59Z",
+        "starred_at": "2019-06-09T12:04:57Z"
+      },
+      "summary": {
+        "zh": "维护93个经过自动验证的公开BitTorrent trackers列表，每日更新并去重。支持HTTP/HTTPS/UDP/WebSocket等多协议，按性能和协议分类提供最佳列表。解决DNS污染问题，提供IP直连版本。",
+        "en": "Maintains 93 automatically verified public BitTorrent trackers with daily updates and deduplication. Supports HTTP/HTTPS/UDP/WebSocket protocols, offering optimized lists by performance. Includes IP-based versions to bypass DNS issues.",
+        "tags_zh": [
+          "BitTorrent协议",
+          "P2P网络",
+          "自动化工具"
+        ],
+        "tags_en": [
+          "BitTorrent",
+          "P2P Networking",
+          "自动化工具"
+        ]
+      },
+      "pushed_at": "2026-04-22T22:09:43Z",
+      "updated_at": "2026-04-22"
+    },
+    "ma6254/FictionDown": {
+      "metadata": {
+        "full_name": "ma6254/FictionDown",
+        "name": "FictionDown",
+        "owner": "ma6254",
+        "description": "小说下载|小说爬取|起点|笔趣阁|导出Markdown|导出txt|转换epub|广告过滤|自动校对",
+        "stars": 939,
+        "language": "Go",
+        "url": "https://github.com/ma6254/FictionDown",
+        "homepage": "",
+        "topics": [
+          "biquge",
+          "crawler",
+          "fiction",
+          "golang",
+          "novels",
+          "qidian",
+          "spider"
+        ],
+        "pushed_at": "2025-01-21T06:35:33Z",
+        "updated_at": "2026-04-21T15:36:40Z",
+        "starred_at": "2019-08-31T20:25:50Z"
+      },
+      "summary": {
+        "zh": "FictionDown 是一款 Go 语言编写的命令行小说爬取工具，支持从起点、笔趣阁等多站点批量下载网络小说，提供 txt、epub、markdown 等多格式导出，内置广告过滤与断点续爬功能，适用于数据分析样本采集场景。",
+        "en": "FictionDown is a command-line novel scraping tool written in Go, supporting batch download from sites like Qidian and Biquge with multi-format export (txt/epub/markdown), built-in ad filtering, breakpoint resume, and cross-site content calibration.",
+        "tags_zh": [
+          "Go语言",
+          "多格式导出",
+          "网页爬虫",
+          "自动化工具"
+        ],
+        "tags_en": [
+          "Automation Tool",
+          "Go",
+          "Multi-format Export",
+          "Web Crawler"
+        ]
+      },
+      "pushed_at": "2025-01-21T06:35:33Z",
+      "updated_at": "2026-04-22"
+    },
+    "keenwon/antcolony": {
+      "metadata": {
+        "full_name": "keenwon/antcolony",
+        "name": "antcolony",
+        "owner": "keenwon",
+        "description": "Nodejs实现的一个磁力链接爬虫 https://findit.keenwon.com (原域名http://findit.so )",
+        "stars": 1458,
+        "language": "JavaScript",
+        "url": "https://github.com/keenwon/antcolony",
+        "homepage": "",
+        "topics": [
+          "antcolony",
+          "bencode",
+          "bittorrent",
+          "dht",
+          "javascript",
+          "nodejs",
+          "spider",
+          "torrent"
+        ],
+        "pushed_at": "2018-12-28T13:07:16Z",
+        "updated_at": "2026-04-13T08:17:34Z",
+        "starred_at": "2019-02-19T12:15:47Z"
+      },
+      "summary": {
+        "zh": "基于Node.js的磁力链接爬虫，运行于DHT网络收集infohash，下载解析种子文件并存储。包含worker（爬虫）、male（下载器）、female（数据库录入）等模块，支持多进程并发。使用MongoDB存储种子数据，Redis缓存节点信息与任务队列，pm2管理进程。findit搜索引擎的核心引擎，已累计发出15亿次DHT请求。",
+        "en": "A Node.js magnet link crawler operating in DHT networks to collect info-hashes, download and parse torrent files. Features modular components: worker (crawler), male (downloader), female (database recorder). Uses MongoDB for storage, Redis for caching, and pm2 for process management. The core engine of the findit search engine with 1.5 billion DHT requests sent.",
+        "tags_zh": [
+          "DHT协议",
+          "分布式系统",
+          "磁力搜索",
+          "网络爬虫"
+        ],
+        "tags_en": [
+          "DHT Protocol",
+          "Distributed System",
+          "Magnet Search",
+          "Web Crawler"
+        ]
+      },
+      "pushed_at": "2018-12-28T13:07:16Z",
+      "updated_at": "2026-04-22"
+    },
+    "instantbox/instantbox": {
+      "metadata": {
+        "full_name": "instantbox/instantbox",
+        "name": "instantbox",
+        "owner": "instantbox",
+        "description": "📦 Get a clean, ready-to-go Linux box in seconds.",
+        "stars": 4188,
+        "language": "Python",
+        "url": "https://github.com/instantbox/instantbox",
+        "homepage": "",
+        "topics": [
+          "docker",
+          "docker-compose",
+          "hacktoberfest",
+          "linux",
+          "linux-shell",
+          "web-shell"
+        ],
+        "pushed_at": "2024-03-12T06:42:40Z",
+        "updated_at": "2026-04-21T09:13:52Z",
+        "starred_at": "2019-01-16T09:27:43Z"
+      },
+      "summary": {
+        "zh": "instantbox 是一个基于 Docker 的在线 Linux 环境创建工具，可秒级生成临时纯净系统，支持 Ubuntu、CentOS、Debian 等多发行版。通过浏览器即可访问 webshell，随时随地使用独立的 Linux 操作环境，适用于代码演示、教学实验、项目测试等场景。",
+        "en": "A Docker-based tool for instant provisioning of temporary Linux environments with web browser access. Supports multiple distributions including Ubuntu, CentOS, Debian, and Fedora. Provides clean, isolated Linux boxes for presentations, education, testing, and remote server management via webshell.",
+        "tags_zh": [
+          "Webshell",
+          "云开发",
+          "容器化",
+          "运维自动化"
+        ],
+        "tags_en": [
+          "Containerization",
+          "DevOps Automation",
+          "Webshell",
+          "云计算"
+        ]
+      },
+      "pushed_at": "2024-03-12T06:42:40Z",
+      "updated_at": "2026-04-22"
+    },
+    "telegram-sms/telegram-sms": {
+      "metadata": {
+        "full_name": "telegram-sms/telegram-sms",
+        "name": "telegram-sms",
+        "owner": "telegram-sms",
+        "description": "An SMS-forwarding Robot Running on Your Android Device.",
+        "stars": 1921,
+        "language": "Kotlin",
+        "url": "https://github.com/telegram-sms/telegram-sms",
+        "homepage": "https://telegram-sms.com",
+        "topics": [
+          "android",
+          "phone",
+          "sms",
+          "telegram",
+          "telegram-bot"
+        ],
+        "pushed_at": "2026-01-22T13:15:30Z",
+        "updated_at": "2026-04-19T06:04:52Z",
+        "starred_at": "2019-04-11T07:48:29Z"
+      },
+      "summary": {
+        "zh": "运行在Android设备上的短信转发机器人，通过Telegram Bot将接收到的SMS、来电、电池状态等信息实时推送给用户。支持远程指令控制，可配置 Bark、Pushdeer、Gotify 等多种推送渠道。最小支持 Android 5.1 系统。",
+        "en": "A lightweight SMS forwarding robot for Android that pushes received messages, call notifications, and battery status to Telegram in real-time. Supports remote command control and multi-channel forwarding like Bark, Pushdeer, and Gotify. Compatible with Android 5.1+.",
+        "tags_zh": [
+          "Android应用",
+          "Telegram机器人",
+          "消息推送",
+          "通知工具"
+        ],
+        "tags_en": [
+          "Android App",
+          "Message Push",
+          "Notification Tool",
+          "Telegram Bot"
+        ]
+      },
+      "pushed_at": "2026-01-22T13:15:30Z",
+      "updated_at": "2026-04-22"
+    },
+    "cxumol/tg-search": {
+      "metadata": {
+        "full_name": "cxumol/tg-search",
+        "name": "tg-search",
+        "owner": "cxumol",
+        "description": "Search in Telegram with CJT words (unofficial). Telegram 中文搜索 (非官方).",
+        "stars": 165,
+        "language": "JavaScript",
+        "url": "https://github.com/cxumol/tg-search",
+        "homepage": "",
+        "topics": [
+          "chat-history",
+          "hacktoberfest",
+          "telegram",
+          "tg-search"
+        ],
+        "pushed_at": "2022-07-07T03:01:39Z",
+        "updated_at": "2026-02-11T16:42:07Z",
+        "starred_at": "2019-04-12T21:02:24Z"
+      },
+      "summary": {
+        "zh": "Telegram中文搜索解决方案（Lite版），解决Telegram对中文、日文等非字母语言搜索体验差的问题。利用Telegram Desktop导出的HTML格式数据，通过本地网页工具实现跨页面全文检索。适合大群导出数据的多页面搜索，相比前作Golang版本更轻量易用。",
+        "en": "A lightweight offline web tool for searching Chinese and Asian language messages in Telegram chat history exports. Solves Telegram's poor search capability for non-alphabetic languages by parsing Telegram Desktop HTML exports and enabling cross-page full-text search, ideal for large chat exports with hundreds of pages.",
+        "tags_zh": [
+          "即时通讯",
+          "多语言支持",
+          "本地搜索",
+          "网页爬虫"
+        ],
+        "tags_en": [
+          "Local Search",
+          "Messaging",
+          "Multilingual",
+          "Web Scraper"
+        ]
+      },
+      "pushed_at": "2022-07-07T03:01:39Z",
+      "updated_at": "2026-04-22"
+    },
+    "copyleft/xen-vm-info": {
+      "metadata": {
+        "full_name": "copyleft/xen-vm-info",
+        "name": "xen-vm-info",
+        "owner": "copyleft",
+        "description": "Python commandline script to retrieve information about a XenServer VM",
+        "stars": 4,
+        "language": "Python",
+        "url": "https://github.com/copyleft/xen-vm-info",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2015-10-05T17:42:07Z",
+        "updated_at": "2024-12-12T01:46:41Z",
+        "starred_at": "2018-06-01T13:13:50Z"
+      },
+      "summary": {
+        "zh": "针对 XenServer 虚拟化平台的 Python 命令行工具，可查询虚拟机详细信息及指定 UUID 检索。配套提供 VHD 配置文件备份功能，支持调试模式输出，适用于服务器虚拟化环境的日常运维管理。",
+        "en": "A Python CLI tool for retrieving XenServer VM information by UUID or listing all VMs. Includes VHD config backup functionality with debug mode support, designed for server virtualization administration.",
+        "tags_zh": [
+          "Python脚本",
+          "命令行工具",
+          "服务器虚拟化"
+        ],
+        "tags_en": [
+          "CLI Tool",
+          "Python",
+          "Virtualization"
+        ]
+      },
+      "pushed_at": "2015-10-05T17:42:07Z",
+      "updated_at": "2026-04-22"
+    },
+    "anptgen/github-trending": {
+      "metadata": {
+        "full_name": "anptgen/github-trending",
+        "name": "github-trending",
+        "owner": "anptgen",
+        "description": "每日github-trending",
+        "stars": 109,
+        "language": "Python",
+        "url": "https://github.com/anptgen/github-trending",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2023-12-18T21:08:12Z",
+        "updated_at": "2026-03-14T04:18:08Z",
+        "starred_at": "2018-05-31T17:49:02Z"
+      },
+      "summary": {
+        "zh": "GitHub Trending 热门项目追踪工具，自动爬取每日 GitHub 趋势榜单并按编程语言分类生成 Markdown 报告。支持 Python、Swift、JavaScript、Go、Java、Kotlin 等多种语言的自定义筛选，帮助开发者快速发现热门开源项目与行业趋势。",
+        "en": "A daily GitHub Trending tracker that scrapes popular repositories by programming language and generates Markdown reports. Supports configurable filtering for Python, Swift, Go, Java, JavaScript, Kotlin, and more, keeping developers updated on trending open-source projects.",
+        "tags_zh": [
+          "GitHub生态",
+          "网页爬虫",
+          "自动化工具"
+        ],
+        "tags_en": [
+          "Automation Tool",
+          "GitHub Ecosystem",
+          "Web Scraper"
+        ]
+      },
+      "pushed_at": "2023-12-18T21:08:12Z",
+      "updated_at": "2026-04-22"
+    },
+    "sboulema/CodeNav": {
+      "metadata": {
+        "full_name": "sboulema/CodeNav",
+        "name": "CodeNav",
+        "owner": "sboulema",
+        "description": "Visual Studio extension to show the code structure of your current document ",
+        "stars": 132,
+        "language": "C#",
+        "url": "https://github.com/sboulema/CodeNav",
+        "homepage": "",
+        "topics": [
+          "c-sharp",
+          "csharp",
+          "visual-studio",
+          "visual-studio-extension",
+          "vs2019",
+          "vs2022",
+          "vs2026",
+          "vsextensibility"
+        ],
+        "pushed_at": "2026-04-22T17:46:27Z",
+        "updated_at": "2026-04-22T17:38:42Z",
+        "starred_at": "2019-04-12T16:10:45Z"
+      },
+      "summary": {
+        "zh": "VS 扩展插件，实时解析 C# 文档的代码结构（方法、属性、区域等），支持点击跳转、光标高亮、过滤搜索和书签功能，显著提升大文件代码导航效率。",
+        "en": "A Visual Studio extension that parses and displays C# code structure (methods, properties, regions) with click-to-navigate, cursor tracking, filtering, and bookmarks to enhance code navigation.",
+        "tags_zh": [
+          "C#开发",
+          "IDE插件",
+          "Visual Studio扩展",
+          "代码导航"
+        ],
+        "tags_en": [
+          "C# Development",
+          "Code Navigation",
+          "IDE Extension",
+          "Visual Studio Extension"
+        ]
+      },
+      "pushed_at": "2026-04-22T17:46:27Z",
+      "updated_at": "2026-04-22"
+    },
+    "MercyCloudTeam/TomatoIDC": {
+      "metadata": {
+        "full_name": "MercyCloudTeam/TomatoIDC",
+        "name": "TomatoIDC",
+        "owner": "MercyCloudTeam",
+        "description": " TomatoIDC/HStack是一款以MIT协议开源销售系统，具备易于扩展的插件系统，模版系统，使用强大的Laravel框架进行驱动，能帮助你轻松的扩展业务。",
+        "stars": 296,
+        "language": "PHP",
+        "url": "https://github.com/MercyCloudTeam/TomatoIDC",
+        "homepage": "",
+        "topics": [
+          "cloud",
+          "idc",
+          "laravel",
+          "php"
+        ],
+        "pushed_at": "2022-07-27T22:22:06Z",
+        "updated_at": "2026-04-18T13:34:07Z",
+        "starred_at": "2018-12-10T12:34:25Z"
+      },
+      "summary": {
+        "zh": "HStack（原TomatoIDC）是一款基于Laravel框架的MIT协议开源在线销售系统，支持插件扩展和模板自定义，助您快速搭建产品销售平台。当前V1版本正在重构中，如需完整功能请使用V0.18版本。",
+        "en": "HStack (formerly TomatoIDC) is an MIT-licensed open-source sales system built on Laravel framework, featuring extensible plugin and template systems for quickly building online product sales platforms. V1 is under rewrite; use V0.18 for complete features.",
+        "tags_zh": [
+          "Laravel框架",
+          "在线销售",
+          "插件扩展",
+          "电商系统"
+        ],
+        "tags_en": [
+          "E-Commerce",
+          "Laravel Framework",
+          "Online Sales",
+          "Plugin System"
+        ]
+      },
+      "pushed_at": "2022-07-27T22:22:06Z",
+      "updated_at": "2026-04-22"
+    },
+    "Mickeyto/phpVideos": {
+      "metadata": {
+        "full_name": "Mickeyto/phpVideos",
+        "name": "phpVideos",
+        "owner": "Mickeyto",
+        "description": "php 写的视频下载工具，现已支持：Youku、Miaopai、腾讯、XVideos、Pornhub、91porn、微博酷燃、bilibili、今日头条、芒果TV",
+        "stars": 373,
+        "language": "PHP",
+        "url": "https://github.com/Mickeyto/phpVideos",
+        "homepage": "",
+        "topics": [
+          "downloader",
+          "php",
+          "phpvideos"
+        ],
+        "pushed_at": "2023-03-12T10:15:55Z",
+        "updated_at": "2026-04-10T14:29:02Z",
+        "starred_at": "2018-08-01T16:23:35Z"
+      },
+      "summary": {
+        "zh": "基于PHP开发的命令行视频批量下载工具，支持B站、优酷、腾讯视频、微博、今日头条、芒果TV等20+主流视频平台。通过curl模拟请求抓取视频流，结合ffmpeg处理媒体文件，支持HTTP代理配置和aria2分布式下载，兼容Linux/Mac/Windows系统，适合批量采集视频资源。",
+        "en": "A PHP-based command-line video downloader supporting 20+ platforms including Bilibili, Youku, Tencent Video, Weibo, Toutiao and MGTV. Features batch downloading via curl stream extraction and FFmpeg processing, with HTTP proxy and aria2 integration. Cross-platform compatible for Linux/Mac/Windows.",
+        "tags_zh": [
+          "PHP脚本",
+          "网页爬虫",
+          "视频下载",
+          "跨平台"
+        ],
+        "tags_en": [
+          "Cross-Platform",
+          "PHP",
+          "Video Downloader",
+          "Web Scraper"
+        ]
+      },
+      "pushed_at": "2023-03-12T10:15:55Z",
+      "updated_at": "2026-04-22"
+    },
+    "ericyd/gdrive-copy": {
+      "metadata": {
+        "full_name": "ericyd/gdrive-copy",
+        "name": "gdrive-copy",
+        "owner": "ericyd",
+        "description": "Web app to copy a Google Drive folder",
+        "stars": 1583,
+        "language": "JavaScript",
+        "url": "https://github.com/ericyd/gdrive-copy",
+        "homepage": "https://script.google.com/macros/s/AKfycbxbGNGajrxv-HbX2sVY2OTu7yj9VvxlOMOeQblZFuq7rYm7uyo/exec",
+        "topics": [],
+        "pushed_at": "2023-02-09T15:35:06Z",
+        "updated_at": "2026-04-20T15:23:55Z",
+        "starred_at": "2018-03-26T06:55:58Z"
+      },
+      "summary": {
+        "zh": "Chrome应用商店上架的Google Drive文件夹递归复制工具。只需对文件夹有查看权限即可完整复制，支持权限继承、离线后台执行，复制后用户自动成为新文件夹所有者。适合组织架构调整时批量拷贝共享资源。",
+        "en": "A Chrome Web Store app that recursively copies Google Drive folders. Users only need view access to fully duplicate folders with optional permission inheritance. The new folder owner becomes the app user, ideal for organizational transitions.",
+        "tags_zh": [
+          "Google Apps Script",
+          "云存储工具",
+          "文件夹批量复制",
+          "权限管理"
+        ],
+        "tags_en": [
+          "Cloud Storage",
+          "Folder Replication",
+          "Google Apps Script",
+          "Permission Management"
+        ]
+      },
+      "pushed_at": "2023-02-09T15:35:06Z",
+      "updated_at": "2026-04-22"
+    },
+    "zorlan/skycaiji": {
+      "metadata": {
+        "full_name": "zorlan/skycaiji",
+        "name": "skycaiji",
+        "owner": "zorlan",
+        "description": "蓝天采集器是一款开源免费的爬虫系统，仅需点选编辑规则即可采集数据，可运行在本地、虚拟主机或云服务器中，几乎能采集所有类型的网页，无缝对接各类CMS建站程序，免登录实时发布数据，全自动无需人工干预！是网页大数据采集软件中完全跨平台的云端爬虫系统",
+        "stars": 2068,
+        "language": "PHP",
+        "url": "https://github.com/zorlan/skycaiji",
+        "homepage": "https://www.skycaiji.com",
+        "topics": [
+          "crawler",
+          "crawling",
+          "php",
+          "spider",
+          "webcrawler"
+        ],
+        "pushed_at": "2026-02-01T03:16:01Z",
+        "updated_at": "2026-04-19T12:26:51Z",
+        "starred_at": "2018-04-12T10:13:58Z"
+      },
+      "summary": {
+        "zh": "蓝天采集器是一款开源免费的可视化网页爬虫系统，通过点选配置即可采集各类网页数据。支持本地、虚拟主机、云服务器等多环境运行，可无缝对接CMS建站程序，实现免登录实时发布数据，全自动采集无需人工干预，是跨平台的云端数据采集工具。",
+        "en": "SkyCaiJi is an open-source visual web scraper that enables point-and-click rule configuration to harvest data from various websites. Running on local servers, virtual hosts, or cloud platforms, it integrates seamlessly with CMS systems for real-time data publishing without login, offering fully automated cross-platform web data collection.",
+        "tags_zh": [
+          "CMS集成",
+          "可视化配置",
+          "网页爬虫",
+          "自动化工具"
+        ],
+        "tags_en": [
+          "Automation Tool",
+          "CMS Integration",
+          "Visual Configuration",
+          "Web Scraper"
+        ]
+      },
+      "pushed_at": "2026-02-01T03:16:01Z",
+      "updated_at": "2026-04-22"
+    },
+    "Codaone/DEXBot": {
+      "metadata": {
+        "full_name": "Codaone/DEXBot",
+        "name": "DEXBot",
+        "owner": "Codaone",
+        "description": "Trading Bot for the BitShares Decentralized Exchange",
+        "stars": 248,
+        "language": "Python",
+        "url": "https://github.com/Codaone/DEXBot",
+        "homepage": "",
+        "topics": [
+          "bitshares",
+          "blockchain",
+          "cryptocurrency",
+          "dex"
+        ],
+        "pushed_at": "2022-09-11T06:44:40Z",
+        "updated_at": "2026-04-08T16:43:10Z",
+        "starred_at": "2018-05-28T16:14:24Z"
+      },
+      "summary": {
+        "zh": "DEXBot 是专为 BitShares 去中心化交易所设计的开源交易机器人，支持 GUI 和 CLI 双模式。采用两种市场做市策略：Relative Orders 适合横向市场与套利，Staggered Orders 适合波动市场的新资产启动。采用 Python3 开发，支持 Docker 部署与跨平台运行，可自定义策略扩展。",
+        "en": "DEXBot is an open-source trading bot for the BitShares decentralized exchange, available in both GUI and CLI modes. It features two market-making strategies: Relative Orders for sideways markets and arbitrage, and Staggered Orders for volatile conditions. Built with Python3, it supports Docker deployment and cross-platform operation with extensible custom strategies.",
+        "tags_zh": [
+          "加密货币交易",
+          "去中心化金融",
+          "市场做市",
+          "量化机器人"
+        ],
+        "tags_en": [
+          "Crypto Trading",
+          "Decentralized Finance",
+          "Market Making",
+          "Quantitative Bot"
+        ]
+      },
+      "pushed_at": "2022-09-11T06:44:40Z",
+      "updated_at": "2026-04-22"
+    },
+    "1265578519/ShanaEncoder": {
+      "metadata": {
+        "full_name": "1265578519/ShanaEncoder",
+        "name": "ShanaEncoder",
+        "owner": "1265578519",
+        "description": "ShanaEncoder，最强的视频压制软件，支持CPU和GPU同时工作，速度快，清晰度高，B站指定压制工具",
+        "stars": 2536,
+        "language": "N/A",
+        "url": "https://github.com/1265578519/ShanaEncoder",
+        "homepage": "http://bbs.itzmx.com/thread-7413-1-1.html",
+        "topics": [],
+        "pushed_at": "2025-02-09T18:18:57Z",
+        "updated_at": "2026-04-22T04:29:15Z",
+        "starred_at": "2018-03-23T17:34:36Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2025-02-09T18:18:57Z",
+      "updated_at": "2026-04-22"
+    },
+    "outline/outline": {
+      "metadata": {
+        "full_name": "outline/outline",
+        "name": "outline",
+        "owner": "outline",
+        "description": "The fastest knowledge base for growing teams. Beautiful, realtime collaborative, feature packed, and markdown compatible.",
+        "stars": 38230,
+        "language": "TypeScript",
+        "url": "https://github.com/outline/outline",
+        "homepage": "https://www.getoutline.com",
+        "topics": [
+          "docker",
+          "hacktoberfest",
+          "javascript",
+          "mobx",
+          "nodejs",
+          "react",
+          "slack",
+          "wiki"
+        ],
+        "pushed_at": "2026-04-22T23:04:38Z",
+        "updated_at": "2026-04-22T23:04:40Z",
+        "starred_at": "2018-05-13T11:37:12Z"
+      },
+      "summary": {
+        "zh": "Outline是一款面向团队的实时协作知识库平台，支持Markdown编辑与实时多人协同编辑，提供强大的搜索与权限管理功能。基于React与Node.js构建，支持自部署或SaaS托管，适用于企业文档管理与团队知识沉淀场景。",
+        "en": "Outline is a real-time collaborative knowledge base for teams, featuring Markdown support, powerful search, and access control. Built with React and Node.js, it supports self-hosting or cloud deployment, ideal for enterprise documentation and knowledge management.",
+        "tags_zh": [
+          "全栈应用",
+          "实时协作",
+          "知识管理"
+        ],
+        "tags_en": [
+          "Full-stack",
+          "Knowledge Base",
+          "Real-time Collaboration"
+        ]
+      },
+      "pushed_at": "2026-04-22T23:04:38Z",
+      "updated_at": "2026-04-22"
+    },
+    "welliamcao/VManagePlatform": {
+      "metadata": {
+        "full_name": "welliamcao/VManagePlatform",
+        "name": "VManagePlatform",
+        "owner": "welliamcao",
+        "description": "Kvm  Manage WebUI",
+        "stars": 659,
+        "language": "Python",
+        "url": "https://github.com/welliamcao/VManagePlatform",
+        "homepage": "",
+        "topics": [
+          "kvm",
+          "kvmwebui",
+          "libvirt"
+        ],
+        "pushed_at": "2022-03-29T21:53:42Z",
+        "updated_at": "2026-01-27T14:58:38Z",
+        "starred_at": "2018-03-12T16:47:44Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2022-03-29T21:53:42Z",
+      "updated_at": "2026-04-22"
+    },
+    "jiang111/ReSend-SMS": {
+      "metadata": {
+        "full_name": "jiang111/ReSend-SMS",
+        "name": "ReSend-SMS",
+        "owner": "jiang111",
+        "description": "将手机接收到的短信以邮件的形式发送至指定邮箱",
+        "stars": 103,
+        "language": "Java",
+        "url": "https://github.com/jiang111/ReSend-SMS",
+        "homepage": "",
+        "topics": [
+          "android",
+          "email-sender",
+          "sms",
+          "smtp"
+        ],
+        "pushed_at": "2019-01-01T08:07:44Z",
+        "updated_at": "2026-04-05T10:58:39Z",
+        "starred_at": "2018-03-09T15:20:16Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2019-01-01T08:07:44Z",
+      "updated_at": "2026-04-22"
+    },
+    "Srar/MemcacheDos": {
+      "metadata": {
+        "full_name": "Srar/MemcacheDos",
+        "name": "MemcacheDos",
+        "owner": "Srar",
+        "description": "Memcache 反射DDOS攻击脚本经供学习参考使用",
+        "stars": 294,
+        "language": "TypeScript",
+        "url": "https://github.com/Srar/MemcacheDos",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2018-03-02T08:04:10Z",
+        "updated_at": "2026-04-09T12:30:01Z",
+        "starred_at": "2018-03-02T18:26:41Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2018-03-02T08:04:10Z",
+      "updated_at": "2026-04-22"
+    },
+    "cdhigh/KindleEar": {
+      "metadata": {
+        "full_name": "cdhigh/KindleEar",
+        "name": "KindleEar",
+        "owner": "cdhigh",
+        "description": "Aggregates RSS and web content(Calibre recipe), sends to Kindle, and includes an e-ink optimized online reader.",
+        "stars": 2839,
+        "language": "Python",
+        "url": "https://github.com/cdhigh/KindleEar",
+        "homepage": "http://cdhigh.github.io/KindleEar/",
+        "topics": [],
+        "pushed_at": "2026-01-31T02:07:00Z",
+        "updated_at": "2026-04-22T11:27:48Z",
+        "starred_at": "2018-02-22T14:36:57Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2026-01-31T02:07:00Z",
+      "updated_at": "2026-04-22"
+    },
+    "netdata/netdata": {
+      "metadata": {
+        "full_name": "netdata/netdata",
+        "name": "netdata",
+        "owner": "netdata",
+        "description": "The fastest path to AI-powered full stack observability, even for lean teams.",
+        "stars": 78559,
+        "language": "C",
+        "url": "https://github.com/netdata/netdata",
+        "homepage": "https://www.netdata.cloud",
+        "topics": [
+          "ai",
+          "alerting",
+          "cncf",
+          "data-visualization",
+          "database",
+          "devops",
+          "docker",
+          "grafana",
+          "influxdb",
+          "kubernetes",
+          "linux",
+          "machine-learning",
+          "mcp",
+          "mongodb",
+          "monitoring",
+          "mysql",
+          "netdata",
+          "observability",
+          "postgresql",
+          "prometheus"
+        ],
+        "pushed_at": "2026-04-22T23:01:24Z",
+        "updated_at": "2026-04-22T23:01:29Z",
+        "starred_at": "2018-02-22T13:09:47Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2026-04-22T23:01:24Z",
+      "updated_at": "2026-04-22"
+    },
+    "psamim/aria2-telegram-bot": {
+      "metadata": {
+        "full_name": "psamim/aria2-telegram-bot",
+        "name": "aria2-telegram-bot",
+        "owner": "psamim",
+        "description": "Telegram bot to control an aria2 daemon",
+        "stars": 27,
+        "language": "Python",
+        "url": "https://github.com/psamim/aria2-telegram-bot",
+        "homepage": "",
+        "topics": [
+          "aria2",
+          "telegram",
+          "telegram-bot"
+        ],
+        "pushed_at": "2025-08-22T23:18:23Z",
+        "updated_at": "2024-12-18T18:01:05Z",
+        "starred_at": "2018-02-14T14:20:13Z"
+      },
+      "summary": {
+        "zh": "一款 Telegram 机器人，通过 diana 库远程控制 aria2 下载守护进程。支持添加、启动、停止、删除下载任务，查看下载状态。专为树莓派等嵌入式设备设计，可通过 systemd 服务实现开机自启，随时随地通过 Telegram 管理下载任务。",
+        "en": "A Telegram bot that controls aria2 download daemon via diana library. Supports adding, starting, stopping, and removing downloads, checking status. Designed for embedded devices like Raspberry Pi, supports systemd service for auto-startup, enabling remote download management from anywhere via Telegram.",
+        "tags_zh": [
+          "Telegram 机器人",
+          "aria2",
+          "自动化工具",
+          "远程下载管理"
+        ],
+        "tags_en": [
+          "Aria2",
+          "Remote Download",
+          "Telegram Bot",
+          "自动化工具"
+        ]
+      },
+      "pushed_at": "2025-08-22T23:18:23Z",
+      "updated_at": "2026-04-22"
+    },
+    "FunctionClub/ZBench": {
+      "metadata": {
+        "full_name": "FunctionClub/ZBench",
+        "name": "ZBench",
+        "owner": "FunctionClub",
+        "description": "又一个Linux VPS测评脚本",
+        "stars": 1181,
+        "language": "Shell",
+        "url": "https://github.com/FunctionClub/ZBench",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2021-03-21T21:08:49Z",
+        "updated_at": "2026-04-18T17:05:33Z",
+        "starred_at": "2018-02-20T16:53:42Z"
+      },
+      "summary": {
+        "zh": "ZBench是一款开源的Linux VPS综合测评脚本，整合Bench.sh与SuperBench两大主流工具，新增Ping延迟和路由追踪功能。一键自动检测CPU、内存、磁盘IO、网络带宽及跑分，并生成HTML格式测评报告，方便站长分享对比数据，是VPS选购和性能评估的实用利器。",
+        "en": "ZBench is an open-source Linux VPS benchmarking script that combines Bench.sh and SuperBench, adding Ping and routing tests. It automatically detects CPU, memory, disk I/O, network speed, and generates shareable HTML reports. A practical tool for VPS evaluation and performance comparison.",
+        "tags_zh": [
+          "Shell脚本",
+          "性能基准测试",
+          "服务器测评",
+          "运维自动化"
+        ],
+        "tags_en": [
+          "DevOps Automation",
+          "Performance Testing",
+          "Server Benchmarking",
+          "Shell Script"
+        ]
+      },
+      "pushed_at": "2021-03-21T21:08:49Z",
+      "updated_at": "2026-04-22"
+    },
+    "ginuerzh/gost": {
+      "metadata": {
+        "full_name": "ginuerzh/gost",
+        "name": "gost",
+        "owner": "ginuerzh",
+        "description": "GO Simple Tunnel - a simple tunnel written in golang",
+        "stars": 17854,
+        "language": "Go",
+        "url": "https://github.com/ginuerzh/gost",
+        "homepage": "",
+        "topics": [
+          "dns",
+          "go",
+          "golang",
+          "http2",
+          "kcp",
+          "obfs4",
+          "quic",
+          "shadowsocks",
+          "sni",
+          "socks5",
+          "ssh",
+          "tls",
+          "tunnel",
+          "tuntap",
+          "udp"
+        ],
+        "pushed_at": "2024-12-31T13:08:51Z",
+        "updated_at": "2026-04-22T10:48:31Z",
+        "starred_at": "2018-02-21T07:08:50Z"
+      },
+      "summary": {
+        "zh": "gost是用Go语言开发的安全隧道工具，支持HTTP/HTTPS/HTTP2/SOCKS4/SOCKS5/Shadowsocks等多种代理协议，可实现本地/远程TCP/UDP端口转发、多级代理链、流量负载均衡和路由控制，并具备DNS解析代理、TUN/TAP设备支持等高级网络功能。",
+        "en": "GO Simple Tunnel is a lightweight security tunnel written in Go, supporting multiple proxy protocols including HTTP/HTTPS/HTTP2/SOCKS4/SOCKS5/Shadowsocks. It enables local/remote TCP/UDP port forwarding, multi-hop proxy chains, load balancing, and route control with advanced features like DNS proxy and TUN/TAP support.",
+        "tags_zh": [
+          "Go语言",
+          "端口转发",
+          "网络代理",
+          "负载均衡"
+        ],
+        "tags_en": [
+          "Go Language",
+          "Load Balancing",
+          "Network Proxy",
+          "Port Forwarding"
+        ]
+      },
+      "pushed_at": "2024-12-31T13:08:51Z",
+      "updated_at": "2026-04-22"
+    },
+    "jpillora/cloud-torrent": {
+      "metadata": {
+        "full_name": "jpillora/cloud-torrent",
+        "name": "cloud-torrent",
+        "owner": "jpillora",
+        "description": "☁️ Cloud Torrent: a self-hosted remote torrent client",
+        "stars": 6157,
+        "language": "Go",
+        "url": "https://github.com/jpillora/cloud-torrent",
+        "homepage": "",
+        "topics": [
+          "cloud",
+          "golang",
+          "self-hosted",
+          "torrent",
+          "torrent-client"
+        ],
+        "pushed_at": "2025-11-28T13:10:45Z",
+        "updated_at": "2026-04-21T12:26:52Z",
+        "starred_at": "2017-10-28T23:50:04Z"
+      },
+      "summary": {
+        "zh": "Cloud Torrent 是一款 Go 语言开发的自托管远程 BT 下载器，支持通过 Web 界面远程管理种子任务，文件下载至服务器本地后可通过 HTTP 流媒体播放或直连下载。具备单二进制部署、Docker 容器化、跨平台支持、实时进度更新和移动端适配等特性，适合 NAS 或 VPS 等私有化部署场景。",
+        "en": "Cloud Torrent is a self-hosted remote torrent client written in Go. It enables users to start torrents remotely, downloading files to the server's local disk, accessible or streamable via HTTP. Features include single binary deployment, Docker support, cross-platform compatibility, real-time updates, and mobile-friendly interface, ideal for private deployment on NAS or VPS.",
+        "tags_zh": [
+          "BT下载器",
+          "Docker部署",
+          "Web应用",
+          "自托管服务"
+        ],
+        "tags_en": [
+          "Torrent Client",
+          "Web Interface",
+          "容器化",
+          "私有化部署"
+        ]
+      },
+      "pushed_at": "2025-11-28T13:10:45Z",
+      "updated_at": "2026-04-22"
+    },
+    "rclone/rclone": {
+      "metadata": {
+        "full_name": "rclone/rclone",
+        "name": "rclone",
+        "owner": "rclone",
+        "description": "\"rsync for cloud storage\" - Google Drive, S3, Dropbox, Backblaze B2, One Drive, Swift, Hubic, Wasabi, Google Cloud Storage, Azure Blob, Azure Files, Yandex Files",
+        "stars": 56798,
+        "language": "Go",
+        "url": "https://github.com/rclone/rclone",
+        "homepage": "https://rclone.org",
+        "topics": [
+          "azure-blob",
+          "azure-blob-storage",
+          "azure-files",
+          "backblaze-b2",
+          "cloud-storage",
+          "dropbox",
+          "encryption",
+          "ftp",
+          "fuse-filesystem",
+          "go",
+          "golang",
+          "google-cloud-storage",
+          "google-drive",
+          "onedrive",
+          "openstack-swift",
+          "rclone",
+          "s3",
+          "sftp",
+          "sync",
+          "webdav"
+        ],
+        "pushed_at": "2026-04-22T16:57:56Z",
+        "updated_at": "2026-04-22T22:51:22Z",
+        "starred_at": "2018-02-20T16:39:11Z"
+      },
+      "summary": {
+        "zh": "Rclone 是云存储同步领域的\"rsync\"，用 Go 语言开发，支持 70+ 云存储后端（Google Drive、S3、Dropbox、Azure 等）。提供文件/目录双向同步、加密、缓存、挂载等功能，跨平台运行，广泛应用于数据备份、迁移和多云管理场景。",
+        "en": "Rclone, described as \"rsync for cloud storage\", is a Go-written CLI tool for syncing files to/from 70+ cloud providers. It offers bidirectional sync, encryption, caching, and mounting capabilities across platforms, widely used for backup, migration, and multi-cloud management.",
+        "tags_zh": [
+          "云存储管理",
+          "命令行工具",
+          "数据同步",
+          "跨平台"
+        ],
+        "tags_en": [
+          "CLI Tool",
+          "Cloud Storage",
+          "Cross-Platform",
+          "Data Synchronization"
+        ]
+      },
+      "pushed_at": "2026-04-22T16:57:56Z",
+      "updated_at": "2026-04-22"
+    },
+    "PowerDNS-Admin/PowerDNS-Admin": {
+      "metadata": {
+        "full_name": "PowerDNS-Admin/PowerDNS-Admin",
+        "name": "PowerDNS-Admin",
+        "owner": "PowerDNS-Admin",
+        "description": "A PowerDNS web interface with advanced features",
+        "stars": 2777,
+        "language": "Python",
+        "url": "https://github.com/PowerDNS-Admin/PowerDNS-Admin",
+        "homepage": "",
+        "topics": [
+          "pdns",
+          "powerdns",
+          "powerdns-admin",
+          "powerdns-web-gui"
+        ],
+        "pushed_at": "2025-12-09T00:52:44Z",
+        "updated_at": "2026-04-22T09:15:48Z",
+        "starred_at": "2017-09-10T14:58:53Z"
+      },
+      "summary": {
+        "zh": "PowerDNS-Admin是功能强大的PowerDNS Web管理界面，支持正向/反向DNS区域管理、区域模板、用户角色权限控制。兼容多种认证方式（本地/LDAP/SAML/OAuth）及TOTP双因素认证，提供REST API、IPv6 PTR编辑、IDN/Punycode支持，支持Docker快速部署，适用于DNS服务运维管理。",
+        "en": "PowerDNS-Admin is a full-featured web interface for PowerDNS offering zone management, templating, RBAC, and multi-auth support (Local/LDAP/SAML/OAuth). It includes TOTP 2FA, REST API, IPv6 PTR editing, IDN/Punycode support, and Docker deployment for DNS infrastructure management.",
+        "tags_zh": [
+          "DNS管理",
+          "Web管理界面",
+          "认证授权",
+          "运维自动化"
+        ],
+        "tags_en": [
+          "Authentication",
+          "DNS Management",
+          "DevOps Tool",
+          "Web Interface"
+        ]
+      },
+      "pushed_at": "2025-12-09T00:52:44Z",
+      "updated_at": "2026-04-22"
+    },
+    "luxiaok/DNSmasqWeb": {
+      "metadata": {
+        "full_name": "luxiaok/DNSmasqWeb",
+        "name": "DNSmasqWeb",
+        "owner": "luxiaok",
+        "description": "基于DNSmasq的DNS解析、以及DHCP地址分配系统",
+        "stars": 225,
+        "language": "HTML",
+        "url": "https://github.com/luxiaok/DNSmasqWeb",
+        "homepage": "",
+        "topics": [
+          "dhcp",
+          "dns",
+          "dnsmasq",
+          "jinja2",
+          "python",
+          "tornado"
+        ],
+        "pushed_at": "2017-09-30T06:29:41Z",
+        "updated_at": "2026-02-15T08:45:14Z",
+        "starred_at": "2017-09-10T14:58:35Z"
+      },
+      "summary": {
+        "zh": "基于DNSmasq的轻量级DNS解析与DHCP地址分配Web管理系统，提供域名管理、DNS记录配置、DHCP分配等核心功能。采用Python+Tornado构建Web界面，MySQL存储配置数据，适用于机房内网、公司内网、家庭内网等内部网络环境的集中管控。",
+        "en": "DNSmasqWeb is a lightweight DNS and DHCP management system built on DNSmasq, featuring a Python/Tornado-based Web UI for domain management, DNS records configuration, and DHCP address allocation. Designed for internal networks including data centers, corporate LANs, and home networks with MySQL backend storage.",
+        "tags_zh": [
+          "DNS/DHCP管理",
+          "Tornado",
+          "内部网络",
+          "网络运维"
+        ],
+        "tags_en": [
+          "Internal Network",
+          "Network Management",
+          "Python",
+          "运维自动化"
+        ]
+      },
+      "pushed_at": "2017-09-30T06:29:41Z",
+      "updated_at": "2026-04-22"
+    },
+    "Badcow/DNS": {
+      "metadata": {
+        "full_name": "Badcow/DNS",
+        "name": "DNS",
+        "owner": "Badcow",
+        "description": "The aim of this project is to create abstract object representations of DNS records in PHP. The project consists of various classes representing DNS objects (such as Zone, ResourceRecord, and various RData types), a parser to convert BIND style text files to the PHP objects, and builders to create aesthetically pleasing BIND records.",
+        "stars": 264,
+        "language": "PHP",
+        "url": "https://github.com/Badcow/DNS",
+        "homepage": "",
+        "topics": [
+          "bind",
+          "dns",
+          "named",
+          "php",
+          "web"
+        ],
+        "pushed_at": "2025-04-08T12:18:17Z",
+        "updated_at": "2025-11-10T18:31:46Z",
+        "starred_at": "2017-09-10T14:57:00Z"
+      },
+      "summary": {
+        "zh": "Badcow DNS Library 是一个 PHP DNS 库，提供 Zone、ResourceRecord 及多种 RData 类型的抽象对象表示。支持 BIND 风格文本解析器和格式化构建器，可解析/编码 DNS 消息，便于在纯 PHP 环境中开发 DNS 客户端/服务器应用，支持 A、AAAA、MX、NS、SOA 等主流记录类型。",
+        "en": "A PHP library providing abstract object representations of DNS records including Zone, ResourceRecord, and various RData types. Features BIND-style parser and aligned builders for DNS message encoding/decoding, enabling pure PHP DNS client/server platform development with support for common record types.",
+        "tags_zh": [
+          "DNS协议",
+          "协议解析库",
+          "网络基础设施"
+        ],
+        "tags_en": [
+          "DNS Protocol",
+          "Network Infrastructure",
+          "Protocol Parser"
+        ]
+      },
+      "pushed_at": "2025-04-08T12:18:17Z",
+      "updated_at": "2026-04-22"
+    },
+    "atomia/atomiadns": {
+      "metadata": {
+        "full_name": "atomia/atomiadns",
+        "name": "atomiadns",
+        "owner": "atomia",
+        "description": "Atomia DNS",
+        "stars": 367,
+        "language": "Perl",
+        "url": "https://github.com/atomia/atomiadns",
+        "homepage": "http://www.atomiadns.com/",
+        "topics": [],
+        "pushed_at": "2024-09-05T13:06:31Z",
+        "updated_at": "2026-04-03T12:01:54Z",
+        "starred_at": "2017-09-05T01:46:31Z"
+      },
+      "summary": {
+        "zh": "Atomia DNS是由Atomia AB开发的多租户DNS管理系统，支持大规模DNS数据的程序化管理。内置PowerDNS和Bind-DLZ同步代理，实现域名服务器数据实时同步。提供命令行客户端、Web管理界面、区域文件导入等辅助工具。采用ISC许可证。",
+        "en": "Atomia DNS is a multi-tenant system for managing large-scale DNS data through programmatic interfaces. It includes synchronization agents for PowerDNS and Bind-DLZ, along with CLI tools, web management, and zone file import utilities. Licensed under ISC.",
+        "tags_zh": [
+          "DNS管理",
+          "同步代理",
+          "域名服务器",
+          "多租户系统"
+        ],
+        "tags_en": [
+          "DNS Infrastructure",
+          "DNS Management",
+          "Multi-Tenant",
+          "Nameserver Sync"
+        ]
+      },
+      "pushed_at": "2024-09-05T13:06:31Z",
+      "updated_at": "2026-04-22"
+    },
+    "kontaxis/snidump": {
+      "metadata": {
+        "full_name": "kontaxis/snidump",
+        "name": "snidump",
+        "owner": "kontaxis",
+        "description": "This is a tcpdump-like program for printing TLS SNI and HTTP/1.1 Host fields in live or captured traffic.",
+        "stars": 114,
+        "language": "C",
+        "url": "https://github.com/kontaxis/snidump",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2024-02-29T15:56:28Z",
+        "updated_at": "2026-01-24T10:26:10Z",
+        "starred_at": "2017-09-07T14:02:40Z"
+      },
+      "summary": {
+        "zh": "一款类似tcpdump的网络抓包工具，专注于提取TLS握手中的SNI字段与HTTP/1.1请求的Host字段。支持从网卡实时监听（可选混杂模式）或离线读取PCAP文件，默认对80/443端口TCP流量进行BPF过滤，可将抓包结果导出。适用于网络流量分析、域名嗅探与安全审计。",
+        "en": "A tcpdump-like packet sniffer that extracts TLS SNI from ClientHello handshakes and HTTP/1.1 Host headers. Supports live interface monitoring (promiscuous mode) or offline PCAP reading with BPF filtering on ports 80/443, with optional PCAP output. Ideal for network analysis, domain enumeration, and security auditing.",
+        "tags_zh": [
+          "TLS/SSL解析",
+          "域名嗅探",
+          "流量分析",
+          "网络抓包"
+        ],
+        "tags_en": [
+          "Domain Sniffing",
+          "Network Capture",
+          "TLS/SSL Parsing",
+          "Traffic Analysis"
+        ]
+      },
+      "pushed_at": "2024-02-29T15:56:28Z",
+      "updated_at": "2026-04-22"
+    },
+    "zzfly256/RyShop": {
+      "metadata": {
+        "full_name": "zzfly256/RyShop",
+        "name": "RyShop",
+        "owner": "zzfly256",
+        "description": "一套基于 PHP 自娱自乐的虚拟主机售卖系统/在线商城",
+        "stars": 76,
+        "language": "PHP",
+        "url": "https://github.com/zzfly256/RyShop",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2019-02-07T15:33:52Z",
+        "updated_at": "2026-01-29T15:31:23Z",
+        "starred_at": "2017-09-02T16:39:31Z"
+      },
+      "summary": {
+        "zh": "基于PHP开发的虚拟主机售卖与在线商城系统，支持商品管理、订单处理、支付集成等核心电商功能。适合个人或小型团队快速搭建虚拟主机销售平台，提供简洁的后台管理和用户友好的前端购物体验。",
+        "en": "A PHP-based virtual host sales and online mall system with product management, order processing, and payment integration. Ideal for individuals or small teams to quickly build virtual hosting sales platforms with simple admin backend and user-friendly shopping experience.",
+        "tags_zh": [
+          "PHP开发",
+          "电商系统",
+          "虚拟主机销售"
+        ],
+        "tags_en": [
+          "E-commerce",
+          "PHP Development",
+          "Web Hosting"
+        ]
+      },
+      "pushed_at": "2019-02-07T15:33:52Z",
+      "updated_at": "2026-04-22"
+    },
+    "librespeed/speedtest": {
+      "metadata": {
+        "full_name": "librespeed/speedtest",
+        "name": "speedtest",
+        "owner": "librespeed",
+        "description": "Self-hosted Speed Test for HTML5 and more. Easy setup, examples, configurable, mobile friendly. Supports PHP, Node, Multiple servers, and more",
+        "stars": 14568,
+        "language": "JavaScript",
+        "url": "https://github.com/librespeed/speedtest",
+        "homepage": "https://librespeed.org",
+        "topics": [
+          "hacktoberfest",
+          "html5-speedtest",
+          "internet-speed",
+          "internet-speed-checker",
+          "librespeed",
+          "php",
+          "speedtest",
+          "web-worker",
+          "xhr"
+        ],
+        "pushed_at": "2026-04-20T06:48:15Z",
+        "updated_at": "2026-04-22T22:14:19Z",
+        "starred_at": "2017-08-16T15:34:30Z"
+      },
+      "summary": {
+        "zh": "LibreSpeed 是一款轻量级自托管网速测试工具，纯 JavaScript 实现，无需 Flash 或 Java 插件。支持下载、上传、Ping、Jitter 测量，可选显示 ISP 信息与遥测数据。跨浏览器兼容（IE11+），移动端友好，支持 PHP/Go/Rust 多语言后端部署，配套 Docker 镜像便于快速搭建。",
+        "en": "LibreSpeed is a lightweight self-hosted speed test solution built with pure JavaScript, requiring no Flash or Java. It measures download, upload, ping, and jitter with optional ISP info and telemetry. Cross-browser compatible (IE11+), mobile-friendly, supporting multiple backend languages including PHP, Go, and Rust with Docker deployment.",
+        "tags_zh": [
+          "性能监控",
+          "网络工具",
+          "自托管服务",
+          "跨平台"
+        ],
+        "tags_en": [
+          "Cross-platform",
+          "Network Utility",
+          "Performance Monitoring",
+          "私有化部署"
+        ]
+      },
+      "pushed_at": "2026-04-20T06:48:15Z",
+      "updated_at": "2026-04-22"
+    },
+    "blueset/ItChat": {
+      "metadata": {
+        "full_name": "blueset/ItChat",
+        "name": "ItChat",
+        "owner": "blueset",
+        "description": "微信个人号接口、微信机器人及命令行微信，Command line talks through Wechat",
+        "stars": 8,
+        "language": "Python",
+        "url": "https://github.com/blueset/ItChat",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2019-08-17T08:07:04Z",
+        "updated_at": "2023-01-28T13:27:33Z",
+        "starred_at": "2017-07-02T06:08:18Z"
+      },
+      "summary": {
+        "zh": "itchat 是 Python 微信个人号接口库，支持通过不到30行代码创建微信机器人。可处理文本、图片、文件、群聊等多类型消息，提供命令行二维码登录和热重载功能。适用于消息自动回复、微信辅助管理等场景。",
+        "en": "itchat is a Python API for WeChat personal accounts, enabling chatbot creation with under 30 lines of code. Supports multi-format messages including text, images, files and group chats, with CLI QR login and hot reload features for automated WeChat management.",
+        "tags_zh": [
+          "Python",
+          "即时通讯",
+          "微信机器人",
+          "自动化工具"
+        ],
+        "tags_en": [
+          "Instant Messaging",
+          "Python",
+          "WeChat Bot",
+          "自动化工具"
+        ]
+      },
+      "pushed_at": "2019-08-17T08:07:04Z",
+      "updated_at": "2026-04-22"
+    },
+    "zuiidea/antd-admin": {
+      "metadata": {
+        "full_name": "zuiidea/antd-admin",
+        "name": "antd-admin",
+        "owner": "zuiidea",
+        "description": "AI-friendly enterprise front-end best practices",
+        "stars": 9751,
+        "language": "TypeScript",
+        "url": "https://github.com/zuiidea/antd-admin",
+        "homepage": "https://antd-admin.zuiidea.top",
+        "topics": [
+          "admin",
+          "antd",
+          "dashboard",
+          "mock",
+          "react"
+        ],
+        "pushed_at": "2026-04-15T06:17:22Z",
+        "updated_at": "2026-04-22T14:50:02Z",
+        "starred_at": "2017-06-21T14:41:25Z"
+      },
+      "summary": {
+        "zh": "基于 Ant Design 6、Umi 4 和 TypeScript 构建的企业级管理后台模板，采用 zustand 轻量状态管理，支持本地 mock 服务独立开发。内置 Dashboard、用户管理、菜单配置及 AI Chat 对话示例，配备 GitHub Actions CI/CD 流程，适用于快速搭建中后台系统。",
+        "en": "A lightweight, high-performance admin template built with Ant Design 6, Umi 4, and TypeScript, featuring zustand for state management and integrated mock server for frontend-only development. Includes ready-to-use pages for Dashboard, User CRUD, Menu config, and AI Chat demo with LLM integration. Pre-configured CI/CD via GitHub Actions.",
+        "tags_zh": [
+          "React框架",
+          "TypeScript",
+          "企业管理系统",
+          "状态管理"
+        ],
+        "tags_en": [
+          "Enterprise Admin",
+          "React Framework",
+          "State Management",
+          "TypeScript"
+        ]
+      },
+      "pushed_at": "2026-04-15T06:17:22Z",
+      "updated_at": "2026-04-22"
+    },
+    "caesar0301/awesome-pcaptools": {
+      "metadata": {
+        "full_name": "caesar0301/awesome-pcaptools",
+        "name": "awesome-pcaptools",
+        "owner": "caesar0301",
+        "description": "A collection of tools developed by other researchers in the Computer Science area to process network traces. All the right reserved for the original authors.",
+        "stars": 3377,
+        "language": "N/A",
+        "url": "https://github.com/caesar0301/awesome-pcaptools",
+        "homepage": "http://caesar0301.github.io/awesome-pcaptools",
+        "topics": [],
+        "pushed_at": "2025-09-03T07:24:40Z",
+        "updated_at": "2026-04-22T16:49:15Z",
+        "starred_at": "2017-06-16T13:32:17Z"
+      },
+      "summary": {
+        "zh": "这是一个精心整理的网络流量分析工具列表，汇集了用于处理PCAP抓包文件的研究工具。涵盖流量监控、带宽测量、数据包捕获检查、DNS分析、文件提取等分类。适用于网络安全分析、流量研究和协议调试等场景。",
+        "en": "A curated collection of network traffic analysis tools designed for processing PCAP capture files in research. It covers bandwidth monitoring, packet inspection, DNS analysis, and file extraction categories. Ideal for network security analysis, traffic research, and protocol debugging scenarios.",
+        "tags_zh": [
+          "协议分析工具集",
+          "网络安全",
+          "网络流量分析"
+        ],
+        "tags_en": [
+          "Network Security",
+          "Network Traffic Analysis",
+          "Protocol Analysis Toolkit"
+        ]
+      },
+      "pushed_at": "2025-09-03T07:24:40Z",
+      "updated_at": "2026-04-22"
+    },
+    "jiangxy/react-antd-admin": {
+      "metadata": {
+        "full_name": "jiangxy/react-antd-admin",
+        "name": "react-antd-admin",
+        "owner": "jiangxy",
+        "description": "用React和Ant Design搭建的一个通用管理后台",
+        "stars": 1628,
+        "language": "JavaScript",
+        "url": "https://github.com/jiangxy/react-antd-admin",
+        "homepage": "http://jiangxy.github.io/react-antd-admin",
+        "topics": [
+          "admin",
+          "admin-dashboard",
+          "admin-theme",
+          "admin-ui",
+          "ant",
+          "ant-design",
+          "antd",
+          "crud",
+          "dashboard",
+          "database",
+          "database-gui",
+          "database-management",
+          "frontend-framework",
+          "react",
+          "react-router",
+          "reactjs",
+          "redux",
+          "single-page-app",
+          "webpack"
+        ],
+        "pushed_at": "2024-04-30T04:16:24Z",
+        "updated_at": "2026-04-13T06:06:54Z",
+        "starred_at": "2017-06-21T14:38:15Z"
+      },
+      "summary": {
+        "zh": "基于React和Ant Design的通用管理后台框架，通过配置文件快速生成后台界面。核心亮点是DBTable组件，通过querySchema和dataSchema配置实现通用的CRUD功能。支持菜单配置、登录校验、单点登录、导入导出等常用功能。理念是\"配置优于代码\"，让后端开发者也能快速搭建可用的后台系统。",
+        "en": "A React-based generic admin dashboard framework built with Ant Design. Its core feature is the DBTable component enabling CRUD operations through schema configuration. Implements a 'configuration over code' philosophy, allowing backend developers to quickly build admin interfaces with menu config, authentication, and import/export capabilities.",
+        "tags_zh": [
+          "CRUD组件",
+          "React",
+          "后台管理系统",
+          "配置化开发"
+        ],
+        "tags_en": [
+          "Admin Dashboard",
+          "CRUD Component",
+          "Configuration-Driven",
+          "React"
+        ]
+      },
+      "pushed_at": "2024-04-30T04:16:24Z",
+      "updated_at": "2026-04-22"
+    },
+    "xluohome/phonedata": {
+      "metadata": {
+        "full_name": "xluohome/phonedata",
+        "name": "phonedata",
+        "owner": "xluohome",
+        "description": "手机号码归属地信息库、手机号归属地查询   phone.dat 最后更新：2023年02月 ",
+        "stars": 2213,
+        "language": "Go",
+        "url": "https://github.com/xluohome/phonedata",
+        "homepage": "https://github.com/xluohome/phonedata",
+        "topics": [
+          "golang",
+          "java",
+          "phonenumber",
+          "php",
+          "python"
+        ],
+        "pushed_at": "2023-11-14T05:23:28Z",
+        "updated_at": "2026-04-22T16:57:11Z",
+        "starred_at": "2017-05-03T17:27:09Z"
+      },
+      "summary": {
+        "zh": "基于Go语言实现的中国手机号归属地查询数据库，采用高效的二分查找算法，支持通过手机号前7位快速查询归属地信息（省份、城市、邮编、长途区号、运营商）。数据文件约4.5MB，包含近50万条号段记录，查询性能达152纳秒，被奇虎360等知名企业采用。",
+        "en": "A Go-based Chinese mobile phone number location lookup database using binary search algorithm for efficient queries. With approximately 4.5MB data file containing nearly 500,000 phone segment records, it enables instant retrieval of location info including province, city, zip code, area code and carrier. Achieves impressive 152ns per query performance and is used by notable companies like 360.",
+        "tags_zh": [
+          "Go语言",
+          "二分查找",
+          "归属地查询",
+          "数据查询"
+        ],
+        "tags_en": [
+          "Binary Search",
+          "Data Query",
+          "Go Language",
+          "Phone Lookup"
+        ]
+      },
+      "pushed_at": "2023-11-14T05:23:28Z",
+      "updated_at": "2026-04-22"
+    },
+    "h2y/Shadowrocket-ADBlock-Rules": {
+      "metadata": {
+        "full_name": "h2y/Shadowrocket-ADBlock-Rules",
+        "name": "Shadowrocket-ADBlock-Rules",
+        "owner": "h2y",
+        "description": "提供多款 Shadowrocket 规则，带广告过滤功能。用于 iOS 未越狱设备选择性地自动翻墙。",
+        "stars": 16513,
+        "language": "Python",
+        "url": "https://github.com/h2y/Shadowrocket-ADBlock-Rules",
+        "homepage": "https://github.com/h2y/Shadowrocket-ADBlock-Rules/blob/master/readme.md",
+        "topics": [
+          "gfw",
+          "proxy",
+          "shadowrocket",
+          "shadowsocks",
+          "shadowsocksr",
+          "ssr",
+          "surge"
+        ],
+        "pushed_at": "2021-04-12T16:11:40Z",
+        "updated_at": "2026-04-22T16:58:27Z",
+        "starred_at": "2017-08-04T11:37:58Z"
+      },
+      "summary": {
+        "zh": "为 iOS Shadowrocket 提供翻墙规则，支持广告过滤。基于 GFWList 自动转换，整合 EasyList 等广告过滤规则源。提供黑名单、白名单、国内外分流等多种模式，用户可按需选择。项目已停止维护，但规则仍可使用。",
+        "en": "A comprehensive rule set for iOS Shadowrocket with ad-blocking. Auto-converts GFWList and integrates EasyList for ad filtering. Offers multiple routing modes including blacklist, whitelist, and geographic splitting. While the project is no longer maintained, rules remain functional.",
+        "tags_zh": [
+          "iOS代理工具",
+          "广告过滤",
+          "网络分流",
+          "翻墙规则"
+        ],
+        "tags_en": [
+          "Ad Blocking",
+          "GFW Rules",
+          "Traffic Routing",
+          "iOS Proxy Tool"
+        ]
+      },
+      "pushed_at": "2021-04-12T16:11:40Z",
+      "updated_at": "2026-04-22"
+    },
+    "HandsomeOne/Scout": {
+      "metadata": {
+        "full_name": "HandsomeOne/Scout",
+        "name": "Scout",
+        "owner": "HandsomeOne",
+        "description": "可能是东半球最灵活的 URL 监控系统",
+        "stars": 187,
+        "language": "TypeScript",
+        "url": "https://github.com/HandsomeOne/Scout",
+        "homepage": "",
+        "topics": [
+          "alert",
+          "antd",
+          "monitoring",
+          "react"
+        ],
+        "pushed_at": "2018-08-27T05:30:02Z",
+        "updated_at": "2026-03-22T07:01:33Z",
+        "starred_at": "2017-04-05T20:16:27Z"
+      },
+      "summary": {
+        "zh": "Scout 是一款面向运维人员的灵活 URL 监控系统，支持自定义 HTTP 请求方法、请求头和请求体。通过 JavaScript 代码编写检测条件，实现状态码、响应时间和返回内容的实时监测。支持活跃时间段、异常容忍机制和 HTTP 告警推送，前端界面直观美观，提供测试用例即时预览、批量管理和告警记录查看等功能。",
+        "en": "Scout is a highly flexible URL monitoring system for DevOps, supporting custom HTTP requests with configurable methods, headers, and body. It enables real-time detection via user-defined JavaScript code for status codes, response times, and content validation. Features include active time windows, anomaly tolerance, HTTP-based alerting, and a visually appealing interface with instant code preview and batch management.",
+        "tags_zh": [
+          "Apdex",
+          "HTTP检测",
+          "监控告警",
+          "运维自动化"
+        ],
+        "tags_en": [
+          "Apdex",
+          "DevOps Automation",
+          "Monitoring & Alerting",
+          "URL Inspection"
+        ]
+      },
+      "pushed_at": "2018-08-27T05:30:02Z",
+      "updated_at": "2026-04-22"
+    },
+    "devlinkcn/ppts_for_php2017": {
+      "metadata": {
+        "full_name": "devlinkcn/ppts_for_php2017",
+        "name": "ppts_for_php2017",
+        "owner": "devlinkcn",
+        "description": "2017 第三届PHP全球开发者大会PPT/Keynote",
+        "stars": 945,
+        "language": "N/A",
+        "url": "https://github.com/devlinkcn/ppts_for_php2017",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2017-06-30T16:23:23Z",
+        "updated_at": "2026-04-21T08:51:43Z",
+        "starred_at": "2017-06-14T18:24:27Z"
+      },
+      "summary": {
+        "zh": "收录2017年PHP全球开发者大会演讲PPT的技术资源库，汇聚PHP生态最新技术实践与行业趋势。由于版权归属讲师，PPT公开与否由讲师自行决定。该仓库通过Pull Request方式接受讲师提交。",
+        "en": "A resource repository featuring presentation slides from the 3rd PHP Global Developers Conference 2017, showcasing technical practices and trends in the PHP ecosystem. PPTs are released based on speakers' discretion via pull request submissions.",
+        "tags_zh": [
+          "PHP",
+          "技术会议",
+          "技术分享",
+          "演示文稿"
+        ],
+        "tags_en": [
+          "Knowledge Sharing",
+          "PHP",
+          "Presentations",
+          "Tech Conference"
+        ]
+      },
+      "pushed_at": "2017-06-30T16:23:23Z",
+      "updated_at": "2026-04-22"
+    },
+    "peckadesign/Monitoring": {
+      "metadata": {
+        "full_name": "peckadesign/Monitoring",
+        "name": "Monitoring",
+        "owner": "peckadesign",
+        "description": "Monitoring na dostupnost webů, generování feedů, DNS, HTTPS atd.",
+        "stars": 40,
+        "language": "PHP",
+        "url": "https://github.com/peckadesign/Monitoring",
+        "homepage": "",
+        "topics": [
+          "monitoring",
+          "nextras",
+          "php"
+        ],
+        "pushed_at": "2023-04-13T06:30:54Z",
+        "updated_at": "2025-01-10T10:50:20Z",
+        "starred_at": "2017-04-05T20:15:12Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2023-04-13T06:30:54Z",
+      "updated_at": "2026-04-22"
+    },
+    "521xueweihan/HelloGitHub": {
+      "metadata": {
+        "full_name": "521xueweihan/HelloGitHub",
+        "name": "HelloGitHub",
+        "owner": "521xueweihan",
+        "description": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
+        "stars": 152513,
+        "language": "Python",
+        "url": "https://github.com/521xueweihan/HelloGitHub",
+        "homepage": "https://hellogithub.com",
+        "topics": [
+          "awesome",
+          "github",
+          "hellogithub",
+          "python"
+        ],
+        "pushed_at": "2026-04-01T16:16:13Z",
+        "updated_at": "2026-04-22T23:39:30Z",
+        "starred_at": "2017-04-01T17:30:04Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2026-04-01T16:16:13Z",
+      "updated_at": "2026-04-22"
+    },
+    "ossrs/srs": {
+      "metadata": {
+        "full_name": "ossrs/srs",
+        "name": "srs",
+        "owner": "ossrs",
+        "description": "SRS is a simple, high-efficiency, real-time media server supporting RTMP, WebRTC, HLS, HTTP-FLV, HTTP-TS, SRT, MPEG-DASH, and GB28181, with codec support for H.264, H.265, AV1, VP9, AAC, Opus, and G.711.",
+        "stars": 28759,
+        "language": "C++",
+        "url": "https://github.com/ossrs/srs",
+        "homepage": "https://ossrs.io",
+        "topics": [
+          "audio",
+          "c",
+          "c-plus-plus",
+          "dash",
+          "hevc",
+          "hls",
+          "live",
+          "live-streaming",
+          "low-latency",
+          "media-server",
+          "multimedia",
+          "prometheus-exporter",
+          "rtmp",
+          "server-side",
+          "srt",
+          "streaming",
+          "video",
+          "video-conferencing",
+          "video-streaming",
+          "webrtc"
+        ],
+        "pushed_at": "2026-04-19T00:33:07Z",
+        "updated_at": "2026-04-22T23:48:31Z",
+        "starred_at": "2017-01-20T16:09:57Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2026-04-19T00:33:07Z",
+      "updated_at": "2026-04-22"
+    },
+    "jiangbianwanghai/ping": {
+      "metadata": {
+        "full_name": "jiangbianwanghai/ping",
+        "name": "ping",
+        "owner": "jiangbianwanghai",
+        "description": "这是一个网页状态监控项目",
+        "stars": 39,
+        "language": "PHP",
+        "url": "https://github.com/jiangbianwanghai/ping",
+        "homepage": "https://jiangbianwanghai.gitbooks.io/mty-monitor-user-guide/content/chapter1.html",
+        "topics": [],
+        "pushed_at": "2016-12-28T09:32:01Z",
+        "updated_at": "2025-02-21T01:59:04Z",
+        "starred_at": "2017-01-02T20:36:35Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2016-12-28T09:32:01Z",
+      "updated_at": "2026-04-22"
+    },
+    "U2FsdGVkX1/Tbo": {
+      "metadata": {
+        "full_name": "U2FsdGVkX1/Tbo",
+        "name": "Tbo",
+        "owner": "U2FsdGVkX1",
+        "description": "一个更轻巧的 Telegram Bot 框架",
+        "stars": 135,
+        "language": "PHP",
+        "url": "https://github.com/U2FsdGVkX1/Tbo",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2022-10-19T06:50:35Z",
+        "updated_at": "2026-03-14T17:31:16Z",
+        "starred_at": "2016-12-25T16:17:52Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2022-10-19T06:50:35Z",
+      "updated_at": "2026-04-22"
+    },
+    "myluoluo/pubuim-zabbix-Incoming": {
+      "metadata": {
+        "full_name": "myluoluo/pubuim-zabbix-Incoming",
+        "name": "pubuim-zabbix-Incoming",
+        "owner": "myluoluo",
+        "description": "为 pubu.im 使用的 Zabbix 报警脚本",
+        "stars": 4,
+        "language": "Python",
+        "url": "https://github.com/myluoluo/pubuim-zabbix-Incoming",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2016-12-19T09:26:09Z",
+        "updated_at": "2023-01-28T08:45:23Z",
+        "starred_at": "2016-12-22T17:06:09Z"
+      },
+      "summary": {
+        "zh": "生成失败",
+        "en": "Generation failed",
+        "tags_zh": [],
+        "tags_en": []
+      },
+      "pushed_at": "2016-12-19T09:26:09Z",
+      "updated_at": "2026-04-22"
+    },
+    "megamsys/nilavu": {
+      "metadata": {
+        "full_name": "megamsys/nilavu",
+        "name": "nilavu",
+        "owner": "megamsys",
+        "description": "Open Source Cloud Management Platform - VM's, Docker, Containers, Applications on the go",
+        "stars": 55,
+        "language": "JavaScript",
+        "url": "https://github.com/megamsys/nilavu",
+        "homepage": "https:/www.megam.io",
+        "topics": [
+          "emberjs",
+          "ruby",
+          "vertice",
+          "virtengine"
+        ],
+        "pushed_at": "2022-12-14T08:39:50Z",
+        "updated_at": "2025-12-28T04:17:14Z",
+        "starred_at": "2016-10-19T17:12:27Z"
+      },
+      "summary": {
+        "zh": "开源云管理平台，支持VM、Docker、容器及应用程序的一键部署。基于Rails 4.2.x与Ember.js构建，提供类似DigitalOcean/AWS的自助式云服务体验。支持多区域集群管理、容器编排（Swarm/Rancher）、自动弹性伸缩及WHMCS等主流计费系统集成，适用于私有云建设和托管服务商构建云平台。",
+        "en": "Open source cloud management platform enabling one-click deployment of VMs, Docker, containers, and applications. Built with Rails 4.2.x and Ember.js, it delivers a DigitalOcean/AWS-like self-service experience with multi-region clusters, container orchestration (Swarm/Rancher), auto-scaling, and WHMCS billing integration for private clouds and hosting providers.",
+        "tags_zh": [
+          "Docker容器",
+          "云计算",
+          "私有云",
+          "自动化运维"
+        ],
+        "tags_en": [
+          "Docker Containers",
+          "Private Cloud",
+          "云计算",
+          "运维自动化"
+        ]
+      },
+      "pushed_at": "2022-12-14T08:39:50Z",
+      "updated_at": "2026-04-22"
+    },
+    "loveshell/ngx_lua_waf": {
+      "metadata": {
+        "full_name": "loveshell/ngx_lua_waf",
+        "name": "ngx_lua_waf",
+        "owner": "loveshell",
+        "description": "ngx_lua_waf是一个基于lua-nginx-module(openresty)的web应用防火墙",
+        "stars": 4023,
+        "language": "Lua",
+        "url": "https://github.com/loveshell/ngx_lua_waf",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2024-03-17T12:14:30Z",
+        "updated_at": "2026-04-22T11:25:06Z",
+        "starred_at": "2016-10-16T16:21:36Z"
+      },
+      "summary": {
+        "zh": "ngx_lua_waf是一款基于OpenResty的轻量级Web应用防火墙，提供SQL注入、XSS、CC攻击等多维度防护。支持IP黑白名单、URL白名单及可定制规则过滤，通过Nginx配置快速集成，高性能低资源占用，适合网站安全加固。",
+        "en": "ngx_lua_waf is a lightweight WAF built on OpenResty/Nginx, providing multi-layered protection against SQL injection, XSS, CC attacks, and web vulnerabilities. It features IP whitelist/blacklist, URL whitelist, and customizable filtering rules for easy deployment and high-performance web security.",
+        "tags_zh": [
+          "Nginx安全",
+          "OpenResty",
+          "WAF防火墙",
+          "Web安全"
+        ],
+        "tags_en": [
+          "Nginx Security",
+          "OpenResty",
+          "WAF Firewall",
+          "Web Security"
+        ]
+      },
+      "pushed_at": "2024-03-17T12:14:30Z",
+      "updated_at": "2026-04-22"
+    },
+    "17mon/LookingGlass": {
+      "metadata": {
+        "full_name": "17mon/LookingGlass",
+        "name": "LookingGlass",
+        "owner": "17mon",
+        "description": "",
+        "stars": 198,
+        "language": "PHP",
+        "url": "https://github.com/17mon/LookingGlass",
+        "homepage": "http://tool.17mon.cn",
+        "topics": [],
+        "pushed_at": "2017-02-19T15:54:09Z",
+        "updated_at": "2025-08-19T08:21:19Z",
+        "starred_at": "2016-09-14T14:55:05Z"
+      },
+      "summary": {
+        "zh": "开源的Web端LookingGlass服务实现，用于查询路由信息和网络诊断。支持traceroute、ping等工具，基于17MON的IP归属地数据库。支持Nginx逐行实时输出，解决国内此类服务稀缺的问题，提供东京、费利蒙、莫斯科、北京等多地区演示节点。",
+        "en": "An open-source Looking Glass web service for network route diagnostics. Supports traceroute and ping with real-time streaming output, based on 17MON IP geolocation database. Solves the lack of such services in China with demo nodes across Tokyo, Fremont, Moscow, and Beijing.",
+        "tags_zh": [
+          "IP归属地",
+          "网络工具",
+          "网络运维",
+          "路由诊断"
+        ],
+        "tags_en": [
+          "IP Geolocation",
+          "Network Operations",
+          "Network Tools",
+          "Route Diagnostics"
+        ]
+      },
+      "pushed_at": "2017-02-19T15:54:09Z",
+      "updated_at": "2026-04-22"
+    },
+    "myanaloglife/py-kms": {
+      "metadata": {
+        "full_name": "myanaloglife/py-kms",
+        "name": "py-kms",
+        "owner": "myanaloglife",
+        "description": "",
+        "stars": 524,
+        "language": "Python",
+        "url": "https://github.com/myanaloglife/py-kms",
+        "homepage": "http://forums.mydigitallife.info/threads/50234-Emulated-KMS-Servers-on-non-Windows-platforms/page2?p=840410&viewfull=1#post840410",
+        "topics": [],
+        "pushed_at": "2019-04-10T04:25:08Z",
+        "updated_at": "2026-04-20T10:37:55Z",
+        "starred_at": "2016-09-09T07:30:58Z"
+      },
+      "summary": {
+        "zh": "py-kms 是 KMS（密钥管理服务）服务器的 Python 实现，支持响应 V4/V5/V6 版本的 KMS 请求，可激活 Windows 7/8/8.1/2008R2/2012/2012R2 及 Office 2010/2013。该项目基于 node-kms 移植而来，使用 Python 2.6/2.7 开发，依赖 pytz 模块提供时区转换功能。",
+        "en": "py-kms is a Python implementation of KMS (Key Management Service) server that responds to V4, V5, and V6 KMS requests. It supports activation for Windows 7/8/8.1/2008R2/2012/2012R2 and Office 2010/2013. Derived from node-kms, it runs on Python 2.6/2.7 with optional pytz for timezone conversion.",
+        "tags_zh": [
+          "Python脚本",
+          "企业批量激活",
+          "网络服务"
+        ],
+        "tags_en": [
+          "Enterprise Activation",
+          "Network Service",
+          "Python"
+        ]
+      },
+      "pushed_at": "2019-04-10T04:25:08Z",
+      "updated_at": "2026-04-22"
+    },
+    "huluoyang/freecodecamp.cn": {
+      "metadata": {
+        "full_name": "huluoyang/freecodecamp.cn",
+        "name": "freecodecamp.cn",
+        "owner": "huluoyang",
+        "description": "随着FCC中文社区的快速发展和更多小伙伴的崛起，此项目已从个人项目升级到团队项目。详情请移步：",
+        "stars": 5563,
+        "language": "JavaScript",
+        "url": "https://github.com/huluoyang/freecodecamp.cn",
+        "homepage": "https://github.com/FreeCodeCampChina/freecodecamp.cn",
+        "topics": [],
+        "pushed_at": "2018-10-19T06:06:57Z",
+        "updated_at": "2026-04-21T20:57:50Z",
+        "starred_at": "2016-09-11T14:42:34Z"
+      },
+      "summary": {
+        "zh": "FreeCodeCamp中文社区是基于开源编程学习平台FreeCodeCamp的中文本地化项目，由个人发起后发展为团队协作，完成了网站界面与课程内容的全面汉化。该项目继承开源精神，强调\"边学边做\"的实践理念，为中国开发者提供了一条降低学习门槛的高效编程入门路径。",
+        "en": "FreeCodeCamp.cn is the Chinese localized version of the popular open-source programming learning platform. Initiated individually, it evolved into a collaborative team project, completing full translation of the website interface and curriculum content. Inheriting the open-source spirit with a \"learning by doing\" approach, it provides Chinese developers with an accessible path to programming education.",
+        "tags_zh": [
+          "中文本地化",
+          "协作翻译",
+          "开源社区",
+          "编程教育"
+        ],
+        "tags_en": [
+          "Chinese Localization",
+          "Collaborative Translation",
+          "Open Source Community",
+          "Programming Education"
+        ]
+      },
+      "pushed_at": "2018-10-19T06:06:57Z",
+      "updated_at": "2026-04-22"
+    },
+    "mzlogin/awesome-adb": {
+      "metadata": {
+        "full_name": "mzlogin/awesome-adb",
+        "name": "awesome-adb",
+        "owner": "mzlogin",
+        "description": "ADB Usage Complete / ADB 用法大全",
+        "stars": 12288,
+        "language": "N/A",
+        "url": "https://github.com/mzlogin/awesome-adb",
+        "homepage": "https://mazhuang.org/awesome-adb/",
+        "topics": [
+          "android",
+          "android-adb",
+          "android-debug-bridge"
+        ],
+        "pushed_at": "2024-12-18T09:31:14Z",
+        "updated_at": "2026-04-22T17:09:43Z",
+        "starred_at": "2016-08-27T12:36:14Z"
+      },
+      "summary": {
+        "zh": "Android Debug Bridge（ADB）命令用法大全，涵盖设备连接管理、应用安装卸载、日志查看分析、系统设置修改、文件传输、模拟输入、屏幕截图录屏、刷机操作等完整命令参考。专为Android开发测试人员及高级玩家打造的中文技术手册，支持中文文档。",
+        "en": "A comprehensive guide to Android Debug Bridge (ADB) commands, covering device connection, app management, log analysis, system settings modification, file transfer, simulated input, screen capture/recording, and flashing operations. An essential reference for Android developers, testers, and power users with Chinese documentation support.",
+        "tags_zh": [
+          "ADB命令",
+          "Android开发工具",
+          "系统运维",
+          "设备调试"
+        ],
+        "tags_en": [
+          "ADB Commands",
+          "Android Development",
+          "Device Debugging",
+          "System Operations"
+        ]
+      },
+      "pushed_at": "2024-12-18T09:31:14Z",
+      "updated_at": "2026-04-22"
+    },
+    "HFO4/shudong-share": {
+      "metadata": {
+        "full_name": "HFO4/shudong-share",
+        "name": "shudong-share",
+        "owner": "HFO4",
+        "description": "树洞外链",
+        "stars": 524,
+        "language": "PHP",
+        "url": "https://github.com/HFO4/shudong-share",
+        "homepage": "https://yun.aoaoao.me",
+        "topics": [
+          "php"
+        ],
+        "pushed_at": "2018-03-01T02:48:52Z",
+        "updated_at": "2026-03-30T13:15:19Z",
+        "starred_at": "2016-08-20T10:41:52Z"
+      },
+      "summary": {
+        "zh": "树洞外链是一款免费开源的PHP外链网盘系统，支持七牛云、本地存储、远程存储、阿里云OSS、又拍云五种储存方式。具备多用户管理和多种上传策略，界面简洁友好，适合个人或小型团队搭建私有外链分享平台。",
+        "en": "Shudong-share is a free open-source PHP file hosting system supporting five storage backends: Qiniu, Local, Remote, Aliyun OSS, and UPYun. It features multi-user management and multiple upload strategies with a clean interface, ideal for building private file sharing platforms.",
+        "tags_zh": [
+          "PHP网盘",
+          "云存储",
+          "多用户系统",
+          "文件分享"
+        ],
+        "tags_en": [
+          "CDN",
+          "Cloud Storage",
+          "File Sharing",
+          "Multi-User",
+          "PHP"
+        ]
+      },
+      "pushed_at": "2018-03-01T02:48:52Z",
+      "updated_at": "2026-04-22"
+    },
+    "d1sm/finalspeed": {
+      "metadata": {
+        "full_name": "d1sm/finalspeed",
+        "name": "finalspeed",
+        "owner": "d1sm",
+        "description": "高速双边加速软件,在高丢包,延迟环境下仍可达到90%物理带宽利用率.",
+        "stars": 2025,
+        "language": "N/A",
+        "url": "https://github.com/d1sm/finalspeed",
+        "homepage": "",
+        "topics": [],
+        "pushed_at": "2020-01-12T05:53:51Z",
+        "updated_at": "2026-04-02T16:23:05Z",
+        "starred_at": "2016-02-24T11:41:37Z"
+      },
+      "summary": {
+        "zh": "高性能双边网络加速工具，专为高丢包、高延迟网络环境设计。通过优化传输算法实现物理带宽90%利用率，适用于跨国网络、游戏加速、远程办公等场景，有效改善弱网环境下的数据传输质量和稳定性。",
+        "en": "A high-performance dual-ended network acceleration tool designed for high packet loss and high latency environments, achieving up to 90% of physical bandwidth utilization. Ideal for cross-border networks, gaming acceleration, and remote work, significantly improving data transmission quality in weak network conditions.",
+        "tags_zh": [
+          "双边加速",
+          "带宽优化",
+          "弱网增强",
+          "网络加速"
+        ],
+        "tags_en": [
+          "Bandwidth Optimization",
+          "Dual-End Acceleration",
+          "Network Acceleration",
+          "Packet Loss Recovery"
+        ]
+      },
+      "pushed_at": "2020-01-12T05:53:51Z",
+      "updated_at": "2026-04-22"
+    },
+    "guzzle/guzzle": {
+      "metadata": {
+        "full_name": "guzzle/guzzle",
+        "name": "guzzle",
+        "owner": "guzzle",
+        "description": "Guzzle, an extensible PHP HTTP client",
+        "stars": 23449,
+        "language": "PHP",
+        "url": "https://github.com/guzzle/guzzle",
+        "homepage": "https://docs.guzzlephp.org/",
+        "topics": [
+          "curl",
+          "guzzle",
+          "http-client",
+          "httpclient",
+          "php",
+          "psr-7",
+          "requests",
+          "webservices"
+        ],
+        "pushed_at": "2026-03-05T20:35:15Z",
+        "updated_at": "2026-04-22T13:29:18Z",
+        "starred_at": "2016-05-06T17:24:46Z"
+      },
+      "summary": {
+        "zh": "Guzzle 是 PHP 生态中最成熟的 HTTP 客户端库，提供简洁 API 发送 HTTP 请求，支持同步与异步两种调用模式。遵循 PSR-7/PSR-18 标准实现传输层解耦，内置中间件系统支持灵活扩展行为。通过 Composer 一键集成，广泛应用于第三方 API 调用、服务间通信及网页数据采集等场景。",
+        "en": "Guzzle is PHP's most established HTTP client library, offering a clean interface for sending HTTP requests with both synchronous and asynchronous support. Compliant with PSR-7 and PSR-18 standards, it decouples transport layers while providing a middleware system for extensible client behavior. Installable via Composer, it is widely used for API consumption, inter-service communication, and web data extraction.",
+        "tags_zh": [
+          "API调用",
+          "HTTP客户端",
+          "PHP",
+          "Web开发"
+        ],
+        "tags_en": [
+          "HTTP Client",
+          "PHP",
+          "PSR-7 Standard",
+          "Web Development"
+        ]
+      },
+      "pushed_at": "2026-03-05T20:35:15Z",
+      "updated_at": "2026-04-22"
+    }
+  }
 }
