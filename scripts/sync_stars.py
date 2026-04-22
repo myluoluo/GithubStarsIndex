@@ -59,6 +59,8 @@ DEFAULT_MD_TEMPLATE = "stars.md.j2"
 STARS_MD_PATH_DEFAULT = SCRIPT_DIR / "stars.md"
 ROBOTS_TXT_NAME = "robots.txt"
 ROBOTS_TXT_DISALLOW_ALL = "User-agent: *\nDisallow: /\n"
+EMPTY_SNAPSHOT_MAX_ATTEMPTS = 3
+ALLOW_EMPTY_SNAPSHOT_ENV = "ALLOW_EMPTY_GITHUB_STARS_SNAPSHOT"
 
 # 确保数据目录存在
 DATA_DIR.mkdir(exist_ok=True)
@@ -74,6 +76,7 @@ BOOLEAN_ENV_KEYS = {
     "PAGES_SYNC_ENABLED",
     "PAGES_DISALLOW_INDEXING",
     "NOTION_SYNC_ENABLED",
+    ALLOW_EMPTY_SNAPSHOT_ENV,
 }
 INTEGER_ENV_KEYS = {"MAX_CONCURRENCY", "TEST_LIMIT"}
 INTEGER_ENV_KEYS.add("AI_TIMEOUT")
@@ -113,6 +116,7 @@ def load_config() -> dict:
         "GH_USERNAME": "github.username",
         "GH_TOKEN": "github.token",
         "GITHUB_TOKEN": "github.token",
+        ALLOW_EMPTY_SNAPSHOT_ENV: "github.allow_empty_snapshot",
         "AI_BASE_URL": "ai.base_url",
         "AI_API_KEY": "ai.api_key",
         "AI_MODEL": "ai.model",
@@ -136,7 +140,11 @@ def load_config() -> dict:
     }
 
     cfg = {
-        "github": {"username": os.environ.get("GH_USERNAME"), "token": None},
+        "github": {
+            "username": os.environ.get("GH_USERNAME"),
+            "token": None,
+            "allow_empty_snapshot": False,
+        },
         "ai": {
             "model": "gpt-4o-mini",
             "base_url": "https://api.openai.com/v1",
@@ -266,6 +274,71 @@ def has_persistable_changes(
     return any((new_count, refreshed_count, removed_count))
 
 
+def get_cached_repo_count(store: DataStore) -> int:
+    return len(store.data.get("repos", {}))
+
+
+def ensure_live_snapshot_is_safe(
+    *,
+    live_repo_count: int,
+    cached_repo_count: int,
+    allow_empty_snapshot: bool,
+) -> None:
+    if live_repo_count > 0 or cached_repo_count == 0 or allow_empty_snapshot:
+        return
+    raise RuntimeError(
+        "GitHub Stars 返回空列表，但本地缓存中仍有历史数据。"
+        "为避免覆盖 data/stars.json，本次同步已中止。"
+        f"如确认当前账号确实没有任何 Stars，请显式设置 "
+        f"{ALLOW_EMPTY_SNAPSHOT_ENV}=true。"
+    )
+
+
+def fetch_live_star_snapshot(
+    gh: "GitHubClient",
+    *,
+    cached_repo_count: int,
+    allow_empty_snapshot: bool,
+) -> list[dict]:
+    for attempt in range(1, EMPTY_SNAPSHOT_MAX_ATTEMPTS + 1):
+        repos = gh.get_starred_repos()
+        live_repo_count = len(repos)
+        log.info(
+            "📥 Live Stars 抓取结果: 第 %s/%s 次尝试获取 %s 条，本地缓存 %s 条",
+            attempt,
+            EMPTY_SNAPSHOT_MAX_ATTEMPTS,
+            live_repo_count,
+            cached_repo_count,
+        )
+        if live_repo_count > 0:
+            return repos
+        if cached_repo_count == 0:
+            log.warning("⚠️ GitHub Stars 返回空列表，且本地缓存也为空，将按空数据继续。")
+            return repos
+        if allow_empty_snapshot:
+            log.warning(
+                "⚠️ GitHub Stars 返回空列表，但已显式允许空快照，将按空数据继续。"
+            )
+            return repos
+        if attempt == EMPTY_SNAPSHOT_MAX_ATTEMPTS:
+            break
+        wait_seconds = 2 ** (attempt - 1)
+        log.warning(
+            "⚠️ GitHub Stars 返回空列表，本次不会直接覆盖历史数据。"
+            " %s 秒后进行第 %s 次重试。",
+            wait_seconds,
+            attempt + 1,
+        )
+        time.sleep(wait_seconds)
+
+    ensure_live_snapshot_is_safe(
+        live_repo_count=0,
+        cached_repo_count=cached_repo_count,
+        allow_empty_snapshot=allow_empty_snapshot,
+    )
+    return []
+
+
 def sync_pages_robots_txt(output_dir: Path, disallow_indexing: bool) -> None:
     robots_path = output_dir / ROBOTS_TXT_NAME
     if disallow_indexing:
@@ -345,6 +418,11 @@ class GitHubClient:
             )
             data = resp.json()
             if not data:
+                log.warning(
+                    "⚠️ GitHub Stars API 第 %s 页返回空列表，当前累计 %s 条",
+                    page,
+                    len(repos),
+                )
                 break
             for item in data:
                 repo = item.get("repo", item)
@@ -751,6 +829,8 @@ def main():
     gh = GitHubClient(cfg["github"]["username"], cfg["github"].get("token"))
 
     store = DataStore(STARS_JSON_PATH)
+    cached_repo_count = get_cached_repo_count(store)
+    log.info(f"📦 已加载本地缓存，共 {cached_repo_count} 条记录")
     generator = TemplateGenerator(TEMPLATES_DIR)
 
     if args.render_only:
@@ -775,6 +855,7 @@ def main():
             or x.get("pushed_at", ""),
             reverse=True,
         )
+        log.info(f"🖼️ 仅渲染模式共装载 {len(all_repos)} 条仓库记录")
     else:
         ai = AISummarizer(
             cfg["ai"]["base_url"],
@@ -787,7 +868,11 @@ def main():
         )
 
         # 1. 抓取所有 Stars
-        all_repos = gh.get_starred_repos()
+        all_repos = fetch_live_star_snapshot(
+            gh,
+            cached_repo_count=cached_repo_count,
+            allow_empty_snapshot=bool(cfg["github"].get("allow_empty_snapshot")),
+        )
 
         # 2. 增量处理
         new_repos_to_process = []
@@ -818,6 +903,15 @@ def main():
                 existing["metadata"] = repo
                 refreshed_count += 1
                 seen_full_names.add(full_name)
+
+        log.info(
+            "📊 同步分类统计: live=%s，待生成=%s，已复用=%s，去重后=%s，TEST_LIMIT=%s",
+            len(all_repos),
+            len(new_repos_to_process),
+            refreshed_count,
+            len(seen_full_names),
+            test_limit if test_limit is not None else "off",
+        )
 
         def process_repo(args_tuple):
             idx, repo_data = args_tuple
@@ -861,7 +955,12 @@ def main():
                 f"刷新 {refreshed_count} 条，清理 {removed_count} 条"
             )
         else:
-            log.info("✨ 没有新条目需要处理")
+            log.info(
+                "✨ 没有可持久化变更: live=%s，缓存=%s，已复用=%s",
+                len(all_repos),
+                cached_repo_count,
+                refreshed_count,
+            )
     has_live_star_source = not args.render_only
 
     # 3. 按 Star 时间重新排序（最新 Star 在前）
