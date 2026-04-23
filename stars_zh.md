@@ -1,6 +1,6 @@
 # ⭐ GitHub Stars Index
 
-> Updated: 2026-04-22 23:56 UTC · Total: 133
+> Updated: 2026-04-23 00:01 UTC · Total: 133
 
 ---
 
@@ -164,7 +164,7 @@
 ## idawnlight/ShichiZip
 
 > [!info]
-> ⭐ 671 · Swift · 2026-04-22T18:41:06Z  
+> ⭐ 672 · Swift · 2026-04-22T23:58:25Z  
 > [GitHub](https://github.com/idawnlight/ShichiZip)  
 > `#Zig语言` `#压缩工具` `#桌面应用` `#跨平台` 
 > ShichiZip 是专为 macOS 设计的 7-Zip 压缩格式衍生工具，采用 Zig 语言开发以获得优异性能。支持标准 7-Zip 和 Zstandard 两种压缩算法变体，通过 XcodeGen 构建项目，为 macOS 用户提供轻量高效的开源压缩解压替代方案。
@@ -184,7 +184,7 @@
 ## gsd-build/get-shit-done
 
 > [!info]
-> ⭐ 56,215 · JavaScript · 2026-04-22T23:43:33Z  
+> ⭐ 56,217 · JavaScript · 2026-04-23T00:00:08Z  
 > [GitHub](https://github.com/gsd-build/get-shit-done)  
 > `#AI编程助手` `#上下文工程` `#元提示技术` `#规范驱动开发` `#claude-code` `#context-engineering` `#meta-prompting` `#spec-driven-development` 
 > GSD是一个专为AI编程助手设计的轻量级元提示、上下文工程和规范驱动开发系统。解决AI在填充上下文窗口时的质量退化问题，支持Claude Code、Cursor、Windsurf等主流工具。通过规划结构和上下文管理，让开发者清晰表达需求即可快速构建功能，适合独立开发者快速交付项目。
@@ -194,7 +194,7 @@
 ## obra/superpowers
 
 > [!info]
-> ⭐ 164,307 · Shell · 2026-04-22T23:50:33Z  
+> ⭐ 164,312 · Shell · 2026-04-22T23:56:46Z  
 > [GitHub](https://github.com/obra/superpowers)  
 > `#AI智能体` `#AI编程辅助` `#多IDE集成` `#软件开发方法论` 
 > Superpowers 是一个面向 AI 编程代理的技能框架与方法论，通过自动触发的技能系统引导代理从需求澄清、设计确认、任务分解到子代理驱动开发的完整流程。它强调 TDD、YAGNI、DRY 等工程实践，支持 Claude Code、Cursor、Github Copilot 等主流 AI IDE，帮助代理实现数小时自主工作不偏离计划。
@@ -242,7 +242,7 @@
 ## jundot/omlx
 
 > [!info]
-> ⭐ 11,076 · Python · 2026-04-22T23:26:01Z  
+> ⭐ 11,078 · Python · 2026-04-22T23:59:43Z  
 > [GitHub](https://github.com/jundot/omlx) · [Website](https://omlx.ai)  
 > `#AI大模型` `#Apple Silicon` `#推理加速` `#本地推理` `#apple-silicon` `#inference-server` `#llm` `#macos` `#mlx` `#openai-api` 
 > oMLX是专为Apple Silicon优化的LLM推理服务器，支持连续批处理与分层KV缓存（内存+SSD热冷分层），实现上下文跨请求复用。通过macOS菜单栏或CLI管理，支持OpenAI兼容API，可本地运行Llama等开源模型，为开发者提供低延迟的本地AI推理能力。
@@ -343,8 +343,8 @@
 > [!info]
 > ⭐ 4,492 · C++ · 2026-04-22T18:15:40Z  
 > [GitHub](https://github.com/xxnuo/MTranServer)  
-> 
-> 生成失败
+> `#离线翻译` `#私有部署` `#跨平台` `#轻量级服务器` 
+> 超低资源消耗的离线翻译模型服务器，无需显卡即可运行，单请求响应时间仅50毫秒。支持Windows、Mac、Linux桌面端一键启动及Docker部署，提供RESTful API兼容DeepL、沉浸式翻译等主流接口，支持全球主要语言，实现无限免费本地翻译。
 > <sub>Offline translation model server with low resource consumption, fast speed, and private deployment capability. 低资源占用速度快可私有部署的离线翻译模型服务器</sub>
 
 ---
@@ -353,8 +353,8 @@
 > [!info]
 > ⭐ 4,554 · C++ · 2026-04-22T10:14:01Z  
 > [GitHub](https://github.com/zufuliu/notepad4)  
-> `#arm64` `#dark-theme` `#editor` `#matepath` `#metapath` `#noteoad2` `#notepad2-mod` `#notepad4` `#scintilla` `#syntax-highlighting` 
-> 生成失败
+> `#代码编辑器` `#自动化工具` `#语法高亮` `#跨平台` `#arm64` `#dark-theme` `#editor` `#matepath` `#metapath` `#noteoad2` `#notepad2-mod` `#notepad4` `#scintilla` `#syntax-highlighting` 
+> Notepad4是基于Scintilla的轻量级Windows文本编辑器，支持50+编程语言的语法高亮、代码折叠、自动补全和API列表功能。由Notepad2现代化重写而来，并集成matepath文件浏览器插件，适合开发者进行代码编辑和查看。
 > <sub>Notepad4 (Notepad2⨯2, Notepad2++) is a light-weight Scintilla based text editor for Windows with syntax highlighting, code folding, auto-completion and API list for many programming languages and documents, bundled with file browser plugin matepath.</sub>
 
 ---
@@ -363,8 +363,8 @@
 > [!info]
 > ⭐ 26,425 · Lua · 2026-04-22T19:36:44Z  
 > [GitHub](https://github.com/koreader/koreader) · [Website](http://koreader.rocks/)  
-> `#cbz` `#djvu` `#djvu-reflow` `#ebook` `#ebook-reader` `#eink` `#epub` `#ereader` `#fb2` `#kindle` `#kobo` `#luajit` `#opds` `#pdf` `#pdf-reflow` `#pocketbook` `#reader` `#reflow` `#remarkable-tablet` `#ubuntu-touch` 
-> 生成失败
+> `#文档格式支持` `#电子书阅读器` `#电子墨水优化` `#跨平台` `#cbz` `#djvu` `#djvu-reflow` `#ebook` `#ebook-reader` `#eink` `#epub` `#ereader` `#fb2` `#kindle` `#kobo` `#luajit` `#opds` `#pdf` `#pdf-reflow` `#pocketbook` `#reader` `#reflow` `#remarkable-tablet` `#ubuntu-touch` 
+> KOReader是一款专为电子墨水设备打造的开源电子书阅读器，支持PDF、EPUB、DjVu等数十种文档格式。跨平台支持Kindle、Kobo、PocketBook、安卓等多设备运行，提供多语言界面、词典查词、RSS订阅、WiFi传书等丰富功能。性能针对电子墨水优化，页面翻转速度比原生系统快一倍以上。
 > <sub>An ebook reader application supporting PDF, DjVu, EPUB, FB2 and many more formats, running on Cervantes, Kindle, Kobo, PocketBook and Android devices</sub>
 
 ---
@@ -373,8 +373,8 @@
 > [!info]
 > ⭐ 736 · JavaScript · 2026-04-22T08:04:36Z  
 > [GitHub](https://github.com/autobcb/read)  
-> 
-> 生成失败
+> `#Flutter` `#代理工具` `#多端同步` `#网络文学` 
+> 轻阅读是一款全移动端网络文学阅读应用后端，支持多端进度同步与跨平台部署。采用Spring Boot+Docker架构，提供代理功能绕过IP限制，可导入本地书源并支持自定义包名。与开源阅读项目进度同步，适合自建书源的书友搭建私有阅读服务。
 > <sub>轻阅读一个全移动端可用的阅读应用，支持多端同步阅读进度，适配各种屏幕尺寸。 后端搭建视频教程：https://space.bilibili.com/517034064 ，麻烦一键三连下。</sub>
 
 ---
@@ -582,8 +582,8 @@
 > [!info]
 > ⭐ 720 · JavaScript · 2026-04-11T17:41:37Z  
 > [GitHub](https://github.com/NXY666/Jsjiemi)  
-> `#decryptor` `#javascript` `#jsjiemi` 
-> 生成失败
+> `#代码逆向` `#安全审计` `#正则解析` `#混淆检测` `#decryptor` `#javascript` `#jsjiemi` 
+> 基于正则匹配的JavaScript代码解密工具，用于安全研究人员评估加密工具的代码保护能力。通过正则表达式解析混淆代码，还原原始逻辑。该项目已停止维护，原用于检测低安全性加密方案的有效性。
 > <sub>基于正则匹配的 JavaScript 解密工具。请务必遵守开源协议，不得用于非法或商业用途。</sub>
 
 ---
@@ -592,8 +592,8 @@
 > [!info]
 > ⭐ 10,970 · Kotlin · 2026-04-22T20:19:27Z  
 > [GitHub](https://github.com/hectorqin/reader)  
-> 
-> 生成失败
+> `#开源` `#网络文学` `#跨平台` `#阅读器` 
+> 阅读3服务器版是一款开源网络文学阅读工具，支持书源管理、书架同步、搜索换源、听书及本地书籍导入。采用Kotlin+Spring Boot+Vert.x后端与Vue.js前端，支持WebDAV同步、自定义主题、RSS订阅和Kindle阅读，适配桌面端与iOS平台。
 > <sub>阅读3服务器版，桌面端，iOS可用。后端 Kotlin + Spring Boot + Vert.x + Coroutine ；前端 Vue.js + Element。麻烦点点star，关注一下公众号【假装大佬】❗️</sub>
 
 ---
@@ -602,8 +602,8 @@
 > [!info]
 > ⭐ 31,086 · N/A · 2026-04-22T19:31:14Z  
 > [GitHub](https://github.com/XIU2/TrackersListCollection) · [Website](https://trackerslist.com)  
-> `#aria2` `#aria2-format-tracker` `#bittorrent` `#bittorrent-trackers` `#qbittorrent` `#torrent` `#torrent-tracker` `#tracker` `#trackers` `#trackerslist` `#utorrent` 
-> 生成失败
+> `#BT下载` `#下载工具` `#开源资源` `#网络加速` `#aria2` `#aria2-format-tracker` `#bittorrent` `#bittorrent-trackers` `#qbittorrent` `#torrent` `#torrent-tracker` `#tracker` `#trackers` `#trackerslist` `#utorrent` 
+> 一个每日更新的热门BT Tracker列表仓库，精选整理高质量tracker服务器地址，有效提升BitTorrent下载速度。支持BEST、ALL、HTTP等多种类型列表，提供Aria2专用格式及多CDN镜像加速，适合qBittorrent、迅雷等主流BT客户端使用。
 > <sub>🎈 Updated daily! A list of popular BitTorrent Trackers! / 每天更新！全网热门 BT Tracker 列表！</sub>
 
 ---
@@ -812,8 +812,8 @@
 > [!info]
 > ⭐ 109 · C · 2025-02-01T00:37:02Z  
 > [GitHub](https://github.com/bilibili/mtr) · [Website](http://www.bitwizard.nl/mtr/)  
-> 
-> 生成失败
+> `#IP解析` `#终端工具` `#网络诊断` `#运维工具` 
+> Bilibili开源的增强版mtr网络诊断工具，在经典traceroute功能基础上增加了IP地理位置解析能力，支持biliip和ipip.net数据库，可显示IP的国家、城市及ISP信息。适用于网络故障诊断、路由追踪和服务器定位等运维场景。
 > <sub>mtr 增加IP解析功能, a network diagnostic tool</sub>
 
 ---
@@ -822,8 +822,8 @@
 > [!info]
 > ⭐ 18,694 · PHP · 2026-04-22T20:17:26Z  
 > [GitHub](https://github.com/BookStackApp/BookStack) · [Website](https://www.bookstackapp.com/)  
-> `#bookstack` `#documentation` `#laravel` `#php` `#selfhosted` `#wiki` 
-> 生成失败
+> `#Laravel框架` `#团队协作` `#文档平台` `#知识管理` `#bookstack` `#documentation` `#laravel` `#php` `#selfhosted` `#wiki` 
+> BookStack 是基于 PHP/Laravel 构建的开源文档与 Wiki 平台，采用书籍-章节-页面三层结构组织内容。提供 Markdown/WYSIWYG 双编辑器、细粒度权限管理、全文搜索与 API 接口，支持多语言与 LDAP/SSO 认证。设计理念强调开箱即用的简洁体验，适合团队知识沉淀、技术文档编写与内部协作。
 > <sub>A platform to create documentation/wiki content built with PHP & Laravel</sub>
 
 ---
@@ -832,8 +832,8 @@
 > [!info]
 > ⭐ 75 · Python · 2026-04-08T16:09:54Z  
 > [GitHub](https://github.com/iRay/TeleTor)  
-> `#telegram` `#telegram-bot` `#torrent` `#transmission` 
-> 生成失败
+> `#BitTorrent管理` `#Python` `#自动化工具` `#远程控制` `#telegram` `#telegram-bot` `#torrent` `#transmission` 
+> TeleTor是一个Telegram机器人，用于远程管理Transmission BitTorrent客户端。用户可通过Telegram发送.torrent文件或magnet链接，并使用inline按钮启动、停止、删除下载任务。专为树莓派或本地网络中的PC设计，实现随时随地管理家庭下载服务器。
 > <sub>Telegram Torrents Bot</sub>
 
 ---
@@ -842,8 +842,8 @@
 > [!info]
 > ⭐ 4 · JavaScript · 2020-07-26T06:29:56Z  
 > [GitHub](https://github.com/FriendsOfHere/meta-news)  
-> `#here` `#news` `#plugin` 
-> 生成失败
+> `#Here.app` `#插件生成工具` `#新闻聚合` `#桌面小组件` `#here` `#news` `#plugin` 
+> Meta News 是专为 Here.app 打造的插件生成工具，可快速创建新闻类桌面插件。用户填写配置字段并点击小窗口后，自动生成新闻插件并显示在桌面。支持一键安装和手动安装两种方式，大幅简化 Here 平台新闻插件的开发流程。
 > <sub>A plugin to generate news plugin</sub>
 
 ---
@@ -852,8 +852,8 @@
 > [!info]
 > ⭐ 156 · N/A · 2026-03-19T01:17:40Z  
 > [GitHub](https://github.com/hereappdev/Here-Plugins) · [Website](https://here.app)  
-> `#app` `#here` `#macos` `#plugin` `#productivity` 
-> 生成失败
+> `#macOS效率工具` `#开源生态` `#插件系统` `#社区贡献` `#app` `#here` `#macos` `#plugin` `#productivity` 
+> Here-Plugins是macOS效率应用Here的官方插件仓库，支持开发者创建和分享插件以扩展应用功能。提供完整的插件开发文档和生成器工具，通过all.json文件管理插件列表，采用MIT开源协议，旨在构建社区驱动的插件生态系统。
 > <sub>Plugins for Here App 🚀</sub>
 
 ---
@@ -1062,8 +1062,8 @@
 > [!info]
 > ⭐ 2,536 · N/A · 2026-04-22T04:29:15Z  
 > [GitHub](https://github.com/1265578519/ShanaEncoder) · [Website](http://bbs.itzmx.com/thread-7413-1-1.html)  
-> 
-> 生成失败
+> `#GPU加速` `#多媒体处理` `#视频压制` `#视频编码` 
+> ShanaEncoder是一款专为视频压制设计的工具，支持CPU与GPU同时加速编码，显著提升压制效率与画质。作为B站推荐的视频压制软件，它兼容多种编码格式，具备批量处理能力，能够在保持高清晰度的同时大幅缩短处理时间，适合内容创作者和专业视频工作者使用。
 > <sub>ShanaEncoder，最强的视频压制软件，支持CPU和GPU同时工作，速度快，清晰度高，B站指定压制工具</sub>
 
 ---
@@ -1072,8 +1072,8 @@
 > [!info]
 > ⭐ 659 · Python · 2026-01-27T14:58:38Z  
 > [GitHub](https://github.com/welliamcao/VManagePlatform)  
-> `#kvm` `#kvmwebui` `#libvirt` 
-> 生成失败
+> `#权限管理` `#自动化运维` `#虚拟化平台` `#资源监控` `#kvm` `#kvmwebui` `#libvirt` 
+> 基于 Django + Celery 的 KVM 虚拟化管理平台，提供虚拟机全生命周期管理、存储池管理、网络管理（支持 OpenVSwitch/SDN）、资源监控及 Web Console 等功能。平台采用 Python 2.7 开发，支持多租户权限管理和热迁移，适用于企业级虚拟化基础设施运维。
 > <sub>Kvm  Manage WebUI</sub>
 
 ---
@@ -1082,8 +1082,8 @@
 > [!info]
 > ⭐ 103 · Java · 2026-04-05T10:58:39Z  
 > [GitHub](https://github.com/jiang111/ReSend-SMS)  
-> `#android` `#email-sender` `#sms` `#smtp` 
-> 生成失败
+> `#Android应用` `#短信监听` `#邮件通知` `#隐私保护` `#android` `#email-sender` `#sms` `#smtp` 
+> 一款Android短信转发应用，实时监听手机接收的短信，通过SMTP协议加密发送至用户指定邮箱。支持163、QQ等主流邮箱服务，采用本地处理机制保护用户隐私，需将应用加入白名单以确保后台常驻运行。
 > <sub>将手机接收到的短信以邮件的形式发送至指定邮箱</sub>
 
 ---
@@ -1092,8 +1092,8 @@
 > [!info]
 > ⭐ 294 · TypeScript · 2026-04-09T12:30:01Z  
 > [GitHub](https://github.com/Srar/MemcacheDos)  
-> 
-> 生成失败
+> `#DDoS攻击` `#放大攻击` `#网络协议` `#网络安全` 
+> 基于Node.js/TypeScript实现的Memcache UDP反射放大DDoS攻击工具。通过伪造源IP利用Memcache 11211端口漏洞，可达60倍至4万倍反射倍率。该仓库已被标记为高危网络安全工具，不建议部署或使用。
 > <sub>Memcache 反射DDOS攻击脚本经供学习参考使用</sub>
 
 ---
@@ -1102,8 +1102,8 @@
 > [!info]
 > ⭐ 2,839 · Python · 2026-04-22T11:27:48Z  
 > [GitHub](https://github.com/cdhigh/KindleEar) · [Website](http://cdhigh.github.io/KindleEar/)  
-> 
-> 生成失败
+> `#内容聚合` `#电子书推送` `#自动化工具` `#阅读器优化` 
+> KindleEar 是一款网页内容聚合工具，支持 RSS/ATOM/JSON 及 Calibre recipe 格式，可自动将网页内容转化为 epub/mobi/mp3 格式并推送至 Kindle。内置专为 e-ink 屏幕优化的在线阅读器，支持 AI 摘要生成、双语翻译和文字转语音功能。提供 Docker 部署、多用户管理和浏览器插件无代码抓取，跨平台运行。
 > <sub>Aggregates RSS and web content(Calibre recipe), sends to Kindle, and includes an e-ink optimized online reader.</sub>
 
 ---
@@ -1112,8 +1112,8 @@
 > [!info]
 > ⭐ 78,559 · C · 2026-04-22T23:01:29Z  
 > [GitHub](https://github.com/netdata/netdata) · [Website](https://www.netdata.cloud)  
-> `#ai` `#alerting` `#cncf` `#data-visualization` `#database` `#devops` `#docker` `#grafana` `#influxdb` `#kubernetes` `#linux` `#machine-learning` `#mcp` `#mongodb` `#monitoring` `#mysql` `#netdata` `#observability` `#postgresql` `#prometheus` 
-> 生成失败
+> `#全栈可观测性` `#实时监控` `#跨平台` `#运维监控` `#ai` `#alerting` `#cncf` `#data-visualization` `#database` `#devops` `#docker` `#grafana` `#influxdb` `#kubernetes` `#linux` `#machine-learning` `#mcp` `#mongodb` `#monitoring` `#mysql` `#netdata` `#observability` `#postgresql` `#prometheus` 
+> Netdata 是一个开源的实时基础设施监控平台，支持 Linux、macOS、FreeBSD 和 Windows 系统。平台以每秒采集全量指标的能力著称，通过 AI 驱动的分析引擎实现即时故障检测与告警。拥有百万级用户和千万级 Docker 拉取量，是运维团队实现全栈可观测性的首选轻量级方案。
 > <sub>The fastest path to AI-powered full stack observability, even for lean teams.</sub>
 
 ---
@@ -1322,18 +1322,18 @@
 > [!info]
 > ⭐ 40 · PHP · 2025-01-10T10:50:20Z  
 > [GitHub](https://github.com/peckadesign/Monitoring)  
-> `#monitoring` `#nextras` `#php` 
-> 生成失败
+> `#DevOps工具` `#PHP技术` `#网站监控` `#自动化检测` `#monitoring` `#nextras` `#php` 
+> 开源网站监控系统，用于追踪Web项目的可用性和功能状态，支持HTTPS证书、DNS解析、RabbitMQ队列等关键依赖的健康检查。采用Docker容器化部署，集成GitHub OAuth认证机制，通过RabbitMQ处理异步检查任务。适合运维团队监控生产环境或开发团队管理多项目运行状态。
 > <sub>Monitoring na dostupnost webů, generování feedů, DNS, HTTPS atd.</sub>
 
 ---
 ## 521xueweihan/HelloGitHub
 
 > [!info]
-> ⭐ 152,513 · Python · 2026-04-22T23:39:30Z  
+> ⭐ 152,514 · Python · 2026-04-22T23:55:43Z  
 > [GitHub](https://github.com/521xueweihan/HelloGitHub) · [Website](https://hellogithub.com)  
-> `#awesome` `#github` `#hellogithub` `#python` 
-> 生成失败
+> `#内容聚合` `#开源社区` `#技术周刊` `#编程学习` `#awesome` `#github` `#hellogithub` `#python` 
+> HelloGitHub 是一个开源项目推荐平台，每月28号发布中文月刊，精选 GitHub 上有趣、入门级的开源项目、开源书籍和实战项目。通过趣味性强、内容浅显易懂的推荐方式，帮助开发者快速发现优质开源项目，降低开源学习门槛，激发编程兴趣，培养开源文化。
 > <sub>:octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.</sub>
 
 ---
@@ -1352,8 +1352,8 @@
 > [!info]
 > ⭐ 39 · PHP · 2025-02-21T01:59:04Z  
 > [GitHub](https://github.com/jiangbianwanghai/ping) · [Website](https://jiangbianwanghai.gitbooks.io/mty-monitor-user-guide/content/chapter1.html)  
-> 
-> 生成失败
+> `#PHP` `#网页爬虫` `#自动化工具` `#运维监控` 
+> 这是一个基于Laravel开发的网页状态监控系统，支持对目标URL进行定时检测和可用性监控。项目利用Laravel的计划任务和队列功能实现自动化监控，通过定期抓取网页状态并异步处理告警，适合运维人员部署用于保障网站可用性。
 > <sub>这是一个网页状态监控项目</sub>
 
 ---
@@ -1362,8 +1362,8 @@
 > [!info]
 > ⭐ 135 · PHP · 2026-03-14T17:31:16Z  
 > [GitHub](https://github.com/U2FsdGVkX1/Tbo)  
-> 
-> 生成失败
+> `#PHP框架` `#Telegram机器人` `#即时通讯自动化` `#轻量级` 
+> Tbo 是一个基于 PHP 的轻量级 Telegram Bot 开发框架，提供简洁友好的 API 接口，支持快速构建聊天机器人和自动化工具。相比其他 Telegram 框架，它更轻巧、门槛更低，适合希望快速搭建 Telegram 机器人的开发者。
 > <sub>一个更轻巧的 Telegram Bot 框架</sub>
 
 ---
@@ -1372,8 +1372,8 @@
 > [!info]
 > ⭐ 4 · Python · 2023-01-28T08:45:23Z  
 > [GitHub](https://github.com/myluoluo/pubuim-zabbix-Incoming)  
-> 
-> 生成失败
+> `#Zabbix` `#告警通知` `#消息推送` `#运维自动化` 
+> 一个 Zabbix 监控告警脚本，通过 pubu.im 的 Incoming Webhook 将触发器状态、主机信息、监控指标等告警内容实时推送给运维人员。Python 编写，部署于 Zabbix AlertScriptsPath 目录，实现监控告警与即时通讯的自动化集成。
 > <sub>为 pubu.im 使用的 Zabbix 报警脚本</sub>
 
 ---

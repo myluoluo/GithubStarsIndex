@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-22 23:56 UTC",
+  "last_updated": "2026-04-23 00:01 UTC",
   "repos": {
     "givenge/reader-rust": {
       "metadata": {
@@ -44,7 +44,7 @@
         "name": "get-shit-done",
         "owner": "gsd-build",
         "description": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by TÂCHES.",
-        "stars": 56215,
+        "stars": 56217,
         "language": "JavaScript",
         "url": "https://github.com/gsd-build/get-shit-done",
         "homepage": "",
@@ -55,7 +55,7 @@
           "spec-driven-development"
         ],
         "pushed_at": "2026-04-22T22:23:10Z",
-        "updated_at": "2026-04-22T23:43:33Z",
+        "updated_at": "2026-04-23T00:00:08Z",
         "starred_at": "2026-03-25T19:32:57Z"
       },
       "summary": {
@@ -129,13 +129,13 @@
         "name": "ShichiZip",
         "owner": "idawnlight",
         "description": "The 7-Zip derivative intended for macOS",
-        "stars": 671,
+        "stars": 672,
         "language": "Swift",
         "url": "https://github.com/idawnlight/ShichiZip",
         "homepage": "",
         "topics": [],
         "pushed_at": "2026-04-22T09:15:31Z",
-        "updated_at": "2026-04-22T18:41:06Z",
+        "updated_at": "2026-04-22T23:58:25Z",
         "starred_at": "2026-04-11T18:06:50Z"
       },
       "summary": {
@@ -197,13 +197,13 @@
         "name": "superpowers",
         "owner": "obra",
         "description": "An agentic skills framework & software development methodology that works.",
-        "stars": 164307,
+        "stars": 164312,
         "language": "Shell",
         "url": "https://github.com/obra/superpowers",
         "homepage": "",
         "topics": [],
         "pushed_at": "2026-04-16T19:50:46Z",
-        "updated_at": "2026-04-22T23:50:33Z",
+        "updated_at": "2026-04-22T23:56:46Z",
         "starred_at": "2026-03-25T19:32:56Z"
       },
       "summary": {
@@ -453,7 +453,7 @@
         "name": "omlx",
         "owner": "jundot",
         "description": "LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar",
-        "stars": 11076,
+        "stars": 11078,
         "language": "Python",
         "url": "https://github.com/jundot/omlx",
         "homepage": "https://omlx.ai",
@@ -466,7 +466,7 @@
           "openai-api"
         ],
         "pushed_at": "2026-04-22T15:26:21Z",
-        "updated_at": "2026-04-22T23:26:01Z",
+        "updated_at": "2026-04-22T23:59:43Z",
         "starred_at": "2026-03-09T12:00:30Z"
       },
       "summary": {
@@ -759,13 +759,23 @@
         "starred_at": "2026-01-09T06:08:54Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "超低资源消耗的离线翻译模型服务器，无需显卡即可运行，单请求响应时间仅50毫秒。支持Windows、Mac、Linux桌面端一键启动及Docker部署，提供RESTful API兼容DeepL、沉浸式翻译等主流接口，支持全球主要语言，实现无限免费本地翻译。",
+        "en": "An ultra-lightweight offline translation server requiring no GPU, with average response time of 50ms per request. Supports one-click desktop launch on Windows/Mac/Linux and Docker deployment. Offers RESTful API compatible with DeepL, Immersive Translate and other mainstream interfaces, enabling unlimited free local translation across major world languages.",
+        "tags_zh": [
+          "离线翻译",
+          "私有部署",
+          "跨平台",
+          "轻量级服务器"
+        ],
+        "tags_en": [
+          "Cross-Platform",
+          "Lightweight Server",
+          "Offline Translation",
+          "Private Deployment"
+        ]
       },
       "pushed_at": "2026-03-08T12:01:45Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "zufuliu/notepad4": {
       "metadata": {
@@ -794,13 +804,23 @@
         "starred_at": "2025-12-31T07:41:46Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "Notepad4是基于Scintilla的轻量级Windows文本编辑器，支持50+编程语言的语法高亮、代码折叠、自动补全和API列表功能。由Notepad2现代化重写而来，并集成matepath文件浏览器插件，适合开发者进行代码编辑和查看。",
+        "en": "Notepad4 is a lightweight Scintilla-based text editor for Windows, featuring syntax highlighting, code folding, auto-completion, and API lists for 50+ programming languages. Rewritten in modern C++ from Notepad2, bundled with matepath file browser plugin, ideal for developers.",
+        "tags_zh": [
+          "代码编辑器",
+          "自动化工具",
+          "语法高亮",
+          "跨平台"
+        ],
+        "tags_en": [
+          "Auto-completion",
+          "Code Editor",
+          "Cross-platform",
+          "Syntax Highlighting"
+        ]
       },
       "pushed_at": "2026-04-21T13:08:33Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "koreader/koreader": {
       "metadata": {
@@ -839,13 +859,23 @@
         "starred_at": "2025-10-10T07:15:34Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "KOReader是一款专为电子墨水设备打造的开源电子书阅读器，支持PDF、EPUB、DjVu等数十种文档格式。跨平台支持Kindle、Kobo、PocketBook、安卓等多设备运行，提供多语言界面、词典查词、RSS订阅、WiFi传书等丰富功能。性能针对电子墨水优化，页面翻转速度比原生系统快一倍以上。",
+        "en": "KOReader is an open-source document viewer optimized for e-ink devices, supporting dozens of formats including PDF, EPUB, DjVu and more. It runs cross-platform on Kindle, Kobo, PocketBook, Android and Linux with multilingual UI, dictionary lookup, RSS feeds and WiFi file transfer. Performance optimized for e-ink achieves over 50% faster page turns.",
+        "tags_zh": [
+          "文档格式支持",
+          "电子书阅读器",
+          "电子墨水优化",
+          "跨平台"
+        ],
+        "tags_en": [
+          "Cross-Platform",
+          "Document Formats",
+          "E-Ink Optimization",
+          "Ebook Reader"
+        ]
       },
       "pushed_at": "2026-04-22T23:40:10Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "autobcb/read": {
       "metadata": {
@@ -863,13 +893,23 @@
         "starred_at": "2025-08-10T16:51:22Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "轻阅读是一款全移动端网络文学阅读应用后端，支持多端进度同步与跨平台部署。采用Spring Boot+Docker架构，提供代理功能绕过IP限制，可导入本地书源并支持自定义包名。与开源阅读项目进度同步，适合自建书源的书友搭建私有阅读服务。",
+        "en": "QRead is a backend service for a cross-platform web novel reading application, supporting multi-device progress sync. Built with Spring Boot and Docker, it features proxy functionality for bypassing IP restrictions, local book source import, and custom package names. Compatible with open-source reading apps via WebDAV sync.",
+        "tags_zh": [
+          "Flutter",
+          "代理工具",
+          "多端同步",
+          "网络文学"
+        ],
+        "tags_en": [
+          "Cross-Platform Sync",
+          "Flutter",
+          "Proxy Tool",
+          "Web Novel"
+        ]
       },
       "pushed_at": "2026-04-10T11:27:10Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "freeok/so-novel": {
       "metadata": {
@@ -1659,13 +1699,23 @@
         "starred_at": "2023-08-27T14:58:05Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "基于正则匹配的JavaScript代码解密工具，用于安全研究人员评估加密工具的代码保护能力。通过正则表达式解析混淆代码，还原原始逻辑。该项目已停止维护，原用于检测低安全性加密方案的有效性。",
+        "en": "A regex-based JavaScript deobfuscation tool designed for security researchers to evaluate the effectiveness of code protection schemes. It restores original logic from obfuscated JavaScript code through pattern matching. Note: The project is discontinued due to vm2 security issues.",
+        "tags_zh": [
+          "代码逆向",
+          "安全审计",
+          "正则解析",
+          "混淆检测"
+        ],
+        "tags_en": [
+          "Code Reverse",
+          "Obfuscation Detection",
+          "Regex Parsing",
+          "Security Audit"
+        ]
       },
       "pushed_at": "2024-03-15T10:52:41Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "Archeb/opentrace": {
       "metadata": {
@@ -1722,13 +1772,23 @@
         "starred_at": "2022-12-31T19:10:15Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "阅读3服务器版是一款开源网络文学阅读工具，支持书源管理、书架同步、搜索换源、听书及本地书籍导入。采用Kotlin+Spring Boot+Vert.x后端与Vue.js前端，支持WebDAV同步、自定义主题、RSS订阅和Kindle阅读，适配桌面端与iOS平台。",
+        "en": "Reader is an open-source web novel reading server with book source management, bookshelf sync, search, text-to-speech, and local book import. Built with Kotlin/Spring Boot/Vert.x backend and Vue.js frontend, it supports WebDAV sync, custom themes, RSS subscription, and Kindle reading across desktop and iOS platforms.",
+        "tags_zh": [
+          "开源",
+          "网络文学",
+          "跨平台",
+          "阅读器"
+        ],
+        "tags_en": [
+          "Cross-Platform",
+          "Open Source",
+          "Vue.js",
+          "Web Novel Reader"
+        ]
       },
       "pushed_at": "2026-04-20T09:10:06Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "XIU2/TrackersListCollection": {
       "metadata": {
@@ -1758,13 +1818,23 @@
         "starred_at": "2022-12-30T16:41:05Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "一个每日更新的热门BT Tracker列表仓库，精选整理高质量tracker服务器地址，有效提升BitTorrent下载速度。支持BEST、ALL、HTTP等多种类型列表，提供Aria2专用格式及多CDN镜像加速，适合qBittorrent、迅雷等主流BT客户端使用。",
+        "en": "A daily-updated collection of popular BitTorrent trackers that significantly improves BT download speeds. Offers multiple tracker lists (BEST/ALL/HTTP), Aria2 format support, and CDN mirrors for easy integration with clients like qBittorrent and BitComet.",
+        "tags_zh": [
+          "BT下载",
+          "下载工具",
+          "开源资源",
+          "网络加速"
+        ],
+        "tags_en": [
+          "BitTorrent",
+          "Download Acceleration",
+          "Network Tools",
+          "Open Source"
+        ]
       },
       "pushed_at": "2026-04-22T00:25:14Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "MikeWang000000/Natter": {
       "metadata": {
@@ -2583,13 +2653,23 @@
         "starred_at": "2020-06-06T15:36:57Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "Bilibili开源的增强版mtr网络诊断工具，在经典traceroute功能基础上增加了IP地理位置解析能力，支持biliip和ipip.net数据库，可显示IP的国家、城市及ISP信息。适用于网络故障诊断、路由追踪和服务器定位等运维场景。",
+        "en": "Bilibili's enhanced mtr network diagnostic tool with IP geolocation support. Based on classic traceroute, it displays country, city and ISP info for each hop using biliip or ipip.net databases. Ideal for network troubleshooting, route analysis and server localization.",
+        "tags_zh": [
+          "IP解析",
+          "终端工具",
+          "网络诊断",
+          "运维工具"
+        ],
+        "tags_en": [
+          "DevOps Tools",
+          "IP Geolocation",
+          "Network Diagnostics",
+          "Terminal Utility"
+        ]
       },
       "pushed_at": "2020-09-06T02:32:12Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "BookStackApp/BookStack": {
       "metadata": {
@@ -2614,13 +2694,23 @@
         "starred_at": "2020-05-02T19:49:24Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "BookStack 是基于 PHP/Laravel 构建的开源文档与 Wiki 平台，采用书籍-章节-页面三层结构组织内容。提供 Markdown/WYSIWYG 双编辑器、细粒度权限管理、全文搜索与 API 接口，支持多语言与 LDAP/SSO 认证。设计理念强调开箱即用的简洁体验，适合团队知识沉淀、技术文档编写与内部协作。",
+        "en": "BookStack is an open-source documentation and wiki platform built with PHP/Laravel, featuring a hierarchical structure of books, chapters, and pages. It offers dual editors (Markdown/WYSIWYG), fine-grained permissions, full-text search, and REST API. Emphasizing an opinionated, out-of-the-box experience, it's ideal for team knowledge management, technical documentation, and internal collaboration.",
+        "tags_zh": [
+          "Laravel框架",
+          "团队协作",
+          "文档平台",
+          "知识管理"
+        ],
+        "tags_en": [
+          "Documentation Platform",
+          "Knowledge Management",
+          "Laravel",
+          "Team Collaboration"
+        ]
       },
       "pushed_at": "2026-04-22T12:30:51Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "iRay/TeleTor": {
       "metadata": {
@@ -2643,13 +2733,23 @@
         "starred_at": "2020-03-16T13:07:07Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "TeleTor是一个Telegram机器人，用于远程管理Transmission BitTorrent客户端。用户可通过Telegram发送.torrent文件或magnet链接，并使用inline按钮启动、停止、删除下载任务。专为树莓派或本地网络中的PC设计，实现随时随地管理家庭下载服务器。",
+        "en": "TeleTor is a Telegram bot for remotely managing Transmission BitTorrent client. Users can send .torrent files or magnet links via Telegram and control downloads using inline buttons. Designed for Raspberry Pi or home PCs behind NAT, enabling download server management from anywhere.",
+        "tags_zh": [
+          "BitTorrent管理",
+          "Python",
+          "自动化工具",
+          "远程控制"
+        ],
+        "tags_en": [
+          "BitTorrent Management",
+          "Open Source",
+          "Python",
+          "Remote Control"
+        ]
       },
       "pushed_at": "2023-10-18T01:49:03Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "FriendsOfHere/meta-news": {
       "metadata": {
@@ -2671,13 +2771,23 @@
         "starred_at": "2020-02-21T14:59:23Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "Meta News 是专为 Here.app 打造的插件生成工具，可快速创建新闻类桌面插件。用户填写配置字段并点击小窗口后，自动生成新闻插件并显示在桌面。支持一键安装和手动安装两种方式，大幅简化 Here 平台新闻插件的开发流程。",
+        "en": "Meta News is a plugin generator for Here.app that enables users to quickly create news widgets for the desktop. By filling configuration fields and clicking the mini window, users can instantly generate news plugins displayed on their desktop. It supports both one-click and manual installation, significantly streamlining the Here platform's news plugin development.",
+        "tags_zh": [
+          "Here.app",
+          "插件生成工具",
+          "新闻聚合",
+          "桌面小组件"
+        ],
+        "tags_en": [
+          "Desktop Widget",
+          "Here.app",
+          "News Aggregation",
+          "Plugin Generator"
+        ]
       },
       "pushed_at": "2020-07-26T06:33:27Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "hereappdev/Here-Plugins": {
       "metadata": {
@@ -2701,13 +2811,23 @@
         "starred_at": "2020-02-17T15:09:56Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "Here-Plugins是macOS效率应用Here的官方插件仓库，支持开发者创建和分享插件以扩展应用功能。提供完整的插件开发文档和生成器工具，通过all.json文件管理插件列表，采用MIT开源协议，旨在构建社区驱动的插件生态系统。",
+        "en": "Here-Plugins is the official plugin repository for macOS productivity app Here, enabling developers to create and share plugins extending app functionality. It provides comprehensive plugin development documentation and generator tools, manages plugins via all.json, and operates under MIT license to build a community-driven plugin ecosystem.",
+        "tags_zh": [
+          "macOS效率工具",
+          "开源生态",
+          "插件系统",
+          "社区贡献"
+        ],
+        "tags_en": [
+          "Community Contribution",
+          "Open Source Ecosystem",
+          "Plugin System",
+          "macOS Productivity"
+        ]
       },
       "pushed_at": "2021-11-16T15:03:52Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "RIPE-NCC/ripe-atlas-software-probe": {
       "metadata": {
@@ -3472,13 +3592,23 @@
         "starred_at": "2018-03-23T17:34:36Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "ShanaEncoder是一款专为视频压制设计的工具，支持CPU与GPU同时加速编码，显著提升压制效率与画质。作为B站推荐的视频压制软件，它兼容多种编码格式，具备批量处理能力，能够在保持高清晰度的同时大幅缩短处理时间，适合内容创作者和专业视频工作者使用。",
+        "en": "ShanaEncoder is a professional video encoding tool supporting simultaneous CPU and GPU acceleration for efficient compression. Recommended by Bilibili, it delivers excellent encoding speed while maintaining high visual quality. With support for multiple codecs and batch processing, it's ideal for content creators and video professionals seeking optimal balance between quality and performance.",
+        "tags_zh": [
+          "GPU加速",
+          "多媒体处理",
+          "视频压制",
+          "视频编码"
+        ],
+        "tags_en": [
+          "GPU Acceleration",
+          "Multimedia Processing",
+          "Video Compression",
+          "Video Encoding"
+        ]
       },
       "pushed_at": "2025-02-09T18:18:57Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "outline/outline": {
       "metadata": {
@@ -3541,13 +3671,23 @@
         "starred_at": "2018-03-12T16:47:44Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "基于 Django + Celery 的 KVM 虚拟化管理平台，提供虚拟机全生命周期管理、存储池管理、网络管理（支持 OpenVSwitch/SDN）、资源监控及 Web Console 等功能。平台采用 Python 2.7 开发，支持多租户权限管理和热迁移，适用于企业级虚拟化基础设施运维。",
+        "en": "A comprehensive KVM virtualization management platform built with Django and Celery, offering full lifecycle management for virtual machines including resource monitoring, storage pool management, network control with OpenVSwitch/SDN support, and Web Console access. Designed for enterprise-level virtualization infrastructure operations.",
+        "tags_zh": [
+          "权限管理",
+          "自动化运维",
+          "虚拟化平台",
+          "资源监控"
+        ],
+        "tags_en": [
+          "Access Control",
+          "Infrastructure",
+          "Virtualization",
+          "自动化工具"
+        ]
       },
       "pushed_at": "2022-03-29T21:53:42Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "jiang111/ReSend-SMS": {
       "metadata": {
@@ -3570,13 +3710,23 @@
         "starred_at": "2018-03-09T15:20:16Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "一款Android短信转发应用，实时监听手机接收的短信，通过SMTP协议加密发送至用户指定邮箱。支持163、QQ等主流邮箱服务，采用本地处理机制保护用户隐私，需将应用加入白名单以确保后台常驻运行。",
+        "en": "An Android SMS forwarding application that monitors incoming messages and securely sends them to a specified email address via encrypted SMTP protocol. Supports popular email services like 163 and QQ, processes data locally to protect privacy, and requires background whitelist inclusion for reliable operation.",
+        "tags_zh": [
+          "Android应用",
+          "短信监听",
+          "邮件通知",
+          "隐私保护"
+        ],
+        "tags_en": [
+          "Android App",
+          "Email Notification",
+          "Privacy Protection",
+          "SMS Monitoring"
+        ]
       },
       "pushed_at": "2019-01-01T08:07:44Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "Srar/MemcacheDos": {
       "metadata": {
@@ -3594,13 +3744,23 @@
         "starred_at": "2018-03-02T18:26:41Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "基于Node.js/TypeScript实现的Memcache UDP反射放大DDoS攻击工具。通过伪造源IP利用Memcache 11211端口漏洞，可达60倍至4万倍反射倍率。该仓库已被标记为高危网络安全工具，不建议部署或使用。",
+        "en": "A Node.js/TypeScript-based Memcache UDP reflection amplification DDoS tool. Exploits Memcache UDP port 11211 by spoofing source IPs, achieving 60x to 40,000x amplification ratios. Marked as high-risk cybersecurity tool, deployment or usage not recommended.",
+        "tags_zh": [
+          "DDoS攻击",
+          "放大攻击",
+          "网络协议",
+          "网络安全"
+        ],
+        "tags_en": [
+          "Amplification Attack",
+          "DDoS Attack",
+          "Network Protocol",
+          "网络安全"
+        ]
       },
       "pushed_at": "2018-03-02T08:04:10Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "cdhigh/KindleEar": {
       "metadata": {
@@ -3618,13 +3778,23 @@
         "starred_at": "2018-02-22T14:36:57Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "KindleEar 是一款网页内容聚合工具，支持 RSS/ATOM/JSON 及 Calibre recipe 格式，可自动将网页内容转化为 epub/mobi/mp3 格式并推送至 Kindle。内置专为 e-ink 屏幕优化的在线阅读器，支持 AI 摘要生成、双语翻译和文字转语音功能。提供 Docker 部署、多用户管理和浏览器插件无代码抓取，跨平台运行。",
+        "en": "KindleEar aggregates web content via RSS/ATOM/JSON or Calibre recipes and delivers formatted ebooks (epub/mobi/mp3) to Kindle devices. Features an e-ink optimized online reader, AI-powered article summarization, bilingual translation, and text-to-speech. Supports Docker deployment, multi-user management, and a browser extension for code-free web scraping, running cross-platform.",
+        "tags_zh": [
+          "内容聚合",
+          "电子书推送",
+          "自动化工具",
+          "阅读器优化"
+        ],
+        "tags_en": [
+          "Automation Tool",
+          "Content Aggregation",
+          "E-ink Optimization",
+          "Ebook Delivery"
+        ]
       },
       "pushed_at": "2026-01-31T02:07:00Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "netdata/netdata": {
       "metadata": {
@@ -3663,13 +3833,23 @@
         "starred_at": "2018-02-22T13:09:47Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "Netdata 是一个开源的实时基础设施监控平台，支持 Linux、macOS、FreeBSD 和 Windows 系统。平台以每秒采集全量指标的能力著称，通过 AI 驱动的分析引擎实现即时故障检测与告警。拥有百万级用户和千万级 Docker 拉取量，是运维团队实现全栈可观测性的首选轻量级方案。",
+        "en": "Netdata is an open-source real-time infrastructure monitoring platform supporting Linux, macOS, FreeBSD, and Windows. It excels at collecting metrics every second with an AI-powered analysis engine for instant fault detection and alerting. With millions of users and Docker pulls, it's the preferred lightweight solution for operations teams seeking full-stack observability.",
+        "tags_zh": [
+          "全栈可观测性",
+          "实时监控",
+          "跨平台",
+          "运维监控"
+        ],
+        "tags_en": [
+          "Cross-platform",
+          "Full-stack Observability",
+          "Infrastructure Monitoring",
+          "Real-time Monitoring"
+        ]
       },
       "pushed_at": "2026-04-22T23:01:24Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "psamim/aria2-telegram-bot": {
       "metadata": {
@@ -4485,13 +4665,23 @@
         "starred_at": "2017-04-05T20:15:12Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "开源网站监控系统，用于追踪Web项目的可用性和功能状态，支持HTTPS证书、DNS解析、RabbitMQ队列等关键依赖的健康检查。采用Docker容器化部署，集成GitHub OAuth认证机制，通过RabbitMQ处理异步检查任务。适合运维团队监控生产环境或开发团队管理多项目运行状态。",
+        "en": "An open-source website monitoring tool for tracking web project availability and functionality. It supports health checks for HTTPS certificates, DNS resolution, RabbitMQ queues and other critical dependencies. Containerized with Docker and GitHub OAuth authentication, it uses RabbitMQ for asynchronous task processing. Ideal for DevOps teams monitoring production environments or development teams managing multiple projects.",
+        "tags_zh": [
+          "DevOps工具",
+          "PHP技术",
+          "网站监控",
+          "自动化检测"
+        ],
+        "tags_en": [
+          "Automated Checking",
+          "DevOps Tools",
+          "PHP Technology",
+          "Website Monitoring"
+        ]
       },
       "pushed_at": "2023-04-13T06:30:54Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "521xueweihan/HelloGitHub": {
       "metadata": {
@@ -4499,7 +4689,7 @@
         "name": "HelloGitHub",
         "owner": "521xueweihan",
         "description": ":octocat: 分享 GitHub 上有趣、入门级的开源项目。Share interesting, entry-level open source projects on GitHub.",
-        "stars": 152513,
+        "stars": 152514,
         "language": "Python",
         "url": "https://github.com/521xueweihan/HelloGitHub",
         "homepage": "https://hellogithub.com",
@@ -4510,17 +4700,27 @@
           "python"
         ],
         "pushed_at": "2026-04-01T16:16:13Z",
-        "updated_at": "2026-04-22T23:39:30Z",
+        "updated_at": "2026-04-22T23:55:43Z",
         "starred_at": "2017-04-01T17:30:04Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "HelloGitHub 是一个开源项目推荐平台，每月28号发布中文月刊，精选 GitHub 上有趣、入门级的开源项目、开源书籍和实战项目。通过趣味性强、内容浅显易懂的推荐方式，帮助开发者快速发现优质开源项目，降低开源学习门槛，激发编程兴趣，培养开源文化。",
+        "en": "HelloGitHub is an open source project discovery platform that publishes monthly Chinese newsletters on the 28th, curating interesting and entry-level projects, books, and practical examples from GitHub. It helps developers discover quality open source projects through engaging, beginner-friendly recommendations, lowering the barrier to open source learning and fostering programming interest.",
+        "tags_zh": [
+          "内容聚合",
+          "开源社区",
+          "技术周刊",
+          "编程学习"
+        ],
+        "tags_en": [
+          "Content Curation",
+          "Open Source Community",
+          "Programming Learning",
+          "Tech Newsletter"
+        ]
       },
       "pushed_at": "2026-04-01T16:16:13Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "ossrs/srs": {
       "metadata": {
@@ -4565,7 +4765,7 @@
         "tags_en": []
       },
       "pushed_at": "2026-04-19T00:33:07Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "jiangbianwanghai/ping": {
       "metadata": {
@@ -4583,13 +4783,23 @@
         "starred_at": "2017-01-02T20:36:35Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "这是一个基于Laravel开发的网页状态监控系统，支持对目标URL进行定时检测和可用性监控。项目利用Laravel的计划任务和队列功能实现自动化监控，通过定期抓取网页状态并异步处理告警，适合运维人员部署用于保障网站可用性。",
+        "en": "A web status monitoring system built with Laravel framework that performs scheduled URL health checks. It leverages Laravel's scheduler and queue workers for automated monitoring tasks, suitable for operations teams deploying website availability surveillance solutions.",
+        "tags_zh": [
+          "PHP",
+          "网页爬虫",
+          "自动化工具",
+          "运维监控"
+        ],
+        "tags_en": [
+          "Laravel",
+          "URL Checker",
+          "Web Monitoring",
+          "自动化工具"
+        ]
       },
       "pushed_at": "2016-12-28T09:32:01Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "U2FsdGVkX1/Tbo": {
       "metadata": {
@@ -4607,13 +4817,23 @@
         "starred_at": "2016-12-25T16:17:52Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "Tbo 是一个基于 PHP 的轻量级 Telegram Bot 开发框架，提供简洁友好的 API 接口，支持快速构建聊天机器人和自动化工具。相比其他 Telegram 框架，它更轻巧、门槛更低，适合希望快速搭建 Telegram 机器人的开发者。",
+        "en": "Tbo is a lightweight PHP framework for building Telegram bots. It offers a friendly and powerful API that makes bot development simpler and more accessible. Designed to be lightweight, it enables developers to quickly create chatbots and automation tools with minimal overhead.",
+        "tags_zh": [
+          "PHP框架",
+          "Telegram机器人",
+          "即时通讯自动化",
+          "轻量级"
+        ],
+        "tags_en": [
+          "IM Automation",
+          "Lightweight",
+          "PHP Framework",
+          "Telegram Bot"
+        ]
       },
       "pushed_at": "2022-10-19T06:50:35Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "myluoluo/pubuim-zabbix-Incoming": {
       "metadata": {
@@ -4631,13 +4851,23 @@
         "starred_at": "2016-12-22T17:06:09Z"
       },
       "summary": {
-        "zh": "生成失败",
-        "en": "Generation failed",
-        "tags_zh": [],
-        "tags_en": []
+        "zh": "一个 Zabbix 监控告警脚本，通过 pubu.im 的 Incoming Webhook 将触发器状态、主机信息、监控指标等告警内容实时推送给运维人员。Python 编写，部署于 Zabbix AlertScriptsPath 目录，实现监控告警与即时通讯的自动化集成。",
+        "en": "A Zabbix alert script that pushes monitoring alerts to pubu.im via Incoming webhook. It delivers trigger status, host info, and metric data in real-time to operations teams. Written in Python, deployed to Zabbix AlertScriptsPath for seamless monitoring notification integration.",
+        "tags_zh": [
+          "Zabbix",
+          "告警通知",
+          "消息推送",
+          "运维自动化"
+        ],
+        "tags_en": [
+          "Alert Notification",
+          "DevOps Automation",
+          "Message Push",
+          "Zabbix"
+        ]
       },
       "pushed_at": "2016-12-19T09:26:09Z",
-      "updated_at": "2026-04-22"
+      "updated_at": "2026-04-23"
     },
     "megamsys/nilavu": {
       "metadata": {
