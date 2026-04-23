@@ -1,6 +1,6 @@
 # ⭐ GitHub Stars Index
 
-> Updated: 2026-04-23 00:01 UTC · Total: 133
+> Updated: 2026-04-23 00:05 UTC · Total: 133
 
 ---
 
@@ -184,7 +184,7 @@
 ## gsd-build/get-shit-done
 
 > [!info]
-> ⭐ 56,217 · JavaScript · 2026-04-23T00:00:08Z  
+> ⭐ 56,218 · JavaScript · 2026-04-23T00:03:42Z  
 > [GitHub](https://github.com/gsd-build/get-shit-done)  
 > `#AI Coding Assistant` `#Context Engineering` `#Meta-Prompting` `#Spec-Driven Dev` `#claude-code` `#context-engineering` `#meta-prompting` `#spec-driven-development` 
 > GSD is a lightweight meta-prompting, context engineering and spec-driven development system for AI coding assistants. It solves context rot — the quality degradation when AI fills its context window. Supports Claude Code, Cursor, Windsurf, and 10+ other tools. Ideal for solo developers who want to specify what they need and have AI build it without enterprise ceremony.
@@ -242,7 +242,7 @@
 ## jundot/omlx
 
 > [!info]
-> ⭐ 11,078 · Python · 2026-04-22T23:59:43Z  
+> ⭐ 11,079 · Python · 2026-04-23T00:03:52Z  
 > [GitHub](https://github.com/jundot/omlx) · [Website](https://omlx.ai)  
 > `#Apple Silicon` `#KV Caching` `#LLM Inference` `#Local Deployment` `#apple-silicon` `#inference-server` `#llm` `#macos` `#mlx` `#openai-api` 
 > oMLX is an LLM inference server optimized for Apple Silicon, featuring continuous batching and tiered KV caching across memory and SSD tiers. Managed via macOS menu bar or CLI, it supports OpenAI-compatible API for running open-source models like Llama, enabling low-latency local AI inference for developers.
@@ -680,7 +680,7 @@
 ## ant-design/ant-design
 
 > [!info]
-> ⭐ 97,818 · TypeScript · 2026-04-22T20:37:23Z  
+> ⭐ 97,819 · TypeScript · 2026-04-23T00:03:40Z  
 > [GitHub](https://github.com/ant-design/ant-design) · [Website](https://ant.design)  
 > `#Design System` `#React` `#TypeScript` `#UI Components` `#ant-design` `#antd` `#design-systems` `#react` `#typescript` `#ui-kit` `#ui-library` 
 > Ant Design is an enterprise-class UI design language and React component library developed by Alibaba. It offers 70+ high-quality React components out of the box, covering forms, tables, navigation and more. Built with TypeScript, it supports theme customization and i18n for 40+ languages, widely used in mid-to-back-office applications.
@@ -1330,7 +1330,7 @@
 ## 521xueweihan/HelloGitHub
 
 > [!info]
-> ⭐ 152,514 · Python · 2026-04-22T23:55:43Z  
+> ⭐ 152,515 · Python · 2026-04-23T00:04:25Z  
 > [GitHub](https://github.com/521xueweihan/HelloGitHub) · [Website](https://hellogithub.com)  
 > `#Content Curation` `#Open Source Community` `#Programming Learning` `#Tech Newsletter` `#awesome` `#github` `#hellogithub` `#python` 
 > HelloGitHub is an open source project discovery platform that publishes monthly Chinese newsletters on the 28th, curating interesting and entry-level projects, books, and practical examples from GitHub. It helps developers discover quality open source projects through engaging, beginner-friendly recommendations, lowering the barrier to open source learning and fostering programming interest.
@@ -1342,8 +1342,8 @@
 > [!info]
 > ⭐ 28,759 · C++ · 2026-04-22T23:48:31Z  
 > [GitHub](https://github.com/ossrs/srs) · [Website](https://ossrs.io)  
-> `#audio` `#c` `#c-plus-plus` `#dash` `#hevc` `#hls` `#live` `#live-streaming` `#low-latency` `#media-server` `#multimedia` `#prometheus-exporter` `#rtmp` `#server-side` `#srt` `#streaming` `#video` `#video-conferencing` `#video-streaming` `#webrtc` 
-> Generation failed
+> `#Live Streaming` `#Media Server` `#RTMP` `#WebRTC` `#audio` `#c` `#c-plus-plus` `#dash` `#hevc` `#hls` `#live` `#live-streaming` `#low-latency` `#media-server` `#multimedia` `#prometheus-exporter` `#rtmp` `#server-side` `#srt` `#streaming` `#video` `#video-conferencing` `#video-streaming` `#webrtc` 
+> SRS is an open-source real-time video server supporting RTMP, WebRTC, HLS, HTTP-FLV, SRT and other streaming protocols for live streaming, surveillance and video conferencing. It supports H.264/H.265/AV1 codecs with cross-platform deployment and Docker support, ideal for scalable streaming services.
 > <sub>SRS is a simple, high-efficiency, real-time media server supporting RTMP, WebRTC, HLS, HTTP-FLV, HTTP-TS, SRT, MPEG-DASH, and GB28181, with codec support for H.264, H.265, AV1, VP9, AAC, Opus, and G.711.</sub>
 
 ---

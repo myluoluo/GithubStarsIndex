@@ -1,6 +1,6 @@
 # ⭐ GitHub Stars Index
 
-> Updated: 2026-04-23 00:01 UTC · Total: 133
+> Updated: 2026-04-23 00:05 UTC · Total: 133
 
 ---
 
@@ -184,7 +184,7 @@
 ## gsd-build/get-shit-done
 
 > [!info]
-> ⭐ 56,217 · JavaScript · 2026-04-23T00:00:08Z  
+> ⭐ 56,218 · JavaScript · 2026-04-23T00:03:42Z  
 > [GitHub](https://github.com/gsd-build/get-shit-done)  
 > `#AI编程助手` `#上下文工程` `#元提示技术` `#规范驱动开发` `#claude-code` `#context-engineering` `#meta-prompting` `#spec-driven-development` 
 > GSD是一个专为AI编程助手设计的轻量级元提示、上下文工程和规范驱动开发系统。解决AI在填充上下文窗口时的质量退化问题，支持Claude Code、Cursor、Windsurf等主流工具。通过规划结构和上下文管理，让开发者清晰表达需求即可快速构建功能，适合独立开发者快速交付项目。
@@ -242,7 +242,7 @@
 ## jundot/omlx
 
 > [!info]
-> ⭐ 11,078 · Python · 2026-04-22T23:59:43Z  
+> ⭐ 11,079 · Python · 2026-04-23T00:03:52Z  
 > [GitHub](https://github.com/jundot/omlx) · [Website](https://omlx.ai)  
 > `#AI大模型` `#Apple Silicon` `#推理加速` `#本地推理` `#apple-silicon` `#inference-server` `#llm` `#macos` `#mlx` `#openai-api` 
 > oMLX是专为Apple Silicon优化的LLM推理服务器，支持连续批处理与分层KV缓存（内存+SSD热冷分层），实现上下文跨请求复用。通过macOS菜单栏或CLI管理，支持OpenAI兼容API，可本地运行Llama等开源模型，为开发者提供低延迟的本地AI推理能力。
@@ -680,7 +680,7 @@
 ## ant-design/ant-design
 
 > [!info]
-> ⭐ 97,818 · TypeScript · 2026-04-22T20:37:23Z  
+> ⭐ 97,819 · TypeScript · 2026-04-23T00:03:40Z  
 > [GitHub](https://github.com/ant-design/ant-design) · [Website](https://ant.design)  
 > `#React` `#企业级UI` `#前端组件库` `#设计系统` `#ant-design` `#antd` `#design-systems` `#react` `#typescript` `#ui-kit` `#ui-library` 
 > Ant Design是阿里开源的企业级UI设计语言和React组件库，提供70+高质量、开箱即用的React组件，涵盖表单、表格、导航等常见场景。基于TypeScript开发，支持主题定制和40+语言国际化，广泛用于中后台应用开发。
@@ -1330,7 +1330,7 @@
 ## 521xueweihan/HelloGitHub
 
 > [!info]
-> ⭐ 152,514 · Python · 2026-04-22T23:55:43Z  
+> ⭐ 152,515 · Python · 2026-04-23T00:04:25Z  
 > [GitHub](https://github.com/521xueweihan/HelloGitHub) · [Website](https://hellogithub.com)  
 > `#内容聚合` `#开源社区` `#技术周刊` `#编程学习` `#awesome` `#github` `#hellogithub` `#python` 
 > HelloGitHub 是一个开源项目推荐平台，每月28号发布中文月刊，精选 GitHub 上有趣、入门级的开源项目、开源书籍和实战项目。通过趣味性强、内容浅显易懂的推荐方式，帮助开发者快速发现优质开源项目，降低开源学习门槛，激发编程兴趣，培养开源文化。
@@ -1342,8 +1342,8 @@
 > [!info]
 > ⭐ 28,759 · C++ · 2026-04-22T23:48:31Z  
 > [GitHub](https://github.com/ossrs/srs) · [Website](https://ossrs.io)  
-> `#audio` `#c` `#c-plus-plus` `#dash` `#hevc` `#hls` `#live` `#live-streaming` `#low-latency` `#media-server` `#multimedia` `#prometheus-exporter` `#rtmp` `#server-side` `#srt` `#streaming` `#video` `#video-conferencing` `#video-streaming` `#webrtc` 
-> 生成失败
+> `#FFmpeg生态` `#WebRTC` `#实时视频` `#流媒体服务` `#audio` `#c` `#c-plus-plus` `#dash` `#hevc` `#hls` `#live` `#live-streaming` `#low-latency` `#media-server` `#multimedia` `#prometheus-exporter` `#rtmp` `#server-side` `#srt` `#streaming` `#video` `#video-conferencing` `#video-streaming` `#webrtc` 
+> SRS是开源实时视频服务器，支持RTMP、WebRTC、HLS、HTTP-FLV、SRT等主流流媒体协议，覆盖直播、监控、视频会议等场景。支持H.264/H.265/AV1等编解码，跨平台运行，提供Docker一键部署，适合构建可扩展的流媒体服务。
 > <sub>SRS is a simple, high-efficiency, real-time media server supporting RTMP, WebRTC, HLS, HTTP-FLV, HTTP-TS, SRT, MPEG-DASH, and GB28181, with codec support for H.264, H.265, AV1, VP9, AAC, Opus, and G.711.</sub>
 
 ---
